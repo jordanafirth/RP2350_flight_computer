@@ -1,0 +1,2 @@
+# Preserve upstream reference bytes so manifest SHA-256 hashes remain valid.
+references/** -text
