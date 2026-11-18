@@ -1,5 +1,6 @@
 # Preserve upstream reference bytes by default; Markdown follows the LF rule below.
 references/** -text
+references/manifest.json text eol=lf
 
 # Keep Markdown LF on checkout and check-in, overriding the reference default.
 *.md text eol=lf

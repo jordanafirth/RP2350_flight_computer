@@ -23,7 +23,7 @@ Status: draft, not a released pinout. Based on the published RP2350 Feather sche
 | 16 | BNO085 interrupt | H_INTN, input |
 | 17 | BNO085 reset | NRST, output with defined startup behavior |
 | 18 | SD card detect | Optional; omit connection if selected socket lacks a detect switch |
-| 19 | Spare/test pad | Potential BNO085 boot access if needed; default BOOTN strap high |
+| 19 | BMP581 interrupt | BMP_INT; BNO085 BOOTN instead has a fixed pull-up |
 | 20 | Exposed SPI MISO | SPI0 RX; preserve RP2350 Feather header function |
 | 21 | Addressable status LED | Preserve RP2350 reference assignment if retained; may omit LED to save power/space |
 | 22 | Exposed SPI clock | SPI0 SCK |

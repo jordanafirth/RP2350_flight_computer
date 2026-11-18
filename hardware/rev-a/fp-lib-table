@@ -1,0 +1,1 @@
+(fp_lib_table (version 7) (lib (name "FlightComputer") (type "KiCad") (uri "${KIPRJMOD}/FlightComputer.pretty") (options "") (descr "Converted pinned reference footprints plus custom servo header")))

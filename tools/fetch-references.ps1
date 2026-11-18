@@ -7,7 +7,8 @@ $repoNames = @(
     'Adafruit-Feather-RP2040-Adalogger-PCB',
     'Adafruit-Feather-RP2350-PCB',
     'Adafruit-BNO08x-PCB',
-    'Adafruit-BMP280-Breakout-PCB'
+    'Adafruit-BMP280-Breakout-PCB',
+    'Adafruit-BMP5xx-Temperature-and-Pressure-Sensor-PCB'
 )
 $previous = if (Test-Path -LiteralPath $manifestPath) { Get-Content -LiteralPath $manifestPath -Raw | ConvertFrom-Json } else { @() }
 $records = @()
@@ -35,10 +36,13 @@ foreach ($repoName in $repoNames) {
         New-Item -ItemType Directory -Force -Path (Split-Path -Parent $destination) | Out-Null
         $escapedPath = (($relative -split '/') | ForEach-Object { [Uri]::EscapeDataString($_) }) -join '/'
         $url = "https://raw.githubusercontent.com/$fullName/$revision/$escapedPath"
-        Invoke-WebRequest -Uri $url -Headers $headers -OutFile $destination
+        $oldFile = if ($oldRecord) { $oldRecord.files | Where-Object { $_.path -eq $relative } | Select-Object -First 1 } else { $null }
+        $alreadyVerified = $oldFile -and (Test-Path -LiteralPath $destination) -and ((Get-FileHash -LiteralPath $destination -Algorithm SHA256).Hash.ToLowerInvariant() -eq $oldFile.sha256)
+        if (!$alreadyVerified) { Invoke-WebRequest -Uri $url -Headers $headers -OutFile $destination }
         $files += [ordered]@{ path = $relative; source = $url; sha256 = (Get-FileHash -LiteralPath $destination -Algorithm SHA256).Hash.ToLowerInvariant() }
     }
     $records += [ordered]@{ repository = $fullName; commit = $revision; retrieved_utc = [DateTime]::UtcNow.ToString('o'); files = $files }
-    $records | ConvertTo-Json -Depth 8 | Set-Content -LiteralPath $manifestPath -Encoding utf8
+    $manifestJson = ($records | ConvertTo-Json -Depth 8) -replace "`r`n", "`n"
+    [IO.File]::WriteAllText($manifestPath, $manifestJson + "`n", [Text.UTF8Encoding]::new($false))
     Write-Output "$fullName @ $revision : $($files.Count) reference files"
 }

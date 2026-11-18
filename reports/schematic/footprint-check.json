@@ -1,0 +1,12 @@
+{
+  "status": "pass",
+  "source_derived_footprints_checked": 25,
+  "source_pads_checked": 197,
+  "checks": [
+    "symbol pad-number coverage",
+    "source pad centers",
+    "source SMD pad sizes",
+    "source SMD rotations modulo 180 degrees for symmetric lands"
+  ],
+  "limits": "Checks conversion fidelity only. Manufacturer land patterns, selected part variants, paste/mask and mechanical clearances require independent review."
+}

@@ -1,0 +1,8 @@
+{
+  "status": "pass",
+  "components": 94,
+  "connected_physical_pads_checked": 351,
+  "hardware_requirement_checks": 25,
+  "display_connector_present": false,
+  "limits": "Export/model equivalence and named hardware connections only; does not establish physical footprint correctness or circuit performance."
+}

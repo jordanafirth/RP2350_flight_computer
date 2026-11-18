@@ -8,6 +8,7 @@ Sources to retrieve:
 - https://github.com/adafruit/Adafruit-Feather-RP2350-PCB (standard HSTX Feather, not the Adalogger)
 - https://github.com/adafruit/Adafruit-BNO08x-PCB
 - https://github.com/adafruit/Adafruit-BMP280-Breakout-PCB (historical circuit reference)
+- https://github.com/adafruit/Adafruit-BMP5xx-Temperature-and-Pressure-Sensor-PCB (BMP581 sensor core for the new draft)
 
 The specific RP2350 Adalogger CAD has not yet been located and verified. Evidence of development does not establish that editable hardware files are published:
 

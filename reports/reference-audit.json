@@ -10644,5 +10644,3275 @@
         ]
       }
     ]
+  },
+  {
+    "repository": "adafruit/Adafruit-BMP5xx-Temperature-and-Pressure-Sensor-PCB",
+    "commit": "0d42329e09e19452f154789a3a77a89a8873e5c7",
+    "path": "Adafruit BMP580 Temperature and Pressure Sensor rev B.brd",
+    "kind": "board",
+    "outline_endpoint_bounds_mm": {
+      "min_x": 0.0,
+      "max_x": 25.4,
+      "min_y": 0.0,
+      "max_y": 17.78,
+      "note": "Bounds of layer-20 wire endpoints only; curved-outline extrema and manufacturing tolerances require CAD review."
+    },
+    "top_elements": 29,
+    "bottom_elements": 11,
+    "bottom_elements_with_contacts": 1,
+    "elements": [
+      {
+        "name": "U$2",
+        "value": "",
+        "package": "ADAFRUIT_2.5MM",
+        "library": "microbuilder",
+        "x_mm": 20.828,
+        "y_mm": 14.732,
+        "rotation": "MR0",
+        "face": "bottom",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "R4",
+        "value": "10K",
+        "package": "0603-NO",
+        "library": "microbuilder",
+        "x_mm": 12.192,
+        "y_mm": 13.462,
+        "rotation": "R180",
+        "face": "top",
+        "smd_pad_count": 2,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "D2",
+        "value": "1N4148",
+        "package": "SOD-323",
+        "library": "microbuilder",
+        "x_mm": 16.764,
+        "y_mm": 5.334,
+        "rotation": "R180",
+        "face": "top",
+        "smd_pad_count": 2,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "R1",
+        "value": "10K",
+        "package": "0603-NO",
+        "library": "microbuilder",
+        "x_mm": 12.192,
+        "y_mm": 11.938,
+        "rotation": "R180",
+        "face": "top",
+        "smd_pad_count": 2,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "IC1",
+        "value": "BMP580",
+        "package": "BMP388",
+        "library": "adafruit_sensor",
+        "x_mm": 12.7,
+        "y_mm": 8.89,
+        "rotation": "R180",
+        "face": "top",
+        "smd_pad_count": 10,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "JP1",
+        "value": "",
+        "package": "1X08_ROUND_70",
+        "library": "microbuilder",
+        "x_mm": 12.7,
+        "y_mm": 2.54,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 8
+      },
+      {
+        "name": "C4",
+        "value": "10uF",
+        "package": "0805-NO",
+        "library": "microbuilder",
+        "x_mm": 6.731,
+        "y_mm": 5.715,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 2,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "U1",
+        "value": "AP2127K-3.3",
+        "package": "SOT23-5",
+        "library": "adafruit_power",
+        "x_mm": 8.128,
+        "y_mm": 8.763,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 5,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "C5",
+        "value": "10uF",
+        "package": "0805-NO",
+        "library": "microbuilder",
+        "x_mm": 8.128,
+        "y_mm": 12.192,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 2,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "C6",
+        "value": "0.1uF",
+        "package": "0603-NO",
+        "library": "microbuilder",
+        "x_mm": 10.541,
+        "y_mm": 8.89,
+        "rotation": "R90",
+        "face": "top",
+        "smd_pad_count": 2,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "R2",
+        "value": "10K Pack",
+        "package": "RESPACK_4X0603",
+        "library": "microbuilder",
+        "x_mm": 17.145,
+        "y_mm": 11.43,
+        "rotation": "R180",
+        "face": "top",
+        "smd_pad_count": 8,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "Q2",
+        "value": "BSS138",
+        "package": "SOT363",
+        "library": "microbuilder",
+        "x_mm": 16.891,
+        "y_mm": 7.747,
+        "rotation": "R90",
+        "face": "top",
+        "smd_pad_count": 6,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "U$40",
+        "value": "MOUNTINGHOLE2.5",
+        "package": "MOUNTINGHOLE_2.5_PLATED",
+        "library": "adafruit_electromech",
+        "x_mm": 2.54,
+        "y_mm": 15.24,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 1
+      },
+      {
+        "name": "U$41",
+        "value": "MOUNTINGHOLE2.5",
+        "package": "MOUNTINGHOLE_2.5_PLATED",
+        "library": "adafruit_electromech",
+        "x_mm": 22.86,
+        "y_mm": 15.24,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 1
+      },
+      {
+        "name": "CONN3",
+        "value": "STEMMA_I2C_QT",
+        "package": "JST_SH4",
+        "library": "adafruit_electromech",
+        "x_mm": 22.225,
+        "y_mm": 8.89,
+        "rotation": "R90",
+        "face": "top",
+        "smd_pad_count": 6,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "CONN4",
+        "value": "STEMMA_I2C_QT",
+        "package": "JST_SH4",
+        "library": "adafruit_electromech",
+        "x_mm": 3.175,
+        "y_mm": 8.89,
+        "rotation": "R270",
+        "face": "top",
+        "smd_pad_count": 6,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "FID3",
+        "value": "FIDUCIAL_1MM",
+        "package": "FIDUCIAL_1MM",
+        "library": "microbuilder",
+        "x_mm": 1.27,
+        "y_mm": 4.064,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 1,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "FID4",
+        "value": "FIDUCIAL_1MM",
+        "package": "FIDUCIAL_1MM",
+        "library": "microbuilder",
+        "x_mm": 19.558,
+        "y_mm": 16.51,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 1,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "U$46",
+        "value": "",
+        "package": "ADAFRUIT_3.5MM",
+        "library": "microbuilder",
+        "x_mm": 4.572,
+        "y_mm": 13.716,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "U$47",
+        "value": "",
+        "package": "PCBFEAT-REV-040",
+        "library": "microbuilder",
+        "x_mm": 21.082,
+        "y_mm": 5.08,
+        "rotation": "MR0",
+        "face": "bottom",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "U$48",
+        "value": "",
+        "package": "STEMMAQT",
+        "library": "silks",
+        "x_mm": 22.479,
+        "y_mm": 4.191,
+        "rotation": "MR90",
+        "face": "bottom",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "U$49",
+        "value": "",
+        "package": "STEMMAQT",
+        "library": "silks",
+        "x_mm": 3.048,
+        "y_mm": 12.954,
+        "rotation": "MR270",
+        "face": "bottom",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "D1",
+        "value": "GREEN",
+        "package": "CHIPLED_0603_NOOUTLINE",
+        "library": "microbuilder",
+        "x_mm": 3.556,
+        "y_mm": 12.573,
+        "rotation": "R90",
+        "face": "top",
+        "smd_pad_count": 2,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "R5",
+        "value": "10K",
+        "package": "0603-NO",
+        "library": "microbuilder",
+        "x_mm": 5.588,
+        "y_mm": 12.446,
+        "rotation": "R270",
+        "face": "top",
+        "smd_pad_count": 2,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "SJ1",
+        "value": "",
+        "package": "SOLDERJUMPER_ARROW_NOPASTE",
+        "library": "microbuilder",
+        "x_mm": 16.764,
+        "y_mm": 7.112,
+        "rotation": "MR180",
+        "face": "bottom",
+        "smd_pad_count": 2,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL14",
+        "value": "",
+        "package": "PLABEL14",
+        "library": "pinguin",
+        "x_mm": 13.335,
+        "y_mm": 7.493,
+        "rotation": "MR0",
+        "face": "bottom",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL15",
+        "value": "",
+        "package": "PLABEL15",
+        "library": "pinguin",
+        "x_mm": 12.446,
+        "y_mm": 3.683,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL16",
+        "value": "",
+        "package": "PLABEL16",
+        "library": "pinguin",
+        "x_mm": 18.034,
+        "y_mm": 3.683,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL17",
+        "value": "",
+        "package": "PLABEL17",
+        "library": "pinguin",
+        "x_mm": 6.477,
+        "y_mm": 0.889,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL18",
+        "value": "",
+        "package": "PLABEL18",
+        "library": "pinguin",
+        "x_mm": 9.017,
+        "y_mm": 4.191,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL19",
+        "value": "",
+        "package": "PLABEL19",
+        "library": "pinguin",
+        "x_mm": 11.557,
+        "y_mm": 0.889,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL20",
+        "value": "",
+        "package": "PLABEL20",
+        "library": "pinguin",
+        "x_mm": 16.637,
+        "y_mm": 0.889,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL21",
+        "value": "",
+        "package": "PLABEL21",
+        "library": "pinguin",
+        "x_mm": 21.971,
+        "y_mm": 0.889,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL22",
+        "value": "",
+        "package": "PLABEL22",
+        "library": "pinguin",
+        "x_mm": 13.716,
+        "y_mm": 16.637,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL23",
+        "value": "",
+        "package": "PLABEL23",
+        "library": "pinguin",
+        "x_mm": 13.97,
+        "y_mm": 14.859,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL24",
+        "value": "",
+        "package": "PLABEL24",
+        "library": "pinguin",
+        "x_mm": 12.827,
+        "y_mm": 11.303,
+        "rotation": "MR0",
+        "face": "bottom",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL25",
+        "value": "",
+        "package": "PLABEL25",
+        "library": "pinguin",
+        "x_mm": 12.7,
+        "y_mm": 15.875,
+        "rotation": "MR0",
+        "face": "bottom",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL26",
+        "value": "",
+        "package": "PLABEL26",
+        "library": "pinguin",
+        "x_mm": 12.573,
+        "y_mm": 0.889,
+        "rotation": "MR0",
+        "face": "bottom",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL27",
+        "value": "",
+        "package": "PLABEL27",
+        "library": "pinguin",
+        "x_mm": 19.05,
+        "y_mm": 4.318,
+        "rotation": "MR0",
+        "face": "bottom",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "U$1",
+        "value": "GND",
+        "package": "ADAFRUIT_2.5MM",
+        "library": "microbuilder",
+        "x_mm": 6.858,
+        "y_mm": 14.732,
+        "rotation": "MR0",
+        "face": "bottom",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      }
+    ],
+    "signals": [
+      {
+        "name": "GND",
+        "pads": [
+          "IC1.3",
+          "IC1.8",
+          "IC1.9",
+          "JP1.3",
+          "C4.2",
+          "U1.2",
+          "C5.2",
+          "C6.2",
+          "CONN4.1",
+          "CONN3.1",
+          "D1.C",
+          "CONN3.MT2",
+          "CONN3.MT1",
+          "CONN4.MT2",
+          "CONN4.MT1",
+          "SJ1.2"
+        ]
+      },
+      {
+        "name": "SDI_3V",
+        "pads": [
+          "IC1.4",
+          "R2.5",
+          "Q2.4"
+        ]
+      },
+      {
+        "name": "SCK_3V",
+        "pads": [
+          "IC1.2",
+          "R2.7",
+          "Q2.1"
+        ]
+      },
+      {
+        "name": "CS_3V",
+        "pads": [
+          "D2.A",
+          "R1.1",
+          "IC1.6"
+        ]
+      },
+      {
+        "name": "3.3V",
+        "pads": [
+          "R4.2",
+          "R1.2",
+          "IC1.1",
+          "IC1.10",
+          "JP1.2",
+          "C6.1",
+          "U1.5",
+          "C5.1",
+          "R2.4",
+          "Q2.2",
+          "R2.2",
+          "Q2.5",
+          "R5.1"
+        ]
+      },
+      {
+        "name": "SDO/ADR",
+        "pads": [
+          "R4.1",
+          "IC1.5",
+          "JP1.5",
+          "SJ1.1"
+        ]
+      },
+      {
+        "name": "SDI/SDA",
+        "pads": [
+          "JP1.6",
+          "Q2.3",
+          "R2.6",
+          "CONN4.3",
+          "CONN3.3"
+        ]
+      },
+      {
+        "name": "SCK/SCL",
+        "pads": [
+          "JP1.4",
+          "Q2.6",
+          "R2.8",
+          "CONN4.4",
+          "CONN3.4"
+        ]
+      },
+      {
+        "name": "CS",
+        "pads": [
+          "D2.C",
+          "JP1.7"
+        ]
+      },
+      {
+        "name": "INT",
+        "pads": [
+          "IC1.7",
+          "JP1.8"
+        ]
+      },
+      {
+        "name": "VCC",
+        "pads": [
+          "CONN3.2",
+          "CONN4.2",
+          "R2.1",
+          "R2.3",
+          "C4.1",
+          "U1.1",
+          "U1.3",
+          "JP1.1"
+        ]
+      },
+      {
+        "name": "N$1",
+        "pads": [
+          "D1.A",
+          "R5.2"
+        ]
+      }
+    ],
+    "routing_layers": [
+      "1",
+      "16"
+    ],
+    "mounting_holes": []
+  },
+  {
+    "repository": "adafruit/Adafruit-BMP5xx-Temperature-and-Pressure-Sensor-PCB",
+    "commit": "0d42329e09e19452f154789a3a77a89a8873e5c7",
+    "path": "Adafruit BMP580 Temperature and Pressure Sensor rev B.sch",
+    "kind": "schematic",
+    "parts": [
+      {
+        "name": "U$3",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "GND",
+        "device": ""
+      },
+      {
+        "name": "U$4",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "GND",
+        "device": ""
+      },
+      {
+        "name": "U$10",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "3.3V",
+        "device": ""
+      },
+      {
+        "name": "U$12",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "3.3V",
+        "device": ""
+      },
+      {
+        "name": "R4",
+        "value": "10K",
+        "library": "microbuilder",
+        "deviceset": "RESISTOR",
+        "device": "_0603_NOOUT"
+      },
+      {
+        "name": "U$25",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "3.3V",
+        "device": ""
+      },
+      {
+        "name": "D2",
+        "value": "1N4148",
+        "library": "microbuilder",
+        "deviceset": "DIODE",
+        "device": "SOD-323"
+      },
+      {
+        "name": "R1",
+        "value": "10K",
+        "library": "microbuilder",
+        "deviceset": "RESISTOR",
+        "device": "_0603_NOOUT"
+      },
+      {
+        "name": "U$18",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "3.3V",
+        "device": ""
+      },
+      {
+        "name": "IC1",
+        "value": "BMP580",
+        "library": "adafruit_sensor",
+        "deviceset": "BMP388",
+        "device": ""
+      },
+      {
+        "name": "JP1",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "HEADER-1X8",
+        "device": "70MIL"
+      },
+      {
+        "name": "U$23",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "GND",
+        "device": ""
+      },
+      {
+        "name": "C4",
+        "value": "10uF",
+        "library": "microbuilder",
+        "deviceset": "CAP_CERAMIC",
+        "device": "0805-NOOUTLINE"
+      },
+      {
+        "name": "U1",
+        "value": "AP2127K-3.3",
+        "library": "adafruit_power",
+        "deviceset": "VREG_SOT23-5",
+        "device": ""
+      },
+      {
+        "name": "C5",
+        "value": "10uF",
+        "library": "microbuilder",
+        "deviceset": "CAP_CERAMIC",
+        "device": "0805-NOOUTLINE"
+      },
+      {
+        "name": "U$30",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "GND",
+        "device": ""
+      },
+      {
+        "name": "U$31",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "GND",
+        "device": ""
+      },
+      {
+        "name": "C6",
+        "value": "0.1uF",
+        "library": "microbuilder",
+        "deviceset": "CAP_CERAMIC",
+        "device": "0603_NO"
+      },
+      {
+        "name": "U$33",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "3.3V",
+        "device": ""
+      },
+      {
+        "name": "U$34",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "3.3V",
+        "device": ""
+      },
+      {
+        "name": "U$35",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "3.3V",
+        "device": ""
+      },
+      {
+        "name": "U$36",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "3.3V",
+        "device": ""
+      },
+      {
+        "name": "R2",
+        "value": "10K Pack",
+        "library": "microbuilder",
+        "deviceset": "RESISTOR_4PACK",
+        "device": ""
+      },
+      {
+        "name": "Q2",
+        "value": "BSS138",
+        "library": "microbuilder",
+        "deviceset": "MOSFET-N_DUAL",
+        "device": ""
+      },
+      {
+        "name": "U$37",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "3.3V",
+        "device": ""
+      },
+      {
+        "name": "U$38",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "3.3V",
+        "device": ""
+      },
+      {
+        "name": "U$40",
+        "value": "",
+        "library": "adafruit_electromech",
+        "deviceset": "MOUNTINGHOLE",
+        "device": "2.5"
+      },
+      {
+        "name": "U$41",
+        "value": "",
+        "library": "adafruit_electromech",
+        "deviceset": "MOUNTINGHOLE",
+        "device": "2.5"
+      },
+      {
+        "name": "CONN3",
+        "value": "",
+        "library": "adafruit_electromech",
+        "deviceset": "STEMMA_I2C",
+        "device": "_QT"
+      },
+      {
+        "name": "CONN4",
+        "value": "",
+        "library": "adafruit_electromech",
+        "deviceset": "STEMMA_I2C",
+        "device": "_QT"
+      },
+      {
+        "name": "U$42",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "FRAME_A4_ADAFRUIT",
+        "device": ""
+      },
+      {
+        "name": "FID3",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "FIDUCIAL",
+        "device": "_1MM"
+      },
+      {
+        "name": "FID4",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "FIDUCIAL",
+        "device": "_1MM"
+      },
+      {
+        "name": "D1",
+        "value": "GREEN",
+        "library": "microbuilder",
+        "deviceset": "LED",
+        "device": "0603_NOOUTLINE"
+      },
+      {
+        "name": "R5",
+        "value": "10K",
+        "library": "microbuilder",
+        "deviceset": "RESISTOR",
+        "device": "_0603_NOOUT"
+      },
+      {
+        "name": "GND6",
+        "value": "",
+        "library": "supply1",
+        "deviceset": "GND",
+        "device": ""
+      },
+      {
+        "name": "P+1",
+        "value": "",
+        "library": "supply1",
+        "deviceset": "VCC",
+        "device": ""
+      },
+      {
+        "name": "P+2",
+        "value": "",
+        "library": "supply1",
+        "deviceset": "VCC",
+        "device": ""
+      },
+      {
+        "name": "P+3",
+        "value": "",
+        "library": "supply1",
+        "deviceset": "VCC",
+        "device": ""
+      },
+      {
+        "name": "U$45",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "3.3V",
+        "device": ""
+      },
+      {
+        "name": "P+5",
+        "value": "",
+        "library": "supply1",
+        "deviceset": "VCC",
+        "device": ""
+      },
+      {
+        "name": "SJ1",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "SOLDERJUMPER",
+        "device": ""
+      },
+      {
+        "name": "U$1",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "GND",
+        "device": ""
+      }
+    ],
+    "nets": [
+      {
+        "name": "GND",
+        "pins": [
+          "CONN4.G$1.GND",
+          "CONN3.G$1.GND",
+          "CONN3.G$3.MT",
+          "CONN3.G$2.MT",
+          "CONN4.G$3.MT",
+          "CONN4.G$2.MT",
+          "U$23.G$1.GND",
+          "C4.G$1.2",
+          "U1.G$1.GND",
+          "C5.G$1.2",
+          "U$30.G$1.GND",
+          "U$31.G$1.GND",
+          "C6.G$1.2",
+          "GND6.1.GND",
+          "D1.G$1.C",
+          "U$3.G$1.GND",
+          "IC1.G$1.GND",
+          "U$4.G$1.GND",
+          "JP1.A.3",
+          "SJ1.1.2",
+          "U$1.G$1.GND"
+        ]
+      },
+      {
+        "name": "VCC",
+        "pins": [
+          "CONN3.G$1.V+",
+          "CONN4.G$1.V+",
+          "R2.G$1.1",
+          "P+1.VCC.VCC",
+          "R2.G$3.1",
+          "P+2.VCC.VCC",
+          "C4.G$1.1",
+          "U1.G$1.IN",
+          "U1.G$1.EN",
+          "P+3.VCC.VCC",
+          "JP1.A.1",
+          "P+5.VCC.VCC"
+        ]
+      },
+      {
+        "name": "3.3V",
+        "pins": [
+          "C6.G$1.1",
+          "U$33.G$1.3.3V",
+          "U1.G$1.OUT",
+          "C5.G$1.1",
+          "U$34.G$1.3.3V",
+          "U$35.G$1.3.3V",
+          "R2.G$4.1",
+          "U$37.G$1.3.3V",
+          "Q2.1.G",
+          "U$36.G$1.3.3V",
+          "R2.G$2.1",
+          "Q2.2.G",
+          "U$38.G$1.3.3V",
+          "U$45.G$1.3.3V",
+          "R5.G$1.1",
+          "U$10.G$1.3.3V",
+          "JP1.A.2",
+          "U$12.G$1.3.3V",
+          "IC1.G$1.VDDIO",
+          "IC1.G$1.VDD",
+          "R4.G$1.2",
+          "U$25.G$1.3.3V",
+          "R1.G$1.2",
+          "U$18.G$1.3.3V"
+        ]
+      },
+      {
+        "name": "INT",
+        "pins": [
+          "IC1.G$1.INT",
+          "JP1.A.8"
+        ]
+      },
+      {
+        "name": "N$1",
+        "pins": [
+          "D1.G$1.A",
+          "R5.G$1.2"
+        ]
+      },
+      {
+        "name": "SDI_3V",
+        "pins": [
+          "IC1.G$1.SDI",
+          "R2.G$4.2",
+          "Q2.2.S"
+        ]
+      },
+      {
+        "name": "SCK_3V",
+        "pins": [
+          "IC1.G$1.SCK",
+          "R2.G$2.2",
+          "Q2.1.S"
+        ]
+      },
+      {
+        "name": "CS_3V",
+        "pins": [
+          "IC1.G$1.CSB",
+          "D2.G$1.A",
+          "R1.G$1.1"
+        ]
+      },
+      {
+        "name": "SDO/ADR",
+        "pins": [
+          "R4.G$1.1",
+          "JP1.A.5",
+          "IC1.G$1.SDO",
+          "SJ1.1.1"
+        ]
+      },
+      {
+        "name": "SDI/SDA",
+        "pins": [
+          "JP1.A.6",
+          "Q2.2.D",
+          "R2.G$3.2",
+          "CONN4.G$1.SDA",
+          "CONN3.G$1.SDA"
+        ]
+      },
+      {
+        "name": "SCK/SCL",
+        "pins": [
+          "JP1.A.4",
+          "Q2.1.D",
+          "R2.G$1.2",
+          "CONN4.G$1.SCL",
+          "CONN3.G$1.SCL"
+        ]
+      },
+      {
+        "name": "CS",
+        "pins": [
+          "D2.G$1.C",
+          "JP1.A.7"
+        ]
+      }
+    ]
+  },
+  {
+    "repository": "adafruit/Adafruit-BMP5xx-Temperature-and-Pressure-Sensor-PCB",
+    "commit": "0d42329e09e19452f154789a3a77a89a8873e5c7",
+    "path": "Adafruit BMP581 Temperature and Pressure Sensor rev B.brd",
+    "kind": "board",
+    "outline_endpoint_bounds_mm": {
+      "min_x": 0.0,
+      "max_x": 25.4,
+      "min_y": 0.0,
+      "max_y": 17.78,
+      "note": "Bounds of layer-20 wire endpoints only; curved-outline extrema and manufacturing tolerances require CAD review."
+    },
+    "top_elements": 29,
+    "bottom_elements": 11,
+    "bottom_elements_with_contacts": 1,
+    "elements": [
+      {
+        "name": "U$2",
+        "value": "",
+        "package": "ADAFRUIT_2.5MM",
+        "library": "microbuilder",
+        "x_mm": 20.828,
+        "y_mm": 14.732,
+        "rotation": "MR0",
+        "face": "bottom",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "R4",
+        "value": "10K",
+        "package": "0603-NO",
+        "library": "microbuilder",
+        "x_mm": 12.192,
+        "y_mm": 13.462,
+        "rotation": "R180",
+        "face": "top",
+        "smd_pad_count": 2,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "D2",
+        "value": "1N4148",
+        "package": "SOD-323",
+        "library": "microbuilder",
+        "x_mm": 16.764,
+        "y_mm": 5.334,
+        "rotation": "R180",
+        "face": "top",
+        "smd_pad_count": 2,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "R1",
+        "value": "10K",
+        "package": "0603-NO",
+        "library": "microbuilder",
+        "x_mm": 12.192,
+        "y_mm": 11.938,
+        "rotation": "R180",
+        "face": "top",
+        "smd_pad_count": 2,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "IC1",
+        "value": "BMP581",
+        "package": "BMP388",
+        "library": "adafruit_sensor",
+        "x_mm": 12.7,
+        "y_mm": 8.89,
+        "rotation": "R180",
+        "face": "top",
+        "smd_pad_count": 10,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "JP1",
+        "value": "",
+        "package": "1X08_ROUND_70",
+        "library": "microbuilder",
+        "x_mm": 12.7,
+        "y_mm": 2.54,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 8
+      },
+      {
+        "name": "C4",
+        "value": "10uF",
+        "package": "0805-NO",
+        "library": "microbuilder",
+        "x_mm": 6.731,
+        "y_mm": 5.715,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 2,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "U1",
+        "value": "AP2127K-3.3",
+        "package": "SOT23-5",
+        "library": "adafruit_power",
+        "x_mm": 8.128,
+        "y_mm": 8.763,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 5,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "C5",
+        "value": "10uF",
+        "package": "0805-NO",
+        "library": "microbuilder",
+        "x_mm": 8.128,
+        "y_mm": 12.192,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 2,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "C6",
+        "value": "0.1uF",
+        "package": "0603-NO",
+        "library": "microbuilder",
+        "x_mm": 10.541,
+        "y_mm": 8.89,
+        "rotation": "R90",
+        "face": "top",
+        "smd_pad_count": 2,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "R2",
+        "value": "10K Pack",
+        "package": "RESPACK_4X0603",
+        "library": "microbuilder",
+        "x_mm": 17.145,
+        "y_mm": 11.43,
+        "rotation": "R180",
+        "face": "top",
+        "smd_pad_count": 8,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "Q2",
+        "value": "BSS138",
+        "package": "SOT363",
+        "library": "microbuilder",
+        "x_mm": 16.891,
+        "y_mm": 7.747,
+        "rotation": "R90",
+        "face": "top",
+        "smd_pad_count": 6,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "U$40",
+        "value": "MOUNTINGHOLE2.5",
+        "package": "MOUNTINGHOLE_2.5_PLATED",
+        "library": "adafruit_electromech",
+        "x_mm": 2.54,
+        "y_mm": 15.24,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 1
+      },
+      {
+        "name": "U$41",
+        "value": "MOUNTINGHOLE2.5",
+        "package": "MOUNTINGHOLE_2.5_PLATED",
+        "library": "adafruit_electromech",
+        "x_mm": 22.86,
+        "y_mm": 15.24,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 1
+      },
+      {
+        "name": "CONN3",
+        "value": "STEMMA_I2C_QT",
+        "package": "JST_SH4",
+        "library": "adafruit_electromech",
+        "x_mm": 22.225,
+        "y_mm": 8.89,
+        "rotation": "R90",
+        "face": "top",
+        "smd_pad_count": 6,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "CONN4",
+        "value": "STEMMA_I2C_QT",
+        "package": "JST_SH4",
+        "library": "adafruit_electromech",
+        "x_mm": 3.175,
+        "y_mm": 8.89,
+        "rotation": "R270",
+        "face": "top",
+        "smd_pad_count": 6,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "FID3",
+        "value": "FIDUCIAL_1MM",
+        "package": "FIDUCIAL_1MM",
+        "library": "microbuilder",
+        "x_mm": 1.27,
+        "y_mm": 4.064,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 1,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "FID4",
+        "value": "FIDUCIAL_1MM",
+        "package": "FIDUCIAL_1MM",
+        "library": "microbuilder",
+        "x_mm": 19.558,
+        "y_mm": 16.51,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 1,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "U$46",
+        "value": "",
+        "package": "ADAFRUIT_3.5MM",
+        "library": "microbuilder",
+        "x_mm": 4.572,
+        "y_mm": 13.716,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "U$47",
+        "value": "",
+        "package": "PCBFEAT-REV-040",
+        "library": "microbuilder",
+        "x_mm": 21.082,
+        "y_mm": 5.08,
+        "rotation": "MR0",
+        "face": "bottom",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "U$48",
+        "value": "",
+        "package": "STEMMAQT",
+        "library": "silks",
+        "x_mm": 22.479,
+        "y_mm": 4.191,
+        "rotation": "MR90",
+        "face": "bottom",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "U$49",
+        "value": "",
+        "package": "STEMMAQT",
+        "library": "silks",
+        "x_mm": 3.048,
+        "y_mm": 12.954,
+        "rotation": "MR270",
+        "face": "bottom",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "D1",
+        "value": "GREEN",
+        "package": "CHIPLED_0603_NOOUTLINE",
+        "library": "microbuilder",
+        "x_mm": 3.556,
+        "y_mm": 12.573,
+        "rotation": "R90",
+        "face": "top",
+        "smd_pad_count": 2,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "R5",
+        "value": "10K",
+        "package": "0603-NO",
+        "library": "microbuilder",
+        "x_mm": 5.588,
+        "y_mm": 12.446,
+        "rotation": "R270",
+        "face": "top",
+        "smd_pad_count": 2,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "SJ1",
+        "value": "",
+        "package": "SOLDERJUMPER_ARROW_NOPASTE",
+        "library": "microbuilder",
+        "x_mm": 16.764,
+        "y_mm": 7.112,
+        "rotation": "MR180",
+        "face": "bottom",
+        "smd_pad_count": 2,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL14",
+        "value": "",
+        "package": "PLABEL14",
+        "library": "pinguin",
+        "x_mm": 13.335,
+        "y_mm": 7.493,
+        "rotation": "MR0",
+        "face": "bottom",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL15",
+        "value": "",
+        "package": "PLABEL15",
+        "library": "pinguin",
+        "x_mm": 12.7,
+        "y_mm": 3.683,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL16",
+        "value": "",
+        "package": "PLABEL16",
+        "library": "pinguin",
+        "x_mm": 18.288,
+        "y_mm": 3.683,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL17",
+        "value": "",
+        "package": "PLABEL17",
+        "library": "pinguin",
+        "x_mm": 6.477,
+        "y_mm": 0.889,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL18",
+        "value": "",
+        "package": "PLABEL18",
+        "library": "pinguin",
+        "x_mm": 9.017,
+        "y_mm": 4.191,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL19",
+        "value": "",
+        "package": "PLABEL19",
+        "library": "pinguin",
+        "x_mm": 11.557,
+        "y_mm": 0.889,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL20",
+        "value": "",
+        "package": "PLABEL20",
+        "library": "pinguin",
+        "x_mm": 16.637,
+        "y_mm": 0.889,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL21",
+        "value": "",
+        "package": "PLABEL21",
+        "library": "pinguin",
+        "x_mm": 21.971,
+        "y_mm": 0.889,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL23",
+        "value": "",
+        "package": "PLABEL23",
+        "library": "pinguin",
+        "x_mm": 13.97,
+        "y_mm": 14.859,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL24",
+        "value": "",
+        "package": "PLABEL24",
+        "library": "pinguin",
+        "x_mm": 12.827,
+        "y_mm": 11.303,
+        "rotation": "MR0",
+        "face": "bottom",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL26",
+        "value": "",
+        "package": "PLABEL26",
+        "library": "pinguin",
+        "x_mm": 12.573,
+        "y_mm": 0.889,
+        "rotation": "MR0",
+        "face": "bottom",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL27",
+        "value": "",
+        "package": "PLABEL27",
+        "library": "pinguin",
+        "x_mm": 19.05,
+        "y_mm": 4.318,
+        "rotation": "MR0",
+        "face": "bottom",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "U$1",
+        "value": "GND",
+        "package": "ADAFRUIT_2.5MM",
+        "library": "microbuilder",
+        "x_mm": 6.858,
+        "y_mm": 14.732,
+        "rotation": "MR0",
+        "face": "bottom",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL28",
+        "value": "",
+        "package": "PLABEL28",
+        "library": "pinguin",
+        "x_mm": 13.716,
+        "y_mm": 16.383,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL29",
+        "value": "",
+        "package": "PLABEL29",
+        "library": "pinguin",
+        "x_mm": 12.7,
+        "y_mm": 15.875,
+        "rotation": "MR0",
+        "face": "bottom",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      }
+    ],
+    "signals": [
+      {
+        "name": "GND",
+        "pads": [
+          "IC1.3",
+          "IC1.8",
+          "IC1.9",
+          "JP1.3",
+          "C4.2",
+          "U1.2",
+          "C5.2",
+          "C6.2",
+          "CONN4.1",
+          "CONN3.1",
+          "D1.C",
+          "CONN3.MT2",
+          "CONN3.MT1",
+          "CONN4.MT2",
+          "CONN4.MT1",
+          "SJ1.2"
+        ]
+      },
+      {
+        "name": "SDI_3V",
+        "pads": [
+          "IC1.4",
+          "R2.5",
+          "Q2.4"
+        ]
+      },
+      {
+        "name": "SCK_3V",
+        "pads": [
+          "IC1.2",
+          "R2.7",
+          "Q2.1"
+        ]
+      },
+      {
+        "name": "CS_3V",
+        "pads": [
+          "D2.A",
+          "R1.1",
+          "IC1.6"
+        ]
+      },
+      {
+        "name": "3.3V",
+        "pads": [
+          "R4.2",
+          "R1.2",
+          "IC1.1",
+          "IC1.10",
+          "JP1.2",
+          "C6.1",
+          "U1.5",
+          "C5.1",
+          "R2.4",
+          "Q2.2",
+          "R2.2",
+          "Q2.5",
+          "R5.1"
+        ]
+      },
+      {
+        "name": "SDO/ADR",
+        "pads": [
+          "R4.1",
+          "IC1.5",
+          "JP1.5",
+          "SJ1.1"
+        ]
+      },
+      {
+        "name": "SDI/SDA",
+        "pads": [
+          "JP1.6",
+          "Q2.3",
+          "R2.6",
+          "CONN4.3",
+          "CONN3.3"
+        ]
+      },
+      {
+        "name": "SCK/SCL",
+        "pads": [
+          "JP1.4",
+          "Q2.6",
+          "R2.8",
+          "CONN4.4",
+          "CONN3.4"
+        ]
+      },
+      {
+        "name": "CS",
+        "pads": [
+          "D2.C",
+          "JP1.7"
+        ]
+      },
+      {
+        "name": "INT",
+        "pads": [
+          "IC1.7",
+          "JP1.8"
+        ]
+      },
+      {
+        "name": "VCC",
+        "pads": [
+          "CONN3.2",
+          "CONN4.2",
+          "R2.1",
+          "R2.3",
+          "C4.1",
+          "U1.1",
+          "U1.3",
+          "JP1.1"
+        ]
+      },
+      {
+        "name": "N$1",
+        "pads": [
+          "D1.A",
+          "R5.2"
+        ]
+      }
+    ],
+    "routing_layers": [
+      "1",
+      "16"
+    ],
+    "mounting_holes": []
+  },
+  {
+    "repository": "adafruit/Adafruit-BMP5xx-Temperature-and-Pressure-Sensor-PCB",
+    "commit": "0d42329e09e19452f154789a3a77a89a8873e5c7",
+    "path": "Adafruit BMP581 Temperature and Pressure Sensor rev B.sch",
+    "kind": "schematic",
+    "parts": [
+      {
+        "name": "U$3",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "GND",
+        "device": ""
+      },
+      {
+        "name": "U$4",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "GND",
+        "device": ""
+      },
+      {
+        "name": "U$10",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "3.3V",
+        "device": ""
+      },
+      {
+        "name": "U$12",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "3.3V",
+        "device": ""
+      },
+      {
+        "name": "R4",
+        "value": "10K",
+        "library": "microbuilder",
+        "deviceset": "RESISTOR",
+        "device": "_0603_NOOUT"
+      },
+      {
+        "name": "U$25",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "3.3V",
+        "device": ""
+      },
+      {
+        "name": "D2",
+        "value": "1N4148",
+        "library": "microbuilder",
+        "deviceset": "DIODE",
+        "device": "SOD-323"
+      },
+      {
+        "name": "R1",
+        "value": "10K",
+        "library": "microbuilder",
+        "deviceset": "RESISTOR",
+        "device": "_0603_NOOUT"
+      },
+      {
+        "name": "U$18",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "3.3V",
+        "device": ""
+      },
+      {
+        "name": "IC1",
+        "value": "BMP581",
+        "library": "adafruit_sensor",
+        "deviceset": "BMP388",
+        "device": ""
+      },
+      {
+        "name": "JP1",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "HEADER-1X8",
+        "device": "70MIL"
+      },
+      {
+        "name": "U$23",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "GND",
+        "device": ""
+      },
+      {
+        "name": "C4",
+        "value": "10uF",
+        "library": "microbuilder",
+        "deviceset": "CAP_CERAMIC",
+        "device": "0805-NOOUTLINE"
+      },
+      {
+        "name": "U1",
+        "value": "AP2127K-3.3",
+        "library": "adafruit_power",
+        "deviceset": "VREG_SOT23-5",
+        "device": ""
+      },
+      {
+        "name": "C5",
+        "value": "10uF",
+        "library": "microbuilder",
+        "deviceset": "CAP_CERAMIC",
+        "device": "0805-NOOUTLINE"
+      },
+      {
+        "name": "U$30",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "GND",
+        "device": ""
+      },
+      {
+        "name": "U$31",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "GND",
+        "device": ""
+      },
+      {
+        "name": "C6",
+        "value": "0.1uF",
+        "library": "microbuilder",
+        "deviceset": "CAP_CERAMIC",
+        "device": "0603_NO"
+      },
+      {
+        "name": "U$33",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "3.3V",
+        "device": ""
+      },
+      {
+        "name": "U$34",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "3.3V",
+        "device": ""
+      },
+      {
+        "name": "U$35",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "3.3V",
+        "device": ""
+      },
+      {
+        "name": "U$36",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "3.3V",
+        "device": ""
+      },
+      {
+        "name": "R2",
+        "value": "10K Pack",
+        "library": "microbuilder",
+        "deviceset": "RESISTOR_4PACK",
+        "device": ""
+      },
+      {
+        "name": "Q2",
+        "value": "BSS138",
+        "library": "microbuilder",
+        "deviceset": "MOSFET-N_DUAL",
+        "device": ""
+      },
+      {
+        "name": "U$37",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "3.3V",
+        "device": ""
+      },
+      {
+        "name": "U$38",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "3.3V",
+        "device": ""
+      },
+      {
+        "name": "U$40",
+        "value": "",
+        "library": "adafruit_electromech",
+        "deviceset": "MOUNTINGHOLE",
+        "device": "2.5"
+      },
+      {
+        "name": "U$41",
+        "value": "",
+        "library": "adafruit_electromech",
+        "deviceset": "MOUNTINGHOLE",
+        "device": "2.5"
+      },
+      {
+        "name": "CONN3",
+        "value": "",
+        "library": "adafruit_electromech",
+        "deviceset": "STEMMA_I2C",
+        "device": "_QT"
+      },
+      {
+        "name": "CONN4",
+        "value": "",
+        "library": "adafruit_electromech",
+        "deviceset": "STEMMA_I2C",
+        "device": "_QT"
+      },
+      {
+        "name": "U$42",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "FRAME_A4_ADAFRUIT",
+        "device": ""
+      },
+      {
+        "name": "FID3",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "FIDUCIAL",
+        "device": "_1MM"
+      },
+      {
+        "name": "FID4",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "FIDUCIAL",
+        "device": "_1MM"
+      },
+      {
+        "name": "D1",
+        "value": "GREEN",
+        "library": "microbuilder",
+        "deviceset": "LED",
+        "device": "0603_NOOUTLINE"
+      },
+      {
+        "name": "R5",
+        "value": "10K",
+        "library": "microbuilder",
+        "deviceset": "RESISTOR",
+        "device": "_0603_NOOUT"
+      },
+      {
+        "name": "GND6",
+        "value": "",
+        "library": "supply1",
+        "deviceset": "GND",
+        "device": ""
+      },
+      {
+        "name": "P+1",
+        "value": "",
+        "library": "supply1",
+        "deviceset": "VCC",
+        "device": ""
+      },
+      {
+        "name": "P+2",
+        "value": "",
+        "library": "supply1",
+        "deviceset": "VCC",
+        "device": ""
+      },
+      {
+        "name": "P+3",
+        "value": "",
+        "library": "supply1",
+        "deviceset": "VCC",
+        "device": ""
+      },
+      {
+        "name": "U$45",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "3.3V",
+        "device": ""
+      },
+      {
+        "name": "P+5",
+        "value": "",
+        "library": "supply1",
+        "deviceset": "VCC",
+        "device": ""
+      },
+      {
+        "name": "SJ1",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "SOLDERJUMPER",
+        "device": ""
+      },
+      {
+        "name": "U$1",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "GND",
+        "device": ""
+      }
+    ],
+    "nets": [
+      {
+        "name": "GND",
+        "pins": [
+          "CONN4.G$1.GND",
+          "CONN3.G$1.GND",
+          "CONN3.G$3.MT",
+          "CONN3.G$2.MT",
+          "CONN4.G$3.MT",
+          "CONN4.G$2.MT",
+          "U$23.G$1.GND",
+          "C4.G$1.2",
+          "U1.G$1.GND",
+          "C5.G$1.2",
+          "U$30.G$1.GND",
+          "U$31.G$1.GND",
+          "C6.G$1.2",
+          "GND6.1.GND",
+          "D1.G$1.C",
+          "U$3.G$1.GND",
+          "IC1.G$1.GND",
+          "U$4.G$1.GND",
+          "JP1.A.3",
+          "SJ1.1.2",
+          "U$1.G$1.GND"
+        ]
+      },
+      {
+        "name": "VCC",
+        "pins": [
+          "CONN3.G$1.V+",
+          "CONN4.G$1.V+",
+          "R2.G$1.1",
+          "P+1.VCC.VCC",
+          "R2.G$3.1",
+          "P+2.VCC.VCC",
+          "C4.G$1.1",
+          "U1.G$1.IN",
+          "U1.G$1.EN",
+          "P+3.VCC.VCC",
+          "JP1.A.1",
+          "P+5.VCC.VCC"
+        ]
+      },
+      {
+        "name": "3.3V",
+        "pins": [
+          "C6.G$1.1",
+          "U$33.G$1.3.3V",
+          "U1.G$1.OUT",
+          "C5.G$1.1",
+          "U$34.G$1.3.3V",
+          "U$35.G$1.3.3V",
+          "R2.G$4.1",
+          "U$37.G$1.3.3V",
+          "Q2.1.G",
+          "U$36.G$1.3.3V",
+          "R2.G$2.1",
+          "Q2.2.G",
+          "U$38.G$1.3.3V",
+          "U$45.G$1.3.3V",
+          "R5.G$1.1",
+          "U$10.G$1.3.3V",
+          "JP1.A.2",
+          "U$12.G$1.3.3V",
+          "IC1.G$1.VDDIO",
+          "IC1.G$1.VDD",
+          "R4.G$1.2",
+          "U$25.G$1.3.3V",
+          "R1.G$1.2",
+          "U$18.G$1.3.3V"
+        ]
+      },
+      {
+        "name": "INT",
+        "pins": [
+          "IC1.G$1.INT",
+          "JP1.A.8"
+        ]
+      },
+      {
+        "name": "N$1",
+        "pins": [
+          "D1.G$1.A",
+          "R5.G$1.2"
+        ]
+      },
+      {
+        "name": "SDI_3V",
+        "pins": [
+          "IC1.G$1.SDI",
+          "R2.G$4.2",
+          "Q2.2.S"
+        ]
+      },
+      {
+        "name": "SCK_3V",
+        "pins": [
+          "IC1.G$1.SCK",
+          "R2.G$2.2",
+          "Q2.1.S"
+        ]
+      },
+      {
+        "name": "CS_3V",
+        "pins": [
+          "IC1.G$1.CSB",
+          "D2.G$1.A",
+          "R1.G$1.1"
+        ]
+      },
+      {
+        "name": "SDO/ADR",
+        "pins": [
+          "R4.G$1.1",
+          "JP1.A.5",
+          "IC1.G$1.SDO",
+          "SJ1.1.1"
+        ]
+      },
+      {
+        "name": "SDI/SDA",
+        "pins": [
+          "JP1.A.6",
+          "Q2.2.D",
+          "R2.G$3.2",
+          "CONN4.G$1.SDA",
+          "CONN3.G$1.SDA"
+        ]
+      },
+      {
+        "name": "SCK/SCL",
+        "pins": [
+          "JP1.A.4",
+          "Q2.1.D",
+          "R2.G$1.2",
+          "CONN4.G$1.SCL",
+          "CONN3.G$1.SCL"
+        ]
+      },
+      {
+        "name": "CS",
+        "pins": [
+          "D2.G$1.C",
+          "JP1.A.7"
+        ]
+      }
+    ]
+  },
+  {
+    "repository": "adafruit/Adafruit-BMP5xx-Temperature-and-Pressure-Sensor-PCB",
+    "commit": "0d42329e09e19452f154789a3a77a89a8873e5c7",
+    "path": "Adafruit BMP585 Temperature and Pressure Sensor rev B.brd",
+    "kind": "board",
+    "outline_endpoint_bounds_mm": {
+      "min_x": 0.0,
+      "max_x": 25.4,
+      "min_y": 0.0,
+      "max_y": 17.78,
+      "note": "Bounds of layer-20 wire endpoints only; curved-outline extrema and manufacturing tolerances require CAD review."
+    },
+    "top_elements": 29,
+    "bottom_elements": 11,
+    "bottom_elements_with_contacts": 1,
+    "elements": [
+      {
+        "name": "R4",
+        "value": "10K",
+        "package": "0603-NO",
+        "library": "microbuilder",
+        "x_mm": 14.097,
+        "y_mm": 13.716,
+        "rotation": "R180",
+        "face": "top",
+        "smd_pad_count": 2,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "D2",
+        "value": "1N4148",
+        "package": "SOD-323",
+        "library": "microbuilder",
+        "x_mm": 18.288,
+        "y_mm": 5.461,
+        "rotation": "R180",
+        "face": "top",
+        "smd_pad_count": 2,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "R1",
+        "value": "10K",
+        "package": "0603-NO",
+        "library": "microbuilder",
+        "x_mm": 14.224,
+        "y_mm": 5.334,
+        "rotation": "R180",
+        "face": "top",
+        "smd_pad_count": 2,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "JP1",
+        "value": "",
+        "package": "1X08_ROUND_70",
+        "library": "microbuilder",
+        "x_mm": 12.7,
+        "y_mm": 2.54,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 8
+      },
+      {
+        "name": "C4",
+        "value": "10uF",
+        "package": "0805-NO",
+        "library": "microbuilder",
+        "x_mm": 6.731,
+        "y_mm": 5.715,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 2,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "U1",
+        "value": "AP2127K-3.3",
+        "package": "SOT23-5",
+        "library": "adafruit_power",
+        "x_mm": 8.128,
+        "y_mm": 8.763,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 5,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "C5",
+        "value": "10uF",
+        "package": "0805-NO",
+        "library": "microbuilder",
+        "x_mm": 8.128,
+        "y_mm": 12.192,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 2,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "C6",
+        "value": "0.1uF",
+        "package": "0603-NO",
+        "library": "microbuilder",
+        "x_mm": 11.049,
+        "y_mm": 13.716,
+        "rotation": "R180",
+        "face": "top",
+        "smd_pad_count": 2,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "R2",
+        "value": "10K Pack",
+        "package": "RESPACK_4X0603",
+        "library": "microbuilder",
+        "x_mm": 17.145,
+        "y_mm": 11.43,
+        "rotation": "R180",
+        "face": "top",
+        "smd_pad_count": 8,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "Q2",
+        "value": "BSS138",
+        "package": "SOT363",
+        "library": "microbuilder",
+        "x_mm": 17.018,
+        "y_mm": 7.747,
+        "rotation": "R90",
+        "face": "top",
+        "smd_pad_count": 6,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "U$40",
+        "value": "MOUNTINGHOLE2.5",
+        "package": "MOUNTINGHOLE_2.5_PLATED",
+        "library": "adafruit_electromech",
+        "x_mm": 2.54,
+        "y_mm": 15.24,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 1
+      },
+      {
+        "name": "U$41",
+        "value": "MOUNTINGHOLE2.5",
+        "package": "MOUNTINGHOLE_2.5_PLATED",
+        "library": "adafruit_electromech",
+        "x_mm": 22.86,
+        "y_mm": 15.24,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 1
+      },
+      {
+        "name": "CONN3",
+        "value": "STEMMA_I2C_QT",
+        "package": "JST_SH4",
+        "library": "adafruit_electromech",
+        "x_mm": 22.225,
+        "y_mm": 8.89,
+        "rotation": "R90",
+        "face": "top",
+        "smd_pad_count": 6,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "CONN4",
+        "value": "STEMMA_I2C_QT",
+        "package": "JST_SH4",
+        "library": "adafruit_electromech",
+        "x_mm": 3.175,
+        "y_mm": 8.89,
+        "rotation": "R270",
+        "face": "top",
+        "smd_pad_count": 6,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "FID3",
+        "value": "FIDUCIAL_0.5MM",
+        "package": "FIDUCIAL_0.5MM",
+        "library": "microbuilder",
+        "x_mm": 1.27,
+        "y_mm": 4.064,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 1,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "FID4",
+        "value": "FIDUCIAL_0.5MM",
+        "package": "FIDUCIAL_0.5MM",
+        "library": "microbuilder",
+        "x_mm": 19.558,
+        "y_mm": 16.51,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 1,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "U$46",
+        "value": "",
+        "package": "ADAFRUIT_3.5MM",
+        "library": "microbuilder",
+        "x_mm": 4.572,
+        "y_mm": 13.716,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "U$47",
+        "value": "",
+        "package": "PCBFEAT-REV-040",
+        "library": "microbuilder",
+        "x_mm": 20.32,
+        "y_mm": 6.985,
+        "rotation": "MR0",
+        "face": "bottom",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "U$48",
+        "value": "",
+        "package": "STEMMAQT",
+        "library": "silks",
+        "x_mm": 22.479,
+        "y_mm": 4.191,
+        "rotation": "MR90",
+        "face": "bottom",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "U$49",
+        "value": "",
+        "package": "STEMMAQT",
+        "library": "silks",
+        "x_mm": 3.048,
+        "y_mm": 12.954,
+        "rotation": "MR270",
+        "face": "bottom",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "D1",
+        "value": "GREEN",
+        "package": "CHIPLED_0603_NOOUTLINE",
+        "library": "microbuilder",
+        "x_mm": 3.556,
+        "y_mm": 12.573,
+        "rotation": "R90",
+        "face": "top",
+        "smd_pad_count": 2,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "R5",
+        "value": "10K",
+        "package": "0603-NO",
+        "library": "microbuilder",
+        "x_mm": 5.588,
+        "y_mm": 12.446,
+        "rotation": "R270",
+        "face": "top",
+        "smd_pad_count": 2,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "SJ1",
+        "value": "",
+        "package": "SOLDERJUMPER_ARROW_NOPASTE",
+        "library": "microbuilder",
+        "x_mm": 16.764,
+        "y_mm": 7.112,
+        "rotation": "MR180",
+        "face": "bottom",
+        "smd_pad_count": 2,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL14",
+        "value": "",
+        "package": "PLABEL14",
+        "library": "pinguin",
+        "x_mm": 13.589,
+        "y_mm": 7.366,
+        "rotation": "MR0",
+        "face": "bottom",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "U2",
+        "value": "BMP585",
+        "package": "LGA9_BMP585_BOS",
+        "library": "adafruit_sensor",
+        "x_mm": 12.7,
+        "y_mm": 8.89,
+        "rotation": "R180",
+        "face": "top",
+        "smd_pad_count": 9,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "U$6",
+        "value": "",
+        "package": "ADAFRUIT_2.5MM",
+        "library": "microbuilder",
+        "x_mm": 20.701,
+        "y_mm": 14.605,
+        "rotation": "MR0",
+        "face": "bottom",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "U$7",
+        "value": "",
+        "package": "ADAFRUIT_2.5MM",
+        "library": "microbuilder",
+        "x_mm": 7.112,
+        "y_mm": 14.605,
+        "rotation": "MR0",
+        "face": "bottom",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL15",
+        "value": "",
+        "package": "PLABEL15",
+        "library": "pinguin",
+        "x_mm": 14.224,
+        "y_mm": 4.191,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL16",
+        "value": "",
+        "package": "PLABEL16",
+        "library": "pinguin",
+        "x_mm": 19.05,
+        "y_mm": 4.064,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL17",
+        "value": "",
+        "package": "PLABEL17",
+        "library": "pinguin",
+        "x_mm": 6.477,
+        "y_mm": 0.889,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL18",
+        "value": "",
+        "package": "PLABEL18",
+        "library": "pinguin",
+        "x_mm": 9.017,
+        "y_mm": 4.191,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL19",
+        "value": "",
+        "package": "PLABEL19",
+        "library": "pinguin",
+        "x_mm": 11.557,
+        "y_mm": 0.889,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL20",
+        "value": "",
+        "package": "PLABEL20",
+        "library": "pinguin",
+        "x_mm": 16.637,
+        "y_mm": 0.889,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL21",
+        "value": "",
+        "package": "PLABEL21",
+        "library": "pinguin",
+        "x_mm": 21.971,
+        "y_mm": 0.889,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL22",
+        "value": "",
+        "package": "PLABEL22",
+        "library": "pinguin",
+        "x_mm": 13.716,
+        "y_mm": 16.637,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL23",
+        "value": "",
+        "package": "PLABEL23",
+        "library": "pinguin",
+        "x_mm": 13.589,
+        "y_mm": 15.113,
+        "rotation": "",
+        "face": "top",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL24",
+        "value": "",
+        "package": "PLABEL24",
+        "library": "pinguin",
+        "x_mm": 12.7,
+        "y_mm": 11.303,
+        "rotation": "MR0",
+        "face": "bottom",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL25",
+        "value": "",
+        "package": "PLABEL25",
+        "library": "pinguin",
+        "x_mm": 12.7,
+        "y_mm": 15.621,
+        "rotation": "MR0",
+        "face": "bottom",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL26",
+        "value": "",
+        "package": "PLABEL26",
+        "library": "pinguin",
+        "x_mm": 12.7,
+        "y_mm": 0.889,
+        "rotation": "MR0",
+        "face": "bottom",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      },
+      {
+        "name": "PLABEL27",
+        "value": "",
+        "package": "PLABEL27",
+        "library": "pinguin",
+        "x_mm": 12.7,
+        "y_mm": 4.826,
+        "rotation": "MR0",
+        "face": "bottom",
+        "smd_pad_count": 0,
+        "through_hole_pad_count": 0
+      }
+    ],
+    "signals": [
+      {
+        "name": "GND",
+        "pads": [
+          "JP1.3",
+          "C4.2",
+          "U1.2",
+          "C5.2",
+          "C6.2",
+          "CONN4.1",
+          "CONN3.1",
+          "D1.C",
+          "CONN3.MT2",
+          "CONN3.MT1",
+          "CONN4.MT2",
+          "CONN4.MT1",
+          "SJ1.2",
+          "U2.6"
+        ]
+      },
+      {
+        "name": "SDI_3V",
+        "pads": [
+          "R2.5",
+          "Q2.4",
+          "U2.2"
+        ]
+      },
+      {
+        "name": "SCK_3V",
+        "pads": [
+          "R2.7",
+          "Q2.1",
+          "U2.1"
+        ]
+      },
+      {
+        "name": "CS_3V",
+        "pads": [
+          "D2.A",
+          "R1.1",
+          "U2.7"
+        ]
+      },
+      {
+        "name": "3.3V",
+        "pads": [
+          "R4.2",
+          "R1.2",
+          "JP1.2",
+          "C6.1",
+          "U1.5",
+          "C5.1",
+          "R2.4",
+          "Q2.2",
+          "R2.2",
+          "Q2.5",
+          "R5.1",
+          "U2.4",
+          "U2.8"
+        ]
+      },
+      {
+        "name": "SDO/ADR",
+        "pads": [
+          "R4.1",
+          "JP1.5",
+          "SJ1.1",
+          "U2.3"
+        ]
+      },
+      {
+        "name": "SDI/SDA",
+        "pads": [
+          "JP1.6",
+          "Q2.3",
+          "R2.6",
+          "CONN4.3",
+          "CONN3.3"
+        ]
+      },
+      {
+        "name": "SCK/SCL",
+        "pads": [
+          "JP1.4",
+          "Q2.6",
+          "R2.8",
+          "CONN4.4",
+          "CONN3.4"
+        ]
+      },
+      {
+        "name": "CS",
+        "pads": [
+          "D2.C",
+          "JP1.7"
+        ]
+      },
+      {
+        "name": "INT",
+        "pads": [
+          "JP1.8",
+          "U2.5"
+        ]
+      },
+      {
+        "name": "VCC",
+        "pads": [
+          "CONN3.2",
+          "CONN4.2",
+          "R2.1",
+          "R2.3",
+          "C4.1",
+          "U1.1",
+          "U1.3",
+          "JP1.1"
+        ]
+      },
+      {
+        "name": "N$1",
+        "pads": [
+          "D1.A",
+          "R5.2"
+        ]
+      }
+    ],
+    "routing_layers": [
+      "1",
+      "16"
+    ],
+    "mounting_holes": []
+  },
+  {
+    "repository": "adafruit/Adafruit-BMP5xx-Temperature-and-Pressure-Sensor-PCB",
+    "commit": "0d42329e09e19452f154789a3a77a89a8873e5c7",
+    "path": "Adafruit BMP585 Temperature and Pressure Sensor rev B.sch",
+    "kind": "schematic",
+    "parts": [
+      {
+        "name": "U$3",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "GND",
+        "device": ""
+      },
+      {
+        "name": "U$4",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "GND",
+        "device": ""
+      },
+      {
+        "name": "U$10",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "3.3V",
+        "device": ""
+      },
+      {
+        "name": "U$12",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "3.3V",
+        "device": ""
+      },
+      {
+        "name": "R4",
+        "value": "10K",
+        "library": "microbuilder",
+        "deviceset": "RESISTOR",
+        "device": "_0603_NOOUT"
+      },
+      {
+        "name": "U$25",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "3.3V",
+        "device": ""
+      },
+      {
+        "name": "D2",
+        "value": "1N4148",
+        "library": "microbuilder",
+        "deviceset": "DIODE",
+        "device": "SOD-323"
+      },
+      {
+        "name": "R1",
+        "value": "10K",
+        "library": "microbuilder",
+        "deviceset": "RESISTOR",
+        "device": "_0603_NOOUT"
+      },
+      {
+        "name": "U$18",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "3.3V",
+        "device": ""
+      },
+      {
+        "name": "JP1",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "HEADER-1X8",
+        "device": "70MIL"
+      },
+      {
+        "name": "U$23",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "GND",
+        "device": ""
+      },
+      {
+        "name": "C4",
+        "value": "10uF",
+        "library": "microbuilder",
+        "deviceset": "CAP_CERAMIC",
+        "device": "0805-NOOUTLINE"
+      },
+      {
+        "name": "U1",
+        "value": "AP2127K-3.3",
+        "library": "adafruit_power",
+        "deviceset": "VREG_SOT23-5",
+        "device": ""
+      },
+      {
+        "name": "C5",
+        "value": "10uF",
+        "library": "microbuilder",
+        "deviceset": "CAP_CERAMIC",
+        "device": "0805-NOOUTLINE"
+      },
+      {
+        "name": "U$30",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "GND",
+        "device": ""
+      },
+      {
+        "name": "U$31",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "GND",
+        "device": ""
+      },
+      {
+        "name": "C6",
+        "value": "0.1uF",
+        "library": "microbuilder",
+        "deviceset": "CAP_CERAMIC",
+        "device": "0603_NO"
+      },
+      {
+        "name": "U$33",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "3.3V",
+        "device": ""
+      },
+      {
+        "name": "U$34",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "3.3V",
+        "device": ""
+      },
+      {
+        "name": "U$35",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "3.3V",
+        "device": ""
+      },
+      {
+        "name": "U$36",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "3.3V",
+        "device": ""
+      },
+      {
+        "name": "R2",
+        "value": "10K Pack",
+        "library": "microbuilder",
+        "deviceset": "RESISTOR_4PACK",
+        "device": ""
+      },
+      {
+        "name": "Q2",
+        "value": "BSS138",
+        "library": "microbuilder",
+        "deviceset": "MOSFET-N_DUAL",
+        "device": ""
+      },
+      {
+        "name": "U$37",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "3.3V",
+        "device": ""
+      },
+      {
+        "name": "U$38",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "3.3V",
+        "device": ""
+      },
+      {
+        "name": "U$40",
+        "value": "",
+        "library": "adafruit_electromech",
+        "deviceset": "MOUNTINGHOLE",
+        "device": "2.5"
+      },
+      {
+        "name": "U$41",
+        "value": "",
+        "library": "adafruit_electromech",
+        "deviceset": "MOUNTINGHOLE",
+        "device": "2.5"
+      },
+      {
+        "name": "CONN3",
+        "value": "",
+        "library": "adafruit_electromech",
+        "deviceset": "STEMMA_I2C",
+        "device": "_QT"
+      },
+      {
+        "name": "CONN4",
+        "value": "",
+        "library": "adafruit_electromech",
+        "deviceset": "STEMMA_I2C",
+        "device": "_QT"
+      },
+      {
+        "name": "U$42",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "FRAME_A4_ADAFRUIT",
+        "device": ""
+      },
+      {
+        "name": "FID3",
+        "value": "FIDUCIAL_0.5MM",
+        "library": "microbuilder",
+        "deviceset": "FIDUCIAL",
+        "device": "_0.5MM"
+      },
+      {
+        "name": "FID4",
+        "value": "FIDUCIAL_0.5MM",
+        "library": "microbuilder",
+        "deviceset": "FIDUCIAL",
+        "device": "_0.5MM"
+      },
+      {
+        "name": "D1",
+        "value": "GREEN",
+        "library": "microbuilder",
+        "deviceset": "LED",
+        "device": "0603_NOOUTLINE"
+      },
+      {
+        "name": "R5",
+        "value": "10K",
+        "library": "microbuilder",
+        "deviceset": "RESISTOR",
+        "device": "_0603_NOOUT"
+      },
+      {
+        "name": "GND6",
+        "value": "",
+        "library": "supply1",
+        "deviceset": "GND",
+        "device": ""
+      },
+      {
+        "name": "P+1",
+        "value": "",
+        "library": "supply1",
+        "deviceset": "VCC",
+        "device": ""
+      },
+      {
+        "name": "P+2",
+        "value": "",
+        "library": "supply1",
+        "deviceset": "VCC",
+        "device": ""
+      },
+      {
+        "name": "P+3",
+        "value": "",
+        "library": "supply1",
+        "deviceset": "VCC",
+        "device": ""
+      },
+      {
+        "name": "U$45",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "3.3V",
+        "device": ""
+      },
+      {
+        "name": "P+5",
+        "value": "",
+        "library": "supply1",
+        "deviceset": "VCC",
+        "device": ""
+      },
+      {
+        "name": "SJ1",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "SOLDERJUMPER",
+        "device": ""
+      },
+      {
+        "name": "U$1",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "GND",
+        "device": ""
+      },
+      {
+        "name": "U2",
+        "value": "",
+        "library": "adafruit_sensor",
+        "deviceset": "BMP585",
+        "device": ""
+      },
+      {
+        "name": "U$5",
+        "value": "",
+        "library": "microbuilder",
+        "deviceset": "3.3V",
+        "device": ""
+      }
+    ],
+    "nets": [
+      {
+        "name": "GND",
+        "pins": [
+          "CONN4.G$1.GND",
+          "CONN3.G$1.GND",
+          "CONN3.G$3.MT",
+          "CONN3.G$2.MT",
+          "CONN4.G$3.MT",
+          "CONN4.G$2.MT",
+          "U$23.G$1.GND",
+          "C4.G$1.2",
+          "U1.G$1.GND",
+          "C5.G$1.2",
+          "U$30.G$1.GND",
+          "U$31.G$1.GND",
+          "C6.G$1.2",
+          "GND6.1.GND",
+          "D1.G$1.C",
+          "U$4.G$1.GND",
+          "JP1.A.3",
+          "SJ1.1.2",
+          "U$1.G$1.GND",
+          "U2.A.VSS",
+          "U$3.G$1.GND"
+        ]
+      },
+      {
+        "name": "VCC",
+        "pins": [
+          "CONN3.G$1.V+",
+          "CONN4.G$1.V+",
+          "R2.G$1.1",
+          "P+1.VCC.VCC",
+          "R2.G$3.1",
+          "P+2.VCC.VCC",
+          "C4.G$1.1",
+          "U1.G$1.IN",
+          "U1.G$1.EN",
+          "P+3.VCC.VCC",
+          "JP1.A.1",
+          "P+5.VCC.VCC"
+        ]
+      },
+      {
+        "name": "3.3V",
+        "pins": [
+          "C6.G$1.1",
+          "U$33.G$1.3.3V",
+          "U1.G$1.OUT",
+          "C5.G$1.1",
+          "U$34.G$1.3.3V",
+          "U$35.G$1.3.3V",
+          "R2.G$4.1",
+          "U$37.G$1.3.3V",
+          "Q2.1.G",
+          "U$36.G$1.3.3V",
+          "R2.G$2.1",
+          "Q2.2.G",
+          "U$38.G$1.3.3V",
+          "U$45.G$1.3.3V",
+          "R5.G$1.1",
+          "U$10.G$1.3.3V",
+          "JP1.A.2",
+          "U$12.G$1.3.3V",
+          "U2.A.VDDIO",
+          "R4.G$1.2",
+          "U$25.G$1.3.3V",
+          "R1.G$1.2",
+          "U$18.G$1.3.3V",
+          "U2.A.VDD",
+          "U$5.G$1.3.3V"
+        ]
+      },
+      {
+        "name": "INT",
+        "pins": [
+          "U2.A.INT",
+          "JP1.A.8"
+        ]
+      },
+      {
+        "name": "N$1",
+        "pins": [
+          "D1.G$1.A",
+          "R5.G$1.2"
+        ]
+      },
+      {
+        "name": "SDI_3V",
+        "pins": [
+          "U2.A.SDX",
+          "R2.G$4.2",
+          "Q2.2.S"
+        ]
+      },
+      {
+        "name": "SCK_3V",
+        "pins": [
+          "U2.A.SCX",
+          "R2.G$2.2",
+          "Q2.1.S"
+        ]
+      },
+      {
+        "name": "CS_3V",
+        "pins": [
+          "U2.A.CSB",
+          "D2.G$1.A",
+          "R1.G$1.1"
+        ]
+      },
+      {
+        "name": "SDO/ADR",
+        "pins": [
+          "R4.G$1.1",
+          "JP1.A.5",
+          "SJ1.1.1",
+          "U2.A.SDO"
+        ]
+      },
+      {
+        "name": "SDI/SDA",
+        "pins": [
+          "JP1.A.6",
+          "Q2.2.D",
+          "R2.G$3.2",
+          "CONN4.G$1.SDA",
+          "CONN3.G$1.SDA"
+        ]
+      },
+      {
+        "name": "SCK/SCL",
+        "pins": [
+          "JP1.A.4",
+          "Q2.1.D",
+          "R2.G$1.2",
+          "CONN4.G$1.SCL",
+          "CONN3.G$1.SCL"
+        ]
+      },
+      {
+        "name": "CS",
+        "pins": [
+          "D2.G$1.C",
+          "JP1.A.7"
+        ]
+      }
+    ]
   }
 ]

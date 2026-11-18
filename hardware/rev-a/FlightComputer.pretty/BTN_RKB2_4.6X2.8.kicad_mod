@@ -1,0 +1,189 @@
+(footprint "BTN_RKB2_4.6X2.8"
+  (version 20241229)
+  (generator "flight_computer_generator")
+  (layer "F.Cu")
+  (property "Reference" "REF**"
+    (at -2.032 -1.778 180)
+    (unlocked yes)
+    (layer "F.SilkS")
+    (hide yes)
+    (effects
+      (font
+        (size 0.666496 0.666496)
+        (thickness 0.146304))
+      (justify right top)))
+  (property "Value" "BTN_RKB2_4.6X2.8"
+    (at -2.032 2.159 180)
+    (unlocked yes)
+    (layer "F.Fab")
+    (hide yes)
+    (effects
+      (font
+        (size 0.36576 0.36576)
+        (thickness 0.04064))
+      (justify right top)))
+  (property "Datasheet" ""
+    (at 0 0 180)
+    (layer "F.Fab")
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Description" ""
+    (at 0 0 180)
+    (layer "F.Fab")
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (duplicate_pad_numbers_are_jumpers no)
+  (fp_line
+    (start 2.1 1.5254)
+    (end -2.1 1.5254)
+    (stroke
+      (width 0.2032)
+      (type solid))
+    (layer "F.SilkS"))
+  (fp_line
+    (start -2.1 -1.5254)
+    (end 2.1 -1.5254)
+    (stroke
+      (width 0.2032)
+      (type solid))
+    (layer "F.SilkS"))
+  (fp_line
+    (start 2.1 1.4)
+    (end -2.1 1.4)
+    (stroke
+      (width 0.2032)
+      (type solid))
+    (layer "F.Fab"))
+  (fp_line
+    (start 2.1 -1.4)
+    (end 2.1 1.4)
+    (stroke
+      (width 0.2032)
+      (type solid))
+    (layer "F.Fab"))
+  (fp_line
+    (start 1.05 0.8)
+    (end -1.05 0.8)
+    (stroke
+      (width 0.2032)
+      (type solid))
+    (layer "F.Fab"))
+  (fp_line
+    (start 0 0.4)
+    (end 0.4 0.4)
+    (stroke
+      (width 0.127)
+      (type solid))
+    (layer "F.Fab"))
+  (fp_line
+    (start 0 0.4)
+    (end 0 0.3)
+    (stroke
+      (width 0.127)
+      (type solid))
+    (layer "F.Fab"))
+  (fp_line
+    (start 0 -0.2)
+    (end 0.3 0.1)
+    (stroke
+      (width 0.127)
+      (type solid))
+    (layer "F.Fab"))
+  (fp_line
+    (start 0 -0.4)
+    (end 0.4 -0.4)
+    (stroke
+      (width 0.127)
+      (type solid))
+    (layer "F.Fab"))
+  (fp_line
+    (start 0 -0.4)
+    (end 0 -0.2)
+    (stroke
+      (width 0.127)
+      (type solid))
+    (layer "F.Fab"))
+  (fp_line
+    (start -0.4 0.4)
+    (end 0 0.4)
+    (stroke
+      (width 0.127)
+      (type solid))
+    (layer "F.Fab"))
+  (fp_line
+    (start -0.4 -0.4)
+    (end 0 -0.4)
+    (stroke
+      (width 0.127)
+      (type solid))
+    (layer "F.Fab"))
+  (fp_line
+    (start -1.05 -0.8)
+    (end 1.05 -0.8)
+    (stroke
+      (width 0.2032)
+      (type solid))
+    (layer "F.Fab"))
+  (fp_line
+    (start -2.1 1.4)
+    (end -2.1 -1.4)
+    (stroke
+      (width 0.2032)
+      (type solid))
+    (layer "F.Fab"))
+  (fp_line
+    (start -2.1 -1.4)
+    (end 2.1 -1.4)
+    (stroke
+      (width 0.2032)
+      (type solid))
+    (layer "F.Fab"))
+  (fp_arc
+    (start 1.05 -0.8)
+    (mid 1.209128 0)
+    (end 1.05 0.799999)
+    (stroke
+      (width 0.2032)
+      (type solid))
+    (layer "F.Fab"))
+  (fp_arc
+    (start -1.05 0.8)
+    (mid -1.209128 0)
+    (end -1.05 -0.799999)
+    (stroke
+      (width 0.2032)
+      (type solid))
+    (layer "F.Fab"))
+  (pad "A" smd rect
+    (at 1.973 -1.075 0.0)
+    (size 1 0.7)
+    (layers "F.Cu" "F.Mask" "F.Paste")
+    (solder_mask_margin 0.0508)
+    (solder_paste_margin 0)
+    (thermal_bridge_angle 0))
+  (pad "A'" smd rect
+    (at -1.973 -1.075 0.0)
+    (size 1 0.7)
+    (layers "F.Cu" "F.Mask" "F.Paste")
+    (solder_mask_margin 0.0508)
+    (solder_paste_margin 0)
+    (thermal_bridge_angle 0))
+  (pad "B" smd rect
+    (at 1.973 1.075 0.0)
+    (size 1 0.7)
+    (layers "F.Cu" "F.Mask" "F.Paste")
+    (solder_mask_margin 0.0508)
+    (solder_paste_margin 0)
+    (thermal_bridge_angle 0))
+  (pad "B'" smd rect
+    (at -1.973 1.075 0.0)
+    (size 1 0.7)
+    (layers "F.Cu" "F.Mask" "F.Paste")
+    (solder_mask_margin 0.0508)
+    (solder_paste_margin 0)
+    (thermal_bridge_angle 0))
+  (embedded_fonts no))

@@ -1,6 +1,6 @@
 # Requirements baseline
 
-Source: direct user statements in this chat, through 2026-11-18. The attached personal-background file is contextual material, not a new instruction source. Its unrelated RF-project permissions and details do not apply here.
+Source: direct user statements in this chat, through 2026-11-18. Prior assistant suggestions are tracked separately as proposed engineering defaults.
 
 ## Confirmed
 
@@ -12,16 +12,20 @@ Source: direct user statements in this chat, through 2026-11-18. The attached pe
 | R04 | Target roughly RP2040 Feather Adalogger size, shape, and features. Exact maximum dimensions and height are not yet specified. |
 | R05 | Existing Adalogger microSD socket is on its top face, per user correction. Verify downloaded CAD revision independently before using it for placement. |
 | R06 | Four installed servo headers, each with power, ground, and independent signal; retain other GPIO access where practical. Existing courses use two servos. |
-| R07 | Assume minimal servo power. Do not make a large dedicated servo supply a baseline requirement. Servo voltage remains unspecified. |
+| R07 | Assume minimal servo power. Do not make a large dedicated servo supply a baseline requirement; battery-voltage operation is confirmed in R14. |
 | R08 | Factory-installed connector for ENABLE and GND; inserted shorting plug turns computer off; removing tagged plug powers it on and starts recording. Connector type is flexible. |
 | R09 | Existing logging is CSV to microSD at 50 Hz and is sufficient. |
 | R10 | Flight normally about 10 s and under five minutes. Recording may include much longer pre/post-flight activity; up to four hours has occurred. This is not a four-hour battery-runtime requirement. |
 | R11 | Prefer +/-16 g; existing BNO085 +/-8 g limit is accepted. |
-| R12 | Small lithium-ion battery. Exact cell/capacity/connector not yet specified. |
+| R12 | Small lithium-ion battery; the confirmed part and packaging arrangement are recorded in R18. |
 | R13 | Five Qwiic connectors and 3 V/5 V interface level shifting need not be retained. |
 | R14 | Current nominal-5 V micro servos work directly from the single-cell battery in hand-tossed 250 mm balsa gliders. Preserve battery-voltage servo power as the baseline; no 5 V boost supply required. |
 | R15 | Application firmware is Arduino in PlatformIO (user calls the setup pioarduino). User will write it separately; sensor outputs and CSV schema are outside this hardware-development scope. |
 | R16 | BNO085 is the intended minor upgrade to the BNO080 reference circuit. A shared BNO080 CAD symbol is expected and is not a reason to change the sensor. |
+| R17 | No display connector on the custom board. |
+| R18 | Battery is Adafruit PID 3898, 3.7 V 400 mAh. Mount it beneath the PCB with clearance for underside sensors; keep its socket on top in the standard Feather location. |
+| R19 | Prefer horizontal, side-entry Qwiic connectors; user reports the vertical connectors seem weak. |
+| R20 | If USB and SD do not fit on a long edge, putting both at the same short end would be desirable. Put the four servo ports at the opposite end. |
 
 ## Proposed engineering defaults (not user commitments)
 
@@ -40,7 +44,7 @@ Source: direct user statements in this chat, through 2026-11-18. The attached pe
 | Input | Why it matters | Needed before |
 | --- | --- | --- |
 | Servo exact model (useful, not blocking reference audit) | Baseline raw-battery power is now confirmed by the working system; check mating clearance, logic threshold, and supply-switch rating | Connector/power detail review |
-| Battery model/capacity, protection, connector polarity | Charge-current setting, power headroom, footprint and safe mechanical fit | Power schematic freeze |
+| Battery details | Resolved: Adafruit PID 3898, 400 mAh, protected, Adafruit-polarity JST-PH | Verify actual socket and clearance during design review |
 | Confirmation that the proposed pin map is convenient | Hardware assignments will be documented; no port of the application, sensor reports, or CSV fields is requested | Pin allocation freeze |
 | Required unused GPIO/interfaces | Resolve conflicts with sensors, SD and four servo outputs | Pin allocation freeze |
 | Required maximum dimensions/height and mounting/enclosure | Assess whether Feather outline and underside placement actually fit | Layout freeze |

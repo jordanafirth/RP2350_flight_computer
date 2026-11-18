@@ -1,0 +1,3449 @@
+{
+  "status": "development draft",
+  "parts": [
+    {
+      "ref": "C1",
+      "value": "10uF",
+      "package": "0805-NO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "VSYS"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C1",
+      "mpn": "",
+      "dnp": false,
+      "page": "Power",
+      "footprint": "FlightComputer:0805-NO"
+    },
+    {
+      "ref": "C4",
+      "value": "10uF",
+      "package": "0805-NO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C4",
+      "mpn": "",
+      "dnp": false,
+      "page": "Power",
+      "footprint": "FlightComputer:0805-NO"
+    },
+    {
+      "ref": "D1",
+      "value": "RED",
+      "package": "CHIPLED_0603_NOOUTLINE",
+      "pins": [
+        {
+          "number": "A",
+          "name": "A",
+          "type": "passive",
+          "net": "BASE_N_2"
+        },
+        {
+          "number": "C",
+          "name": "C",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:L",
+      "mpn": "",
+      "dnp": false,
+      "page": "Processor",
+      "footprint": "FlightComputer:CHIPLED_0603_NOOUTLINE"
+    },
+    {
+      "ref": "R7",
+      "value": "10K",
+      "package": "_0402NO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "STATUS_LED"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "BASE_N_2"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R7",
+      "mpn": "",
+      "dnp": false,
+      "page": "Processor",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "SW1",
+      "value": "KMR2",
+      "package": "BTN_RKB2_4.6X2.8",
+      "pins": [
+        {
+          "number": "A",
+          "name": "P",
+          "type": "passive",
+          "net": "!RESET"
+        },
+        {
+          "number": "A'",
+          "name": "P1",
+          "type": "passive",
+          "net": "!RESET"
+        },
+        {
+          "number": "B",
+          "name": "S",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "B'",
+          "name": "S1",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:SW1",
+      "mpn": "",
+      "dnp": false,
+      "page": "Processor",
+      "footprint": "FlightComputer:BTN_RKB2_4.6X2.8"
+    },
+    {
+      "ref": "U2",
+      "value": "RT9080-3.3",
+      "package": "SOT23-5",
+      "pins": [
+        {
+          "number": "3",
+          "name": "EN",
+          "type": "input",
+          "net": "ENABLE"
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "1",
+          "name": "IN",
+          "type": "power_in",
+          "net": "VSYS"
+        },
+        {
+          "number": "5",
+          "name": "OUT",
+          "type": "power_out",
+          "net": "+3V3"
+        },
+        {
+          "number": "4",
+          "name": "P4",
+          "type": "bidirectional",
+          "net": null
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:U2",
+      "mpn": "RT9080-33GJ5",
+      "dnp": false,
+      "page": "Power",
+      "footprint": "FlightComputer:SOT23-5"
+    },
+    {
+      "ref": "J1",
+      "value": "HEADER-1X16",
+      "package": "1X16_ROUND",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "GPIO8"
+        },
+        {
+          "number": "10",
+          "name": "10",
+          "type": "passive",
+          "net": "A2"
+        },
+        {
+          "number": "11",
+          "name": "11",
+          "type": "passive",
+          "net": "A1"
+        },
+        {
+          "number": "12",
+          "name": "12",
+          "type": "passive",
+          "net": "A0"
+        },
+        {
+          "number": "13",
+          "name": "13",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "14",
+          "name": "14",
+          "type": "passive",
+          "net": "+3V3"
+        },
+        {
+          "number": "15",
+          "name": "15",
+          "type": "passive",
+          "net": "+3V3"
+        },
+        {
+          "number": "16",
+          "name": "16",
+          "type": "passive",
+          "net": "!RESET"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "UART_TX"
+        },
+        {
+          "number": "3",
+          "name": "3",
+          "type": "passive",
+          "net": "UART_RX"
+        },
+        {
+          "number": "4",
+          "name": "4",
+          "type": "passive",
+          "net": "EXP_MISO"
+        },
+        {
+          "number": "5",
+          "name": "5",
+          "type": "passive",
+          "net": "EXP_MOSI"
+        },
+        {
+          "number": "6",
+          "name": "6",
+          "type": "passive",
+          "net": "EXP_SCK"
+        },
+        {
+          "number": "7",
+          "name": "7",
+          "type": "passive",
+          "net": "GPIO25"
+        },
+        {
+          "number": "8",
+          "name": "8",
+          "type": "passive",
+          "net": "GPIO24"
+        },
+        {
+          "number": "9",
+          "name": "9",
+          "type": "passive",
+          "net": "A3"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:JP1",
+      "mpn": "",
+      "dnp": true,
+      "page": "Interfaces",
+      "footprint": "FlightComputer:1X16_ROUND"
+    },
+    {
+      "ref": "JBAT1",
+      "value": "JSTPH",
+      "package": "JSTPH2_BATT",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "VBAT"
+        },
+        {
+          "number": "NC1",
+          "name": "P$1",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "NC2",
+          "name": "P$1",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:X1",
+      "mpn": "S2B-PH-SM4-TB(LF)(SN)",
+      "dnp": false,
+      "page": "Power",
+      "footprint": "FlightComputer:JSTPH2_BATT"
+    },
+    {
+      "ref": "J2",
+      "value": "HEADER-1X12",
+      "package": "1X12_ROUND",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "VBAT"
+        },
+        {
+          "number": "10",
+          "name": "10",
+          "type": "passive",
+          "net": "SERVO1"
+        },
+        {
+          "number": "11",
+          "name": "11",
+          "type": "passive",
+          "net": "SCL"
+        },
+        {
+          "number": "12",
+          "name": "12",
+          "type": "passive",
+          "net": "SDA"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "ENABLE"
+        },
+        {
+          "number": "3",
+          "name": "3",
+          "type": "passive",
+          "net": "VBUS"
+        },
+        {
+          "number": "4",
+          "name": "4",
+          "type": "passive",
+          "net": "STATUS_LED"
+        },
+        {
+          "number": "5",
+          "name": "5",
+          "type": "passive",
+          "net": "GPIO4"
+        },
+        {
+          "number": "6",
+          "name": "6",
+          "type": "passive",
+          "net": "GPIO11"
+        },
+        {
+          "number": "7",
+          "name": "7",
+          "type": "passive",
+          "net": "SERVO4"
+        },
+        {
+          "number": "8",
+          "name": "8",
+          "type": "passive",
+          "net": "SERVO3"
+        },
+        {
+          "number": "9",
+          "name": "9",
+          "type": "passive",
+          "net": "SERVO2"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:JP3",
+      "mpn": "",
+      "dnp": true,
+      "page": "Interfaces",
+      "footprint": "FlightComputer:1X12_ROUND"
+    },
+    {
+      "ref": "U3",
+      "value": "MCP73831T-2ACI/OT",
+      "package": "SOT23-5",
+      "pins": [
+        {
+          "number": "5",
+          "name": "PROG",
+          "type": "input",
+          "net": "BASE_N_4"
+        },
+        {
+          "number": "1",
+          "name": "STAT",
+          "type": "output",
+          "net": "BASE_N_3"
+        },
+        {
+          "number": "3",
+          "name": "VBAT",
+          "type": "power_in",
+          "net": "VBAT"
+        },
+        {
+          "number": "4",
+          "name": "VDD",
+          "type": "power_in",
+          "net": "VBUS"
+        },
+        {
+          "number": "2",
+          "name": "VSS",
+          "type": "power_in",
+          "net": "GND"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:U3",
+      "mpn": "MCP73831T-2ACI/OT",
+      "dnp": false,
+      "page": "Power",
+      "footprint": "FlightComputer:SOT23-5"
+    },
+    {
+      "ref": "D2",
+      "value": "ORANGE",
+      "package": "CHIPLED_0603_NOOUTLINE",
+      "pins": [
+        {
+          "number": "A",
+          "name": "A",
+          "type": "passive",
+          "net": "VBUS"
+        },
+        {
+          "number": "C",
+          "name": "C",
+          "type": "passive",
+          "net": "BASE_N_1"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:CHG",
+      "mpn": "",
+      "dnp": false,
+      "page": "Power",
+      "footprint": "FlightComputer:CHIPLED_0603_NOOUTLINE"
+    },
+    {
+      "ref": "R2",
+      "value": "10K",
+      "package": "_0402NO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "BASE_N_1"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "BASE_N_3"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R2",
+      "mpn": "",
+      "dnp": false,
+      "page": "Power",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "C20",
+      "value": "10uF",
+      "package": "0805-NO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "VBAT"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C20",
+      "mpn": "",
+      "dnp": false,
+      "page": "Power",
+      "footprint": "FlightComputer:0805-NO"
+    },
+    {
+      "ref": "R8",
+      "value": "5.1k",
+      "package": "_0402NO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "BASE_N_4"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R8",
+      "mpn": "RC0402FR-075K1L",
+      "dnp": false,
+      "page": "Power",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "C5",
+      "value": "10uF",
+      "package": "0603-NO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C5",
+      "mpn": "",
+      "dnp": false,
+      "page": "Processor",
+      "footprint": "FlightComputer:0603-NO"
+    },
+    {
+      "ref": "D5",
+      "value": "WS2812B_SK6805_1515",
+      "package": "SK6805_1515",
+      "pins": [
+        {
+          "number": "1",
+          "name": "DI",
+          "type": "input",
+          "net": "NEOPIXEL"
+        },
+        {
+          "number": "3",
+          "name": "DO",
+          "type": "output",
+          "net": null
+        },
+        {
+          "number": "4",
+          "name": "GND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "2",
+          "name": "VDD",
+          "type": "power_in",
+          "net": "+3V3"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:LED1",
+      "mpn": "",
+      "dnp": false,
+      "page": "Processor",
+      "footprint": "FlightComputer:SK6805_1515"
+    },
+    {
+      "ref": "U1",
+      "value": "8MB QSPI",
+      "package": "USON8_4X4",
+      "pins": [
+        {
+          "number": "7",
+          "name": "HOLD#/IO3",
+          "type": "bidirectional",
+          "net": "QSPI_IO3"
+        },
+        {
+          "number": "2",
+          "name": "MISO",
+          "type": "bidirectional",
+          "net": "QSPI_IO1"
+        },
+        {
+          "number": "5",
+          "name": "MOSI",
+          "type": "bidirectional",
+          "net": "QSPI_IO0"
+        },
+        {
+          "number": "6",
+          "name": "SCK",
+          "type": "bidirectional",
+          "net": "QSPI_SCK"
+        },
+        {
+          "number": "1",
+          "name": "SSEL",
+          "type": "bidirectional",
+          "net": "QSPI_CS"
+        },
+        {
+          "number": "8",
+          "name": "VCC",
+          "type": "power_in",
+          "net": "+3V3"
+        },
+        {
+          "number": "4",
+          "name": "VSS",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "PAD",
+          "name": "VSS",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "3",
+          "name": "WP#/IO2",
+          "type": "bidirectional",
+          "net": "QSPI_IO2"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:U1",
+      "mpn": "",
+      "dnp": false,
+      "page": "Processor",
+      "footprint": "FlightComputer:USON8_4X4"
+    },
+    {
+      "ref": "R5",
+      "value": "10K",
+      "package": "_0402NO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "QSPI_CS"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "+3V3"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R5",
+      "mpn": "",
+      "dnp": false,
+      "page": "Processor",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "C9",
+      "value": "0.1uF",
+      "package": "_0402NO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C9",
+      "mpn": "",
+      "dnp": false,
+      "page": "Processor",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "C10",
+      "value": "1uF",
+      "package": "_0402NO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C10",
+      "mpn": "",
+      "dnp": false,
+      "page": "Processor",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "D4",
+      "value": "PMEG2020AEA",
+      "package": "SOD-323F",
+      "pins": [
+        {
+          "number": "A",
+          "name": "A",
+          "type": "passive",
+          "net": "VBUS"
+        },
+        {
+          "number": "C",
+          "name": "C",
+          "type": "passive",
+          "net": "VSYS"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:D4",
+      "mpn": "",
+      "dnp": false,
+      "page": "Power",
+      "footprint": "FlightComputer:SOD-323F"
+    },
+    {
+      "ref": "Q3",
+      "value": "DMG3415UFY",
+      "package": "DFN2015-3",
+      "pins": [
+        {
+          "number": "3",
+          "name": "D",
+          "type": "passive",
+          "net": "VBAT"
+        },
+        {
+          "number": "1",
+          "name": "G",
+          "type": "passive",
+          "net": "VBUS"
+        },
+        {
+          "number": "2",
+          "name": "S",
+          "type": "passive",
+          "net": "VSYS"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:Q3",
+      "mpn": "",
+      "dnp": false,
+      "page": "Power",
+      "footprint": "FlightComputer:DFN2015-3"
+    },
+    {
+      "ref": "R3",
+      "value": "10K",
+      "package": "_0402NO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "ENABLE"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "VSYS"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R3",
+      "mpn": "",
+      "dnp": false,
+      "page": "Power",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "TP1",
+      "value": "TP",
+      "package": "B1,27",
+      "pins": [
+        {
+          "number": "TP",
+          "name": "TP",
+          "type": "passive",
+          "net": "USB_D+"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:D+1",
+      "mpn": "",
+      "dnp": false,
+      "page": "Power",
+      "footprint": "FlightComputer:B1_27"
+    },
+    {
+      "ref": "TP2",
+      "value": "TP",
+      "package": "B1,27",
+      "pins": [
+        {
+          "number": "TP",
+          "name": "TP",
+          "type": "passive",
+          "net": "USB_D-"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:D-1",
+      "mpn": "",
+      "dnp": false,
+      "page": "Power",
+      "footprint": "FlightComputer:B1_27"
+    },
+    {
+      "ref": "JUSB1",
+      "value": "USB Type C",
+      "package": "Connector_USB:USB_C_Receptacle_GCT_USB4110",
+      "pins": [
+        {
+          "number": "A1",
+          "name": "A1",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "A12",
+          "name": "A12",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "B1",
+          "name": "B1",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "B12",
+          "name": "B12",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "SH",
+          "name": "SH",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "A4",
+          "name": "A4",
+          "type": "passive",
+          "net": "VBUS"
+        },
+        {
+          "number": "A9",
+          "name": "A9",
+          "type": "passive",
+          "net": "VBUS"
+        },
+        {
+          "number": "B4",
+          "name": "B4",
+          "type": "passive",
+          "net": "VBUS"
+        },
+        {
+          "number": "B9",
+          "name": "B9",
+          "type": "passive",
+          "net": "VBUS"
+        },
+        {
+          "number": "A5",
+          "name": "A5",
+          "type": "passive",
+          "net": "CC1"
+        },
+        {
+          "number": "B5",
+          "name": "B5",
+          "type": "passive",
+          "net": "CC2"
+        },
+        {
+          "number": "A6",
+          "name": "A6",
+          "type": "passive",
+          "net": "USB_D+"
+        },
+        {
+          "number": "B6",
+          "name": "B6",
+          "type": "passive",
+          "net": "USB_D+"
+        },
+        {
+          "number": "A7",
+          "name": "A7",
+          "type": "passive",
+          "net": "USB_D-"
+        },
+        {
+          "number": "B7",
+          "name": "B7",
+          "type": "passive",
+          "net": "USB_D-"
+        },
+        {
+          "number": "A8",
+          "name": "A8",
+          "type": "passive",
+          "net": null
+        },
+        {
+          "number": "B8",
+          "name": "B8",
+          "type": "passive",
+          "net": null
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:X6",
+      "mpn": "USB4110-GF-A",
+      "dnp": false,
+      "page": "Power",
+      "footprint": "Connector_USB:USB_C_Receptacle_GCT_USB4110"
+    },
+    {
+      "ref": "R12",
+      "value": "5.1K",
+      "package": "_0402NO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "CC2"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R12",
+      "mpn": "",
+      "dnp": false,
+      "page": "Power",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "R13",
+      "value": "5.1K",
+      "package": "_0402NO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "CC1"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R13",
+      "mpn": "",
+      "dnp": false,
+      "page": "Power",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "Y1",
+      "value": "12MHz/10pF/50ohm",
+      "package": "CRYSTAL_2.5X2",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "BASE_N_6"
+        },
+        {
+          "number": "3",
+          "name": "2",
+          "type": "passive",
+          "net": "BASE_N_5"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:Y1",
+      "mpn": "",
+      "dnp": false,
+      "page": "Processor",
+      "footprint": "FlightComputer:CRYSTAL_2.5X2"
+    },
+    {
+      "ref": "R4",
+      "value": "10K",
+      "package": "_0402NO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "VBUS"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R4",
+      "mpn": "",
+      "dnp": false,
+      "page": "Power",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "C6",
+      "value": "0.1uF",
+      "package": "_0402NO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "VCORE"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C6",
+      "mpn": "",
+      "dnp": false,
+      "page": "Processor",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "C7",
+      "value": "0.1uF",
+      "package": "_0402NO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "VCORE"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C7",
+      "mpn": "",
+      "dnp": false,
+      "page": "Processor",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "C8",
+      "value": "10uF_0603",
+      "package": "_0603MP",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "VCORE"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C8",
+      "mpn": "",
+      "dnp": false,
+      "page": "Processor",
+      "footprint": "FlightComputer:_0603MP"
+    },
+    {
+      "ref": "C11",
+      "value": "1uF",
+      "package": "_0402NO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C11",
+      "mpn": "",
+      "dnp": false,
+      "page": "Processor",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "C12",
+      "value": "0.1uF",
+      "package": "_0402NO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C12",
+      "mpn": "",
+      "dnp": false,
+      "page": "Processor",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "C13",
+      "value": "10uF_0603",
+      "package": "_0603MP",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C13",
+      "mpn": "",
+      "dnp": false,
+      "page": "Processor",
+      "footprint": "FlightComputer:_0603MP"
+    },
+    {
+      "ref": "C14",
+      "value": "0.1uF",
+      "package": "_0402NO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C14",
+      "mpn": "",
+      "dnp": false,
+      "page": "Processor",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "C15",
+      "value": "1uF",
+      "package": "_0402NO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C15",
+      "mpn": "",
+      "dnp": false,
+      "page": "Processor",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "C16",
+      "value": "0.1uF",
+      "package": "_0402NO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C16",
+      "mpn": "",
+      "dnp": false,
+      "page": "Processor",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "C2",
+      "value": "15pF",
+      "package": "_0402NO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "BASE_N_5"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C2",
+      "mpn": "",
+      "dnp": false,
+      "page": "Processor",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "C3",
+      "value": "15pF",
+      "package": "_0402NO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "BASE_N_6"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C3",
+      "mpn": "",
+      "dnp": false,
+      "page": "Processor",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "R6",
+      "value": "1K",
+      "package": "_0402NO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "BASE_N_6"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "BASE_N_7"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R6",
+      "mpn": "",
+      "dnp": false,
+      "page": "Processor",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "R9",
+      "value": "27 ohm",
+      "package": "_0402NO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "USB_D-"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "D-"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R9",
+      "mpn": "",
+      "dnp": false,
+      "page": "Power",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "R10",
+      "value": "27 ohm",
+      "package": "_0402NO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "USB_D+"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "D+"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R10",
+      "mpn": "",
+      "dnp": false,
+      "page": "Power",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "SW2",
+      "value": "KMR2",
+      "package": "BTN_RKB2_4.6X2.8",
+      "pins": [
+        {
+          "number": "A",
+          "name": "P",
+          "type": "passive",
+          "net": "USBBOOT"
+        },
+        {
+          "number": "A'",
+          "name": "P1",
+          "type": "passive",
+          "net": "USBBOOT"
+        },
+        {
+          "number": "B",
+          "name": "S",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "B'",
+          "name": "S1",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:SW2",
+      "mpn": "",
+      "dnp": false,
+      "page": "Processor",
+      "footprint": "FlightComputer:BTN_RKB2_4.6X2.8"
+    },
+    {
+      "ref": "R11",
+      "value": "1K",
+      "package": "_0402NO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "QSPI_CS"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "USBBOOT"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R11",
+      "mpn": "",
+      "dnp": false,
+      "page": "Processor",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "TP3",
+      "value": "TESTPOINT",
+      "package": "TESTPOINT_ROUND_1.5MM_NO",
+      "pins": [
+        {
+          "number": "P$1",
+          "name": "P$1",
+          "type": "passive",
+          "net": "USBBOOT"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:TP3",
+      "mpn": "",
+      "dnp": false,
+      "page": "Processor",
+      "footprint": "FlightComputer:TESTPOINT_ROUND_1.5MM_NO"
+    },
+    {
+      "ref": "C17",
+      "value": "1uF",
+      "package": "_0402NO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C17",
+      "mpn": "",
+      "dnp": false,
+      "page": "Processor",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "C18",
+      "value": "0.1uF",
+      "package": "_0402NO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "VCORE"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C18",
+      "mpn": "",
+      "dnp": false,
+      "page": "Processor",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "U4",
+      "value": "RP2350A (A4)",
+      "package": "QFN60_7MM_REDUCEDEPAD",
+      "pins": [
+        {
+          "number": "60",
+          "name": "!QSPI_CS",
+          "type": "bidirectional",
+          "net": "QSPI_CS"
+        },
+        {
+          "number": "26",
+          "name": "/RUN",
+          "type": "bidirectional",
+          "net": "!RESET"
+        },
+        {
+          "number": "44",
+          "name": "ADC_AVDD",
+          "type": "power_in",
+          "net": "ADC_AVDD"
+        },
+        {
+          "number": "3",
+          "name": "GPIO1",
+          "type": "bidirectional",
+          "net": "UART_RX"
+        },
+        {
+          "number": "33",
+          "name": "GPIO21",
+          "type": "bidirectional",
+          "net": "NEOPIXEL"
+        },
+        {
+          "number": "8",
+          "name": "GPIO5",
+          "type": "bidirectional",
+          "net": "SERVO1"
+        },
+        {
+          "number": "13",
+          "name": "GPIO9",
+          "type": "bidirectional",
+          "net": "SERVO3"
+        },
+        {
+          "number": "6",
+          "name": "DVDD",
+          "type": "power_in",
+          "net": "VCORE"
+        },
+        {
+          "number": "23",
+          "name": "DVDD",
+          "type": "power_in",
+          "net": "VCORE"
+        },
+        {
+          "number": "39",
+          "name": "DVDD",
+          "type": "power_in",
+          "net": "VCORE"
+        },
+        {
+          "number": "P$1",
+          "name": "GND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "36",
+          "name": "GPIO24",
+          "type": "bidirectional",
+          "net": "GPIO24"
+        },
+        {
+          "number": "37",
+          "name": "GPIO25",
+          "type": "bidirectional",
+          "net": "GPIO25"
+        },
+        {
+          "number": "40",
+          "name": "GPIO26",
+          "type": "bidirectional",
+          "net": "A0"
+        },
+        {
+          "number": "41",
+          "name": "GPIO27",
+          "type": "bidirectional",
+          "net": "A1"
+        },
+        {
+          "number": "42",
+          "name": "GPIO28",
+          "type": "bidirectional",
+          "net": "A2"
+        },
+        {
+          "number": "43",
+          "name": "GPIO29",
+          "type": "bidirectional",
+          "net": "A3"
+        },
+        {
+          "number": "28",
+          "name": "GPIO17",
+          "type": "bidirectional",
+          "net": "BNO_RESET_N"
+        },
+        {
+          "number": "17",
+          "name": "GPIO13",
+          "type": "bidirectional",
+          "net": "SD_CS"
+        },
+        {
+          "number": "27",
+          "name": "GPIO16",
+          "type": "bidirectional",
+          "net": "BNO_INT_N"
+        },
+        {
+          "number": "16",
+          "name": "GPIO12",
+          "type": "bidirectional",
+          "net": "SD_MISO"
+        },
+        {
+          "number": "19",
+          "name": "GPIO15",
+          "type": "bidirectional",
+          "net": "SD_MOSI"
+        },
+        {
+          "number": "29",
+          "name": "GPIO18",
+          "type": "bidirectional",
+          "net": "SD_DETECT_N"
+        },
+        {
+          "number": "18",
+          "name": "GPIO14",
+          "type": "bidirectional",
+          "net": "SD_CLK"
+        },
+        {
+          "number": "1",
+          "name": "IOVDD",
+          "type": "power_in",
+          "net": "+3V3"
+        },
+        {
+          "number": "11",
+          "name": "IOVDD",
+          "type": "power_in",
+          "net": "+3V3"
+        },
+        {
+          "number": "20",
+          "name": "IOVDD",
+          "type": "power_in",
+          "net": "+3V3"
+        },
+        {
+          "number": "30",
+          "name": "IOVDD",
+          "type": "power_in",
+          "net": "+3V3"
+        },
+        {
+          "number": "38",
+          "name": "IOVDD",
+          "type": "power_in",
+          "net": "+3V3"
+        },
+        {
+          "number": "45",
+          "name": "IOVDD",
+          "type": "power_in",
+          "net": "+3V3"
+        },
+        {
+          "number": "32",
+          "name": "GPIO20",
+          "type": "bidirectional",
+          "net": "EXP_MISO"
+        },
+        {
+          "number": "7",
+          "name": "GPIO4",
+          "type": "bidirectional",
+          "net": "GPIO4"
+        },
+        {
+          "number": "5",
+          "name": "GPIO3",
+          "type": "bidirectional",
+          "net": "SCL"
+        },
+        {
+          "number": "35",
+          "name": "GPIO23",
+          "type": "bidirectional",
+          "net": "EXP_MOSI"
+        },
+        {
+          "number": "10",
+          "name": "GPIO7",
+          "type": "bidirectional",
+          "net": "STATUS_LED"
+        },
+        {
+          "number": "15",
+          "name": "GPIO11",
+          "type": "bidirectional",
+          "net": "GPIO11"
+        },
+        {
+          "number": "54",
+          "name": "QSPI_IOVDD",
+          "type": "power_in",
+          "net": "+3V3"
+        },
+        {
+          "number": "56",
+          "name": "QSPI_SCLK",
+          "type": "bidirectional",
+          "net": "QSPI_SCK"
+        },
+        {
+          "number": "57",
+          "name": "QSPI_SD0",
+          "type": "bidirectional",
+          "net": "QSPI_IO0"
+        },
+        {
+          "number": "59",
+          "name": "QSPI_SD1",
+          "type": "bidirectional",
+          "net": "QSPI_IO1"
+        },
+        {
+          "number": "58",
+          "name": "QSPI_SD2",
+          "type": "bidirectional",
+          "net": "QSPI_IO2"
+        },
+        {
+          "number": "55",
+          "name": "QSPI_SD3",
+          "type": "bidirectional",
+          "net": "QSPI_IO3"
+        },
+        {
+          "number": "4",
+          "name": "GPIO2",
+          "type": "bidirectional",
+          "net": "SDA"
+        },
+        {
+          "number": "34",
+          "name": "GPIO22",
+          "type": "bidirectional",
+          "net": "EXP_SCK"
+        },
+        {
+          "number": "9",
+          "name": "GPIO6",
+          "type": "bidirectional",
+          "net": "SERVO2"
+        },
+        {
+          "number": "14",
+          "name": "GPIO10",
+          "type": "bidirectional",
+          "net": "SERVO4"
+        },
+        {
+          "number": "24",
+          "name": "SWCLK",
+          "type": "bidirectional",
+          "net": "SWCLK"
+        },
+        {
+          "number": "25",
+          "name": "SWDIO",
+          "type": "bidirectional",
+          "net": "SWDIO"
+        },
+        {
+          "number": "52",
+          "name": "USB_D+",
+          "type": "bidirectional",
+          "net": "D+"
+        },
+        {
+          "number": "51",
+          "name": "USB_D-",
+          "type": "bidirectional",
+          "net": "D-"
+        },
+        {
+          "number": "53",
+          "name": "USB_OTP_VDD",
+          "type": "power_in",
+          "net": "+3V3"
+        },
+        {
+          "number": "46",
+          "name": "VREG_AVDD",
+          "type": "power_in",
+          "net": "VREG_AVDD"
+        },
+        {
+          "number": "50",
+          "name": "VREG_FB",
+          "type": "input",
+          "net": "VCORE"
+        },
+        {
+          "number": "48",
+          "name": "VREG_LX",
+          "type": "input",
+          "net": "LX"
+        },
+        {
+          "number": "47",
+          "name": "VREG_PGND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "49",
+          "name": "VREG_VIN",
+          "type": "input",
+          "net": "+3V3"
+        },
+        {
+          "number": "21",
+          "name": "XIN",
+          "type": "input",
+          "net": "BASE_N_5"
+        },
+        {
+          "number": "12",
+          "name": "GPIO8",
+          "type": "bidirectional",
+          "net": "GPIO8"
+        },
+        {
+          "number": "22",
+          "name": "XOUT",
+          "type": "output",
+          "net": "BASE_N_7"
+        },
+        {
+          "number": "31",
+          "name": "GPIO19",
+          "type": "bidirectional",
+          "net": "BMP_INT"
+        },
+        {
+          "number": "2",
+          "name": "GPIO0",
+          "type": "bidirectional",
+          "net": "UART_TX"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:X2",
+      "mpn": "RP2350A0A4",
+      "dnp": false,
+      "page": "Processor",
+      "footprint": "FlightComputer:QFN60_7MM_REDUCEDEPAD"
+    },
+    {
+      "ref": "R21",
+      "value": "10K",
+      "package": "_0402NO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "!RESET"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R21",
+      "mpn": "",
+      "dnp": false,
+      "page": "Processor",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "R1",
+      "value": "200",
+      "package": "_0402NO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "ADC_AVDD"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "+3V3"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R1",
+      "mpn": "",
+      "dnp": false,
+      "page": "Processor",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "C19",
+      "value": "2.2uF",
+      "package": "_0402NO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "ADC_AVDD"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C19",
+      "mpn": "",
+      "dnp": false,
+      "page": "Processor",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "R14",
+      "value": "10",
+      "package": "_0402NO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "VREG_AVDD"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R14",
+      "mpn": "",
+      "dnp": false,
+      "page": "Processor",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "C21",
+      "value": "2.2uF",
+      "package": "_0402NO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "VREG_AVDD"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C21",
+      "mpn": "",
+      "dnp": false,
+      "page": "Processor",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "L1",
+      "value": "DFE252012F-3R3M=P2",
+      "package": "INDUCTOR_1007",
+      "pins": [
+        {
+          "number": "P$1",
+          "name": "1",
+          "type": "passive",
+          "net": "VCORE"
+        },
+        {
+          "number": "P$2",
+          "name": "2",
+          "type": "passive",
+          "net": "LX"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:L1",
+      "mpn": "",
+      "dnp": false,
+      "page": "Processor",
+      "footprint": "FlightComputer:INDUCTOR_1007"
+    },
+    {
+      "ref": "TP4",
+      "value": "TESTPOINT",
+      "package": "TESTPOINT_ROUND_1MM",
+      "pins": [
+        {
+          "number": "P$1",
+          "name": "P$1",
+          "type": "passive",
+          "net": "SWDIO"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:SWD",
+      "mpn": "",
+      "dnp": false,
+      "page": "Processor",
+      "footprint": "FlightComputer:TESTPOINT_ROUND_1MM"
+    },
+    {
+      "ref": "TP5",
+      "value": "TESTPOINT",
+      "package": "TESTPOINT_ROUND_1MM",
+      "pins": [
+        {
+          "number": "P$1",
+          "name": "P$1",
+          "type": "passive",
+          "net": "SWCLK"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:SWC",
+      "mpn": "",
+      "dnp": false,
+      "page": "Processor",
+      "footprint": "FlightComputer:TESTPOINT_ROUND_1MM"
+    },
+    {
+      "ref": "R16",
+      "value": "4.7k",
+      "package": "_0402NO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "SDA"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R16",
+      "mpn": "",
+      "dnp": false,
+      "page": "Interfaces",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "R17",
+      "value": "4.7k",
+      "package": "_0402NO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "SCL"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R17",
+      "mpn": "",
+      "dnp": false,
+      "page": "Interfaces",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "JQT1",
+      "value": "STEMMA_I2C_QTRA",
+      "package": "JST_SH4_RA",
+      "pins": [
+        {
+          "number": "1",
+          "name": "GND",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "4",
+          "name": "SCL",
+          "type": "passive",
+          "net": "SCL"
+        },
+        {
+          "number": "3",
+          "name": "SDA",
+          "type": "passive",
+          "net": "SDA"
+        },
+        {
+          "number": "2",
+          "name": "V+",
+          "type": "passive",
+          "net": "+3V3"
+        },
+        {
+          "number": "MT1",
+          "name": "MT",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "MT2",
+          "name": "MT",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:CONN1",
+      "mpn": "SM04B-SRSS-TB(LF)(SN)",
+      "dnp": false,
+      "page": "Interfaces",
+      "footprint": "FlightComputer:JST_SH4_RA"
+    },
+    {
+      "ref": "U5",
+      "value": "BNO085",
+      "package": "BNO080",
+      "pins": [
+        {
+          "number": "4",
+          "name": "BOOTN",
+          "type": "input",
+          "net": "BNO_BOOT_N"
+        },
+        {
+          "number": "9",
+          "name": "CAP",
+          "type": "passive",
+          "net": "BNO_CAP"
+        },
+        {
+          "number": "10",
+          "name": "CLKSEL0",
+          "type": "input",
+          "net": "GND"
+        },
+        {
+          "number": "26",
+          "name": "CLKSEL1/XOUT32",
+          "type": "output",
+          "net": "BNO_XOUT"
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "25",
+          "name": "GNDIO",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "18",
+          "name": "H_CSN",
+          "type": "input",
+          "net": "BNO_CS_N"
+        },
+        {
+          "number": "14",
+          "name": "H_INTN",
+          "type": "output",
+          "net": "BNO_INT_N"
+        },
+        {
+          "number": "17",
+          "name": "H_SA0/MOSI",
+          "type": "input",
+          "net": "GND"
+        },
+        {
+          "number": "19",
+          "name": "H_SCL/SCLK/RX",
+          "type": "bidirectional",
+          "net": "SCL"
+        },
+        {
+          "number": "20",
+          "name": "H_SDA/MISO/TX",
+          "type": "bidirectional",
+          "net": "SDA"
+        },
+        {
+          "number": "11",
+          "name": "NRST",
+          "type": "input",
+          "net": "BNO_RESET_N"
+        },
+        {
+          "number": "6",
+          "name": "PS0/WAKE",
+          "type": "input",
+          "net": "GND"
+        },
+        {
+          "number": "5",
+          "name": "PS1",
+          "type": "input",
+          "net": "GND"
+        },
+        {
+          "number": "15",
+          "name": "S_SCL",
+          "type": "bidirectional",
+          "net": "BNO_AUX_SCL"
+        },
+        {
+          "number": "16",
+          "name": "S_SDA",
+          "type": "bidirectional",
+          "net": "BNO_AUX_SDA"
+        },
+        {
+          "number": "3",
+          "name": "VDD",
+          "type": "power_in",
+          "net": "+3V3"
+        },
+        {
+          "number": "28",
+          "name": "VDDIO",
+          "type": "power_in",
+          "net": "+3V3"
+        },
+        {
+          "number": "27",
+          "name": "XIN32",
+          "type": "input",
+          "net": "BNO_XIN"
+        },
+        {
+          "number": "1",
+          "name": "RESV_NC",
+          "type": "no_connect",
+          "net": null
+        },
+        {
+          "number": "7",
+          "name": "RESV_NC",
+          "type": "no_connect",
+          "net": null
+        },
+        {
+          "number": "8",
+          "name": "RESV_NC",
+          "type": "no_connect",
+          "net": null
+        },
+        {
+          "number": "12",
+          "name": "RESV_NC",
+          "type": "no_connect",
+          "net": null
+        },
+        {
+          "number": "13",
+          "name": "RESV_NC",
+          "type": "no_connect",
+          "net": null
+        },
+        {
+          "number": "21",
+          "name": "RESV_NC",
+          "type": "no_connect",
+          "net": null
+        },
+        {
+          "number": "22",
+          "name": "RESV_NC",
+          "type": "no_connect",
+          "net": null
+        },
+        {
+          "number": "23",
+          "name": "RESV_NC",
+          "type": "no_connect",
+          "net": null
+        },
+        {
+          "number": "24",
+          "name": "RESV_NC",
+          "type": "no_connect",
+          "net": null
+        }
+      ],
+      "source": "Adafruit-BNO08x-PCB/Adafruit_BNO08x.sch:U1",
+      "mpn": "BNO085",
+      "dnp": false,
+      "page": "Sensors",
+      "footprint": "FlightComputer:BNO080"
+    },
+    {
+      "ref": "Y2",
+      "value": "32.768kHz",
+      "package": "XTAL3215",
+      "pins": [
+        {
+          "number": "P$1",
+          "name": "P$1",
+          "type": "bidirectional",
+          "net": "BNO_XIN"
+        },
+        {
+          "number": "P$2",
+          "name": "P$2",
+          "type": "bidirectional",
+          "net": "BNO_XOUT"
+        }
+      ],
+      "source": "Adafruit-BNO08x-PCB/Adafruit_BNO08x.sch:X1",
+      "mpn": "",
+      "dnp": false,
+      "page": "Sensors",
+      "footprint": "FlightComputer:XTAL3215"
+    },
+    {
+      "ref": "C31",
+      "value": "100nF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "BNO_CAP"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "package": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "source": "Custom integration",
+      "dnp": false,
+      "page": "Sensors",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "ref": "C32",
+      "value": "100nF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "package": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "source": "Custom integration",
+      "dnp": false,
+      "page": "Sensors",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "ref": "C33",
+      "value": "22pF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "BNO_XIN"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "package": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "source": "Custom integration",
+      "dnp": false,
+      "page": "Sensors",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "ref": "C34",
+      "value": "22pF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "BNO_XOUT"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "package": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "source": "Custom integration",
+      "dnp": false,
+      "page": "Sensors",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "ref": "C35",
+      "value": "100nF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "package": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "source": "Custom integration",
+      "dnp": false,
+      "page": "Sensors",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "ref": "R41",
+      "value": "10k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "BNO_BOOT_N"
+        }
+      ],
+      "package": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "source": "Custom integration",
+      "dnp": false,
+      "page": "Sensors",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "R42",
+      "value": "10k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "BNO_RESET_N"
+        }
+      ],
+      "package": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "source": "Custom integration",
+      "dnp": false,
+      "page": "Sensors",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "R43",
+      "value": "10k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "BNO_CS_N"
+        }
+      ],
+      "package": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "source": "Custom integration",
+      "dnp": false,
+      "page": "Sensors",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "R44",
+      "value": "10k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "BNO_AUX_SCL"
+        }
+      ],
+      "package": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "source": "Custom integration",
+      "dnp": false,
+      "page": "Sensors",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "R45",
+      "value": "10k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "BNO_AUX_SDA"
+        }
+      ],
+      "package": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "source": "Custom integration",
+      "dnp": false,
+      "page": "Sensors",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "U6",
+      "value": "BMP581",
+      "package": "BMP388",
+      "pins": [
+        {
+          "number": "6",
+          "name": "CSB",
+          "type": "input",
+          "net": "+3V3"
+        },
+        {
+          "number": "3",
+          "name": "GND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "8",
+          "name": "GND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "9",
+          "name": "GND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "7",
+          "name": "INT",
+          "type": "output",
+          "net": "BMP_INT"
+        },
+        {
+          "number": "2",
+          "name": "SCK",
+          "type": "input",
+          "net": "SCL"
+        },
+        {
+          "number": "4",
+          "name": "SDI",
+          "type": "input",
+          "net": "SDA"
+        },
+        {
+          "number": "5",
+          "name": "SDO",
+          "type": "input",
+          "net": "GND"
+        },
+        {
+          "number": "10",
+          "name": "VDD",
+          "type": "power_in",
+          "net": "+3V3"
+        },
+        {
+          "number": "1",
+          "name": "VDDIO",
+          "type": "power_in",
+          "net": "+3V3"
+        }
+      ],
+      "source": "Adafruit-BMP5xx-Temperature-and-Pressure-Sensor-PCB/Adafruit BMP581 Temperature and Pressure Sensor rev B.sch:IC1",
+      "mpn": "BMP581",
+      "dnp": false,
+      "page": "Sensors",
+      "footprint": "FlightComputer:BMP388"
+    },
+    {
+      "ref": "C36",
+      "value": "100nF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "package": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "source": "Custom integration",
+      "dnp": false,
+      "page": "Sensors",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "ref": "C37",
+      "value": "100nF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "package": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "source": "Custom integration",
+      "dnp": false,
+      "page": "Sensors",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "ref": "JSD1",
+      "value": "MicroSD",
+      "package": "MICROSD",
+      "pins": [
+        {
+          "number": "CD1",
+          "name": "CARD_DETECT",
+          "type": "passive",
+          "net": "SD_DETECT_N"
+        },
+        {
+          "number": "CD2",
+          "name": "CARD_DETECT",
+          "type": "passive",
+          "net": "SD_DETECT_N"
+        },
+        {
+          "number": "2",
+          "name": "CS",
+          "type": "input",
+          "net": "SD_CS"
+        },
+        {
+          "number": "8",
+          "name": "DAT1",
+          "type": "bidirectional",
+          "net": "SD_DAT1_UNUSED"
+        },
+        {
+          "number": "1",
+          "name": "DAT2",
+          "type": "bidirectional",
+          "net": "SD_DAT2_UNUSED"
+        },
+        {
+          "number": "3",
+          "name": "DATA_IN",
+          "type": "input",
+          "net": "SD_MOSI"
+        },
+        {
+          "number": "7",
+          "name": "DATA_OUT",
+          "type": "output",
+          "net": "SD_MISO"
+        },
+        {
+          "number": "MT1",
+          "name": "MOUNTING",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "MT2",
+          "name": "MOUNTING",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "5",
+          "name": "SCLK",
+          "type": "input",
+          "net": "SD_CLK"
+        },
+        {
+          "number": "4",
+          "name": "SD_VDD",
+          "type": "power_in",
+          "net": "+3V3"
+        },
+        {
+          "number": "6",
+          "name": "SD_VSS",
+          "type": "power_in",
+          "net": "GND"
+        }
+      ],
+      "source": "Adafruit-Feather-RP2040-Adalogger-PCB/Adafruit Feather RP2040 Adalogger.sch:X2",
+      "mpn": "",
+      "dnp": false,
+      "page": "Interfaces",
+      "footprint": "FlightComputer:MICROSD"
+    },
+    {
+      "ref": "R31",
+      "value": "47k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "SD_MISO"
+        }
+      ],
+      "package": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "source": "Custom integration",
+      "dnp": false,
+      "page": "Interfaces",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "R32",
+      "value": "47k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "SD_MOSI"
+        }
+      ],
+      "package": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "source": "Custom integration",
+      "dnp": false,
+      "page": "Interfaces",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "R33",
+      "value": "47k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "SD_CS"
+        }
+      ],
+      "package": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "source": "Custom integration",
+      "dnp": false,
+      "page": "Interfaces",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "R34",
+      "value": "47k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "SD_DAT1_UNUSED"
+        }
+      ],
+      "package": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "source": "Custom integration",
+      "dnp": false,
+      "page": "Interfaces",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "R35",
+      "value": "47k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "SD_DAT2_UNUSED"
+        }
+      ],
+      "package": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "source": "Custom integration",
+      "dnp": false,
+      "page": "Interfaces",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "R36",
+      "value": "47k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "SD_DETECT_N"
+        }
+      ],
+      "package": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "source": "Custom integration",
+      "dnp": false,
+      "page": "Interfaces",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "C38",
+      "value": "10uF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "package": "Capacitor_SMD:C_0805_2012Metric",
+      "mpn": "",
+      "source": "Custom integration",
+      "dnp": false,
+      "page": "Interfaces",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric"
+    },
+    {
+      "ref": "JTAG1",
+      "value": "REMOVE BEFORE FLIGHT",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "ENABLE"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "package": "Connector_JST:JST_SH_BM02B-SRSS-TB_1x02-1MP_P1.00mm_Vertical",
+      "mpn": "BM02B-SRSS-TB(LF)(SN)",
+      "source": "Custom integration",
+      "dnp": false,
+      "page": "Power",
+      "footprint": "Connector_JST:JST_SH_BM02B-SRSS-TB_1x02-1MP_P1.00mm_Vertical"
+    },
+    {
+      "ref": "JSERVO1",
+      "value": "4 x servo: S / BAT / GND",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "SERVO1"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "VBAT_SERVO"
+        },
+        {
+          "number": "3",
+          "name": "3",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "4",
+          "name": "4",
+          "type": "passive",
+          "net": "SERVO2"
+        },
+        {
+          "number": "5",
+          "name": "5",
+          "type": "passive",
+          "net": "VBAT_SERVO"
+        },
+        {
+          "number": "6",
+          "name": "6",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "7",
+          "name": "7",
+          "type": "passive",
+          "net": "SERVO3"
+        },
+        {
+          "number": "8",
+          "name": "8",
+          "type": "passive",
+          "net": "VBAT_SERVO"
+        },
+        {
+          "number": "9",
+          "name": "9",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "10",
+          "name": "10",
+          "type": "passive",
+          "net": "SERVO4"
+        },
+        {
+          "number": "11",
+          "name": "11",
+          "type": "passive",
+          "net": "VBAT_SERVO"
+        },
+        {
+          "number": "12",
+          "name": "12",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "package": "FlightComputer:Servo_3x04_P2.54mm",
+      "mpn": "TSW-104-07-T-T",
+      "source": "Custom integration",
+      "dnp": false,
+      "page": "Interfaces",
+      "footprint": "FlightComputer:Servo_3x04_P2.54mm"
+    },
+    {
+      "ref": "R51",
+      "value": "100k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "SERVO1"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "package": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "source": "Custom integration",
+      "dnp": false,
+      "page": "Interfaces",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "R52",
+      "value": "100k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "SERVO2"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "package": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "source": "Custom integration",
+      "dnp": false,
+      "page": "Interfaces",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "R53",
+      "value": "100k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "SERVO3"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "package": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "source": "Custom integration",
+      "dnp": false,
+      "page": "Interfaces",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "R54",
+      "value": "100k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "SERVO4"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "package": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "source": "Custom integration",
+      "dnp": false,
+      "page": "Interfaces",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "U7",
+      "value": "TPS22919",
+      "pins": [
+        {
+          "number": "1",
+          "name": "VIN",
+          "type": "power_in",
+          "net": "VBAT"
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "3",
+          "name": "ON",
+          "type": "input",
+          "net": "ENABLE"
+        },
+        {
+          "number": "4",
+          "name": "NC",
+          "type": "no_connect",
+          "net": null
+        },
+        {
+          "number": "5",
+          "name": "QOD",
+          "type": "passive",
+          "net": "SERVO_QOD"
+        },
+        {
+          "number": "6",
+          "name": "VOUT",
+          "type": "power_out",
+          "net": "VBAT_SERVO"
+        }
+      ],
+      "package": "Package_TO_SOT_SMD:SOT-363_SC-70-6",
+      "mpn": "TPS22919DCKR",
+      "source": "Custom integration",
+      "dnp": false,
+      "page": "Power",
+      "footprint": "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+    },
+    {
+      "ref": "R55",
+      "value": "1k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "VBAT_SERVO"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "SERVO_QOD"
+        }
+      ],
+      "package": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "source": "Custom integration",
+      "dnp": false,
+      "page": "Power",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "C39",
+      "value": "10uF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "VBAT_SERVO"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "package": "Capacitor_SMD:C_0805_2012Metric",
+      "mpn": "",
+      "source": "Custom integration",
+      "dnp": false,
+      "page": "Power",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric"
+    },
+    {
+      "ref": "C40",
+      "value": "1uF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "VBAT"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "package": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "source": "Custom integration",
+      "dnp": false,
+      "page": "Power",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "ref": "#FLG01",
+      "value": "PWR_FLAG",
+      "pins": [
+        {
+          "number": "1",
+          "name": "pwr",
+          "type": "power_out",
+          "net": "VBUS"
+        }
+      ],
+      "package": "",
+      "mpn": "",
+      "source": "Custom integration",
+      "dnp": false,
+      "page": "Power",
+      "footprint": ""
+    },
+    {
+      "ref": "#FLG02",
+      "value": "PWR_FLAG",
+      "pins": [
+        {
+          "number": "1",
+          "name": "pwr",
+          "type": "power_out",
+          "net": "VBAT"
+        }
+      ],
+      "package": "",
+      "mpn": "",
+      "source": "Custom integration",
+      "dnp": false,
+      "page": "Power",
+      "footprint": ""
+    },
+    {
+      "ref": "#FLG03",
+      "value": "PWR_FLAG",
+      "pins": [
+        {
+          "number": "1",
+          "name": "pwr",
+          "type": "power_out",
+          "net": "VSYS"
+        }
+      ],
+      "package": "",
+      "mpn": "",
+      "source": "Custom integration",
+      "dnp": false,
+      "page": "Power",
+      "footprint": ""
+    },
+    {
+      "ref": "#FLG04",
+      "value": "PWR_FLAG",
+      "pins": [
+        {
+          "number": "1",
+          "name": "pwr",
+          "type": "power_out",
+          "net": "GND"
+        }
+      ],
+      "package": "",
+      "mpn": "",
+      "source": "Custom integration",
+      "dnp": false,
+      "page": "Power",
+      "footprint": ""
+    },
+    {
+      "ref": "#FLG05",
+      "value": "PWR_FLAG",
+      "pins": [
+        {
+          "number": "1",
+          "name": "pwr",
+          "type": "power_out",
+          "net": "VCORE"
+        }
+      ],
+      "package": "",
+      "mpn": "",
+      "source": "Custom integration",
+      "dnp": false,
+      "page": "Power",
+      "footprint": ""
+    },
+    {
+      "ref": "#FLG06",
+      "value": "PWR_FLAG",
+      "pins": [
+        {
+          "number": "1",
+          "name": "pwr",
+          "type": "power_out",
+          "net": "ADC_AVDD"
+        }
+      ],
+      "package": "",
+      "mpn": "",
+      "source": "Custom integration",
+      "dnp": false,
+      "page": "Power",
+      "footprint": ""
+    },
+    {
+      "ref": "#FLG07",
+      "value": "PWR_FLAG",
+      "pins": [
+        {
+          "number": "1",
+          "name": "pwr",
+          "type": "power_out",
+          "net": "VREG_AVDD"
+        }
+      ],
+      "package": "",
+      "mpn": "",
+      "source": "Custom integration",
+      "dnp": false,
+      "page": "Power",
+      "footprint": ""
+    }
+  ]
+}

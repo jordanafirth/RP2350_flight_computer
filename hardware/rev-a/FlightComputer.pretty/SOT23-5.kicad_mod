@@ -1,0 +1,178 @@
+(footprint "SOT23-5"
+  (version 20241229)
+  (generator "flight_computer_generator")
+  (layer "F.Cu")
+  (descr "Small Outline Transistor - 5 Pin")
+  (property "Reference" "REF**"
+    (at 1.978 0 0)
+    (unlocked yes)
+    (layer "F.SilkS")
+    (effects
+      (font
+        (size 0.692831 0.692831)
+        (thickness 0.119969))
+      (justify right top)))
+  (property "Value" "SOT23-5"
+    (at 5.134 11.2395 0)
+    (unlocked yes)
+    (layer "F.Fab")
+    (effects
+      (font
+        (size 0.776224 0.776224)
+        (thickness 0.036576))
+      (justify left bottom)))
+  (property "Datasheet" ""
+    (at 0 0 180)
+    (layer "F.Fab")
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Description" ""
+    (at 0 0 180)
+    (layer "F.Fab")
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (duplicate_pad_numbers_are_jumpers no)
+  (fp_line
+    (start 1.65 -0.8)
+    (end 1.65 0.8)
+    (stroke
+      (width 0.2032)
+      (type solid))
+    (layer "F.SilkS"))
+  (fp_line
+    (start -0.4 -1.05)
+    (end 0.4 -1.05)
+    (stroke
+      (width 0.2032)
+      (type solid))
+    (layer "F.SilkS"))
+  (fp_line
+    (start -1.65 -0.8)
+    (end -1.65 0.8)
+    (stroke
+      (width 0.2032)
+      (type solid))
+    (layer "F.SilkS"))
+  (fp_line
+    (start 1.4224 0.8104)
+    (end -1.4224 0.8104)
+    (stroke
+      (width 0.2032)
+      (type solid))
+    (layer "F.Fab"))
+  (fp_line
+    (start 1.4224 -0.8104)
+    (end 1.4224 0.8104)
+    (stroke
+      (width 0.2032)
+      (type solid))
+    (layer "F.Fab"))
+  (fp_line
+    (start -1.4224 0.8104)
+    (end -1.4224 -0.8104)
+    (stroke
+      (width 0.2032)
+      (type solid))
+    (layer "F.Fab"))
+  (fp_line
+    (start -1.4224 -0.8104)
+    (end 1.4224 -0.8104)
+    (stroke
+      (width 0.2032)
+      (type solid))
+    (layer "F.Fab"))
+  (fp_poly
+    (pts
+      (xy 0.7 1.5)
+      (xy 1.2 1.5)
+      (xy 1.2 0.85)
+      (xy 0.7 0.85))
+    (stroke
+      (width 0)
+      (type default))
+    (fill yes)
+    (layer "F.Fab"))
+  (fp_poly
+    (pts
+      (xy 0.7 -0.85)
+      (xy 1.2 -0.85)
+      (xy 1.2 -1.5)
+      (xy 0.7 -1.5))
+    (stroke
+      (width 0)
+      (type default))
+    (fill yes)
+    (layer "F.Fab"))
+  (fp_poly
+    (pts
+      (xy -0.25 1.5)
+      (xy 0.25 1.5)
+      (xy 0.25 0.85)
+      (xy -0.25 0.85))
+    (stroke
+      (width 0)
+      (type default))
+    (fill yes)
+    (layer "F.Fab"))
+  (fp_poly
+    (pts
+      (xy -1.2 1.5)
+      (xy -0.7 1.5)
+      (xy -0.7 0.85)
+      (xy -1.2 0.85))
+    (stroke
+      (width 0)
+      (type default))
+    (fill yes)
+    (layer "F.Fab"))
+  (fp_poly
+    (pts
+      (xy -1.2 -0.85)
+      (xy -0.7 -0.85)
+      (xy -0.7 -1.5)
+      (xy -1.2 -1.5))
+    (stroke
+      (width 0)
+      (type default))
+    (fill yes)
+    (layer "F.Fab"))
+  (pad "1" smd rect
+    (at -0.95 1.3001 0.0)
+    (size 0.55 1.2)
+    (layers "F.Cu" "F.Mask" "F.Paste")
+    (solder_mask_margin 0.0508)
+    (solder_paste_margin 0)
+    (thermal_bridge_angle 0))
+  (pad "2" smd rect
+    (at 0 1.3001 0.0)
+    (size 0.55 1.2)
+    (layers "F.Cu" "F.Mask" "F.Paste")
+    (solder_mask_margin 0.0508)
+    (solder_paste_margin 0)
+    (thermal_bridge_angle 0))
+  (pad "3" smd rect
+    (at 0.95 1.3001 0.0)
+    (size 0.55 1.2)
+    (layers "F.Cu" "F.Mask" "F.Paste")
+    (solder_mask_margin 0.0508)
+    (solder_paste_margin 0)
+    (thermal_bridge_angle 0))
+  (pad "4" smd rect
+    (at 0.95 -1.3001 0.0)
+    (size 0.55 1.2)
+    (layers "F.Cu" "F.Mask" "F.Paste")
+    (solder_mask_margin 0.0508)
+    (solder_paste_margin 0)
+    (thermal_bridge_angle 0))
+  (pad "5" smd rect
+    (at -0.95 -1.3001 0.0)
+    (size 0.55 1.2)
+    (layers "F.Cu" "F.Mask" "F.Paste")
+    (solder_mask_margin 0.0508)
+    (solder_paste_margin 0)
+    (thermal_bridge_angle 0))
+  (embedded_fonts no))

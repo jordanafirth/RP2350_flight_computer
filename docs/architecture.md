@@ -46,10 +46,12 @@ Provide hardware capable of the existing 50 Hz logging workload, with independen
 
 Baseline is BNO085 with accepted +/-8 g range. A +/-16 g upgrade is an unresolved preference, not authorization for an additional sensor. Route reset/interrupt signals where useful and support recovery from sensor resets. Do not prescribe an interface change until reference and firmware review justify it.
 
-Select a current-production barometer compatible with 3.3 V logic. BMP390 is an initial candidate only, subject to sourcing, layout and driver review. Preserve access to its pressure opening and enclosure venting.
+BMP581 is selected for the draft, using the published Adafruit sensor core and manufacturer pin/strap documentation. BMP390 was an earlier candidate. Preserve access to the pressure opening and enclosure venting. Exact production supply remains unconfirmed.
 
 ## Mechanical approach
 
 Start with approximately 50.8 x 22.8 mm Feather outline and existing mounting geometry, subject to source-CAD measurement. The user's board has its SD socket on top. Measure underside clearance, mounting-hole keepouts, vias and trace constraints before placing sensors there. Consider either-face sensor placement if it improves assembly cost or routing without compromising package size.
+
+The user specified the battery beneath the board with sensor clearance, and its socket in the standard Feather location on top. The custom design has no display connector.
 
 A candidate GPIO allocation is recorded in [pin-allocation.md](pin-allocation.md), based on the pinned references. It preserves the RP2350 Feather's external SPI pins and uses a separate hardware SPI peripheral for microSD. The allocation is provisional until schematic review and the mechanical placement study.

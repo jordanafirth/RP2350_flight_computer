@@ -1,0 +1,192 @@
+(footprint "SK6805_1515"
+  (version 20241229)
+  (generator "flight_computer_generator")
+  (layer "F.Cu")
+  (property "Reference" "REF**"
+    (at -1.905 -2.159 0)
+    (unlocked yes)
+    (layer "F.SilkS")
+    (effects
+      (font
+        (size 0.64455 0.64455)
+        (thickness 0.16825))
+      (justify left bottom)))
+  (property "Value" "SK6805_1515"
+    (at -1.6129 3.0353 90)
+    (unlocked yes)
+    (layer "F.Fab")
+    (effects
+      (font
+        (size 0.719328 0.719328)
+        (thickness 0.093472))
+      (justify left bottom)))
+  (property "Datasheet" ""
+    (at 0 0 0)
+    (layer "F.Fab")
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Description" ""
+    (at 0 0 0)
+    (layer "F.Fab")
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (duplicate_pad_numbers_are_jumpers no)
+  (fp_line
+    (start -0.8 -0.9)
+    (end 0.8 -0.9)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (layer "F.SilkS"))
+  (fp_line
+    (start -0.8 0.9)
+    (end 0.8 0.9)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (layer "F.SilkS"))
+  (fp_line
+    (start -0.762 0)
+    (end 0 0)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (layer "F.SilkS"))
+  (fp_line
+    (start -0.189 0)
+    (end -0.739 0)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (layer "F.SilkS"))
+  (fp_line
+    (start 0 0)
+    (end 0 0.889)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (layer "F.SilkS"))
+  (fp_line
+    (start 0.4064 -0.0762)
+    (end 0.6604 -0.0762)
+    (stroke
+      (width 0.127)
+      (type solid))
+    (layer "F.SilkS"))
+  (fp_line
+    (start 0.5334 0.0762)
+    (end 0.4064 -0.0762)
+    (stroke
+      (width 0.127)
+      (type solid))
+    (layer "F.SilkS"))
+  (fp_line
+    (start 0.6604 -0.0762)
+    (end 0.5334 0.0762)
+    (stroke
+      (width 0.127)
+      (type solid))
+    (layer "F.SilkS"))
+  (fp_line
+    (start -0.75 -0.75)
+    (end 0.25 -0.75)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (layer "F.Fab"))
+  (fp_line
+    (start -0.75 0.75)
+    (end -0.75 -0.75)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (layer "F.Fab"))
+  (fp_line
+    (start 0.25 -0.75)
+    (end 0.25 0.75)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (layer "F.Fab"))
+  (fp_line
+    (start 0.25 0.75)
+    (end -0.75 0.75)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (layer "F.Fab"))
+  (fp_line
+    (start 0.25 0.75)
+    (end 0.35 0.75)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (layer "F.Fab"))
+  (fp_line
+    (start 0.35 -0.75)
+    (end 0.25 -0.75)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (layer "F.Fab"))
+  (fp_line
+    (start 0.35 -0.75)
+    (end 0.75 -0.75)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (layer "F.Fab"))
+  (fp_line
+    (start 0.35 0.75)
+    (end 0.35 -0.75)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (layer "F.Fab"))
+  (fp_line
+    (start 0.75 -0.75)
+    (end 0.75 0.75)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (layer "F.Fab"))
+  (fp_line
+    (start 0.75 0.75)
+    (end 0.35 0.75)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (layer "F.Fab"))
+  (pad "1" smd rect
+    (at -0.5 0.45 0.0)
+    (size 0.5 0.5)
+    (layers "F.Cu" "F.Mask" "F.Paste")
+    (solder_mask_margin 0.0508)
+    (solder_paste_margin 0)
+    (thermal_bridge_angle 0))
+  (pad "2" smd rect
+    (at 0.5 0.45 0.0)
+    (size 0.5 0.5)
+    (layers "F.Cu" "F.Mask" "F.Paste")
+    (solder_mask_margin 0.0508)
+    (solder_paste_margin 0)
+    (thermal_bridge_angle 0))
+  (pad "3" smd rect
+    (at 0.5 -0.45 0.0)
+    (size 0.5 0.5)
+    (layers "F.Cu" "F.Mask" "F.Paste")
+    (solder_mask_margin 0.0508)
+    (solder_paste_margin 0)
+    (thermal_bridge_angle 0))
+  (pad "4" smd rect
+    (at -0.5 -0.45 0.0)
+    (size 0.5 0.5)
+    (layers "F.Cu" "F.Mask" "F.Paste")
+    (solder_mask_margin 0.0508)
+    (solder_paste_margin 0)
+    (thermal_bridge_angle 0))
+  (embedded_fonts no))

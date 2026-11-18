@@ -1,0 +1,90 @@
+Reference,Value,MPN,Footprint,DNP,Source
+C1,10uF,,FlightComputer:0805-NO,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C1
+C4,10uF,,FlightComputer:0805-NO,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C4
+D1,RED,,FlightComputer:CHIPLED_0603_NOOUTLINE,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:L
+R7,10K,,FlightComputer:_0402NO,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R7
+SW1,KMR2,,FlightComputer:BTN_RKB2_4.6X2.8,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:SW1
+U2,RT9080-3.3,RT9080-33GJ5,FlightComputer:SOT23-5,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:U2
+J1,HEADER-1X16,,FlightComputer:1X16_ROUND,True,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:JP1
+JBAT1,JSTPH,S2B-PH-SM4-TB(LF)(SN),FlightComputer:JSTPH2_BATT,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:X1
+J2,HEADER-1X12,,FlightComputer:1X12_ROUND,True,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:JP3
+U3,MCP73831T-2ACI/OT,MCP73831T-2ACI/OT,FlightComputer:SOT23-5,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:U3
+D2,ORANGE,,FlightComputer:CHIPLED_0603_NOOUTLINE,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:CHG
+R2,10K,,FlightComputer:_0402NO,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R2
+C20,10uF,,FlightComputer:0805-NO,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C20
+R8,5.1k,RC0402FR-075K1L,FlightComputer:_0402NO,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R8
+C5,10uF,,FlightComputer:0603-NO,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C5
+D5,WS2812B_SK6805_1515,,FlightComputer:SK6805_1515,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:LED1
+U1,8MB QSPI,,FlightComputer:USON8_4X4,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:U1
+R5,10K,,FlightComputer:_0402NO,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R5
+C9,0.1uF,,FlightComputer:_0402NO,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C9
+C10,1uF,,FlightComputer:_0402NO,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C10
+D4,PMEG2020AEA,,FlightComputer:SOD-323F,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:D4
+Q3,DMG3415UFY,,FlightComputer:DFN2015-3,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:Q3
+R3,10K,,FlightComputer:_0402NO,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R3
+JUSB1,USB Type C,USB4110-GF-A,Connector_USB:USB_C_Receptacle_GCT_USB4110,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:X6
+R12,5.1K,,FlightComputer:_0402NO,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R12
+R13,5.1K,,FlightComputer:_0402NO,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R13
+Y1,12MHz/10pF/50ohm,,FlightComputer:CRYSTAL_2.5X2,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:Y1
+R4,10K,,FlightComputer:_0402NO,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R4
+C6,0.1uF,,FlightComputer:_0402NO,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C6
+C7,0.1uF,,FlightComputer:_0402NO,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C7
+C8,10uF_0603,,FlightComputer:_0603MP,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C8
+C11,1uF,,FlightComputer:_0402NO,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C11
+C12,0.1uF,,FlightComputer:_0402NO,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C12
+C13,10uF_0603,,FlightComputer:_0603MP,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C13
+C14,0.1uF,,FlightComputer:_0402NO,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C14
+C15,1uF,,FlightComputer:_0402NO,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C15
+C16,0.1uF,,FlightComputer:_0402NO,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C16
+C2,15pF,,FlightComputer:_0402NO,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C2
+C3,15pF,,FlightComputer:_0402NO,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C3
+R6,1K,,FlightComputer:_0402NO,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R6
+R9,27 ohm,,FlightComputer:_0402NO,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R9
+R10,27 ohm,,FlightComputer:_0402NO,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R10
+SW2,KMR2,,FlightComputer:BTN_RKB2_4.6X2.8,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:SW2
+R11,1K,,FlightComputer:_0402NO,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R11
+C17,1uF,,FlightComputer:_0402NO,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C17
+C18,0.1uF,,FlightComputer:_0402NO,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C18
+U4,RP2350A (A4),RP2350A0A4,FlightComputer:QFN60_7MM_REDUCEDEPAD,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:X2
+R21,10K,,FlightComputer:_0402NO,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R21
+R1,200,,FlightComputer:_0402NO,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R1
+C19,2.2uF,,FlightComputer:_0402NO,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C19
+R14,10,,FlightComputer:_0402NO,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R14
+C21,2.2uF,,FlightComputer:_0402NO,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C21
+L1,DFE252012F-3R3M=P2,,FlightComputer:INDUCTOR_1007,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:L1
+R16,4.7k,,FlightComputer:_0402NO,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R16
+R17,4.7k,,FlightComputer:_0402NO,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R17
+JQT1,STEMMA_I2C_QTRA,SM04B-SRSS-TB(LF)(SN),FlightComputer:JST_SH4_RA,False,Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:CONN1
+U5,BNO085,BNO085,FlightComputer:BNO080,False,Adafruit-BNO08x-PCB/Adafruit_BNO08x.sch:U1
+Y2,32.768kHz,,FlightComputer:XTAL3215,False,Adafruit-BNO08x-PCB/Adafruit_BNO08x.sch:X1
+C31,100nF,,Capacitor_SMD:C_0603_1608Metric,False,Custom integration
+C32,100nF,,Capacitor_SMD:C_0603_1608Metric,False,Custom integration
+C33,22pF,,Capacitor_SMD:C_0603_1608Metric,False,Custom integration
+C34,22pF,,Capacitor_SMD:C_0603_1608Metric,False,Custom integration
+C35,100nF,,Capacitor_SMD:C_0603_1608Metric,False,Custom integration
+R41,10k,,Resistor_SMD:R_0603_1608Metric,False,Custom integration
+R42,10k,,Resistor_SMD:R_0603_1608Metric,False,Custom integration
+R43,10k,,Resistor_SMD:R_0603_1608Metric,False,Custom integration
+R44,10k,,Resistor_SMD:R_0603_1608Metric,False,Custom integration
+R45,10k,,Resistor_SMD:R_0603_1608Metric,False,Custom integration
+U6,BMP581,BMP581,FlightComputer:BMP388,False,Adafruit-BMP5xx-Temperature-and-Pressure-Sensor-PCB/Adafruit BMP581 Temperature and Pressure Sensor rev B.sch:IC1
+C36,100nF,,Capacitor_SMD:C_0603_1608Metric,False,Custom integration
+C37,100nF,,Capacitor_SMD:C_0603_1608Metric,False,Custom integration
+JSD1,MicroSD,,FlightComputer:MICROSD,False,Adafruit-Feather-RP2040-Adalogger-PCB/Adafruit Feather RP2040 Adalogger.sch:X2
+R31,47k,,Resistor_SMD:R_0603_1608Metric,False,Custom integration
+R32,47k,,Resistor_SMD:R_0603_1608Metric,False,Custom integration
+R33,47k,,Resistor_SMD:R_0603_1608Metric,False,Custom integration
+R34,47k,,Resistor_SMD:R_0603_1608Metric,False,Custom integration
+R35,47k,,Resistor_SMD:R_0603_1608Metric,False,Custom integration
+R36,47k,,Resistor_SMD:R_0603_1608Metric,False,Custom integration
+C38,10uF,,Capacitor_SMD:C_0805_2012Metric,False,Custom integration
+JTAG1,REMOVE BEFORE FLIGHT,BM02B-SRSS-TB(LF)(SN),Connector_JST:JST_SH_BM02B-SRSS-TB_1x02-1MP_P1.00mm_Vertical,False,Custom integration
+JSERVO1,4 x servo: S / BAT / GND,TSW-104-07-T-T,FlightComputer:Servo_3x04_P2.54mm,False,Custom integration
+R51,100k,,Resistor_SMD:R_0603_1608Metric,False,Custom integration
+R52,100k,,Resistor_SMD:R_0603_1608Metric,False,Custom integration
+R53,100k,,Resistor_SMD:R_0603_1608Metric,False,Custom integration
+R54,100k,,Resistor_SMD:R_0603_1608Metric,False,Custom integration
+U7,TPS22919,TPS22919DCKR,Package_TO_SOT_SMD:SOT-363_SC-70-6,False,Custom integration
+R55,1k,,Resistor_SMD:R_0603_1608Metric,False,Custom integration
+C39,10uF,,Capacitor_SMD:C_0805_2012Metric,False,Custom integration
+C40,1uF,,Capacitor_SMD:C_0603_1608Metric,False,Custom integration

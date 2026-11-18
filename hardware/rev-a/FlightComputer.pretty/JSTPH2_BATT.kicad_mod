@@ -1,0 +1,207 @@
+(footprint "JSTPH2_BATT"
+  (version 20241229)
+  (generator "flight_computer_generator")
+  (layer "F.Cu")
+  (descr "2-Pin JST PH Series Right-Angle Connector (+/- for batteries)")
+  (property "Reference" "REF**"
+    (at -2.2225 -1.9685 0)
+    (unlocked yes)
+    (layer "F.SilkS")
+    (effects
+      (font
+        (size 0.692831 0.692831)
+        (thickness 0.119969))
+      (justify left bottom)))
+  (property "Value" "JSTPH2_BATT"
+    (at -1.8415 -1.524 0)
+    (unlocked yes)
+    (layer "F.Fab")
+    (effects
+      (font
+        (size 0.776224 0.776224)
+        (thickness 0.036576))
+      (justify left bottom)))
+  (property "Datasheet" ""
+    (at 0 0 0)
+    (layer "F.Fab")
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Description" ""
+    (at 0 0 0)
+    (layer "F.Fab")
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (duplicate_pad_numbers_are_jumpers no)
+  (fp_line
+    (start -4 3.103)
+    (end -4 -0.897)
+    (stroke
+      (width 0.2032)
+      (type solid))
+    (layer "F.SilkS"))
+  (fp_line
+    (start -3.15 0.857)
+    (end -3.15 3.103)
+    (stroke
+      (width 0.2032)
+      (type solid))
+    (layer "F.SilkS"))
+  (fp_line
+    (start -3.15 3.103)
+    (end -4 3.103)
+    (stroke
+      (width 0.2032)
+      (type solid))
+    (layer "F.SilkS"))
+  (fp_line
+    (start -2.794 2.413)
+    (end -1.905 2.413)
+    (stroke
+      (width 0.3048)
+      (type solid))
+    (layer "F.SilkS"))
+  (fp_line
+    (start -2.25 -4.397)
+    (end 2.25 -4.397)
+    (stroke
+      (width 0.2032)
+      (type solid))
+    (layer "F.SilkS"))
+  (fp_line
+    (start -1.75 0.857)
+    (end -3.15 0.857)
+    (stroke
+      (width 0.2032)
+      (type solid))
+    (layer "F.SilkS"))
+  (fp_line
+    (start 1.905 2.413)
+    (end 2.794 2.413)
+    (stroke
+      (width 0.3048)
+      (type solid))
+    (layer "F.SilkS"))
+  (fp_line
+    (start 2.3495 2.921)
+    (end 2.3495 1.9685)
+    (stroke
+      (width 0.3048)
+      (type solid))
+    (layer "F.SilkS"))
+  (fp_line
+    (start 3.15 0.857)
+    (end 1.75 0.857)
+    (stroke
+      (width 0.2032)
+      (type solid))
+    (layer "F.SilkS"))
+  (fp_line
+    (start 3.15 3.103)
+    (end 3.15 0.857)
+    (stroke
+      (width 0.2032)
+      (type solid))
+    (layer "F.SilkS"))
+  (fp_line
+    (start 4 -0.897)
+    (end 4 3.103)
+    (stroke
+      (width 0.2032)
+      (type solid))
+    (layer "F.SilkS"))
+  (fp_line
+    (start 4 3.103)
+    (end 3.15 3.103)
+    (stroke
+      (width 0.2032)
+      (type solid))
+    (layer "F.SilkS"))
+  (fp_line
+    (start -4 -4.397)
+    (end 4 -4.397)
+    (stroke
+      (width 0.2032)
+      (type solid))
+    (layer "F.Fab"))
+  (fp_line
+    (start -4 3.103)
+    (end -4 -4.397)
+    (stroke
+      (width 0.2032)
+      (type solid))
+    (layer "F.Fab"))
+  (fp_line
+    (start -3.2 0.857)
+    (end -3.2 3.103)
+    (stroke
+      (width 0.2032)
+      (type solid))
+    (layer "F.Fab"))
+  (fp_line
+    (start -3.2 3.103)
+    (end -4 3.103)
+    (stroke
+      (width 0.2032)
+      (type solid))
+    (layer "F.Fab"))
+  (fp_line
+    (start 3.2 0.857)
+    (end -3.2 0.857)
+    (stroke
+      (width 0.2032)
+      (type solid))
+    (layer "F.Fab"))
+  (fp_line
+    (start 3.2 3.103)
+    (end 3.2 0.857)
+    (stroke
+      (width 0.2032)
+      (type solid))
+    (layer "F.Fab"))
+  (fp_line
+    (start 4 -4.397)
+    (end 4 3.103)
+    (stroke
+      (width 0.2032)
+      (type solid))
+    (layer "F.Fab"))
+  (fp_line
+    (start 4 3.103)
+    (end 3.2 3.103)
+    (stroke
+      (width 0.2032)
+      (type solid))
+    (layer "F.Fab"))
+  (pad "1" smd rect
+    (at -1 2.303 0.0)
+    (size 1 4.6)
+    (layers "F.Cu" "F.Mask" "F.Paste")
+    (solder_mask_margin 0.0508)
+    (solder_paste_margin 0)
+    (thermal_bridge_angle 0))
+  (pad "2" smd rect
+    (at 1 2.303 0.0)
+    (size 1 4.6)
+    (layers "F.Cu" "F.Mask" "F.Paste")
+    (solder_mask_margin 0.0508)
+    (solder_paste_margin 0)
+    (thermal_bridge_angle 0))
+  (pad "NC1" smd rect
+    (at -3.4 -2.897 90.0)
+    (size 3.4 1.6)
+    (layers "F.Cu" "F.Mask" "F.Paste")
+    (solder_mask_margin 0.0508)
+    (solder_paste_margin 0)
+    (thermal_bridge_angle 0))
+  (pad "NC2" smd rect
+    (at 3.4 -2.897 90.0)
+    (size 3.4 1.6)
+    (layers "F.Cu" "F.Mask" "F.Paste")
+    (solder_mask_margin 0.0508)
+    (solder_paste_margin 0)
+    (thermal_bridge_angle 0))
+  (embedded_fonts no))

@@ -2,7 +2,7 @@
   {
     "repository": "adafruit/Adafruit-Feather-RP2040-Adalogger-PCB",
     "commit": "dbe392caf8440e8d806dbed88806003d40c765d7",
-    "retrieved_utc": "2026-11-18T19:23:44.4183777Z",
+    "retrieved_utc": "2026-11-18T19:45:31.0477140Z",
     "files": [
       {
         "path": "Adafruit Feather RP2040 Adalogger.brd",
@@ -34,7 +34,7 @@
   {
     "repository": "adafruit/Adafruit-Feather-RP2350-PCB",
     "commit": "d7bc5cb6c16f071e01ae1cf790ee2142d376ee41",
-    "retrieved_utc": "2026-11-18T19:23:46.8951423Z",
+    "retrieved_utc": "2026-11-18T19:45:31.4391930Z",
     "files": [
       {
         "path": "Adafruit Feather RP2350.brd",
@@ -66,7 +66,7 @@
   {
     "repository": "adafruit/Adafruit-BNO08x-PCB",
     "commit": "be9dc9984bb19b1e8ba31e8744917d0952993ef2",
-    "retrieved_utc": "2026-11-18T19:23:48.7090467Z",
+    "retrieved_utc": "2026-11-18T19:45:31.7452032Z",
     "files": [
       {
         "path": "Adafruit_BNO08x.brd",
@@ -93,7 +93,7 @@
   {
     "repository": "adafruit/Adafruit-BMP280-Breakout-PCB",
     "commit": "1ba329baf692f9e681e0deb891c98ce6579a5c26",
-    "retrieved_utc": "2026-11-18T19:23:51.6496266Z",
+    "retrieved_utc": "2026-11-18T19:45:32.0606815Z",
     "files": [
       {
         "path": "Adafruit BMP280 STEMMA QT.brd",
@@ -124,6 +124,53 @@
         "path": "license.txt",
         "source": "https://raw.githubusercontent.com/adafruit/Adafruit-BMP280-Breakout-PCB/1ba329baf692f9e681e0deb891c98ce6579a5c26/license.txt",
         "sha256": "1f63e1f4676a433423b2c2ff1ccd9e80093f341f10b81f0ac0106342bc7bbe89"
+      }
+    ]
+  },
+  {
+    "repository": "adafruit/Adafruit-BMP5xx-Temperature-and-Pressure-Sensor-PCB",
+    "commit": "0d42329e09e19452f154789a3a77a89a8873e5c7",
+    "retrieved_utc": "2026-11-18T19:45:35.7569581Z",
+    "files": [
+      {
+        "path": "Adafruit BMP580 Temperature and Pressure Sensor rev B.brd",
+        "source": "https://raw.githubusercontent.com/adafruit/Adafruit-BMP5xx-Temperature-and-Pressure-Sensor-PCB/0d42329e09e19452f154789a3a77a89a8873e5c7/Adafruit%20BMP580%20Temperature%20and%20Pressure%20Sensor%20rev%20B.brd",
+        "sha256": "30a7325d5c9eb93321b6bbda2844b2e037a180774d74b98ef3ef40d2fdf30693"
+      },
+      {
+        "path": "Adafruit BMP580 Temperature and Pressure Sensor rev B.sch",
+        "source": "https://raw.githubusercontent.com/adafruit/Adafruit-BMP5xx-Temperature-and-Pressure-Sensor-PCB/0d42329e09e19452f154789a3a77a89a8873e5c7/Adafruit%20BMP580%20Temperature%20and%20Pressure%20Sensor%20rev%20B.sch",
+        "sha256": "e4cd064a17b11cd5546841ce73480274f21faaf6a81b5eb670142db58d253123"
+      },
+      {
+        "path": "Adafruit BMP581 Temperature and Pressure Sensor rev B.brd",
+        "source": "https://raw.githubusercontent.com/adafruit/Adafruit-BMP5xx-Temperature-and-Pressure-Sensor-PCB/0d42329e09e19452f154789a3a77a89a8873e5c7/Adafruit%20BMP581%20Temperature%20and%20Pressure%20Sensor%20rev%20B.brd",
+        "sha256": "bdf695b3f2390d46d440a767e2737d656e98016c7cdec45f7db7f6111975e64f"
+      },
+      {
+        "path": "Adafruit BMP581 Temperature and Pressure Sensor rev B.sch",
+        "source": "https://raw.githubusercontent.com/adafruit/Adafruit-BMP5xx-Temperature-and-Pressure-Sensor-PCB/0d42329e09e19452f154789a3a77a89a8873e5c7/Adafruit%20BMP581%20Temperature%20and%20Pressure%20Sensor%20rev%20B.sch",
+        "sha256": "40e46a014a5afd889126a379d6f602c7743a4847093689e7f77f9dc0015f9381"
+      },
+      {
+        "path": "Adafruit BMP585 Temperature and Pressure Sensor rev B.brd",
+        "source": "https://raw.githubusercontent.com/adafruit/Adafruit-BMP5xx-Temperature-and-Pressure-Sensor-PCB/0d42329e09e19452f154789a3a77a89a8873e5c7/Adafruit%20BMP585%20Temperature%20and%20Pressure%20Sensor%20rev%20B.brd",
+        "sha256": "fbecf3db66947e3c77333bd433177dc42a65ed2594ed2bbdfdd49effa49fae25"
+      },
+      {
+        "path": "Adafruit BMP585 Temperature and Pressure Sensor rev B.sch",
+        "source": "https://raw.githubusercontent.com/adafruit/Adafruit-BMP5xx-Temperature-and-Pressure-Sensor-PCB/0d42329e09e19452f154789a3a77a89a8873e5c7/Adafruit%20BMP585%20Temperature%20and%20Pressure%20Sensor%20rev%20B.sch",
+        "sha256": "cc5bfd7c4921685518386346986179207cff397c436c0c90a2d52a3ac5f45857"
+      },
+      {
+        "path": "README.md",
+        "source": "https://raw.githubusercontent.com/adafruit/Adafruit-BMP5xx-Temperature-and-Pressure-Sensor-PCB/0d42329e09e19452f154789a3a77a89a8873e5c7/README.md",
+        "sha256": "6ca6ee5c758875d8209cb15a0a277ed2bbfb27c995c420df1104a3ded0f4886d"
+      },
+      {
+        "path": "license.txt",
+        "source": "https://raw.githubusercontent.com/adafruit/Adafruit-BMP5xx-Temperature-and-Pressure-Sensor-PCB/0d42329e09e19452f154789a3a77a89a8873e5c7/license.txt",
+        "sha256": "075dad5e5fc96c27014fabc269f4f5732909cffd178a486f546d982b6cf86b74"
       }
     ]
   }

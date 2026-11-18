@@ -1,0 +1,9 @@
+**/.history/
+**/*-backups/
+**/*.kicad_prl
+**/*.lck
+**/~*.lck
+**/__pycache__/
+hardware/imports/**/*.sch
+hardware/imports/
+.cache/

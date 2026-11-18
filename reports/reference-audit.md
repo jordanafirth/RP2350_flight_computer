@@ -404,3 +404,156 @@ Layer-20 wire endpoint span: 17.78 x 19.05 mm. Curves/tolerances need CAD review
 | D2 | 1N4148 | SOD-323 | top | 13.716 | 11.43 |
 | U$20 |  | PCBFEAT-REV-040 | bottom | 1.27 | 10.795 |
 
+## adafruit/Adafruit-BMP5xx-Temperature-and-Pressure-Sensor-PCB / Adafruit BMP580 Temperature and Pressure Sensor rev B.brd
+
+Revision: 0d42329e09e19452f154789a3a77a89a8873e5c7
+
+Top elements: 29; bottom elements: 11. Trace layers used: 1, 16.
+Bottom elements with copper contacts: 1. Element totals include graphics, labels, holes and test pads; they are not populated-component counts.
+Layer-20 wire endpoint span: 25.4 x 17.78 mm. Curves/tolerances need CAD review.
+
+| Reference | Value | Package | Face | X mm | Y mm |
+| --- | --- | --- | --- | --- | --- |
+| U$2 |  | ADAFRUIT_2.5MM | bottom | 20.828 | 14.732 |
+| R4 | 10K | 0603-NO | top | 12.192 | 13.462 |
+| D2 | 1N4148 | SOD-323 | top | 16.764 | 5.334 |
+| R1 | 10K | 0603-NO | top | 12.192 | 11.938 |
+| IC1 | BMP580 | BMP388 | top | 12.7 | 8.89 |
+| JP1 |  | 1X08_ROUND_70 | top | 12.7 | 2.54 |
+| C4 | 10uF | 0805-NO | top | 6.731 | 5.715 |
+| U1 | AP2127K-3.3 | SOT23-5 | top | 8.128 | 8.763 |
+| C5 | 10uF | 0805-NO | top | 8.128 | 12.192 |
+| C6 | 0.1uF | 0603-NO | top | 10.541 | 8.89 |
+| R2 | 10K Pack | RESPACK_4X0603 | top | 17.145 | 11.43 |
+| Q2 | BSS138 | SOT363 | top | 16.891 | 7.747 |
+| U$40 | MOUNTINGHOLE2.5 | MOUNTINGHOLE_2.5_PLATED | top | 2.54 | 15.24 |
+| U$41 | MOUNTINGHOLE2.5 | MOUNTINGHOLE_2.5_PLATED | top | 22.86 | 15.24 |
+| CONN3 | STEMMA_I2C_QT | JST_SH4 | top | 22.225 | 8.89 |
+| CONN4 | STEMMA_I2C_QT | JST_SH4 | top | 3.175 | 8.89 |
+| FID3 | FIDUCIAL_1MM | FIDUCIAL_1MM | top | 1.27 | 4.064 |
+| FID4 | FIDUCIAL_1MM | FIDUCIAL_1MM | top | 19.558 | 16.51 |
+| U$46 |  | ADAFRUIT_3.5MM | top | 4.572 | 13.716 |
+| U$47 |  | PCBFEAT-REV-040 | bottom | 21.082 | 5.08 |
+| U$48 |  | STEMMAQT | bottom | 22.479 | 4.191 |
+| U$49 |  | STEMMAQT | bottom | 3.048 | 12.954 |
+| D1 | GREEN | CHIPLED_0603_NOOUTLINE | top | 3.556 | 12.573 |
+| R5 | 10K | 0603-NO | top | 5.588 | 12.446 |
+| SJ1 |  | SOLDERJUMPER_ARROW_NOPASTE | bottom | 16.764 | 7.112 |
+| PLABEL14 |  | PLABEL14 | bottom | 13.335 | 7.493 |
+| PLABEL15 |  | PLABEL15 | top | 12.446 | 3.683 |
+| PLABEL16 |  | PLABEL16 | top | 18.034 | 3.683 |
+| PLABEL17 |  | PLABEL17 | top | 6.477 | 0.889 |
+| PLABEL18 |  | PLABEL18 | top | 9.017 | 4.191 |
+| PLABEL19 |  | PLABEL19 | top | 11.557 | 0.889 |
+| PLABEL20 |  | PLABEL20 | top | 16.637 | 0.889 |
+| PLABEL21 |  | PLABEL21 | top | 21.971 | 0.889 |
+| PLABEL22 |  | PLABEL22 | top | 13.716 | 16.637 |
+| PLABEL23 |  | PLABEL23 | top | 13.97 | 14.859 |
+| PLABEL24 |  | PLABEL24 | bottom | 12.827 | 11.303 |
+| PLABEL25 |  | PLABEL25 | bottom | 12.7 | 15.875 |
+| PLABEL26 |  | PLABEL26 | bottom | 12.573 | 0.889 |
+| PLABEL27 |  | PLABEL27 | bottom | 19.05 | 4.318 |
+| U$1 | GND | ADAFRUIT_2.5MM | bottom | 6.858 | 14.732 |
+
+## adafruit/Adafruit-BMP5xx-Temperature-and-Pressure-Sensor-PCB / Adafruit BMP581 Temperature and Pressure Sensor rev B.brd
+
+Revision: 0d42329e09e19452f154789a3a77a89a8873e5c7
+
+Top elements: 29; bottom elements: 11. Trace layers used: 1, 16.
+Bottom elements with copper contacts: 1. Element totals include graphics, labels, holes and test pads; they are not populated-component counts.
+Layer-20 wire endpoint span: 25.4 x 17.78 mm. Curves/tolerances need CAD review.
+
+| Reference | Value | Package | Face | X mm | Y mm |
+| --- | --- | --- | --- | --- | --- |
+| U$2 |  | ADAFRUIT_2.5MM | bottom | 20.828 | 14.732 |
+| R4 | 10K | 0603-NO | top | 12.192 | 13.462 |
+| D2 | 1N4148 | SOD-323 | top | 16.764 | 5.334 |
+| R1 | 10K | 0603-NO | top | 12.192 | 11.938 |
+| IC1 | BMP581 | BMP388 | top | 12.7 | 8.89 |
+| JP1 |  | 1X08_ROUND_70 | top | 12.7 | 2.54 |
+| C4 | 10uF | 0805-NO | top | 6.731 | 5.715 |
+| U1 | AP2127K-3.3 | SOT23-5 | top | 8.128 | 8.763 |
+| C5 | 10uF | 0805-NO | top | 8.128 | 12.192 |
+| C6 | 0.1uF | 0603-NO | top | 10.541 | 8.89 |
+| R2 | 10K Pack | RESPACK_4X0603 | top | 17.145 | 11.43 |
+| Q2 | BSS138 | SOT363 | top | 16.891 | 7.747 |
+| U$40 | MOUNTINGHOLE2.5 | MOUNTINGHOLE_2.5_PLATED | top | 2.54 | 15.24 |
+| U$41 | MOUNTINGHOLE2.5 | MOUNTINGHOLE_2.5_PLATED | top | 22.86 | 15.24 |
+| CONN3 | STEMMA_I2C_QT | JST_SH4 | top | 22.225 | 8.89 |
+| CONN4 | STEMMA_I2C_QT | JST_SH4 | top | 3.175 | 8.89 |
+| FID3 | FIDUCIAL_1MM | FIDUCIAL_1MM | top | 1.27 | 4.064 |
+| FID4 | FIDUCIAL_1MM | FIDUCIAL_1MM | top | 19.558 | 16.51 |
+| U$46 |  | ADAFRUIT_3.5MM | top | 4.572 | 13.716 |
+| U$47 |  | PCBFEAT-REV-040 | bottom | 21.082 | 5.08 |
+| U$48 |  | STEMMAQT | bottom | 22.479 | 4.191 |
+| U$49 |  | STEMMAQT | bottom | 3.048 | 12.954 |
+| D1 | GREEN | CHIPLED_0603_NOOUTLINE | top | 3.556 | 12.573 |
+| R5 | 10K | 0603-NO | top | 5.588 | 12.446 |
+| SJ1 |  | SOLDERJUMPER_ARROW_NOPASTE | bottom | 16.764 | 7.112 |
+| PLABEL14 |  | PLABEL14 | bottom | 13.335 | 7.493 |
+| PLABEL15 |  | PLABEL15 | top | 12.7 | 3.683 |
+| PLABEL16 |  | PLABEL16 | top | 18.288 | 3.683 |
+| PLABEL17 |  | PLABEL17 | top | 6.477 | 0.889 |
+| PLABEL18 |  | PLABEL18 | top | 9.017 | 4.191 |
+| PLABEL19 |  | PLABEL19 | top | 11.557 | 0.889 |
+| PLABEL20 |  | PLABEL20 | top | 16.637 | 0.889 |
+| PLABEL21 |  | PLABEL21 | top | 21.971 | 0.889 |
+| PLABEL23 |  | PLABEL23 | top | 13.97 | 14.859 |
+| PLABEL24 |  | PLABEL24 | bottom | 12.827 | 11.303 |
+| PLABEL26 |  | PLABEL26 | bottom | 12.573 | 0.889 |
+| PLABEL27 |  | PLABEL27 | bottom | 19.05 | 4.318 |
+| U$1 | GND | ADAFRUIT_2.5MM | bottom | 6.858 | 14.732 |
+| PLABEL28 |  | PLABEL28 | top | 13.716 | 16.383 |
+| PLABEL29 |  | PLABEL29 | bottom | 12.7 | 15.875 |
+
+## adafruit/Adafruit-BMP5xx-Temperature-and-Pressure-Sensor-PCB / Adafruit BMP585 Temperature and Pressure Sensor rev B.brd
+
+Revision: 0d42329e09e19452f154789a3a77a89a8873e5c7
+
+Top elements: 29; bottom elements: 11. Trace layers used: 1, 16.
+Bottom elements with copper contacts: 1. Element totals include graphics, labels, holes and test pads; they are not populated-component counts.
+Layer-20 wire endpoint span: 25.4 x 17.78 mm. Curves/tolerances need CAD review.
+
+| Reference | Value | Package | Face | X mm | Y mm |
+| --- | --- | --- | --- | --- | --- |
+| R4 | 10K | 0603-NO | top | 14.097 | 13.716 |
+| D2 | 1N4148 | SOD-323 | top | 18.288 | 5.461 |
+| R1 | 10K | 0603-NO | top | 14.224 | 5.334 |
+| JP1 |  | 1X08_ROUND_70 | top | 12.7 | 2.54 |
+| C4 | 10uF | 0805-NO | top | 6.731 | 5.715 |
+| U1 | AP2127K-3.3 | SOT23-5 | top | 8.128 | 8.763 |
+| C5 | 10uF | 0805-NO | top | 8.128 | 12.192 |
+| C6 | 0.1uF | 0603-NO | top | 11.049 | 13.716 |
+| R2 | 10K Pack | RESPACK_4X0603 | top | 17.145 | 11.43 |
+| Q2 | BSS138 | SOT363 | top | 17.018 | 7.747 |
+| U$40 | MOUNTINGHOLE2.5 | MOUNTINGHOLE_2.5_PLATED | top | 2.54 | 15.24 |
+| U$41 | MOUNTINGHOLE2.5 | MOUNTINGHOLE_2.5_PLATED | top | 22.86 | 15.24 |
+| CONN3 | STEMMA_I2C_QT | JST_SH4 | top | 22.225 | 8.89 |
+| CONN4 | STEMMA_I2C_QT | JST_SH4 | top | 3.175 | 8.89 |
+| FID3 | FIDUCIAL_0.5MM | FIDUCIAL_0.5MM | top | 1.27 | 4.064 |
+| FID4 | FIDUCIAL_0.5MM | FIDUCIAL_0.5MM | top | 19.558 | 16.51 |
+| U$46 |  | ADAFRUIT_3.5MM | top | 4.572 | 13.716 |
+| U$47 |  | PCBFEAT-REV-040 | bottom | 20.32 | 6.985 |
+| U$48 |  | STEMMAQT | bottom | 22.479 | 4.191 |
+| U$49 |  | STEMMAQT | bottom | 3.048 | 12.954 |
+| D1 | GREEN | CHIPLED_0603_NOOUTLINE | top | 3.556 | 12.573 |
+| R5 | 10K | 0603-NO | top | 5.588 | 12.446 |
+| SJ1 |  | SOLDERJUMPER_ARROW_NOPASTE | bottom | 16.764 | 7.112 |
+| PLABEL14 |  | PLABEL14 | bottom | 13.589 | 7.366 |
+| U2 | BMP585 | LGA9_BMP585_BOS | top | 12.7 | 8.89 |
+| U$6 |  | ADAFRUIT_2.5MM | bottom | 20.701 | 14.605 |
+| U$7 |  | ADAFRUIT_2.5MM | bottom | 7.112 | 14.605 |
+| PLABEL15 |  | PLABEL15 | top | 14.224 | 4.191 |
+| PLABEL16 |  | PLABEL16 | top | 19.05 | 4.064 |
+| PLABEL17 |  | PLABEL17 | top | 6.477 | 0.889 |
+| PLABEL18 |  | PLABEL18 | top | 9.017 | 4.191 |
+| PLABEL19 |  | PLABEL19 | top | 11.557 | 0.889 |
+| PLABEL20 |  | PLABEL20 | top | 16.637 | 0.889 |
+| PLABEL21 |  | PLABEL21 | top | 21.971 | 0.889 |
+| PLABEL22 |  | PLABEL22 | top | 13.716 | 16.637 |
+| PLABEL23 |  | PLABEL23 | top | 13.589 | 15.113 |
+| PLABEL24 |  | PLABEL24 | bottom | 12.7 | 11.303 |
+| PLABEL25 |  | PLABEL25 | bottom | 12.7 | 15.621 |
+| PLABEL26 |  | PLABEL26 | bottom | 12.7 | 0.889 |
+| PLABEL27 |  | PLABEL27 | bottom | 12.7 | 4.826 |
+
