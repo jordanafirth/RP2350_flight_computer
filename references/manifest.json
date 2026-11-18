@@ -1,0 +1,130 @@
+[
+  {
+    "repository": "adafruit/Adafruit-Feather-RP2040-Adalogger-PCB",
+    "commit": "dbe392caf8440e8d806dbed88806003d40c765d7",
+    "retrieved_utc": "2026-11-18T19:23:44.4183777Z",
+    "files": [
+      {
+        "path": "Adafruit Feather RP2040 Adalogger.brd",
+        "source": "https://raw.githubusercontent.com/adafruit/Adafruit-Feather-RP2040-Adalogger-PCB/dbe392caf8440e8d806dbed88806003d40c765d7/Adafruit%20Feather%20RP2040%20Adalogger.brd",
+        "sha256": "594a1a66371f8526238efa834ef8bfabcf136881c7afde99c1dcba0b8b16f733"
+      },
+      {
+        "path": "Adafruit Feather RP2040 Adalogger.sch",
+        "source": "https://raw.githubusercontent.com/adafruit/Adafruit-Feather-RP2040-Adalogger-PCB/dbe392caf8440e8d806dbed88806003d40c765d7/Adafruit%20Feather%20RP2040%20Adalogger.sch",
+        "sha256": "45eaaa643fe17e359d8776d347f6c1a8c721296c0dd7afef53e796636973bb82"
+      },
+      {
+        "path": "README.md",
+        "source": "https://raw.githubusercontent.com/adafruit/Adafruit-Feather-RP2040-Adalogger-PCB/dbe392caf8440e8d806dbed88806003d40c765d7/README.md",
+        "sha256": "43476e460df70d5ee279732c3480fb97c50254b64e6a594eeb12a4023a8fc00b"
+      },
+      {
+        "path": "factory-reset/README.md",
+        "source": "https://raw.githubusercontent.com/adafruit/Adafruit-Feather-RP2040-Adalogger-PCB/dbe392caf8440e8d806dbed88806003d40c765d7/factory-reset/README.md",
+        "sha256": "e3cb2bb84c38408ccb6fed9b5c0b54e5baacec9cca85b53cb6654a66cf0e0d8d"
+      },
+      {
+        "path": "license.txt",
+        "source": "https://raw.githubusercontent.com/adafruit/Adafruit-Feather-RP2040-Adalogger-PCB/dbe392caf8440e8d806dbed88806003d40c765d7/license.txt",
+        "sha256": "075dad5e5fc96c27014fabc269f4f5732909cffd178a486f546d982b6cf86b74"
+      }
+    ]
+  },
+  {
+    "repository": "adafruit/Adafruit-Feather-RP2350-PCB",
+    "commit": "d7bc5cb6c16f071e01ae1cf790ee2142d376ee41",
+    "retrieved_utc": "2026-11-18T19:23:46.8951423Z",
+    "files": [
+      {
+        "path": "Adafruit Feather RP2350.brd",
+        "source": "https://raw.githubusercontent.com/adafruit/Adafruit-Feather-RP2350-PCB/d7bc5cb6c16f071e01ae1cf790ee2142d376ee41/Adafruit%20Feather%20RP2350.brd",
+        "sha256": "5e25817a1add376be8b04192b4367b8cf9d7516f3e32f964120ed369d9a16ec4"
+      },
+      {
+        "path": "Adafruit Feather RP2350.sch",
+        "source": "https://raw.githubusercontent.com/adafruit/Adafruit-Feather-RP2350-PCB/d7bc5cb6c16f071e01ae1cf790ee2142d376ee41/Adafruit%20Feather%20RP2350.sch",
+        "sha256": "457c42c30fbdf3cab59c757cf3bc42a03ef838c455438c5ad684d24ee2019788"
+      },
+      {
+        "path": "README.md",
+        "source": "https://raw.githubusercontent.com/adafruit/Adafruit-Feather-RP2350-PCB/d7bc5cb6c16f071e01ae1cf790ee2142d376ee41/README.md",
+        "sha256": "d7885678760fdc0e89c85dfcc3aa6f1bc1ce11a13bbb1ade0ffe18dc1102dd93"
+      },
+      {
+        "path": "factory-reset/README.md",
+        "source": "https://raw.githubusercontent.com/adafruit/Adafruit-Feather-RP2350-PCB/d7bc5cb6c16f071e01ae1cf790ee2142d376ee41/factory-reset/README.md",
+        "sha256": "a2e86650eccb78ca306b8b923cc2446ca3b8a7660fd844d7d55997bf8a9218a3"
+      },
+      {
+        "path": "license.txt",
+        "source": "https://raw.githubusercontent.com/adafruit/Adafruit-Feather-RP2350-PCB/d7bc5cb6c16f071e01ae1cf790ee2142d376ee41/license.txt",
+        "sha256": "075dad5e5fc96c27014fabc269f4f5732909cffd178a486f546d982b6cf86b74"
+      }
+    ]
+  },
+  {
+    "repository": "adafruit/Adafruit-BNO08x-PCB",
+    "commit": "be9dc9984bb19b1e8ba31e8744917d0952993ef2",
+    "retrieved_utc": "2026-11-18T19:23:48.7090467Z",
+    "files": [
+      {
+        "path": "Adafruit_BNO08x.brd",
+        "source": "https://raw.githubusercontent.com/adafruit/Adafruit-BNO08x-PCB/be9dc9984bb19b1e8ba31e8744917d0952993ef2/Adafruit_BNO08x.brd",
+        "sha256": "ee62fe200964f49c09ce0fc0ec7f07cc4bebda074a07c79749befbf5aa2712d6"
+      },
+      {
+        "path": "Adafruit_BNO08x.sch",
+        "source": "https://raw.githubusercontent.com/adafruit/Adafruit-BNO08x-PCB/be9dc9984bb19b1e8ba31e8744917d0952993ef2/Adafruit_BNO08x.sch",
+        "sha256": "19255b0330332928295b952e19a2f9e15e0021878469c140c0dd8745263015d1"
+      },
+      {
+        "path": "README.md",
+        "source": "https://raw.githubusercontent.com/adafruit/Adafruit-BNO08x-PCB/be9dc9984bb19b1e8ba31e8744917d0952993ef2/README.md",
+        "sha256": "ff89b0a7eac7b98a3609fc885e8b25927ed93192e04f826a5483d1963a58a43f"
+      },
+      {
+        "path": "license.txt",
+        "source": "https://raw.githubusercontent.com/adafruit/Adafruit-BNO08x-PCB/be9dc9984bb19b1e8ba31e8744917d0952993ef2/license.txt",
+        "sha256": "075dad5e5fc96c27014fabc269f4f5732909cffd178a486f546d982b6cf86b74"
+      }
+    ]
+  },
+  {
+    "repository": "adafruit/Adafruit-BMP280-Breakout-PCB",
+    "commit": "1ba329baf692f9e681e0deb891c98ce6579a5c26",
+    "retrieved_utc": "2026-11-18T19:23:51.6496266Z",
+    "files": [
+      {
+        "path": "Adafruit BMP280 STEMMA QT.brd",
+        "source": "https://raw.githubusercontent.com/adafruit/Adafruit-BMP280-Breakout-PCB/1ba329baf692f9e681e0deb891c98ce6579a5c26/Adafruit%20BMP280%20STEMMA%20QT.brd",
+        "sha256": "298fc9dc2b29183778cda4863d27a83792e84cfe282ea07e38645042f2c15427"
+      },
+      {
+        "path": "Adafruit BMP280 STEMMA QT.sch",
+        "source": "https://raw.githubusercontent.com/adafruit/Adafruit-BMP280-Breakout-PCB/1ba329baf692f9e681e0deb891c98ce6579a5c26/Adafruit%20BMP280%20STEMMA%20QT.sch",
+        "sha256": "b4f4a4beaea8bb8c213b3b7cb3859e43d0cb7a149cb11014a18f0f1bfc1de8e3"
+      },
+      {
+        "path": "Adafruit BMP280.brd",
+        "source": "https://raw.githubusercontent.com/adafruit/Adafruit-BMP280-Breakout-PCB/1ba329baf692f9e681e0deb891c98ce6579a5c26/Adafruit%20BMP280.brd",
+        "sha256": "f650a378fb72d7fd2b663ca2927d57374bdb3327df3be2a07c0bd2f1d1284bc1"
+      },
+      {
+        "path": "Adafruit BMP280.sch",
+        "source": "https://raw.githubusercontent.com/adafruit/Adafruit-BMP280-Breakout-PCB/1ba329baf692f9e681e0deb891c98ce6579a5c26/Adafruit%20BMP280.sch",
+        "sha256": "76af03eeb6b1b9805baa656ed900d6f3a7d160bdcb2f5bcc7aab9898859148fa"
+      },
+      {
+        "path": "README.md",
+        "source": "https://raw.githubusercontent.com/adafruit/Adafruit-BMP280-Breakout-PCB/1ba329baf692f9e681e0deb891c98ce6579a5c26/README.md",
+        "sha256": "2cb5e53bab24eda4ab9cc2fb24ac900c73acad1b70ffed3f45d90075478f988a"
+      },
+      {
+        "path": "license.txt",
+        "source": "https://raw.githubusercontent.com/adafruit/Adafruit-BMP280-Breakout-PCB/1ba329baf692f9e681e0deb891c98ce6579a5c26/license.txt",
+        "sha256": "1f63e1f4676a433423b2c2ff1ccd9e80093f341f10b81f0ac0106342bc7bbe89"
+      }
+    ]
+  }
+]
