@@ -1,2 +1,5 @@
-# Preserve upstream reference bytes so manifest SHA-256 hashes remain valid.
+# Preserve upstream reference bytes by default; Markdown follows the LF rule below.
 references/** -text
+
+# Keep Markdown LF on checkout and check-in, overriding the reference default.
+*.md text eol=lf

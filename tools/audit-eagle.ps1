@@ -101,5 +101,5 @@ foreach ($result in $results | Where-Object { $_.kind -eq 'board' }) {
     }
     $lines.Add('')
 }
-$lines | Set-Content -LiteralPath (Join-Path $reportRoot 'reference-audit.md') -Encoding utf8
+[IO.File]::WriteAllText((Join-Path $reportRoot 'reference-audit.md'), (($lines -join "`n") + "`n"), [Text.UTF8Encoding]::new($false))
 Write-Output "Verified source hashes and parsed $($results.Count) CAD files. Reports written to reports/reference-audit.json and .md."
