@@ -83,6 +83,8 @@ def main():
             x, y, angle, side = float(e.get('x')), float(e.get('y')), float(e.get('rot', 'R0').replace('MR','').replace('R','')), 'F'
         if ref in overrides:
             x,y = overrides[ref]['x'],overrides[ref]['y']
+            angle=overrides[ref].get('rotation',angle)
+            side=overrides[ref].get('side',side)
         lib, name = part['footprint'].split(':', 1)
         path = OUT/'FlightComputer.pretty'/(name+'.kicad_mod') if lib == 'FlightComputer' else KICAD/'footprints'/(lib+'.pretty')/(name+'.kicad_mod')
         fp = loads(path.read_text(encoding='utf-8'))

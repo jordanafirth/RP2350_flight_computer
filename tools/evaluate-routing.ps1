@@ -1,4 +1,5 @@
-param([Parameter(Mandatory=$true)][ValidateSet('fine','stable','stitched')][string]$Candidate, [switch]$OuterGround)
+param([Parameter(Mandatory=$true)][ValidateSet('fine','stable','stitched','sensor','signal-layers','critical','escape','offset')][string]$Candidate, [switch]$OuterGround,
+    [string]$BaseBoard='hardware/rev-a/flight-computer.kicad_pcb')
 $ErrorActionPreference = 'Stop'
 $projectRoot = Split-Path -Parent $PSScriptRoot
 $bin = Join-Path $env:LOCALAPPDATA 'Programs\KiCad\10.0\bin'
@@ -13,7 +14,7 @@ try {
     $session = ".cache/routing/result-$Candidate.ses"
     $board = ".cache/routing/candidate-$Candidate.kicad_pcb"
     if (!(Test-Path -LiteralPath $session)) { throw "Routing session is not complete: $session" }
-    Copy-Item -LiteralPath 'hardware/rev-a/flight-computer.kicad_pcb' -Destination $board -Force
+    Copy-Item -LiteralPath $BaseBoard -Destination $board -Force
     # KiCad CLI discovers rules by the candidate PCB's own basename/path.
     # A scratch PCB without this context would be checked against global
     # defaults rather than the project's explicit fabrication constraints.

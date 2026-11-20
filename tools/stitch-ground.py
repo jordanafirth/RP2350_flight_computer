@@ -8,11 +8,17 @@ regulator-loop, thermal-pad or assembler review.
 """
 import json
 import math
+import argparse
 from pathlib import Path
 from native_cad import pcbnew,load_board,save_board
 
 ROOT=Path(__file__).resolve().parents[1]
-path=ROOT/'hardware/rev-a/flight-computer.kicad_pcb'
+parser=argparse.ArgumentParser()
+parser.add_argument('--board',type=Path,default=ROOT/'hardware/rev-a/flight-computer.kicad_pcb')
+parser.add_argument('--report',type=Path,default=ROOT/'reports/pcb/ground-stitching.json')
+args=parser.parse_args()
+args.report=args.report.resolve()
+path=args.board.resolve()
 board=load_board(path)
 layers=[pcbnew.F_Cu,pcbnew.In1_Cu,pcbnew.In2_Cu,pcbnew.B_Cu]
 fills={}
@@ -131,5 +137,5 @@ report={'status':'candidate stitches; independent DRC required','vias_added':add
     'outer_fill_islands_without_a_new_stitch':[{'layer':board.GetLayerName(l),'island':i} for l,i in sorted(uncovered)],
     'processor_exposed_pad_vias':ep_vias,
     'limits':'Exposed-pad vias require filling and copper capping in the fabrication quote. Uncovered islands may already connect through PTH pads or may need manual routing. Independent DRC and assembler stencil/process review remain required.'}
-(ROOT/'reports/pcb/ground-stitching.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8',newline='\n')
+args.report.write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8',newline='\n')
 print(f'Added {len(added)} ground stitches and {len(ep_vias)} filled/capped exposed-pad vias; {len(uncovered)} outer fill islands need connectivity review.')

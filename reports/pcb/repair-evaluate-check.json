@@ -1,0 +1,9 @@
+{
+  "board": ".cache/routing/candidate-repair.kicad_pcb",
+  "sha256": "2531b32864d8353ca62c1bedfd704c2424a99c1f564bb142b8d97b1e613959f5",
+  "action": "Evaluate",
+  "unconnected": 23,
+  "drc_report": "reports/pcb/candidate-repair-drc.json",
+  "unexpected_via_in_pad": false,
+  "usb_return_screen": "pass"
+}

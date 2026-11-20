@@ -10,8 +10,9 @@ Custom Feather-size data logger for a reusable teaching fleet: 2,000 initial uni
 - [Part selections](docs/parts-selection.md)
 - [Schematic draft and review notes](docs/schematic-review.md)
 - [Placement and mechanical review](docs/placement-review.md)
+- [Routing development review](docs/routing-review.md)
 - [Reference acquisition](references/README.md)
 
-Status: integrated KiCad schematic and PCB routing are under development. Candidate part numbers, right-angle servo headers and the compact USB/SD arrangement are defined. The PCB still has incomplete connections and requires USB, power, footprint and mechanical review. There is no manufacturing release or complete PCBA quote yet.
+Status: integrated KiCad schematic and PCB routing are under development. Critical USB, processor power and IMU connections have explicit routing; the checked working PCB has 30 unconnected items. Candidate part numbers, right-angle servo headers and the compact USB/SD arrangement are defined. Routing completion, fabricator impedance confirmation, footprint and physical validation remain open. There is no manufacturing release or complete PCBA quote yet.
 
 The current product is an RP2040 Feather Adalogger connected by Qwiic cables to BMP280 and BNO085 breakouts, powered by a small single-cell lithium-ion battery. The target combines these functions, preferably using RP2350, and adds factory-installed servo and power-control connectors.

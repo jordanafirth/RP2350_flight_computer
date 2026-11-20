@@ -13,7 +13,7 @@ Status 2026-11-20: incomplete engineering design. No vendor quote has been recei
 
 ## Assembly scope
 
-- Approximately 50.8 x 22.86 mm, four-layer, 1.6-mm PCB. Explicit controlled-impedance stackup is still being finalized; JLC04161H-3313 is the candidate. Quote lead-free assembly and ENIG as the starting finish. Do not substitute a stackup without reviewing USB geometry.
+- Approximately 50.8 x 22.86 mm, four-layer, nominal 1.6-mm PCB. JLC04161H-3313 is recorded as the candidate stackup in native CAD and `reports/pcb/fabrication-settings.json`; fabricator confirmation and USB impedance verification remain open. Quote lead-free assembly and ENIG as the starting finish. Do not substitute a stackup without reviewing USB geometry.
 - Populate both faces from the released BOM and centroid files. Current draft has 86 fitted items, including one through-hole servo header. Use exact part numbers for ICs, oscillators and connectors; return any proposed substitutes for review.
 - Processor SC1509-A4, BNO085 IMU, BMP581 barometer, QSPI flash, charging and switched logic/servo supplies.
 - Factory-install all connectors, including Samtec TSW-104-08-T-T-RA right-angle servo header. Solder all 12 contacts; mating cables leave the end. Maximum nominal post projection extends 5.58 mm beyond the PCB.
@@ -22,7 +22,7 @@ Status 2026-11-20: incomplete engineering design. No vendor quote has been recei
 - Supply a factory-made mating shorting harness: JST SHR-02V-S-B, two SSH-003T-P0.2-H contacts, a short 28-AWG loop, and a REMOVE BEFORE FLIGHT tag. Verify that its two contacts are shorted, with no connection to battery power.
 - Quote the shorting harness/tag, a microSD card, and battery separately from the PCBA. Battery reference is protected Adafruit PID3898, 3.7 V 400 mAh, Adafruit-polarity JST PH; the PCB's charge current is approximately 196 mA.
 - Review USB locating-peg engagement over the underside SD socket as documented in `placement-review.md`. Four M2 mounting centers differ from stock Feather Y spacing by 0.4 mm per row.
-- The current candidate has three 0.4-mm-diameter / 0.2-mm-drill GND vias in the RP2350 exposed pad. Quote these as filled and copper capped; coordinates are recorded in `reports/pcb/ground-stitching.json`. The selected sites avoid the underside BNO lands and lie between the inherited paste windows. Require assembler review of stencil coverage, via treatment and the two-sided process before release.
+- The current candidate has three 0.4-mm-diameter / 0.2-mm-drill GND vias in the RP2350 exposed pad. Quote these as epoxy filled and copper capped; exact coordinates are recorded in `reports/pcb/fabrication-settings.json`. Ordinary vias are tented on both faces. The selected sites avoid the underside BNO lands and lie between the inherited paste windows. Include a selective via-treatment drawing and require assembler review of stencil coverage, via treatment and the two-sided process before release.
 
 ## Requested quote details
 

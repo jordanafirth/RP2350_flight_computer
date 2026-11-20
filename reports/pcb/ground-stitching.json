@@ -1,75 +1,25 @@
 {
   "status": "candidate stitches; independent DRC required",
-  "vias_added": [
-    {
-      "x": 122.75,
-      "y": 105.0,
-      "diameter_mm": 0.4,
-      "drill_mm": 0.2
-    },
-    {
-      "x": 129.75,
-      "y": 118.0,
-      "diameter_mm": 0.4,
-      "drill_mm": 0.2
-    },
-    {
-      "x": 125.5,
-      "y": 112.25,
-      "diameter_mm": 0.4,
-      "drill_mm": 0.2
-    },
-    {
-      "x": 126.0,
-      "y": 119.25,
-      "diameter_mm": 0.4,
-      "drill_mm": 0.2
-    }
-  ],
-  "outer_fill_islands_without_a_new_stitch": [
-    {
-      "layer": "F.Cu",
-      "island": 5
-    },
-    {
-      "layer": "F.Cu",
-      "island": 7
-    },
-    {
-      "layer": "F.Cu",
-      "island": 9
-    },
-    {
-      "layer": "F.Cu",
-      "island": 10
-    },
-    {
-      "layer": "F.Cu",
-      "island": 12
-    },
-    {
-      "layer": "B.Cu",
-      "island": 5
-    }
-  ],
+  "vias_added": [],
+  "outer_fill_islands_without_a_new_stitch": [],
   "processor_exposed_pad_vias": [
     {
-      "x": 123.1775,
+      "x": 123.178,
       "y": 112.7,
       "diameter_mm": 0.4,
       "drill_mm": 0.2,
       "process": "filled and copper capped; assembler review required"
     },
     {
-      "x": 123.97749999999999,
-      "y": 112.7,
-      "diameter_mm": 0.4,
-      "drill_mm": 0.2,
-      "process": "filled and copper capped; assembler review required"
-    },
-    {
-      "x": 123.1775,
+      "x": 123.178,
       "y": 111.9,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2,
+      "process": "filled and copper capped; assembler review required"
+    },
+    {
+      "x": 123.977,
+      "y": 112.7,
       "diameter_mm": 0.4,
       "drill_mm": 0.2,
       "process": "filled and copper capped; assembler review required"

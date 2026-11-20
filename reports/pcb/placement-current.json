@@ -35,9 +35,9 @@
     },
     {
       "ref": "C7",
-      "x": 28.6783,
-      "y": 9.8822,
-      "rotation": 180.0,
+      "x": 23.9775,
+      "y": 15.21,
+      "rotation": -90.0,
       "side": "F",
       "footprint": "FlightComputer:_0402NO"
     },
@@ -91,7 +91,7 @@
     },
     {
       "ref": "R1",
-      "x": 27.1447,
+      "x": 26.1447,
       "y": 3.5957,
       "rotation": 0.0,
       "side": "F",
@@ -195,9 +195,9 @@
     },
     {
       "ref": "C20",
-      "x": 10.3235,
-      "y": 12.065,
-      "rotation": 180.0,
+      "x": 11.0,
+      "y": 11.56,
+      "rotation": 90.0,
       "side": "F",
       "footprint": "FlightComputer:0805-NO"
     },
@@ -235,7 +235,7 @@
     },
     {
       "ref": "C17",
-      "x": 30.48,
+      "x": 32.05,
       "y": 11.276,
       "rotation": 0.0,
       "side": "F",
@@ -267,16 +267,16 @@
     },
     {
       "ref": "U3",
-      "x": 10.4,
-      "y": 9.46,
+      "x": 10.35,
+      "y": 8.86,
       "rotation": 90.0,
       "side": "F",
       "footprint": "FlightComputer:SOT23-5"
     },
     {
       "ref": "R10",
-      "x": 28.0,
-      "y": 12.36,
+      "x": 29.5,
+      "y": 12.51,
       "rotation": 180.0,
       "side": "F",
       "footprint": "FlightComputer:_0402NO"
@@ -323,9 +323,9 @@
     },
     {
       "ref": "C21",
-      "x": 27.759,
-      "y": 6.7325,
-      "rotation": -90.0,
+      "x": 28.75,
+      "y": 5.66,
+      "rotation": 0.0,
       "side": "F",
       "footprint": "FlightComputer:_0402NO"
     },
@@ -363,8 +363,8 @@
     },
     {
       "ref": "R14",
-      "x": 28.8798,
-      "y": 4.1402,
+      "x": 28.75,
+      "y": 3.76,
       "rotation": 90.0,
       "side": "F",
       "footprint": "FlightComputer:_0402NO"
@@ -419,7 +419,7 @@
     },
     {
       "ref": "R9",
-      "x": 28.0,
+      "x": 29.5,
       "y": 11.11,
       "rotation": 180.0,
       "side": "F",
@@ -460,24 +460,24 @@
     {
       "ref": "Y2",
       "x": 23.0,
-      "y": 15.5,
-      "rotation": 0.0,
+      "y": 7.56,
+      "rotation": 180.0,
       "side": "B",
       "footprint": "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm"
     },
     {
       "ref": "R45",
-      "x": 28.1,
-      "y": 17.0,
-      "rotation": 90.0,
+      "x": 28.25,
+      "y": 16.86,
+      "rotation": 180.0,
       "side": "B",
       "footprint": "Resistor_SMD:R_0603_1608Metric"
     },
     {
       "ref": "R44",
-      "x": 26.5,
-      "y": 14.5,
-      "rotation": 90.0,
+      "x": 27.5,
+      "y": 14.36,
+      "rotation": -90.0,
       "side": "B",
       "footprint": "Resistor_SMD:R_0603_1608Metric"
     },
@@ -499,17 +499,17 @@
     },
     {
       "ref": "TP4",
-      "x": 30.0,
-      "y": 13.0,
+      "x": 36.5,
+      "y": 18.36,
       "rotation": 0.0,
       "side": "B",
       "footprint": "FlightComputer:TESTPOINT_ROUND_1MM"
     },
     {
       "ref": "R43",
-      "x": 28.5,
-      "y": 8.0,
-      "rotation": 90.0,
+      "x": 27.8,
+      "y": 8.06,
+      "rotation": 180.0,
       "side": "B",
       "footprint": "Resistor_SMD:R_0603_1608Metric"
     },
@@ -523,7 +523,7 @@
     },
     {
       "ref": "R35",
-      "x": 30.0,
+      "x": 31.1,
       "y": 4.9,
       "rotation": 90.0,
       "side": "B",
@@ -539,8 +539,8 @@
     },
     {
       "ref": "C31",
-      "x": 20.0,
-      "y": 11.0,
+      "x": 23.25,
+      "y": 14.56,
       "rotation": 90.0,
       "side": "B",
       "footprint": "Capacitor_SMD:C_0603_1608Metric"
@@ -587,9 +587,9 @@
     },
     {
       "ref": "C33",
-      "x": 20.5,
-      "y": 17.5,
-      "rotation": 0.0,
+      "x": 21.75,
+      "y": 4.91,
+      "rotation": -90.0,
       "side": "B",
       "footprint": "Capacitor_SMD:C_0603_1608Metric"
     },
@@ -603,7 +603,7 @@
     },
     {
       "ref": "R34",
-      "x": 26.9,
+      "x": 27.3,
       "y": 5.0,
       "rotation": 90.0,
       "side": "B",
@@ -611,7 +611,7 @@
     },
     {
       "ref": "R32",
-      "x": 21.0,
+      "x": 20.25,
       "y": 4.8,
       "rotation": 90.0,
       "side": "B",
@@ -619,15 +619,15 @@
     },
     {
       "ref": "R41",
-      "x": 20.0,
-      "y": 7.9,
-      "rotation": 90.0,
+      "x": 19.55,
+      "y": 12.61,
+      "rotation": 0.0,
       "side": "B",
       "footprint": "Resistor_SMD:R_0603_1608Metric"
     },
     {
       "ref": "R33",
-      "x": 24.0,
+      "x": 25.75,
       "y": 4.7,
       "rotation": 90.0,
       "side": "B",
@@ -635,15 +635,15 @@
     },
     {
       "ref": "TP3",
-      "x": 30.0,
-      "y": 19.0,
+      "x": 40.5,
+      "y": 18.36,
       "rotation": 0.0,
       "side": "B",
       "footprint": "FlightComputer:TESTPOINT_ROUND_1.5MM_NO"
     },
     {
       "ref": "C38",
-      "x": 18.2,
+      "x": 17.0,
       "y": 8.3,
       "rotation": 90.0,
       "side": "B",
@@ -651,17 +651,17 @@
     },
     {
       "ref": "C34",
-      "x": 24.5,
-      "y": 17.5,
-      "rotation": 0.0,
+      "x": 24.25,
+      "y": 4.91,
+      "rotation": -90.0,
       "side": "B",
       "footprint": "Capacitor_SMD:C_0603_1608Metric"
     },
     {
       "ref": "C32",
-      "x": 24.0,
-      "y": 7.0,
-      "rotation": 0.0,
+      "x": 19.65,
+      "y": 9.46,
+      "rotation": 180.0,
       "side": "B",
       "footprint": "Capacitor_SMD:C_0603_1608Metric"
     },
@@ -675,9 +675,9 @@
     },
     {
       "ref": "C35",
-      "x": 28.0,
-      "y": 11.1,
-      "rotation": 90.0,
+      "x": 19.65,
+      "y": 10.96,
+      "rotation": 180.0,
       "side": "B",
       "footprint": "Capacitor_SMD:C_0603_1608Metric"
     },
@@ -715,16 +715,16 @@
     },
     {
       "ref": "R42",
-      "x": 18.8,
-      "y": 15.2,
-      "rotation": 90.0,
+      "x": 24.8,
+      "y": 14.56,
+      "rotation": -90.0,
       "side": "B",
       "footprint": "Resistor_SMD:R_0603_1608Metric"
     },
     {
       "ref": "TP5",
-      "x": 30.0,
-      "y": 15.0,
+      "x": 38.5,
+      "y": 18.36,
       "rotation": 0.0,
       "side": "B",
       "footprint": "FlightComputer:TESTPOINT_ROUND_1MM"

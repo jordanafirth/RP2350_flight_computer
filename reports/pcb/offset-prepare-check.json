@@ -1,0 +1,9 @@
+{
+  "board": ".cache/routing/candidate-offset-placement.kicad_pcb",
+  "sha256": "2fa2cac95b498b7ec9a74c74a0ee5471c6344646b05c986a2d4daa0eba119044",
+  "action": "Prepare",
+  "unconnected": 160,
+  "drc_report": "reports/pcb/offset-placement-drc.json",
+  "unexpected_via_in_pad": false,
+  "usb_return_screen": "pass"
+}

@@ -1,0 +1,9 @@
+{
+  "board": ".cache/routing/candidate-escape.kicad_pcb",
+  "sha256": "144aad8f69f81105c616e45d635754093c05b4364d8bf9b73f45635811237a8b",
+  "action": "Evaluate",
+  "unconnected": 30,
+  "drc_report": "reports/pcb/candidate-escape-drc.json",
+  "unexpected_via_in_pad": false,
+  "usb_return_screen": "pass"
+}

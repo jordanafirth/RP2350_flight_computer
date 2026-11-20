@@ -1,0 +1,192 @@
+{
+  "status": "independent physical DRC required",
+  "imu_shift_native_mm": [
+    -5,
+    0
+  ],
+  "shifted_parts": [
+    "U5",
+    "Y2",
+    "C31",
+    "C32",
+    "C33",
+    "C34",
+    "C35",
+    "R41",
+    "R42",
+    "R43",
+    "R44"
+  ],
+  "obsolete_ground_vias_removed": 1,
+  "placements": {
+    "R4": {
+      "position": [
+        119.2,
+        105.6
+      ],
+      "rotation": 180.0,
+      "side": "B"
+    },
+    "R42": {
+      "position": [
+        119.8,
+        108.3
+      ],
+      "rotation": -90.0,
+      "side": "B"
+    },
+    "C35": {
+      "position": [
+        114.65,
+        111.9
+      ],
+      "rotation": 180.0,
+      "side": "B"
+    },
+    "Y2": {
+      "position": [
+        118.0,
+        115.3
+      ],
+      "rotation": 180.0,
+      "side": "B"
+    },
+    "R35": {
+      "position": [
+        128.1,
+        118.1
+      ],
+      "rotation": 90.0,
+      "side": "B"
+    },
+    "C32": {
+      "position": [
+        114.65,
+        113.4
+      ],
+      "rotation": 180.0,
+      "side": "B"
+    },
+    "R44": {
+      "position": [
+        126.5,
+        107.0
+      ],
+      "rotation": -90.0,
+      "side": "B"
+    },
+    "R31": {
+      "position": [
+        121.3,
+        118.1
+      ],
+      "rotation": 90.0,
+      "side": "B"
+    },
+    "C34": {
+      "position": [
+        119.25,
+        117.95
+      ],
+      "rotation": -90.0,
+      "side": "B"
+    },
+    "R41": {
+      "position": [
+        114.85,
+        110.25
+      ],
+      "rotation": 0.0,
+      "side": "B"
+    },
+    "R45": {
+      "position": [
+        124.3,
+        110.5
+      ],
+      "rotation": 90.0,
+      "side": "B"
+    },
+    "C38": {
+      "position": [
+        116.2,
+        104.3
+      ],
+      "rotation": 0.0,
+      "side": "B"
+    },
+    "U5": {
+      "position": [
+        119.0,
+        111.86
+      ],
+      "rotation": 0.0,
+      "side": "B"
+    },
+    "C31": {
+      "position": [
+        118.25,
+        108.3
+      ],
+      "rotation": 90.0,
+      "side": "B"
+    },
+    "R36": {
+      "position": [
+        129.8,
+        118.1
+      ],
+      "rotation": 90.0,
+      "side": "B"
+    },
+    "R33": {
+      "position": [
+        124.7,
+        118.1
+      ],
+      "rotation": 90.0,
+      "side": "B"
+    },
+    "R43": {
+      "position": [
+        122.8,
+        114.8
+      ],
+      "rotation": 180.0,
+      "side": "B"
+    },
+    "R34": {
+      "position": [
+        126.399999,
+        118.1
+      ],
+      "rotation": 90.0,
+      "side": "B"
+    },
+    "R32": {
+      "position": [
+        123.0,
+        118.1
+      ],
+      "rotation": 90.0,
+      "side": "B"
+    },
+    "C33": {
+      "position": [
+        116.75,
+        117.95
+      ],
+      "rotation": -90.0,
+      "side": "B"
+    },
+    "C4": {
+      "position": [
+        115.4,
+        106.6
+      ],
+      "rotation": 0.0,
+      "side": "B"
+    }
+  },
+  "limits": "Reuses exact parts and local sensor topology. Board outline and connector locations are unchanged. Physical prototype and assembly review remain required."
+}

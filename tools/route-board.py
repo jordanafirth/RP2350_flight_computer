@@ -20,8 +20,8 @@ parser.add_argument('--session',type=Path,default=CACHE/'result.ses')
 parser.add_argument('--dsn',type=Path,default=CACHE/'input.dsn')
 parser.add_argument('--board',type=Path,default=TARGET,help='Candidate PCB to read or update; defaults to the working board.')
 parser.add_argument('--three-signal-layers',action='store_true')
-parser.add_argument('--replace-tracks',action='store_true',help='Replace this generated candidate routing from a full-board SES; back up the PCB first.')
-parser.add_argument('--fresh-routing',action='store_true',help='Export placement without existing candidate tracks.')
+parser.add_argument('--replace-tracks',action='store_true',help='Replace generated routing while retaining fixed copper omitted by SES; use the matching DSN base and back it up first.')
+parser.add_argument('--fresh-routing',action='store_true',help='Export placement and fixed copper without provisional generated tracks.')
 parser.add_argument('--outer-ground',action='store_true',help='Add outer-layer ground pours for a separately checked candidate.')
 parser.add_argument('--quiet',action='store_true')
 args=parser.parse_args()
@@ -29,16 +29,31 @@ TARGET=args.board.resolve()
 args.dsn=args.dsn.resolve()
 args.session=args.session.resolve()
 load_path=TARGET
+original=loads(TARGET.read_text(encoding='utf-8'))
+def fixed(n):
+    value=first(n,'locked')
+    return value is not None and (len(value)==1 or value[1]=='yes')
+fixed_ids={first(n,'uuid')[1] for n in original if isinstance(n,list) and n[0] in {'segment','via','arc'} and fixed(n)}
+def copper_signature(n):
+    keys=['start','end','mid','width','layer','net'] if n[0]!='via' else ['at','size','drill','layers','net']
+    def atom(v):
+        try:return round(float(v),6)
+        except ValueError:return str(v)
+    return tuple((k,tuple(atom(v) for v in first(n,k)[1:])) for k in keys if first(n,k))
+fixed_before={first(n,'uuid')[1]:copper_signature(n) for n in original if isinstance(n,list) and n[0] in {'segment','via','arc'} and fixed(n)}
 strip_tracks=(args.action=='export' and args.fresh_routing) or (args.action=='import' and args.replace_tracks)
 strip_plane=args.action=='export' and args.three_signal_layers
-if strip_tracks or strip_plane:
+strip_outer=args.action=='export'
+if strip_tracks or strip_plane or strip_outer:
     # Removing large SWIG-owned collections in this KiCad build destabilizes
     # subsequent object iteration. Filter the native file before loading it;
     # the original candidate remains untouched until an explicit import/save.
-    data=loads(TARGET.read_text(encoding='utf-8'))
+    data=original
     data[:]=[n for n in data if not (isinstance(n,list) and (
-        (strip_tracks and n[0] in {'segment','via','arc'}) or
-        (strip_plane and n[0]=='zone' and first(n,'layer') and first(n,'layer')[1]=='In2.Cu')))]
+        (strip_tracks and n[0] in {'segment','via','arc'} and not fixed(n)) or
+        (n[0]=='zone' and not first(n,'keepout') and first(n,'layer') and (
+            (strip_plane and first(n,'layer')[1]=='In2.Cu') or
+            (strip_outer and first(n,'layer')[1] in {'F.Cu','B.Cu'})))))]
     load_path=CACHE/(TARGET.stem+'-interchange-base.kicad_pcb')
     load_path.write_text(dumps(data)+'\n',encoding='utf-8',newline='\n')
 board=load_board(load_path,OUT/'flight-computer.kicad_pro')
@@ -77,6 +92,16 @@ elif args.action=='import':
         if isinstance(item,pcbnew.PCB_TEXT) and 'UNROUTED PLACEMENT' in item.GetText():
             item.SetText('ROUTING IN PROGRESS — NOT FOR FABRICATION')
     save_board(board,TARGET)
+    saved=loads(TARGET.read_text(encoding='utf-8'))
+    saved_ids={first(n,'uuid')[1] for n in saved if isinstance(n,list) and n[0] in {'segment','via','arc'}}
+    missing=fixed_ids-saved_ids
+    if missing:raise SystemExit(f'SES import lost {len(missing)} fixed copper items')
+    saved_fixed={first(n,'uuid')[1]:copper_signature(n) for n in saved if isinstance(n,list) and n[0] in {'segment','via','arc'} and first(n,'uuid')[1] in fixed_ids}
+    changed=[key for key in fixed_ids if fixed_before[key]!=saved_fixed[key]]
+    if changed:raise SystemExit(f'SES import changed {len(changed)} fixed copper geometries/nets')
+    (ROOT/'reports/pcb/fixed-copper-check.json').write_text(json.dumps({'status':'pass','board':TARGET.name,
+        'session':args.session.name,'fixed_items_checked':len(fixed_ids),'geometry_width_layer_and_net_preserved':True},indent=2)+'\n',encoding='utf-8',newline='\n')
+    print(f'Preserved {len(fixed_ids)} fixed copper items omitted by SES.')
     print('Imported session:',args.session)
     print('Track/via items:',len(board.GetTracks()))
 elif args.action=='pads':

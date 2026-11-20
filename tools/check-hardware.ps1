@@ -8,6 +8,12 @@ function Run-Step([string]$Executable, [string[]]$Arguments) {
     & $Executable @Arguments
     if ($LASTEXITCODE -ne 0) { throw "Check failed ($LASTEXITCODE): $Executable $($Arguments -join ' ')" }
 }
+function Normalize-Svg([string]$Path) {
+    $absolute=Join-Path $projectRoot $Path
+    $svg=[IO.File]::ReadAllText($absolute).Replace("`r`n","`n")
+    $svg=[regex]::Replace($svg,'(?m)[\t ]+$','')
+    [IO.File]::WriteAllText($absolute,$svg,[Text.UTF8Encoding]::new($false))
+}
 Push-Location $projectRoot
 try {
     if (!$PreviewOnly) {
@@ -22,6 +28,8 @@ try {
     Run-Step $python @('tools/route-board.py','pads','--quiet')
     Run-Step $cli @('pcb','export','svg','--mode-single','--layers','F.Cu,F.Fab,Edge.Cuts','--output','.cache/current-top.svg','hardware/rev-a/flight-computer.kicad_pcb')
     Run-Step $cli @('pcb','export','svg','--mode-single','--layers','B.Cu,B.Fab,Edge.Cuts','--output','.cache/current-bottom.svg','hardware/rev-a/flight-computer.kicad_pcb')
+    foreach ($face in @('top','bottom')) {Normalize-Svg ".cache/current-$face.svg"}
+    Get-ChildItem -LiteralPath 'hardware/rev-a/exports' -Filter '*.svg' | ForEach-Object {Normalize-Svg ('hardware/rev-a/exports/'+$_.Name)}
     $inkscape = 'C:\Program Files\Inkscape\bin\inkscape.com'
     if (Test-Path -LiteralPath $inkscape) {
         foreach ($face in @('top','bottom')) {
