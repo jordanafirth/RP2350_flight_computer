@@ -40,7 +40,9 @@ for t in b.GetTracks():
     else:row.update(start=xy(t.GetStart()),end=xy(t.GetEnd()))
     tracks.append(row)
 path=ROOT/'.cache/layout-geometry.json'
-path.write_text(json.dumps({'parts':parts,'pads':pads,'tracks':tracks},indent=2)+'\n',encoding='utf-8',newline='\n')
+count=b.GetCopperLayerCount()
+signal_layers=['F.Cu','In2.Cu','In3.Cu','B.Cu'] if count==6 else ['F.Cu','In2.Cu','B.Cu']
+path.write_text(json.dumps({'copper_layer_count':count,'routing_layers':signal_layers,'parts':parts,'pads':pads,'tracks':tracks},indent=2)+'\n',encoding='utf-8',newline='\n')
 vip=[]
 for v in tracks:
     if not v['via']:continue

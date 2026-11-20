@@ -44,7 +44,7 @@ The simple retained charger is not a separate battery power-path controller. Ser
 - ERC is necessary but cannot establish correct footprints, physical fit, supply transient behavior or sensor performance. A clean check would not constitute manufacturing approval.
 - Pin types for BNO085 SA0 and BMP581 SDO are inputs in this selected I2C configuration, even though shared SPI-oriented source symbols label them differently.
 - Connector mounting contacts are modeled as passive metal contacts. The source geometry check caught and corrected a 1 mm test-pad diameter that had initially been recreated as 1.27 mm.
-- Expansion headers J1/J2 retain their pads and connections but are DNP. D5 is also DNP because its rated minimum supply exceeds 3.3 V. The three SWD/GND test pads are excluded from the assembly BOM. Servo, tag, battery and Qwiic connectors remain fitted in the draft.
+- Expansion headers J1/J2 retain their pads and connections but are DNP. D5 is also DNP because its rated minimum supply exceeds 3.3 V. The three boot/SWD test pads are excluded from the assembly BOM: TP3 is USBBOOT, TP4 is SWDIO and TP5 is SWCLK. A programming fixture also needs an existing ground pad. Servo, tag, battery and Qwiic connectors remain fitted in the draft.
 - Power flags describe external supplies and supply paths through passive components. They do not add hardware or simulate voltage regulation.
 - Converted reference boards are used for footprint extraction only. KiCad reported skipped inner-layer polygons on Feather imports. Their imported routing must not be used as a validated replacement for the original boards.
 

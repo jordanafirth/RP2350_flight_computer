@@ -1,0 +1,9 @@
+{
+  "board": ".cache/routing/candidate-six.kicad_pcb",
+  "sha256": "e137711e1c5dcb0f4c65a2518b562bbf976bf771e19d713d2ac167504ddf35e9",
+  "action": "Evaluate",
+  "unconnected": 20,
+  "drc_report": "reports/pcb/candidate-six-drc.json",
+  "unexpected_via_in_pad": false,
+  "usb_return_screen": "pass"
+}

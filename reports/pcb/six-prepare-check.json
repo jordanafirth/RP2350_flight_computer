@@ -1,0 +1,9 @@
+{
+  "board": ".cache/routing/candidate-six-placement.kicad_pcb",
+  "sha256": "5e2d22e02368ddec8d84877ce1c07aa34a6cd4f8839585dde149ca87249f9a1a",
+  "action": "Prepare",
+  "unconnected": 32,
+  "drc_report": "reports/pcb/six-placement-drc.json",
+  "unexpected_via_in_pad": false,
+  "usb_return_screen": "pass"
+}

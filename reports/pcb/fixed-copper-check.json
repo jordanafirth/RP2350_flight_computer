@@ -1,7 +1,7 @@
 {
   "status": "pass",
-  "board": "candidate-escape.kicad_pcb",
-  "session": "result-escape.ses",
-  "fixed_items_checked": 193,
+  "board": "candidate-six.kicad_pcb",
+  "session": "result-six.ses",
+  "fixed_items_checked": 196,
   "geometry_width_layer_and_net_preserved": true
 }

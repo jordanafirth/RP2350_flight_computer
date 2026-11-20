@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "board": "candidate-critical-placement.kicad_pcb",
+  "reference_layer": "In2.Cu / L3 GND",
+  "trace_center_samples_with_reference": 371,
+  "samples_without_reference": [],
+  "transition_samples_excluded_within_0p8mm": 81,
+  "foreign_vias_within_0p3mm_copper_edge": [],
+  "limits": "Geometric saved-fill screen only. Excludes the local layer-transition regions, which require return-via review. Does not establish impedance, signal integrity or fabrication suitability."
+}

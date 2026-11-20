@@ -64,6 +64,11 @@ def main():
     layers = copy.deepcopy(first(source, 'layers'))
     layers.insert(2, ['4', Q('In1.Cu'), 'power'])
     layers.insert(3, ['6', Q('In2.Cu'), 'signal'])
+    layout_path=OUT/'layout-settings.json'
+    layout=json.loads(layout_path.read_text(encoding='utf-8')) if layout_path.exists() else {'copper_layers':4}
+    if layout['copper_layers']==6:
+        layers.insert(4,['8',Q('In3.Cu'),'signal'])
+        layers.insert(5,['10',Q('In4.Cu'),'power'])
     board.extend([layers, ['setup', ['pad_to_mask_clearance', '0']]])
     eagle = ET.parse(ROOT/'references/Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.brd').getroot()
     elements = {e.get('name'): e for e in eagle.findall('drawing/board/elements/element')}

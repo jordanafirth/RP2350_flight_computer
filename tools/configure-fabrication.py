@@ -14,6 +14,8 @@ parser.add_argument('--ep-report',type=Path,required=True)
 parser.add_argument('--report',type=Path,default=ROOT/'reports/pcb/fabrication-settings.json')
 args=parser.parse_args()
 b=loads(args.board.read_text(encoding='utf-8'))
+layer_count=sum(1 for n in first(b,'layers') if isinstance(n,list) and str(n[1]).endswith('.Cu'))
+if layer_count not in (4,6):raise ValueError('Only the reviewed four- and six-layer candidates are supported')
 setup=first(b,'setup')
 stack=['stackup']
 def layer(name,kind,thickness=None,material=None,er=None):
@@ -27,9 +29,18 @@ layer('F.Mask','Top Solder Mask',.01524,er=3.8)
 layer('F.Cu','copper',.035)
 layer('dielectric 1','prepreg',.0994,'3313',4.1)
 layer('In1.Cu','copper',.0152)
-layer('dielectric 2','core',1.265,'FR4',4.6)
-layer('In2.Cu','copper',.0152)
-layer('dielectric 3','prepreg',.0994,'3313',4.1)
+if layer_count==6:
+    layer('dielectric 2','core',.1,'FR4',4.6)
+    layer('In2.Cu','copper',.0152)
+    layer('dielectric 3','core',1.1208,'7628 / 0.7-mm unclad FR4 / 7628',4.6)
+    layer('In3.Cu','copper',.0152)
+    layer('dielectric 4','core',.1,'FR4',4.6)
+    layer('In4.Cu','copper',.0152)
+    layer('dielectric 5','prepreg',.0994,'3313',4.1)
+else:
+    layer('dielectric 2','core',1.265,'FR4',4.6)
+    layer('In2.Cu','copper',.0152)
+    layer('dielectric 3','prepreg',.0994,'3313',4.1)
 layer('B.Cu','copper',.035)
 layer('B.Mask','Bottom Solder Mask',.01524,er=3.8)
 layer('B.SilkS','Bottom Silk Screen')
@@ -48,13 +59,18 @@ for v in children(b,'via'):
     v.extend([['filling','yes'],['capping','yes'],['tenting',['front','no'],['back','yes']]])
     selected.append({'x':x,'y':y,'uuid':first(v,'uuid')[1]})
 if len(selected)!=3:raise ValueError('Exposed-pad via coordinates do not match this PCB')
+if layer_count==6:first(first(b,'general'),'thickness')[1]='1.68088'
 args.board.write_text(dumps(b)+'\n',encoding='utf-8',newline='\n')
+stack_name='JLC06161H-3313E' if layer_count==6 else 'JLC04161H-3313'
 result={'status':'candidate fabrication requirements; supplier confirmation pending',
-        'manufacturing_release':False,'board':args.board.name,'stackup':'JLC04161H-3313',
+        'manufacturing_release':False,'board':args.board.name,'stackup':stack_name,'copper_layers':layer_count,
         'source':'https://jlcpcb.com/impedance','nominal_board_thickness_mm':1.6,
-        'copper_and_dielectric_sum_mm':1.5642,'sum_including_modelled_mask_mm':1.59468,
+        'copper_and_dielectric_sum_mm':1.6504 if layer_count==6 else 1.5642,'sum_including_modelled_mask_mm':1.68088 if layer_count==6 else 1.59468,
+        'internal_dielectric_Dk_assumed':4.6,'internal_dielectric_Dk_supplier_confirmed':False,
         'ordinary_vias':'tented both faces per board defaults',
         'processor_vias':selected,'processor_via_process':'epoxy filled and copper capped; exposed on front, tented on back',
         'impedance_verified':False,'limits':'Fabricator must confirm materials, finished copper, tolerances and USB geometry. Include a selective via-treatment drawing with any quotation/manufacturing package.'}
 args.report.write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8',newline='\n')
+if args.board.resolve()==(ROOT/'hardware/rev-a/flight-computer.kicad_pcb').resolve():
+    (ROOT/'hardware/rev-a/layout-settings.json').write_text(json.dumps({'copper_layers':layer_count,'candidate_stackup':stack_name},indent=2)+'\n',encoding='utf-8',newline='\n')
 print('Recorded candidate stackup and three selective filled/capped vias; supplier confirmation remains required.')

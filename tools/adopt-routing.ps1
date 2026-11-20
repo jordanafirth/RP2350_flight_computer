@@ -1,4 +1,4 @@
-param([ValidateSet('stitched','critical','escape','repair','repair2','repair3')][string]$Candidate = 'stitched')
+param([ValidateSet('stitched','critical','escape','offset','six','repair','repair2','repair3','repair6','repair6b','repair6c')][string]$Candidate = 'stitched')
 $ErrorActionPreference = 'Stop'
 $projectRoot = Split-Path -Parent $PSScriptRoot
 $python = Join-Path $env:LOCALAPPDATA 'Programs\KiCad\10.0\bin\python.exe'

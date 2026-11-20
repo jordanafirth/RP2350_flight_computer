@@ -24,6 +24,7 @@ try {
     Run-Step $cli @('sch','export','svg','--output','hardware/rev-a/exports/','hardware/rev-a/flight-computer.kicad_sch')
     # Preserve raw violations. A generated report is not a release approval.
     Run-Step $cli @('pcb','drc','--refill-zones','--save-board','--schematic-parity','--format','json','--output',$PcbReport,'hardware/rev-a/flight-computer.kicad_pcb')
+    Run-Step $python @('tools/check-pcb-connectivity.py')
     }
     Run-Step $python @('tools/route-board.py','pads','--quiet')
     Run-Step $cli @('pcb','export','svg','--mode-single','--layers','F.Cu,F.Fab,Edge.Cuts','--output','.cache/current-top.svg','hardware/rev-a/flight-computer.kicad_pcb')

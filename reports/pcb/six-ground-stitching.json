@@ -1,0 +1,42 @@
+{
+  "status": "candidate stitches; independent DRC required",
+  "vias_added": [],
+  "outer_fill_islands_without_a_new_stitch": [
+    {
+      "layer": "F.Cu",
+      "island": 0
+    },
+    {
+      "layer": "F.Cu",
+      "island": 8
+    },
+    {
+      "layer": "B.Cu",
+      "island": 10
+    }
+  ],
+  "processor_exposed_pad_vias": [
+    {
+      "x": 123.977,
+      "y": 112.7,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2,
+      "process": "filled and copper capped; assembler review required"
+    },
+    {
+      "x": 123.178,
+      "y": 111.9,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2,
+      "process": "filled and copper capped; assembler review required"
+    },
+    {
+      "x": 123.178,
+      "y": 112.7,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2,
+      "process": "filled and copper capped; assembler review required"
+    }
+  ],
+  "limits": "Exposed-pad vias require filling and copper capping in the fabrication quote. Uncovered islands may already connect through PTH pads or may need manual routing. Independent DRC and assembler stencil/process review remain required."
+}

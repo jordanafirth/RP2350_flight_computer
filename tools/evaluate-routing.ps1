@@ -1,4 +1,4 @@
-param([Parameter(Mandatory=$true)][ValidateSet('fine','stable','stitched','sensor','signal-layers','critical','escape','offset')][string]$Candidate, [switch]$OuterGround,
+param([Parameter(Mandatory=$true)][ValidateSet('fine','stable','stitched','sensor','signal-layers','critical','escape','offset','six')][string]$Candidate, [switch]$OuterGround,
     [string]$BaseBoard='hardware/rev-a/flight-computer.kicad_pcb')
 $ErrorActionPreference = 'Stop'
 $projectRoot = Split-Path -Parent $PSScriptRoot

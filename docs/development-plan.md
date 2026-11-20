@@ -54,7 +54,7 @@ Production release requires physical prototype and pilot results. CAD checks and
 
 ## Next concrete work
 
-Updated 2026-11-20: the native PCB contains partial routing, the selected right-angle servo header, exact USB/SD sockets, four M2 mounting holes and a battery envelope. All 86 fitted components have candidate MPNs. The draft now has 92 footprint items, including three SWD/GND test pads and three DNP items. The horizontal Qwiic socket and top battery socket are retained. No assembly quote has been obtained.
+Updated 2026-11-20: the native PCB contains partial routing, the selected right-angle servo header, exact USB/SD sockets, four M2 mounting holes and a battery envelope. All 86 fitted components have candidate MPNs. The draft now has 92 footprint items, including three boot/SWD test pads and three DNP items. TP3 retains its inherited USBBOOT net; TP4/TP5 are SWDIO/SWCLK. A fixture must also contact an existing ground pad. The horizontal Qwiic socket and top battery socket are retained. No assembly quote has been obtained.
 
 Routing checkpoints are retained under `reports/pcb/`. The five-pass fine candidate had 88 unconnected items; outer ground pours reduced that to 39 with three routed-edge violations and two reviewed locating-hole notices. Moving USB resistors closer to the MCU required removing obstructing copper and rerouting affected nets. Six candidate ground stitching vias were added and checked. These are development measurements, not release evidence; consult the latest named DRC report for the current state.
 

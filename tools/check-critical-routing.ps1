@@ -1,5 +1,5 @@
 param([ValidateSet('Prepare','Evaluate')][string]$Action='Evaluate',
-      [ValidateSet('critical','escape','offset')][string]$Candidate='critical')
+      [ValidateSet('critical','escape','offset','six')][string]$Candidate='critical')
 $ErrorActionPreference='Stop'
 $root=Split-Path -Parent $PSScriptRoot
 $bin=Join-Path $env:LOCALAPPDATA 'Programs\KiCad\10.0\bin'
@@ -15,6 +15,7 @@ try {
         $prepareArgs=@('tools/prepare-critical-routing.py')
         if ($Candidate -eq 'escape') {$prepareArgs+='--escape-flash'}
         if ($Candidate -eq 'offset') {$prepareArgs=@('tools/prepare-offset-routing.py')}
+        if ($Candidate -eq 'six') {$prepareArgs=@('tools/prepare-six-layer.py')}
         Run-Step $python $prepareArgs
         $board=".cache/routing/candidate-$Candidate-placement.kicad_pcb"
         foreach ($extension in @('kicad_pro','kicad_dru')) {
@@ -36,12 +37,13 @@ try {
         }
     }
     $raw=Get-Content $report -Raw | ConvertFrom-Json
+    Run-Step $python @('tools/check-pcb-connectivity.py','--board',$board,'--report',"reports/pcb/$Candidate-pad-net-check.json")
     [pscustomobject]@{board=$board;unconnected=@($raw.unconnected_items).Count;types=@($raw.violations | Group-Object type | Select-Object Name,Count)} | ConvertTo-Json -Depth 5
     Run-Step $python @('tools/export-layout.py','--board',$board,'--strict-vias')
     Run-Step $python @('tools/check-usb-return.py','--board',$board,'--report',"reports/pcb/usb-return-$Candidate-$($Action.ToLowerInvariant())-check.json")
     if ($Action -eq 'Prepare') {
         if (@($raw.violations | Where-Object type -NotIn npth_inside_courtyard,track_dangling,via_dangling).Count) { throw 'Resolve local DRC before export' }
-        Run-Step $python @('tools/route-board.py','export','--board',$board,'--three-signal-layers','--dsn',".cache/routing/input-$Candidate.dsn")
+        Run-Step $python @('tools/route-board.py','export','--board',$board,'--signal-routing','--dsn',".cache/routing/input-$Candidate.dsn")
     }
     $manifest=[ordered]@{board=$board;sha256=(Get-FileHash -LiteralPath $board -Algorithm SHA256).Hash.ToLowerInvariant();action=$Action;
         unconnected=@($raw.unconnected_items).Count;drc_report=$report;unexpected_via_in_pad=$false;usb_return_screen='pass'}

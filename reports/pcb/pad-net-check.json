@@ -1,0 +1,19 @@
+{
+  "status": "pass",
+  "board": "flight-computer.kicad_pcb",
+  "components_checked": 92,
+  "numbered_circuit_lands_checked": 371,
+  "connected_physical_pads_checked": 350,
+  "unassigned_mechanical_lands": [
+    {
+      "ref": "JTAG1",
+      "pad": "MP"
+    },
+    {
+      "ref": "JTAG1",
+      "pad": "MP"
+    }
+  ],
+  "errors": [],
+  "limits": "PCB/model equivalence only. Does not validate circuit design, physical footprints, routing or fabrication."
+}

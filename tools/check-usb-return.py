@@ -12,14 +12,15 @@ parser.add_argument('--report',type=Path,default=ROOT/'reports/pcb/usb-return-ch
 args=parser.parse_args()
 args.board=args.board.resolve();args.report=args.report.resolve()
 b=load_board(args.board,ROOT/'hardware/rev-a/flight-computer.kicad_pro')
+reference=pcbnew.In4_Cu if b.GetCopperLayerCount()==6 else pcbnew.In2_Cu
 def xy(p):return tuple(pcbnew.ToMM(v) for v in (p.x,p.y))
 def vec(x,y):return pcbnew.VECTOR2I(pcbnew.FromMM(x),pcbnew.FromMM(y))
 def distance(p,a,z):
     dx,dy=z[0]-a[0],z[1]-a[1]
     t=max(0,min(1,((p[0]-a[0])*dx+(p[1]-a[1])*dy)/(dx*dx+dy*dy))) if dx or dy else 0
     return math.dist(p,(a[0]+t*dx,a[1]+t*dy))
-ground=[z.GetFilledPolysList(pcbnew.In2_Cu) for z in b.Zones()
-        if not z.GetIsRuleArea() and z.GetNetname()=='GND' and z.GetLayer()==pcbnew.In2_Cu]
+ground=[z.GetFilledPolysList(reference) for z in b.Zones()
+        if not z.GetIsRuleArea() and z.GetNetname()=='GND' and z.GetLayer()==reference]
 if not ground or not any(p.OutlineCount() for p in ground):
     raise SystemExit('Refill and save L3 GND before this check')
 usb={'USB_D+','USB_D-'}
@@ -41,7 +42,7 @@ for v in b.GetTracks():
     separation=min((distance(p,xy(t.GetStart()),xy(t.GetEnd()))-pcbnew.ToMM(t.GetWidth())/2-radius for t in routes),default=999)
     if separation<.3:foreign.append({'net':v.GetNetname(),'position':p,'copper_edge_distance_mm':round(separation,4)})
 result={'status':'pass' if not gaps and not foreign else 'review required','board':args.board.name,
-        'reference_layer':'In2.Cu / L3 GND','trace_center_samples_with_reference':samples-len(gaps),
+        'reference_layer':b.GetLayerName(reference)+' / GND','trace_center_samples_with_reference':samples-len(gaps),
         'samples_without_reference':gaps,'transition_samples_excluded_within_0p8mm':near_transition,
         'foreign_vias_within_0p3mm_copper_edge':foreign,
         'limits':'Geometric saved-fill screen only. Excludes the local layer-transition regions, which require return-via review. Does not establish impedance, signal integrity or fabrication suitability.'}

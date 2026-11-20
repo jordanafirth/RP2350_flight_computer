@@ -1,5 +1,5 @@
-param([ValidateSet('escape','repair','repair2')][string]$Source='escape',
-      [ValidateSet('repair','repair2','repair3')][string]$Candidate='repair',
+param([ValidateSet('escape','offset','six','repair','repair2','repair6','repair6b')][string]$Source='escape',
+      [ValidateSet('repair','repair2','repair3','repair6','repair6b','repair6c')][string]$Candidate='repair',
       [ValidateRange(1,100)][int]$Limit=100,[switch]$ReuseProposals)
 $ErrorActionPreference='Stop'
 if ($Source -eq $Candidate) {throw 'Keep the source board separate from the repair candidate'}
@@ -34,6 +34,7 @@ try {
     }
     $raw=Get-Content $report -Raw|ConvertFrom-Json
     [pscustomobject]@{board=$board;unconnected=@($raw.unconnected_items).Count;types=@($raw.violations|Group-Object type|Select-Object Name,Count)}|ConvertTo-Json -Depth 5
+    Run-Step $python @('tools/check-pcb-connectivity.py','--board',$board,'--report',"reports/pcb/$Candidate-pad-net-check.json")
     Run-Step $python @('tools/export-layout.py','--board',$board,'--strict-vias')
     Run-Step $python @('tools/check-usb-return.py','--board',$board,'--report',"reports/pcb/usb-return-$Candidate-evaluate-check.json")
     $manifest=[ordered]@{board=$board;sha256=(Get-FileHash -LiteralPath $board -Algorithm SHA256).Hash.ToLowerInvariant();action='Evaluate';
