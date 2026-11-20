@@ -44,7 +44,7 @@
       (width 0)
       (type default))
     (fill yes)
-    (layer "F.SilkS"))
+    (layer "F.Fab"))
   (fp_poly
     (pts
       (xy -0.381 -0.1397)
@@ -55,7 +55,7 @@
       (width 0)
       (type default))
     (fill yes)
-    (layer "F.SilkS"))
+    (layer "F.Fab"))
   (fp_line
     (start -0.4 -0.375)
     (end -0.4 0.35)

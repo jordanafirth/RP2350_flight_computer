@@ -2,5 +2,122 @@
   "meta": {
     "filename": "flight-computer.kicad_pro",
     "version": 3
+  },
+  "board": {
+    "design_settings": {
+      "rules": {
+        "min_clearance": 0.1,
+        "min_copper_edge_clearance": 0.25,
+        "min_track_width": 0.1,
+        "min_via_diameter": 0.4,
+        "min_through_hole_diameter": 0.2,
+        "min_via_annular_width": 0.1,
+        "min_hole_clearance": 0.2,
+        "min_hole_to_hole": 0.2
+      }
+    }
+  },
+  "net_settings": {
+    "meta": {
+      "version": 4
+    },
+    "classes": [
+      {
+        "name": "Default",
+        "clearance": 0.1,
+        "track_width": 0.1,
+        "via_diameter": 0.4,
+        "via_drill": 0.2,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "diff_pair_width": 0.13,
+        "diff_pair_gap": 0.13,
+        "diff_pair_via_gap": 0.25,
+        "wire_width": 6,
+        "bus_width": 12,
+        "line_style": 0,
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2147483647
+      },
+      {
+        "name": "Power",
+        "clearance": 0.2,
+        "track_width": 0.4,
+        "via_diameter": 0.4,
+        "via_drill": 0.2,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "diff_pair_width": 0.13,
+        "diff_pair_gap": 0.13,
+        "diff_pair_via_gap": 0.25,
+        "wire_width": 6,
+        "bus_width": 12,
+        "line_style": 0,
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0
+      },
+      {
+        "name": "Logic supply",
+        "clearance": 0.1,
+        "track_width": 0.15,
+        "via_diameter": 0.4,
+        "via_drill": 0.2,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "diff_pair_width": 0.13,
+        "diff_pair_gap": 0.13,
+        "diff_pair_via_gap": 0.25,
+        "wire_width": 6,
+        "bus_width": 12,
+        "line_style": 0,
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1
+      },
+      {
+        "name": "Core supply",
+        "clearance": 0.1,
+        "track_width": 0.2,
+        "via_diameter": 0.4,
+        "via_drill": 0.2,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "diff_pair_width": 0.13,
+        "diff_pair_gap": 0.13,
+        "diff_pair_via_gap": 0.25,
+        "wire_width": 6,
+        "bus_width": 12,
+        "line_style": 0,
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2
+      }
+    ],
+    "netclass_assignments": {},
+    "netclass_patterns": [
+      {
+        "netclass": "Power",
+        "pattern": "VBAT*"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "VBUS"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "VSYS"
+      },
+      {
+        "netclass": "Logic supply",
+        "pattern": "+3V3"
+      },
+      {
+        "netclass": "Core supply",
+        "pattern": "VCORE"
+      }
+    ],
+    "net_colors": null
   }
 }

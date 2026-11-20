@@ -42,21 +42,21 @@
     (stroke
       (width 0.2032)
       (type solid))
-    (layer "F.SilkS"))
+    (layer "F.Fab"))
   (fp_line
     (start -0.4 -1.05)
     (end 0.4 -1.05)
     (stroke
       (width 0.2032)
       (type solid))
-    (layer "F.SilkS"))
+    (layer "F.Fab"))
   (fp_line
     (start -1.65 -0.8)
     (end -1.65 0.8)
     (stroke
       (width 0.2032)
       (type solid))
-    (layer "F.SilkS"))
+    (layer "F.Fab"))
   (fp_line
     (start 1.4224 0.8104)
     (end -1.4224 0.8104)

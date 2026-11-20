@@ -13,6 +13,7 @@ import re
 import uuid
 import xml.etree.ElementTree as ET
 from pathlib import Path
+from part_catalog import apply as apply_part_catalog
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'hardware' / 'rev-a'
@@ -108,7 +109,7 @@ def prepare_model():
             aliases[pin['net']] = gpio_nets[int(match.group(1))]
     for i in range(4):
         aliases[f'QSPI_DATA[{i}]'] = f'QSPI_IO{i}'
-    excluded = {'CN2', 'U4', 'R15', 'C22', 'DEBUG', 'SJ1'}
+    excluded = {'CN2', 'U4', 'R15', 'C22', 'DEBUG', 'SJ1', 'D+1', 'D-1'}
     rename = {'X2': 'U4', 'X1': 'JBAT1', 'X6': 'JUSB1', 'JP1': 'J1', 'JP3': 'J2', 'CONN1': 'JQT1', 'L': 'D1', 'CHG': 'D2', 'LED1': 'D5', 'D+1': 'TP1', 'D-1': 'TP2', 'TP3': 'TP3', 'SWD': 'TP4', 'SWC': 'TP5'}
     power = {'JBAT1', 'JUSB1', 'U2', 'U3', 'Q3', 'D4', 'D2', 'R2', 'R3', 'R4', 'R8', 'R9', 'R10', 'R12', 'R13', 'C1', 'C4', 'C20', 'TP1', 'TP2'}
     interfaces = {'J1', 'J2', 'JQT1', 'R16', 'R17'}
@@ -195,7 +196,7 @@ def prepare_model():
     simple('C38', '10uF', ['+3V3', 'GND'], 'Interfaces', 'Capacitor_SMD:C_0805_2012Metric')
     simple('JTAG1', 'REMOVE BEFORE FLIGHT', ['ENABLE', 'GND'], 'Power', 'Connector_JST:JST_SH_BM02B-SRSS-TB_1x02-1MP_P1.00mm_Vertical', 'BM02B-SRSS-TB(LF)(SN)')
     servo_pins = [net for i in range(1, 5) for net in (f'SERVO{i}', 'VBAT_SERVO', 'GND')]
-    simple('JSERVO1', '4 x servo: S / BAT / GND', servo_pins, 'Interfaces', 'FlightComputer:Servo_3x04_P2.54mm', 'TSW-104-07-T-T')
+    simple('JSERVO1', '4 x servo: S / BAT / GND', servo_pins, 'Interfaces', 'FlightComputer:Servo_RA_3x04_P2.54mm_TSW10408', 'TSW-104-08-T-T-RA')
     for i in range(1, 5):
         simple(f'R{50+i}', '100k', [f'SERVO{i}', 'GND'], 'Interfaces', resistor)
     simple('U7', 'TPS22919', ['VBAT', 'GND', 'ENABLE', None, 'SERVO_QOD', 'VBAT_SERVO'], 'Power', 'Package_TO_SOT_SMD:SOT-363_SC-70-6', 'TPS22919DCKR', ['VIN', 'GND', 'ON', 'NC', 'QOD', 'VOUT'], ['power_in', 'power_in', 'input', 'no_connect', 'passive', 'power_out'])
@@ -220,6 +221,22 @@ def prepare_model():
         'A7':'USB_D-', 'B7':'USB_D-', 'A8':None, 'B8':None,
     }
     usb['pins'] = [{'number':pad, 'name':pad, 'type':'passive', 'net':net} for pad,net in usb_map.items()]
+    sd['package'] = 'Connector_Card:microSD_HC_Molex_104031-0811'
+    sd['mpn'] = '1040310811'
+    sd_map = {'1':'SD_DAT2_UNUSED', '2':'SD_CS', '3':'SD_MOSI', '4':'+3V3',
+              '5':'SD_CLK', '6':'GND', '7':'SD_MISO', '8':'SD_DAT1_UNUSED',
+              '9':'SD_DETECT_N', '10':'GND', 'SH':'GND'}
+    sd['pins'] = [{'number':pad, 'name':pad, 'type':'passive', 'net':net} for pad,net in sd_map.items()]
+    # Manufacturer-approved RP235x crystal; explicitly ground the case pads.
+    parts['Y1']['package'] = 'Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm'
+    parts['Y1']['mpn'] = 'ABM8-272-T3'
+    parts['Y1']['pins'].extend([{'number':str(n),'name':'GND','type':'passive','net':'GND'} for n in (2,4)])
+    parts['Y2']['package'] = 'Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm'
+    parts['Y2']['mpn'] = 'ABS07-32.768KHZ-T'
+    for n,pin in enumerate(parts['Y2']['pins'],1):
+        pin['number'] = str(n)
+    parts['U1']['mpn'] = 'W25Q64JVXGIQ'
+    apply_part_catalog(parts)
 
     # Source-specific anonymous nets are namespaced; no accidental joins across
     # the merged projects are permitted. Every physical pad has one assignment.
@@ -345,7 +362,10 @@ def build():
           (instances (project {q(PROJECT)} (path {q('/'+root_id)} (page {q(page_num)})))))''')
     root.append('(embedded_fonts no))')
     write(OUT / (PROJECT+'.kicad_sch'), '\n'.join(root)+'\n')
-    write(OUT / (PROJECT+'.kicad_pro'), json.dumps({'meta': {'filename': PROJECT+'.kicad_pro', 'version': 3}}, indent=2)+'\n')
+    project_path = OUT / (PROJECT+'.kicad_pro')
+    project_settings = json.loads(project_path.read_text(encoding='utf-8')) if project_path.exists() else {}
+    project_settings['meta'] = {'filename': PROJECT+'.kicad_pro', 'version': 3}
+    write(project_path, json.dumps(project_settings, indent=2)+'\n')
     write(OUT / 'sym-lib-table', '(sym_lib_table (version 7) (lib (name "FlightComputer") (type "KiCad") (uri "${KIPRJMOD}/FlightComputer.kicad_sym") (options "") (descr "Project-local symbols with physical pad numbering from pinned references")))\n')
     # Library names are unqualified outside an embedded schematic cache.
     lib = '\n'.join(library_symbol(p).replace(q('FlightComputer:'+p['ref']), q(p['ref']), 1) for p in parts.values())
@@ -353,11 +373,11 @@ def build():
     write(OUT / 'connectivity.json', json.dumps({'status': 'development draft', 'parts': list(parts.values())}, indent=2)+'\n')
     with (OUT / 'draft-bom.csv').open('w', encoding='utf-8', newline='') as stream:
         writer = csv.writer(stream, lineterminator='\n')
-        writer.writerow(['Reference','Value','MPN','Footprint','DNP','Source'])
+        writer.writerow(['Reference','Value','Manufacturer','MPN','Footprint','DNP','Source'])
         for part in parts.values():
             if part['ref'].startswith(('#', 'TP')):
                 continue
-            writer.writerow([part['ref'],part['value'],part['mpn'],part['footprint'],part['dnp'],part['source']])
+            writer.writerow([part['ref'],part['value'],part.get('manufacturer',''),part['mpn'],part['footprint'],part['dnp'],part['source']])
     print(f'Generated draft: {len(parts)} parts, {pin_count} physical pad assignments, four functional sheets plus root.')
 
 

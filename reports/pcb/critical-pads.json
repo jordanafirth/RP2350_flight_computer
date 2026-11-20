@@ -1,0 +1,292 @@
+[
+  {
+    "ref": "C2",
+    "pad": "2",
+    "net": "BASE_N_5",
+    "x": 112.8,
+    "y": 110.752,
+    "copper_layers": [
+      "F.Cu"
+    ]
+  },
+  {
+    "ref": "C7",
+    "pad": "2",
+    "net": "VCORE",
+    "x": 128.1703,
+    "y": 112.9778,
+    "copper_layers": [
+      "F.Cu"
+    ]
+  },
+  {
+    "ref": "Y1",
+    "pad": "1",
+    "net": "BASE_N_6",
+    "x": 116.15,
+    "y": 114.16,
+    "copper_layers": [
+      "F.Cu"
+    ]
+  },
+  {
+    "ref": "Y1",
+    "pad": "3",
+    "net": "BASE_N_5",
+    "x": 114.45,
+    "y": 111.96,
+    "copper_layers": [
+      "F.Cu"
+    ]
+  },
+  {
+    "ref": "C3",
+    "pad": "2",
+    "net": "BASE_N_6",
+    "x": 112.8,
+    "y": 114.768,
+    "copper_layers": [
+      "F.Cu"
+    ]
+  },
+  {
+    "ref": "C18",
+    "pad": "2",
+    "net": "VCORE",
+    "x": 118.1,
+    "y": 114.152,
+    "copper_layers": [
+      "F.Cu"
+    ]
+  },
+  {
+    "ref": "C6",
+    "pad": "2",
+    "net": "VCORE",
+    "x": 123.3934,
+    "y": 117.6911,
+    "copper_layers": [
+      "F.Cu"
+    ]
+  },
+  {
+    "ref": "R10",
+    "pad": "1",
+    "net": "USB_D+",
+    "x": 128.508,
+    "y": 110.5,
+    "copper_layers": [
+      "F.Cu"
+    ]
+  },
+  {
+    "ref": "R10",
+    "pad": "2",
+    "net": "D+",
+    "x": 127.492,
+    "y": 110.5,
+    "copper_layers": [
+      "F.Cu"
+    ]
+  },
+  {
+    "ref": "JUSB1",
+    "pad": "A6",
+    "net": "USB_D+",
+    "x": 107.5535,
+    "y": 111.18,
+    "copper_layers": [
+      "F.Cu"
+    ]
+  },
+  {
+    "ref": "JUSB1",
+    "pad": "A7",
+    "net": "USB_D-",
+    "x": 107.5535,
+    "y": 111.68,
+    "copper_layers": [
+      "F.Cu"
+    ]
+  },
+  {
+    "ref": "JUSB1",
+    "pad": "B6",
+    "net": "USB_D+",
+    "x": 107.5535,
+    "y": 112.18,
+    "copper_layers": [
+      "F.Cu"
+    ]
+  },
+  {
+    "ref": "JUSB1",
+    "pad": "B7",
+    "net": "USB_D-",
+    "x": 107.5535,
+    "y": 110.68,
+    "copper_layers": [
+      "F.Cu"
+    ]
+  },
+  {
+    "ref": "L1",
+    "pad": "P$1",
+    "net": "VCORE",
+    "x": 131.988,
+    "y": 114.6685,
+    "copper_layers": [
+      "F.Cu"
+    ]
+  },
+  {
+    "ref": "L1",
+    "pad": "P$2",
+    "net": "LX",
+    "x": 129.988,
+    "y": 114.6685,
+    "copper_layers": [
+      "F.Cu"
+    ]
+  },
+  {
+    "ref": "C8",
+    "pad": "1",
+    "net": "VCORE",
+    "x": 131.4325,
+    "y": 116.51,
+    "copper_layers": [
+      "F.Cu"
+    ]
+  },
+  {
+    "ref": "U4",
+    "pad": "6",
+    "net": "VCORE",
+    "x": 123.9775,
+    "y": 109.3,
+    "copper_layers": [
+      "F.Cu"
+    ]
+  },
+  {
+    "ref": "U4",
+    "pad": "21",
+    "net": "BASE_N_5",
+    "x": 119.7775,
+    "y": 111.9,
+    "copper_layers": [
+      "F.Cu"
+    ]
+  },
+  {
+    "ref": "U4",
+    "pad": "22",
+    "net": "BASE_N_7",
+    "x": 119.7775,
+    "y": 112.3,
+    "copper_layers": [
+      "F.Cu"
+    ]
+  },
+  {
+    "ref": "U4",
+    "pad": "23",
+    "net": "VCORE",
+    "x": 119.7775,
+    "y": 112.7,
+    "copper_layers": [
+      "F.Cu"
+    ]
+  },
+  {
+    "ref": "U4",
+    "pad": "39",
+    "net": "VCORE",
+    "x": 123.5775,
+    "y": 116.1,
+    "copper_layers": [
+      "F.Cu"
+    ]
+  },
+  {
+    "ref": "U4",
+    "pad": "48",
+    "net": "LX",
+    "x": 126.5775,
+    "y": 114.7,
+    "copper_layers": [
+      "F.Cu"
+    ]
+  },
+  {
+    "ref": "U4",
+    "pad": "50",
+    "net": "VCORE",
+    "x": 126.5775,
+    "y": 113.9,
+    "copper_layers": [
+      "F.Cu"
+    ]
+  },
+  {
+    "ref": "U4",
+    "pad": "51",
+    "net": "D-",
+    "x": 126.5775,
+    "y": 113.5,
+    "copper_layers": [
+      "F.Cu"
+    ]
+  },
+  {
+    "ref": "U4",
+    "pad": "52",
+    "net": "D+",
+    "x": 126.5775,
+    "y": 113.1,
+    "copper_layers": [
+      "F.Cu"
+    ]
+  },
+  {
+    "ref": "R6",
+    "pad": "1",
+    "net": "BASE_N_6",
+    "x": 117.692,
+    "y": 112.546,
+    "copper_layers": [
+      "F.Cu"
+    ]
+  },
+  {
+    "ref": "R6",
+    "pad": "2",
+    "net": "BASE_N_7",
+    "x": 118.708,
+    "y": 112.546,
+    "copper_layers": [
+      "F.Cu"
+    ]
+  },
+  {
+    "ref": "R9",
+    "pad": "1",
+    "net": "USB_D-",
+    "x": 128.508,
+    "y": 111.75,
+    "copper_layers": [
+      "F.Cu"
+    ]
+  },
+  {
+    "ref": "R9",
+    "pad": "2",
+    "net": "D-",
+    "x": 127.492,
+    "y": 111.75,
+    "copper_layers": [
+      "F.Cu"
+    ]
+  }
+]

@@ -1,7 +1,7 @@
 {
   "status": "pass",
-  "source_derived_footprints_checked": 25,
-  "source_pads_checked": 197,
+  "source_derived_footprints_checked": 21,
+  "source_pads_checked": 178,
   "checks": [
     "symbol pad-number coverage",
     "source pad centers",

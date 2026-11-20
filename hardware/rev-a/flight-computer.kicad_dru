@@ -1,0 +1,13 @@
+(version 1)
+
+# 0.25 mm is above the fabricator's 0.20-mm routed-edge capability and fits
+# the retained Feather header and battery lands. V-score edges are excluded.
+(rule "Routed board edge"
+  (constraint edge_clearance (min 0.25mm)))
+
+# Four-layer, 1-oz design target. The QFN uses 0.4-mm pitch and needs local
+# escapes. Signals use 0.10 mm; supply classes use wider routing.
+(rule "Electrical clearance"
+  (constraint clearance (min 0.10mm)))
+(rule "Minimum track"
+  (constraint track_width (min 0.10mm)))

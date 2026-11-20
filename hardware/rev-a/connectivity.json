@@ -20,9 +20,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C1",
-      "mpn": "",
+      "mpn": "GRM21BR61A106KE19L",
       "dnp": false,
       "page": "Power",
+      "manufacturer": "Murata",
       "footprint": "FlightComputer:0805-NO"
     },
     {
@@ -44,9 +45,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C4",
-      "mpn": "",
+      "mpn": "GRM21BR61A106KE19L",
       "dnp": false,
       "page": "Power",
+      "manufacturer": "Murata",
       "footprint": "FlightComputer:0805-NO"
     },
     {
@@ -68,9 +70,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:L",
-      "mpn": "",
+      "mpn": "LTST-C190KRKT",
       "dnp": false,
       "page": "Processor",
+      "manufacturer": "Lite-On",
       "footprint": "FlightComputer:CHIPLED_0603_NOOUTLINE"
     },
     {
@@ -92,9 +95,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R7",
-      "mpn": "",
+      "mpn": "RC0402FR-0710KL",
       "dnp": false,
       "page": "Processor",
+      "manufacturer": "Yageo",
       "footprint": "FlightComputer:_0402NO"
     },
     {
@@ -128,9 +132,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:SW1",
-      "mpn": "",
+      "mpn": "KMR221GLFS",
       "dnp": false,
       "page": "Processor",
+      "manufacturer": "C&K / Littelfuse",
       "footprint": "FlightComputer:BTN_RKB2_4.6X2.8"
     },
     {
@@ -173,6 +178,7 @@
       "mpn": "RT9080-33GJ5",
       "dnp": false,
       "page": "Power",
+      "manufacturer": "Richtek",
       "footprint": "FlightComputer:SOT23-5"
     },
     {
@@ -317,6 +323,7 @@
       "mpn": "S2B-PH-SM4-TB(LF)(SN)",
       "dnp": false,
       "page": "Power",
+      "manufacturer": "JST",
       "footprint": "FlightComputer:JSTPH2_BATT"
     },
     {
@@ -443,6 +450,7 @@
       "mpn": "MCP73831T-2ACI/OT",
       "dnp": false,
       "page": "Power",
+      "manufacturer": "Microchip",
       "footprint": "FlightComputer:SOT23-5"
     },
     {
@@ -464,9 +472,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:CHG",
-      "mpn": "",
+      "mpn": "LTST-C190KFKT",
       "dnp": false,
       "page": "Power",
+      "manufacturer": "Lite-On",
       "footprint": "FlightComputer:CHIPLED_0603_NOOUTLINE"
     },
     {
@@ -488,9 +497,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R2",
-      "mpn": "",
+      "mpn": "RC0402FR-0710KL",
       "dnp": false,
       "page": "Power",
+      "manufacturer": "Yageo",
       "footprint": "FlightComputer:_0402NO"
     },
     {
@@ -512,9 +522,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C20",
-      "mpn": "",
+      "mpn": "GRM21BR61A106KE19L",
       "dnp": false,
       "page": "Power",
+      "manufacturer": "Murata",
       "footprint": "FlightComputer:0805-NO"
     },
     {
@@ -539,6 +550,7 @@
       "mpn": "RC0402FR-075K1L",
       "dnp": false,
       "page": "Power",
+      "manufacturer": "Yageo",
       "footprint": "FlightComputer:_0402NO"
     },
     {
@@ -560,9 +572,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C5",
-      "mpn": "",
+      "mpn": "GRM188R60J106ME47D",
       "dnp": false,
       "page": "Processor",
+      "manufacturer": "Murata",
       "footprint": "FlightComputer:0603-NO"
     },
     {
@@ -596,9 +609,11 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:LED1",
-      "mpn": "",
-      "dnp": false,
+      "mpn": "SK6805-EC15",
+      "dnp": true,
       "page": "Processor",
+      "manufacturer": "OPSCO",
+      "procurement_note": "DNP: RGB supply rating is not guaranteed at 3.3 V",
       "footprint": "FlightComputer:SK6805_1515"
     },
     {
@@ -662,9 +677,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:U1",
-      "mpn": "",
+      "mpn": "W25Q64JVXGIQ",
       "dnp": false,
       "page": "Processor",
+      "manufacturer": "Winbond",
       "footprint": "FlightComputer:USON8_4X4"
     },
     {
@@ -686,9 +702,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R5",
-      "mpn": "",
+      "mpn": "RC0402FR-0710KL",
       "dnp": false,
       "page": "Processor",
+      "manufacturer": "Yageo",
       "footprint": "FlightComputer:_0402NO"
     },
     {
@@ -710,9 +727,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C9",
-      "mpn": "",
+      "mpn": "GRM155R71C104KA88D",
       "dnp": false,
       "page": "Processor",
+      "manufacturer": "Murata",
       "footprint": "FlightComputer:_0402NO"
     },
     {
@@ -734,9 +752,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C10",
-      "mpn": "",
+      "mpn": "GRM155R61A105KE15D",
       "dnp": false,
       "page": "Processor",
+      "manufacturer": "Murata",
       "footprint": "FlightComputer:_0402NO"
     },
     {
@@ -758,14 +777,15 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:D4",
-      "mpn": "",
+      "mpn": "PMEG2020AEA,115",
       "dnp": false,
       "page": "Power",
+      "manufacturer": "Nexperia",
       "footprint": "FlightComputer:SOD-323F"
     },
     {
       "ref": "Q3",
-      "value": "DMG3415UFY",
+      "value": "DMP2045UFY4",
       "package": "DFN2015-3",
       "pins": [
         {
@@ -788,9 +808,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:Q3",
-      "mpn": "",
+      "mpn": "DMP2045UFY4-7",
       "dnp": false,
       "page": "Power",
+      "manufacturer": "Diodes Incorporated",
       "footprint": "FlightComputer:DFN2015-3"
     },
     {
@@ -812,46 +833,11 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R3",
-      "mpn": "",
+      "mpn": "RC0402FR-0710KL",
       "dnp": false,
       "page": "Power",
+      "manufacturer": "Yageo",
       "footprint": "FlightComputer:_0402NO"
-    },
-    {
-      "ref": "TP1",
-      "value": "TP",
-      "package": "B1,27",
-      "pins": [
-        {
-          "number": "TP",
-          "name": "TP",
-          "type": "passive",
-          "net": "USB_D+"
-        }
-      ],
-      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:D+1",
-      "mpn": "",
-      "dnp": false,
-      "page": "Power",
-      "footprint": "FlightComputer:B1_27"
-    },
-    {
-      "ref": "TP2",
-      "value": "TP",
-      "package": "B1,27",
-      "pins": [
-        {
-          "number": "TP",
-          "name": "TP",
-          "type": "passive",
-          "net": "USB_D-"
-        }
-      ],
-      "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:D-1",
-      "mpn": "",
-      "dnp": false,
-      "page": "Power",
-      "footprint": "FlightComputer:B1_27"
     },
     {
       "ref": "JUSB1",
@@ -965,6 +951,7 @@
       "mpn": "USB4110-GF-A",
       "dnp": false,
       "page": "Power",
+      "manufacturer": "GCT",
       "footprint": "Connector_USB:USB_C_Receptacle_GCT_USB4110"
     },
     {
@@ -986,9 +973,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R12",
-      "mpn": "",
+      "mpn": "RC0402FR-075K1L",
       "dnp": false,
       "page": "Power",
+      "manufacturer": "Yageo",
       "footprint": "FlightComputer:_0402NO"
     },
     {
@@ -1010,15 +998,16 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R13",
-      "mpn": "",
+      "mpn": "RC0402FR-075K1L",
       "dnp": false,
       "page": "Power",
+      "manufacturer": "Yageo",
       "footprint": "FlightComputer:_0402NO"
     },
     {
       "ref": "Y1",
       "value": "12MHz/10pF/50ohm",
-      "package": "CRYSTAL_2.5X2",
+      "package": "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm",
       "pins": [
         {
           "number": "1",
@@ -1031,13 +1020,26 @@
           "name": "2",
           "type": "passive",
           "net": "BASE_N_5"
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "4",
+          "name": "GND",
+          "type": "passive",
+          "net": "GND"
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:Y1",
-      "mpn": "",
+      "mpn": "ABM8-272-T3",
       "dnp": false,
       "page": "Processor",
-      "footprint": "FlightComputer:CRYSTAL_2.5X2"
+      "manufacturer": "Abracon",
+      "footprint": "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm"
     },
     {
       "ref": "R4",
@@ -1058,9 +1060,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R4",
-      "mpn": "",
+      "mpn": "RC0402FR-0710KL",
       "dnp": false,
       "page": "Power",
+      "manufacturer": "Yageo",
       "footprint": "FlightComputer:_0402NO"
     },
     {
@@ -1082,9 +1085,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C6",
-      "mpn": "",
+      "mpn": "GRM155R71C104KA88D",
       "dnp": false,
       "page": "Processor",
+      "manufacturer": "Murata",
       "footprint": "FlightComputer:_0402NO"
     },
     {
@@ -1106,9 +1110,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C7",
-      "mpn": "",
+      "mpn": "GRM155R71C104KA88D",
       "dnp": false,
       "page": "Processor",
+      "manufacturer": "Murata",
       "footprint": "FlightComputer:_0402NO"
     },
     {
@@ -1130,9 +1135,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C8",
-      "mpn": "",
+      "mpn": "GRM188R60J106ME47D",
       "dnp": false,
       "page": "Processor",
+      "manufacturer": "Murata",
       "footprint": "FlightComputer:_0603MP"
     },
     {
@@ -1154,9 +1160,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C11",
-      "mpn": "",
+      "mpn": "GRM155R61A105KE15D",
       "dnp": false,
       "page": "Processor",
+      "manufacturer": "Murata",
       "footprint": "FlightComputer:_0402NO"
     },
     {
@@ -1178,9 +1185,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C12",
-      "mpn": "",
+      "mpn": "GRM155R71C104KA88D",
       "dnp": false,
       "page": "Processor",
+      "manufacturer": "Murata",
       "footprint": "FlightComputer:_0402NO"
     },
     {
@@ -1202,9 +1210,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C13",
-      "mpn": "",
+      "mpn": "GRM188R60J106ME47D",
       "dnp": false,
       "page": "Processor",
+      "manufacturer": "Murata",
       "footprint": "FlightComputer:_0603MP"
     },
     {
@@ -1226,9 +1235,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C14",
-      "mpn": "",
+      "mpn": "GRM155R71C104KA88D",
       "dnp": false,
       "page": "Processor",
+      "manufacturer": "Murata",
       "footprint": "FlightComputer:_0402NO"
     },
     {
@@ -1250,9 +1260,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C15",
-      "mpn": "",
+      "mpn": "GRM155R61A105KE15D",
       "dnp": false,
       "page": "Processor",
+      "manufacturer": "Murata",
       "footprint": "FlightComputer:_0402NO"
     },
     {
@@ -1274,9 +1285,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C16",
-      "mpn": "",
+      "mpn": "GRM155R71C104KA88D",
       "dnp": false,
       "page": "Processor",
+      "manufacturer": "Murata",
       "footprint": "FlightComputer:_0402NO"
     },
     {
@@ -1298,9 +1310,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C2",
-      "mpn": "",
+      "mpn": "GRM1555C1H150JA01D",
       "dnp": false,
       "page": "Processor",
+      "manufacturer": "Murata",
       "footprint": "FlightComputer:_0402NO"
     },
     {
@@ -1322,9 +1335,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C3",
-      "mpn": "",
+      "mpn": "GRM1555C1H150JA01D",
       "dnp": false,
       "page": "Processor",
+      "manufacturer": "Murata",
       "footprint": "FlightComputer:_0402NO"
     },
     {
@@ -1346,9 +1360,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R6",
-      "mpn": "",
+      "mpn": "RC0402FR-071KL",
       "dnp": false,
       "page": "Processor",
+      "manufacturer": "Yageo",
       "footprint": "FlightComputer:_0402NO"
     },
     {
@@ -1370,9 +1385,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R9",
-      "mpn": "",
+      "mpn": "RC0402FR-0727RL",
       "dnp": false,
       "page": "Power",
+      "manufacturer": "Yageo",
       "footprint": "FlightComputer:_0402NO"
     },
     {
@@ -1394,9 +1410,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R10",
-      "mpn": "",
+      "mpn": "RC0402FR-0727RL",
       "dnp": false,
       "page": "Power",
+      "manufacturer": "Yageo",
       "footprint": "FlightComputer:_0402NO"
     },
     {
@@ -1430,9 +1447,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:SW2",
-      "mpn": "",
+      "mpn": "KMR221GLFS",
       "dnp": false,
       "page": "Processor",
+      "manufacturer": "C&K / Littelfuse",
       "footprint": "FlightComputer:BTN_RKB2_4.6X2.8"
     },
     {
@@ -1454,9 +1472,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R11",
-      "mpn": "",
+      "mpn": "RC0402FR-071KL",
       "dnp": false,
       "page": "Processor",
+      "manufacturer": "Yageo",
       "footprint": "FlightComputer:_0402NO"
     },
     {
@@ -1496,9 +1515,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C17",
-      "mpn": "",
+      "mpn": "GRM155R61A105KE15D",
       "dnp": false,
       "page": "Processor",
+      "manufacturer": "Murata",
       "footprint": "FlightComputer:_0402NO"
     },
     {
@@ -1520,9 +1540,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C18",
-      "mpn": "",
+      "mpn": "GRM155R71C104KA88D",
       "dnp": false,
       "page": "Processor",
+      "manufacturer": "Murata",
       "footprint": "FlightComputer:_0402NO"
     },
     {
@@ -1898,9 +1919,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:X2",
-      "mpn": "RP2350A0A4",
+      "mpn": "SC1509-A4",
       "dnp": false,
       "page": "Processor",
+      "manufacturer": "Raspberry Pi",
       "footprint": "FlightComputer:QFN60_7MM_REDUCEDEPAD"
     },
     {
@@ -1922,9 +1944,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R21",
-      "mpn": "",
+      "mpn": "RC0402FR-0710KL",
       "dnp": false,
       "page": "Processor",
+      "manufacturer": "Yageo",
       "footprint": "FlightComputer:_0402NO"
     },
     {
@@ -1946,9 +1969,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R1",
-      "mpn": "",
+      "mpn": "RC0402FR-07200RL",
       "dnp": false,
       "page": "Processor",
+      "manufacturer": "Yageo",
       "footprint": "FlightComputer:_0402NO"
     },
     {
@@ -1970,9 +1994,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C19",
-      "mpn": "",
+      "mpn": "GRM155R61A225KE01D",
       "dnp": false,
       "page": "Processor",
+      "manufacturer": "Murata",
       "footprint": "FlightComputer:_0402NO"
     },
     {
@@ -1994,9 +2019,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R14",
-      "mpn": "",
+      "mpn": "RC0402FR-0710RL",
       "dnp": false,
       "page": "Processor",
+      "manufacturer": "Yageo",
       "footprint": "FlightComputer:_0402NO"
     },
     {
@@ -2018,9 +2044,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:C21",
-      "mpn": "",
+      "mpn": "GRM155R61A225KE01D",
       "dnp": false,
       "page": "Processor",
+      "manufacturer": "Murata",
       "footprint": "FlightComputer:_0402NO"
     },
     {
@@ -2042,9 +2069,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:L1",
-      "mpn": "",
+      "mpn": "DFE252012F-3R3M=P2",
       "dnp": false,
       "page": "Processor",
+      "manufacturer": "TDK",
       "footprint": "FlightComputer:INDUCTOR_1007"
     },
     {
@@ -2102,9 +2130,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R16",
-      "mpn": "",
+      "mpn": "RC0402FR-074K7L",
       "dnp": false,
       "page": "Interfaces",
+      "manufacturer": "Yageo",
       "footprint": "FlightComputer:_0402NO"
     },
     {
@@ -2126,9 +2155,10 @@
         }
       ],
       "source": "Adafruit-Feather-RP2350-PCB/Adafruit Feather RP2350.sch:R17",
-      "mpn": "",
+      "mpn": "RC0402FR-074K7L",
       "dnp": false,
       "page": "Interfaces",
+      "manufacturer": "Yageo",
       "footprint": "FlightComputer:_0402NO"
     },
     {
@@ -2177,6 +2207,7 @@
       "mpn": "SM04B-SRSS-TB(LF)(SN)",
       "dnp": false,
       "page": "Interfaces",
+      "manufacturer": "JST",
       "footprint": "FlightComputer:JST_SH4_RA"
     },
     {
@@ -2357,31 +2388,33 @@
       "mpn": "BNO085",
       "dnp": false,
       "page": "Sensors",
+      "manufacturer": "CEVA",
       "footprint": "FlightComputer:BNO080"
     },
     {
       "ref": "Y2",
       "value": "32.768kHz",
-      "package": "XTAL3215",
+      "package": "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm",
       "pins": [
         {
-          "number": "P$1",
+          "number": "1",
           "name": "P$1",
           "type": "bidirectional",
           "net": "BNO_XIN"
         },
         {
-          "number": "P$2",
+          "number": "2",
           "name": "P$2",
           "type": "bidirectional",
           "net": "BNO_XOUT"
         }
       ],
       "source": "Adafruit-BNO08x-PCB/Adafruit_BNO08x.sch:X1",
-      "mpn": "",
+      "mpn": "ABS07-32.768KHZ-T",
       "dnp": false,
       "page": "Sensors",
-      "footprint": "FlightComputer:XTAL3215"
+      "manufacturer": "Abracon",
+      "footprint": "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm"
     },
     {
       "ref": "C31",
@@ -2401,10 +2434,11 @@
         }
       ],
       "package": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "",
+      "mpn": "GRM188R71H104KA93D",
       "source": "Custom integration",
       "dnp": false,
       "page": "Sensors",
+      "manufacturer": "Murata",
       "footprint": "Capacitor_SMD:C_0603_1608Metric"
     },
     {
@@ -2425,10 +2459,11 @@
         }
       ],
       "package": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "",
+      "mpn": "GRM188R71H104KA93D",
       "source": "Custom integration",
       "dnp": false,
       "page": "Sensors",
+      "manufacturer": "Murata",
       "footprint": "Capacitor_SMD:C_0603_1608Metric"
     },
     {
@@ -2449,10 +2484,11 @@
         }
       ],
       "package": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "",
+      "mpn": "GRM1885C1H220JA01D",
       "source": "Custom integration",
       "dnp": false,
       "page": "Sensors",
+      "manufacturer": "Murata",
       "footprint": "Capacitor_SMD:C_0603_1608Metric"
     },
     {
@@ -2473,10 +2509,11 @@
         }
       ],
       "package": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "",
+      "mpn": "GRM1885C1H220JA01D",
       "source": "Custom integration",
       "dnp": false,
       "page": "Sensors",
+      "manufacturer": "Murata",
       "footprint": "Capacitor_SMD:C_0603_1608Metric"
     },
     {
@@ -2497,10 +2534,11 @@
         }
       ],
       "package": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "",
+      "mpn": "GRM188R71H104KA93D",
       "source": "Custom integration",
       "dnp": false,
       "page": "Sensors",
+      "manufacturer": "Murata",
       "footprint": "Capacitor_SMD:C_0603_1608Metric"
     },
     {
@@ -2521,10 +2559,11 @@
         }
       ],
       "package": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "",
+      "mpn": "RC0603FR-0710KL",
       "source": "Custom integration",
       "dnp": false,
       "page": "Sensors",
+      "manufacturer": "Yageo",
       "footprint": "Resistor_SMD:R_0603_1608Metric"
     },
     {
@@ -2545,10 +2584,11 @@
         }
       ],
       "package": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "",
+      "mpn": "RC0603FR-0710KL",
       "source": "Custom integration",
       "dnp": false,
       "page": "Sensors",
+      "manufacturer": "Yageo",
       "footprint": "Resistor_SMD:R_0603_1608Metric"
     },
     {
@@ -2569,10 +2609,11 @@
         }
       ],
       "package": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "",
+      "mpn": "RC0603FR-0710KL",
       "source": "Custom integration",
       "dnp": false,
       "page": "Sensors",
+      "manufacturer": "Yageo",
       "footprint": "Resistor_SMD:R_0603_1608Metric"
     },
     {
@@ -2593,10 +2634,11 @@
         }
       ],
       "package": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "",
+      "mpn": "RC0603FR-0710KL",
       "source": "Custom integration",
       "dnp": false,
       "page": "Sensors",
+      "manufacturer": "Yageo",
       "footprint": "Resistor_SMD:R_0603_1608Metric"
     },
     {
@@ -2617,10 +2659,11 @@
         }
       ],
       "package": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "",
+      "mpn": "RC0603FR-0710KL",
       "source": "Custom integration",
       "dnp": false,
       "page": "Sensors",
+      "manufacturer": "Yageo",
       "footprint": "Resistor_SMD:R_0603_1608Metric"
     },
     {
@@ -2693,6 +2736,7 @@
       "mpn": "BMP581",
       "dnp": false,
       "page": "Sensors",
+      "manufacturer": "Bosch Sensortec",
       "footprint": "FlightComputer:BMP388"
     },
     {
@@ -2713,10 +2757,11 @@
         }
       ],
       "package": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "",
+      "mpn": "GRM188R71H104KA93D",
       "source": "Custom integration",
       "dnp": false,
       "page": "Sensors",
+      "manufacturer": "Murata",
       "footprint": "Capacitor_SMD:C_0603_1608Metric"
     },
     {
@@ -2737,95 +2782,91 @@
         }
       ],
       "package": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "",
+      "mpn": "GRM188R71H104KA93D",
       "source": "Custom integration",
       "dnp": false,
       "page": "Sensors",
+      "manufacturer": "Murata",
       "footprint": "Capacitor_SMD:C_0603_1608Metric"
     },
     {
       "ref": "JSD1",
       "value": "MicroSD",
-      "package": "MICROSD",
+      "package": "Connector_Card:microSD_HC_Molex_104031-0811",
       "pins": [
         {
-          "number": "CD1",
-          "name": "CARD_DETECT",
-          "type": "passive",
-          "net": "SD_DETECT_N"
-        },
-        {
-          "number": "CD2",
-          "name": "CARD_DETECT",
-          "type": "passive",
-          "net": "SD_DETECT_N"
-        },
-        {
-          "number": "2",
-          "name": "CS",
-          "type": "input",
-          "net": "SD_CS"
-        },
-        {
-          "number": "8",
-          "name": "DAT1",
-          "type": "bidirectional",
-          "net": "SD_DAT1_UNUSED"
-        },
-        {
           "number": "1",
-          "name": "DAT2",
-          "type": "bidirectional",
+          "name": "1",
+          "type": "passive",
           "net": "SD_DAT2_UNUSED"
         },
         {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "SD_CS"
+        },
+        {
           "number": "3",
-          "name": "DATA_IN",
-          "type": "input",
+          "name": "3",
+          "type": "passive",
           "net": "SD_MOSI"
         },
         {
-          "number": "7",
-          "name": "DATA_OUT",
-          "type": "output",
-          "net": "SD_MISO"
-        },
-        {
-          "number": "MT1",
-          "name": "MOUNTING",
-          "type": "passive",
-          "net": "GND"
-        },
-        {
-          "number": "MT2",
-          "name": "MOUNTING",
-          "type": "passive",
-          "net": "GND"
-        },
-        {
-          "number": "5",
-          "name": "SCLK",
-          "type": "input",
-          "net": "SD_CLK"
-        },
-        {
           "number": "4",
-          "name": "SD_VDD",
-          "type": "power_in",
+          "name": "4",
+          "type": "passive",
           "net": "+3V3"
         },
         {
+          "number": "5",
+          "name": "5",
+          "type": "passive",
+          "net": "SD_CLK"
+        },
+        {
           "number": "6",
-          "name": "SD_VSS",
-          "type": "power_in",
+          "name": "6",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "7",
+          "name": "7",
+          "type": "passive",
+          "net": "SD_MISO"
+        },
+        {
+          "number": "8",
+          "name": "8",
+          "type": "passive",
+          "net": "SD_DAT1_UNUSED"
+        },
+        {
+          "number": "9",
+          "name": "9",
+          "type": "passive",
+          "net": "SD_DETECT_N"
+        },
+        {
+          "number": "10",
+          "name": "10",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "SH",
+          "name": "SH",
+          "type": "passive",
           "net": "GND"
         }
       ],
       "source": "Adafruit-Feather-RP2040-Adalogger-PCB/Adafruit Feather RP2040 Adalogger.sch:X2",
-      "mpn": "",
+      "mpn": "1040310811",
       "dnp": false,
       "page": "Interfaces",
-      "footprint": "FlightComputer:MICROSD"
+      "manufacturer": "Molex",
+      "footprint": "Connector_Card:microSD_HC_Molex_104031-0811"
     },
     {
       "ref": "R31",
@@ -2845,10 +2886,11 @@
         }
       ],
       "package": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "",
+      "mpn": "RC0603FR-0747KL",
       "source": "Custom integration",
       "dnp": false,
       "page": "Interfaces",
+      "manufacturer": "Yageo",
       "footprint": "Resistor_SMD:R_0603_1608Metric"
     },
     {
@@ -2869,10 +2911,11 @@
         }
       ],
       "package": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "",
+      "mpn": "RC0603FR-0747KL",
       "source": "Custom integration",
       "dnp": false,
       "page": "Interfaces",
+      "manufacturer": "Yageo",
       "footprint": "Resistor_SMD:R_0603_1608Metric"
     },
     {
@@ -2893,10 +2936,11 @@
         }
       ],
       "package": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "",
+      "mpn": "RC0603FR-0747KL",
       "source": "Custom integration",
       "dnp": false,
       "page": "Interfaces",
+      "manufacturer": "Yageo",
       "footprint": "Resistor_SMD:R_0603_1608Metric"
     },
     {
@@ -2917,10 +2961,11 @@
         }
       ],
       "package": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "",
+      "mpn": "RC0603FR-0747KL",
       "source": "Custom integration",
       "dnp": false,
       "page": "Interfaces",
+      "manufacturer": "Yageo",
       "footprint": "Resistor_SMD:R_0603_1608Metric"
     },
     {
@@ -2941,10 +2986,11 @@
         }
       ],
       "package": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "",
+      "mpn": "RC0603FR-0747KL",
       "source": "Custom integration",
       "dnp": false,
       "page": "Interfaces",
+      "manufacturer": "Yageo",
       "footprint": "Resistor_SMD:R_0603_1608Metric"
     },
     {
@@ -2965,10 +3011,11 @@
         }
       ],
       "package": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "",
+      "mpn": "RC0603FR-0747KL",
       "source": "Custom integration",
       "dnp": false,
       "page": "Interfaces",
+      "manufacturer": "Yageo",
       "footprint": "Resistor_SMD:R_0603_1608Metric"
     },
     {
@@ -2989,10 +3036,11 @@
         }
       ],
       "package": "Capacitor_SMD:C_0805_2012Metric",
-      "mpn": "",
+      "mpn": "GRM21BR61A106KE19L",
       "source": "Custom integration",
       "dnp": false,
       "page": "Interfaces",
+      "manufacturer": "Murata",
       "footprint": "Capacitor_SMD:C_0805_2012Metric"
     },
     {
@@ -3017,6 +3065,7 @@
       "source": "Custom integration",
       "dnp": false,
       "page": "Power",
+      "manufacturer": "JST",
       "footprint": "Connector_JST:JST_SH_BM02B-SRSS-TB_1x02-1MP_P1.00mm_Vertical"
     },
     {
@@ -3096,12 +3145,13 @@
           "net": "GND"
         }
       ],
-      "package": "FlightComputer:Servo_3x04_P2.54mm",
-      "mpn": "TSW-104-07-T-T",
+      "package": "FlightComputer:Servo_RA_3x04_P2.54mm_TSW10408",
+      "mpn": "TSW-104-08-T-T-RA",
       "source": "Custom integration",
       "dnp": false,
       "page": "Interfaces",
-      "footprint": "FlightComputer:Servo_3x04_P2.54mm"
+      "manufacturer": "Samtec",
+      "footprint": "FlightComputer:Servo_RA_3x04_P2.54mm_TSW10408"
     },
     {
       "ref": "R51",
@@ -3121,10 +3171,11 @@
         }
       ],
       "package": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "",
+      "mpn": "RC0603FR-07100KL",
       "source": "Custom integration",
       "dnp": false,
       "page": "Interfaces",
+      "manufacturer": "Yageo",
       "footprint": "Resistor_SMD:R_0603_1608Metric"
     },
     {
@@ -3145,10 +3196,11 @@
         }
       ],
       "package": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "",
+      "mpn": "RC0603FR-07100KL",
       "source": "Custom integration",
       "dnp": false,
       "page": "Interfaces",
+      "manufacturer": "Yageo",
       "footprint": "Resistor_SMD:R_0603_1608Metric"
     },
     {
@@ -3169,10 +3221,11 @@
         }
       ],
       "package": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "",
+      "mpn": "RC0603FR-07100KL",
       "source": "Custom integration",
       "dnp": false,
       "page": "Interfaces",
+      "manufacturer": "Yageo",
       "footprint": "Resistor_SMD:R_0603_1608Metric"
     },
     {
@@ -3193,10 +3246,11 @@
         }
       ],
       "package": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "",
+      "mpn": "RC0603FR-07100KL",
       "source": "Custom integration",
       "dnp": false,
       "page": "Interfaces",
+      "manufacturer": "Yageo",
       "footprint": "Resistor_SMD:R_0603_1608Metric"
     },
     {
@@ -3245,6 +3299,7 @@
       "source": "Custom integration",
       "dnp": false,
       "page": "Power",
+      "manufacturer": "Texas Instruments",
       "footprint": "Package_TO_SOT_SMD:SOT-363_SC-70-6"
     },
     {
@@ -3265,10 +3320,11 @@
         }
       ],
       "package": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "",
+      "mpn": "RC0603FR-071KL",
       "source": "Custom integration",
       "dnp": false,
       "page": "Power",
+      "manufacturer": "Yageo",
       "footprint": "Resistor_SMD:R_0603_1608Metric"
     },
     {
@@ -3289,10 +3345,11 @@
         }
       ],
       "package": "Capacitor_SMD:C_0805_2012Metric",
-      "mpn": "",
+      "mpn": "GRM21BR61A106KE19L",
       "source": "Custom integration",
       "dnp": false,
       "page": "Power",
+      "manufacturer": "Murata",
       "footprint": "Capacitor_SMD:C_0805_2012Metric"
     },
     {
@@ -3313,10 +3370,11 @@
         }
       ],
       "package": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "",
+      "mpn": "GRM188R61A105KA61D",
       "source": "Custom integration",
       "dnp": false,
       "page": "Power",
+      "manufacturer": "Murata",
       "footprint": "Capacitor_SMD:C_0603_1608Metric"
     },
     {

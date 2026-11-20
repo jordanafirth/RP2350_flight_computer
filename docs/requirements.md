@@ -1,6 +1,6 @@
 # Requirements baseline
 
-Source: direct user statements in this chat, through 2026-11-18. Prior assistant suggestions are tracked separately as proposed engineering defaults.
+Source: direct user statements in this chat, through 2026-11-19. Prior assistant suggestions are tracked separately as proposed engineering defaults.
 
 ## Confirmed
 
@@ -26,6 +26,7 @@ Source: direct user statements in this chat, through 2026-11-18. Prior assistant
 | R18 | Battery is Adafruit PID 3898, 3.7 V 400 mAh. Mount it beneath the PCB with clearance for underside sensors; keep its socket on top in the standard Feather location. |
 | R19 | Prefer horizontal, side-entry Qwiic connectors; user reports the vertical connectors seem weak. |
 | R20 | If USB and SD do not fit on a long edge, putting both at the same short end would be desirable. Put the four servo ports at the opposite end. |
+| R21 | Use right-angle servo pins so the mating cables exit through the far end. |
 
 ## Proposed engineering defaults (not user commitments)
 

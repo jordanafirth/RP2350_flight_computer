@@ -32,19 +32,19 @@ The simple retained charger is not a separate battery power-path controller. Ser
 
 - Begin at approximately 50.8 x 22.86 mm, with Feather mounting/header geometry where possible.
 - Put battery beneath the PCB, with a mechanical gap for underside sensors and solder joints. Keep its socket on top in the standard Feather location.
-- A nominal 2 mm underside gap is an initial placement-study assumption only. Verify sensor height, header tails, solder fillets, insulation, battery tolerances and retention before approving it.
+- A nominal 3 mm underside gap is the current placement-study proposal. Verify sensor height, header tails, solder fillets, insulation, battery tolerances and retention before approving it.
 - Battery starting envelope is approximately 36 x 17 x 7.8 mm. Do not place adhesive or foam over the barometer pressure opening. Provide a path for ambient pressure to reach the sensor.
-- Installed vertical servo headers extend roughly 8.4 mm above the PCB using the selected post dimensions. Mating plugs and cables need additional clearance. Actual enclosure height is not yet established.
+- The selected right-angle servo header has an approximately 8.13-mm triple-row body envelope above the PCB and projects 5.58 mm beyond the end. Mating plugs and cables need additional clearance. Actual enclosure height is not yet established; see `placement-review.md` for the manufacturer-drawing review.
 
 ## Validation and limitations
 
 - KiCad 10.0.3 parses and exports the draft. Current detailed check results are in `reports/schematic/`.
-- Current schematic checks pass: zero ERC violations; 351 connected physical pads match the exported netlist; 25 named hardware checks pass. The netlist contains 94 footprint-bearing items, including five copper test pads and two unpopulated expansion headers; these are not 94 purchased components. Conversion checks cover 25 source-derived footprints and 197 source pads after substituting the standard-library USB4110 footprint. The servo footprint is newly drawn and requires manufacturer-drawing review.
+- Current check evidence is retained in `reports/schematic/erc.json`, `connectivity-check.json` and `footprint-check.json`. The latest draft contains 92 footprint-bearing items: 86 fitted components, three copper test pads and three DNP items (J1/J2 and D5). USB data test pads were removed during routing to avoid test stubs. Source-conversion checks do not qualify newly selected standard-library packages or prove physical assembly suitability. The custom right-angle servo footprint was reviewed against the Samtec print and hole pattern; prototype inspection remains required.
 - `check-connectivity.py` compares the independently exported KiCad netlist against the intended per-pad model and checks named sensor, tag, switch and servo connections.
 - ERC is necessary but cannot establish correct footprints, physical fit, supply transient behavior or sensor performance. A clean check would not constitute manufacturing approval.
 - Pin types for BNO085 SA0 and BMP581 SDO are inputs in this selected I2C configuration, even though shared SPI-oriented source symbols label them differently.
 - Connector mounting contacts are modeled as passive metal contacts. The source geometry check caught and corrected a 1 mm test-pad diameter that had initially been recreated as 1.27 mm.
-- Expansion headers J1/J2 retain their pads and connections but are marked DNP (do not populate). The five test pads are excluded from the assembly BOM. Servo, tag, battery and Qwiic connectors remain fitted in the draft.
+- Expansion headers J1/J2 retain their pads and connections but are DNP. D5 is also DNP because its rated minimum supply exceeds 3.3 V. The three SWD/GND test pads are excluded from the assembly BOM. Servo, tag, battery and Qwiic connectors remain fitted in the draft.
 - Power flags describe external supplies and supply paths through passive components. They do not add hardware or simulate voltage regulation.
 - Converted reference boards are used for footprint extraction only. KiCad reported skipped inner-layer polygons on Feather imports. Their imported routing must not be used as a validated replacement for the original boards.
 
@@ -52,6 +52,6 @@ The simple retained charger is not a separate battery power-path controller. Ser
 
 1. Independently compare every IC pin and power connection against manufacturer documentation, including the selected RP2350 stepping/package.
 2. Verify all project-local pad numbers, pad sizes, rotations, paste/mask apertures and thermal-pad treatment; verify the custom servo-header drawing against the manufacturer dimensions.
-3. Assign and source the remaining exact flash, microSD, crystal, USB, MOSFET, diode, LED and passive manufacturer part numbers. Draft values/footprints are not orderable BOM substitutes.
+3. Qualify and source the assigned flash, microSD, crystal, USB, MOSFET, diode, LED and passive manufacturer part numbers. Every fitted item has a candidate MPN; this does not establish availability or approval for substitution.
 4. Perform the measured component placement study, then review routing and test access.
 5. Validate battery/USB switching, tag operation, charging, sensor reset/startup and simultaneous servo/logging operation on prototypes.

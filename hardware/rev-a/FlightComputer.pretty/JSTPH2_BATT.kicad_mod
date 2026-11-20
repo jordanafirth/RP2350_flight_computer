@@ -42,84 +42,84 @@
     (stroke
       (width 0.2032)
       (type solid))
-    (layer "F.SilkS"))
+    (layer "F.Fab"))
   (fp_line
     (start -3.15 0.857)
     (end -3.15 3.103)
     (stroke
       (width 0.2032)
       (type solid))
-    (layer "F.SilkS"))
+    (layer "F.Fab"))
   (fp_line
     (start -3.15 3.103)
     (end -4 3.103)
     (stroke
       (width 0.2032)
       (type solid))
-    (layer "F.SilkS"))
+    (layer "F.Fab"))
   (fp_line
     (start -2.794 2.413)
     (end -1.905 2.413)
     (stroke
       (width 0.3048)
       (type solid))
-    (layer "F.SilkS"))
+    (layer "F.Fab"))
   (fp_line
     (start -2.25 -4.397)
     (end 2.25 -4.397)
     (stroke
       (width 0.2032)
       (type solid))
-    (layer "F.SilkS"))
+    (layer "F.Fab"))
   (fp_line
     (start -1.75 0.857)
     (end -3.15 0.857)
     (stroke
       (width 0.2032)
       (type solid))
-    (layer "F.SilkS"))
+    (layer "F.Fab"))
   (fp_line
     (start 1.905 2.413)
     (end 2.794 2.413)
     (stroke
       (width 0.3048)
       (type solid))
-    (layer "F.SilkS"))
+    (layer "F.Fab"))
   (fp_line
     (start 2.3495 2.921)
     (end 2.3495 1.9685)
     (stroke
       (width 0.3048)
       (type solid))
-    (layer "F.SilkS"))
+    (layer "F.Fab"))
   (fp_line
     (start 3.15 0.857)
     (end 1.75 0.857)
     (stroke
       (width 0.2032)
       (type solid))
-    (layer "F.SilkS"))
+    (layer "F.Fab"))
   (fp_line
     (start 3.15 3.103)
     (end 3.15 0.857)
     (stroke
       (width 0.2032)
       (type solid))
-    (layer "F.SilkS"))
+    (layer "F.Fab"))
   (fp_line
     (start 4 -0.897)
     (end 4 3.103)
     (stroke
       (width 0.2032)
       (type solid))
-    (layer "F.SilkS"))
+    (layer "F.Fab"))
   (fp_line
     (start 4 3.103)
     (end 3.15 3.103)
     (stroke
       (width 0.2032)
       (type solid))
-    (layer "F.SilkS"))
+    (layer "F.Fab"))
   (fp_line
     (start -4 -4.397)
     (end 4 -4.397)

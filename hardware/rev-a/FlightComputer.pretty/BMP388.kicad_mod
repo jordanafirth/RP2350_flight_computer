@@ -39,28 +39,28 @@
     (stroke
       (width 0.1524)
       (type solid))
-    (layer "F.SilkS"))
+    (layer "F.Fab"))
   (fp_line
     (start 1 -1)
     (end 1 1)
     (stroke
       (width 0.1524)
       (type solid))
-    (layer "F.SilkS"))
+    (layer "F.Fab"))
   (fp_line
     (start -1 1)
     (end -1 -1)
     (stroke
       (width 0.1524)
       (type solid))
-    (layer "F.SilkS"))
+    (layer "F.Fab"))
   (fp_line
     (start -1 -1)
     (end 1 -1)
     (stroke
       (width 0.1524)
       (type solid))
-    (layer "F.SilkS"))
+    (layer "F.Fab"))
   (fp_circle
     (center 0.3 -0.3)
     (end 0.441418 -0.3)
@@ -68,7 +68,7 @@
       (width 0.1016)
       (type solid))
     (fill no)
-    (layer "F.SilkS"))
+    (layer "F.Fab"))
   (pad "1" smd rect
     (at 0.25 -0.75 180.0)
     (size 0.25 0.275)

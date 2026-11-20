@@ -1,0 +1,741 @@
+{
+  "status": "routing development; not released",
+  "placements": [
+    {
+      "ref": "JBAT1",
+      "x": 10.922,
+      "y": 17.907,
+      "rotation": 0.0,
+      "side": "F",
+      "footprint": "FlightComputer:JSTPH2_BATT"
+    },
+    {
+      "ref": "C16",
+      "x": 22.0425,
+      "y": 4.2545,
+      "rotation": -90.0,
+      "side": "F",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "R3",
+      "x": 16.637,
+      "y": 19.0119,
+      "rotation": 0.0,
+      "side": "F",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "C2",
+      "x": 12.8,
+      "y": 11.6,
+      "rotation": 90.0,
+      "side": "F",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "C7",
+      "x": 28.6783,
+      "y": 9.8822,
+      "rotation": 180.0,
+      "side": "F",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "U2",
+      "x": 16.891,
+      "y": 16.4465,
+      "rotation": 180.0,
+      "side": "F",
+      "footprint": "FlightComputer:SOT23-5"
+    },
+    {
+      "ref": "R16",
+      "x": 34.5,
+      "y": 6.5,
+      "rotation": 0.0,
+      "side": "F",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "C14",
+      "x": 18.2,
+      "y": 11.9,
+      "rotation": 180.0,
+      "side": "F",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "C19",
+      "x": 26.5574,
+      "y": 4.9609,
+      "rotation": 0.0,
+      "side": "F",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "C15",
+      "x": 17.399,
+      "y": 13.5255,
+      "rotation": 0.0,
+      "side": "F",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "R17",
+      "x": 36.7,
+      "y": 6.5,
+      "rotation": 0.0,
+      "side": "F",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "R1",
+      "x": 27.1447,
+      "y": 3.5957,
+      "rotation": 0.0,
+      "side": "F",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "U1",
+      "x": 29.591,
+      "y": 17.399,
+      "rotation": 0.0,
+      "side": "F",
+      "footprint": "FlightComputer:USON8_4X4"
+    },
+    {
+      "ref": "JTAG1",
+      "x": 35.5,
+      "y": 17.0,
+      "rotation": 0.0,
+      "side": "F",
+      "footprint": "Connector_JST:JST_SH_BM02B-SRSS-TB_1x02-1MP_P1.00mm_Vertical"
+    },
+    {
+      "ref": "J2",
+      "x": 30.48,
+      "y": 21.6535,
+      "rotation": 0.0,
+      "side": "F",
+      "footprint": "FlightComputer:1X12_ROUND"
+    },
+    {
+      "ref": "Y1",
+      "x": 15.3,
+      "y": 9.8,
+      "rotation": 90.0,
+      "side": "F",
+      "footprint": "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm"
+    },
+    {
+      "ref": "C11",
+      "x": 12.6095,
+      "y": 4.445,
+      "rotation": 90.0,
+      "side": "F",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "D5",
+      "x": 30.9118,
+      "y": 4.4196,
+      "rotation": 0.0,
+      "side": "F",
+      "footprint": "FlightComputer:SK6805_1515"
+    },
+    {
+      "ref": "R7",
+      "x": 10.0,
+      "y": 3.3,
+      "rotation": 180.0,
+      "side": "F",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "SW2",
+      "x": 15.875,
+      "y": 5.08,
+      "rotation": 180.0,
+      "side": "F",
+      "footprint": "FlightComputer:BTN_RKB2_4.6X2.8"
+    },
+    {
+      "ref": "R11",
+      "x": 19.8755,
+      "y": 4.0005,
+      "rotation": 180.0,
+      "side": "F",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "R13",
+      "x": 10.0,
+      "y": 5.0,
+      "rotation": 180.0,
+      "side": "F",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "Q3",
+      "x": 20.8915,
+      "y": 16.7386,
+      "rotation": 180.0,
+      "side": "F",
+      "footprint": "FlightComputer:DFN2015-3"
+    },
+    {
+      "ref": "R2",
+      "x": 7.115,
+      "y": 2.9005,
+      "rotation": 0.0,
+      "side": "F",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "C20",
+      "x": 10.3235,
+      "y": 12.065,
+      "rotation": 180.0,
+      "side": "F",
+      "footprint": "FlightComputer:0805-NO"
+    },
+    {
+      "ref": "R12",
+      "x": 10.0,
+      "y": 6.5,
+      "rotation": 180.0,
+      "side": "F",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "C10",
+      "x": 23.9742,
+      "y": 19.228,
+      "rotation": 180.0,
+      "side": "F",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "C3",
+      "x": 12.8,
+      "y": 8.6,
+      "rotation": -90.0,
+      "side": "F",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "C18",
+      "x": 18.1,
+      "y": 8.2,
+      "rotation": 90.0,
+      "side": "F",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "C17",
+      "x": 30.48,
+      "y": 11.276,
+      "rotation": 0.0,
+      "side": "F",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "JQT1",
+      "x": 36.0,
+      "y": 10.35,
+      "rotation": 180.0,
+      "side": "F",
+      "footprint": "FlightComputer:JST_SH4_RA"
+    },
+    {
+      "ref": "C6",
+      "x": 23.3934,
+      "y": 4.6609,
+      "rotation": 90.0,
+      "side": "F",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "C12",
+      "x": 24.0665,
+      "y": 17.8816,
+      "rotation": 180.0,
+      "side": "F",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "U3",
+      "x": 10.4,
+      "y": 9.46,
+      "rotation": 90.0,
+      "side": "F",
+      "footprint": "FlightComputer:SOT23-5"
+    },
+    {
+      "ref": "R10",
+      "x": 28.0,
+      "y": 12.36,
+      "rotation": 180.0,
+      "side": "F",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "JUSB1",
+      "x": 3.8735,
+      "y": 11.43,
+      "rotation": -90.0,
+      "side": "F",
+      "footprint": "Connector_USB:USB_C_Receptacle_GCT_USB4110"
+    },
+    {
+      "ref": "C5",
+      "x": 33.6821,
+      "y": 13.6287,
+      "rotation": 180.0,
+      "side": "F",
+      "footprint": "FlightComputer:0603-NO"
+    },
+    {
+      "ref": "J1",
+      "x": 25.4,
+      "y": 1.27,
+      "rotation": 180.0,
+      "side": "F",
+      "footprint": "FlightComputer:1X16_ROUND"
+    },
+    {
+      "ref": "C9",
+      "x": 35.2552,
+      "y": 7.9645,
+      "rotation": 180.0,
+      "side": "F",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "L1",
+      "x": 30.988,
+      "y": 8.1915,
+      "rotation": 180.0,
+      "side": "F",
+      "footprint": "FlightComputer:INDUCTOR_1007"
+    },
+    {
+      "ref": "C21",
+      "x": 27.759,
+      "y": 6.7325,
+      "rotation": -90.0,
+      "side": "F",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "C8",
+      "x": 30.6705,
+      "y": 6.35,
+      "rotation": 180.0,
+      "side": "F",
+      "footprint": "FlightComputer:_0603MP"
+    },
+    {
+      "ref": "D4",
+      "x": 5.8674,
+      "y": 20.1295,
+      "rotation": 90.0,
+      "side": "F",
+      "footprint": "FlightComputer:SOD-323F"
+    },
+    {
+      "ref": "U4",
+      "x": 23.1775,
+      "y": 10.16,
+      "rotation": -90.0,
+      "side": "F",
+      "footprint": "FlightComputer:QFN60_7MM_REDUCEDEPAD"
+    },
+    {
+      "ref": "C13",
+      "x": 28.8385,
+      "y": 7.6835,
+      "rotation": -90.0,
+      "side": "F",
+      "footprint": "FlightComputer:_0603MP"
+    },
+    {
+      "ref": "R14",
+      "x": 28.8798,
+      "y": 4.1402,
+      "rotation": 90.0,
+      "side": "F",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "D1",
+      "x": 4.0,
+      "y": 18.0,
+      "rotation": 90.0,
+      "side": "F",
+      "footprint": "FlightComputer:CHIPLED_0603_NOOUTLINE"
+    },
+    {
+      "ref": "R6",
+      "x": 18.2,
+      "y": 10.314,
+      "rotation": 0.0,
+      "side": "F",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "D2",
+      "x": 45.0,
+      "y": 18.5,
+      "rotation": 0.0,
+      "side": "F",
+      "footprint": "FlightComputer:CHIPLED_0603_NOOUTLINE"
+    },
+    {
+      "ref": "JSERVO1",
+      "x": 41.4,
+      "y": 7.62,
+      "rotation": 90.0,
+      "side": "F",
+      "footprint": "FlightComputer:Servo_RA_3x04_P2.54mm_TSW10408"
+    },
+    {
+      "ref": "R5",
+      "x": 25.7683,
+      "y": 18.2372,
+      "rotation": 90.0,
+      "side": "F",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "C1",
+      "x": 20.833,
+      "y": 18.6963,
+      "rotation": 0.0,
+      "side": "F",
+      "footprint": "FlightComputer:0805-NO"
+    },
+    {
+      "ref": "R9",
+      "x": 28.0,
+      "y": 11.11,
+      "rotation": 180.0,
+      "side": "F",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "SW1",
+      "x": 42.5,
+      "y": 4.3,
+      "rotation": 180.0,
+      "side": "F",
+      "footprint": "FlightComputer:BTN_RKB2_4.6X2.8"
+    },
+    {
+      "ref": "R36",
+      "x": 33.0,
+      "y": 4.7,
+      "rotation": 90.0,
+      "side": "B",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "C4",
+      "x": 15.4,
+      "y": 14.5,
+      "rotation": 0.0,
+      "side": "B",
+      "footprint": "FlightComputer:0805-NO"
+    },
+    {
+      "ref": "U6",
+      "x": 33.0,
+      "y": 17.0,
+      "rotation": 0.0,
+      "side": "B",
+      "footprint": "FlightComputer:BMP388"
+    },
+    {
+      "ref": "Y2",
+      "x": 23.0,
+      "y": 15.5,
+      "rotation": 0.0,
+      "side": "B",
+      "footprint": "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm"
+    },
+    {
+      "ref": "R45",
+      "x": 28.1,
+      "y": 17.0,
+      "rotation": 90.0,
+      "side": "B",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "R44",
+      "x": 26.5,
+      "y": 14.5,
+      "rotation": 90.0,
+      "side": "B",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "C37",
+      "x": 33.0,
+      "y": 19.0,
+      "rotation": 0.0,
+      "side": "B",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "ref": "U5",
+      "x": 24.0,
+      "y": 11.0,
+      "rotation": 0.0,
+      "side": "B",
+      "footprint": "FlightComputer:BNO080"
+    },
+    {
+      "ref": "TP4",
+      "x": 30.0,
+      "y": 13.0,
+      "rotation": 0.0,
+      "side": "B",
+      "footprint": "FlightComputer:TESTPOINT_ROUND_1MM"
+    },
+    {
+      "ref": "R43",
+      "x": 28.5,
+      "y": 8.0,
+      "rotation": 90.0,
+      "side": "B",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "R52",
+      "x": 36.4,
+      "y": 9.0,
+      "rotation": 90.0,
+      "side": "B",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "R35",
+      "x": 30.0,
+      "y": 4.9,
+      "rotation": 90.0,
+      "side": "B",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "R31",
+      "x": 18.0,
+      "y": 5.0,
+      "rotation": 90.0,
+      "side": "B",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "C31",
+      "x": 20.0,
+      "y": 11.0,
+      "rotation": 90.0,
+      "side": "B",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "ref": "R8",
+      "x": 21.0,
+      "y": 19.0,
+      "rotation": 0.0,
+      "side": "B",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "R55",
+      "x": 34.0,
+      "y": 7.0,
+      "rotation": 0.0,
+      "side": "B",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "C36",
+      "x": 33.0,
+      "y": 14.0,
+      "rotation": 0.0,
+      "side": "B",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "ref": "U7",
+      "x": 34.0,
+      "y": 10.0,
+      "rotation": 0.0,
+      "side": "B",
+      "footprint": "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+    },
+    {
+      "ref": "R53",
+      "x": 38.0,
+      "y": 11.9,
+      "rotation": 90.0,
+      "side": "B",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "C33",
+      "x": 20.5,
+      "y": 17.5,
+      "rotation": 0.0,
+      "side": "B",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "ref": "C39",
+      "x": 34.0,
+      "y": 12.2,
+      "rotation": 0.0,
+      "side": "B",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric"
+    },
+    {
+      "ref": "R34",
+      "x": 26.9,
+      "y": 5.0,
+      "rotation": 90.0,
+      "side": "B",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "R32",
+      "x": 21.0,
+      "y": 4.8,
+      "rotation": 90.0,
+      "side": "B",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "R41",
+      "x": 20.0,
+      "y": 7.9,
+      "rotation": 90.0,
+      "side": "B",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "R33",
+      "x": 24.0,
+      "y": 4.7,
+      "rotation": 90.0,
+      "side": "B",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "TP3",
+      "x": 30.0,
+      "y": 19.0,
+      "rotation": 0.0,
+      "side": "B",
+      "footprint": "FlightComputer:TESTPOINT_ROUND_1.5MM_NO"
+    },
+    {
+      "ref": "C38",
+      "x": 18.2,
+      "y": 8.3,
+      "rotation": 90.0,
+      "side": "B",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric"
+    },
+    {
+      "ref": "C34",
+      "x": 24.5,
+      "y": 17.5,
+      "rotation": 0.0,
+      "side": "B",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "ref": "C32",
+      "x": 24.0,
+      "y": 7.0,
+      "rotation": 0.0,
+      "side": "B",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "ref": "R21",
+      "x": 30.5,
+      "y": 7.0,
+      "rotation": 0.0,
+      "side": "B",
+      "footprint": "FlightComputer:_0402NO"
+    },
+    {
+      "ref": "C35",
+      "x": 28.0,
+      "y": 11.1,
+      "rotation": 90.0,
+      "side": "B",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "ref": "JSD1",
+      "x": 6.4,
+      "y": 11.43,
+      "rotation": -90.0,
+      "side": "B",
+      "footprint": "Connector_Card:microSD_HC_Molex_104031-0811"
+    },
+    {
+      "ref": "C40",
+      "x": 31.0,
+      "y": 10.0,
+      "rotation": 90.0,
+      "side": "B",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "ref": "R51",
+      "x": 38.0,
+      "y": 6.0,
+      "rotation": 90.0,
+      "side": "B",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "R54",
+      "x": 38.0,
+      "y": 15.0,
+      "rotation": 90.0,
+      "side": "B",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "R42",
+      "x": 18.8,
+      "y": 15.2,
+      "rotation": 90.0,
+      "side": "B",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "TP5",
+      "x": 30.0,
+      "y": 15.0,
+      "rotation": 0.0,
+      "side": "B",
+      "footprint": "FlightComputer:TESTPOINT_ROUND_1MM"
+    },
+    {
+      "ref": "R4",
+      "x": 16.0,
+      "y": 6.0,
+      "rotation": 180.0,
+      "side": "B",
+      "footprint": "FlightComputer:_0402NO"
+    }
+  ]
+}

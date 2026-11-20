@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>C:\Users\jordan\Documents\ChatGPT\flight computer\hardware\rev-a\flight-computer.kicad_sch</source>
-    <date>2026-11-18T14:41:54</date>
+    <date>2026-11-20T09:17:59</date>
     <tool>Eeschema 10.0.3</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -100,13 +100,13 @@
       <value>10uF</value>
       <footprint>FlightComputer:0805-NO</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">GRM21BR61A106KE19L</field>
         <field name="Footprint">FlightComputer:0805-NO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="C1" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="GRM21BR61A106KE19L"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <sheetpath names="/Power/" tstamps="/cd0e32ad-13e2-50e0-a52c-06599e08b47d/"/>
@@ -124,13 +124,13 @@
       <value>10uF</value>
       <footprint>FlightComputer:0805-NO</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">GRM21BR61A106KE19L</field>
         <field name="Footprint">FlightComputer:0805-NO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="C4" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="GRM21BR61A106KE19L"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <sheetpath names="/Power/" tstamps="/cd0e32ad-13e2-50e0-a52c-06599e08b47d/"/>
@@ -148,13 +148,13 @@
       <value>10uF</value>
       <footprint>FlightComputer:0805-NO</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">GRM21BR61A106KE19L</field>
         <field name="Footprint">FlightComputer:0805-NO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="C20" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="GRM21BR61A106KE19L"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <sheetpath names="/Power/" tstamps="/cd0e32ad-13e2-50e0-a52c-06599e08b47d/"/>
@@ -172,13 +172,13 @@
       <value>10uF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">GRM21BR61A106KE19L</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="C39" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="GRM21BR61A106KE19L"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <sheetpath names="/Power/" tstamps="/cd0e32ad-13e2-50e0-a52c-06599e08b47d/"/>
@@ -196,13 +196,13 @@
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">GRM188R61A105KA61D</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="C40" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="GRM188R61A105KA61D"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <sheetpath names="/Power/" tstamps="/cd0e32ad-13e2-50e0-a52c-06599e08b47d/"/>
@@ -220,13 +220,13 @@
       <value>ORANGE</value>
       <footprint>FlightComputer:CHIPLED_0603_NOOUTLINE</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">LTST-C190KFKT</field>
         <field name="Footprint">FlightComputer:CHIPLED_0603_NOOUTLINE</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="D2" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="LTST-C190KFKT"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <sheetpath names="/Power/" tstamps="/cd0e32ad-13e2-50e0-a52c-06599e08b47d/"/>
@@ -244,13 +244,13 @@
       <value>PMEG2020AEA</value>
       <footprint>FlightComputer:SOD-323F</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">PMEG2020AEA,115</field>
         <field name="Footprint">FlightComputer:SOD-323F</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="D4" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="PMEG2020AEA,115"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <sheetpath names="/Power/" tstamps="/cd0e32ad-13e2-50e0-a52c-06599e08b47d/"/>
@@ -354,16 +354,16 @@
       </units>
     </comp>
     <comp ref="Q3">
-      <value>DMG3415UFY</value>
+      <value>DMP2045UFY4</value>
       <footprint>FlightComputer:DFN2015-3</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">DMP2045UFY4-7</field>
         <field name="Footprint">FlightComputer:DFN2015-3</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="Q3" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="DMP2045UFY4-7"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <sheetpath names="/Power/" tstamps="/cd0e32ad-13e2-50e0-a52c-06599e08b47d/"/>
@@ -382,13 +382,13 @@
       <value>10K</value>
       <footprint>FlightComputer:_0402NO</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">RC0402FR-0710KL</field>
         <field name="Footprint">FlightComputer:_0402NO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="R2" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="RC0402FR-0710KL"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <sheetpath names="/Power/" tstamps="/cd0e32ad-13e2-50e0-a52c-06599e08b47d/"/>
@@ -406,13 +406,13 @@
       <value>10K</value>
       <footprint>FlightComputer:_0402NO</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">RC0402FR-0710KL</field>
         <field name="Footprint">FlightComputer:_0402NO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="R3" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="RC0402FR-0710KL"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <sheetpath names="/Power/" tstamps="/cd0e32ad-13e2-50e0-a52c-06599e08b47d/"/>
@@ -430,13 +430,13 @@
       <value>10K</value>
       <footprint>FlightComputer:_0402NO</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">RC0402FR-0710KL</field>
         <field name="Footprint">FlightComputer:_0402NO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="R4" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="RC0402FR-0710KL"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <sheetpath names="/Power/" tstamps="/cd0e32ad-13e2-50e0-a52c-06599e08b47d/"/>
@@ -478,13 +478,13 @@
       <value>27 ohm</value>
       <footprint>FlightComputer:_0402NO</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">RC0402FR-0727RL</field>
         <field name="Footprint">FlightComputer:_0402NO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="R9" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="RC0402FR-0727RL"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <sheetpath names="/Power/" tstamps="/cd0e32ad-13e2-50e0-a52c-06599e08b47d/"/>
@@ -502,13 +502,13 @@
       <value>27 ohm</value>
       <footprint>FlightComputer:_0402NO</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">RC0402FR-0727RL</field>
         <field name="Footprint">FlightComputer:_0402NO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="R10" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="RC0402FR-0727RL"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <sheetpath names="/Power/" tstamps="/cd0e32ad-13e2-50e0-a52c-06599e08b47d/"/>
@@ -526,13 +526,13 @@
       <value>5.1K</value>
       <footprint>FlightComputer:_0402NO</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">RC0402FR-075K1L</field>
         <field name="Footprint">FlightComputer:_0402NO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="R12" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="RC0402FR-075K1L"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <sheetpath names="/Power/" tstamps="/cd0e32ad-13e2-50e0-a52c-06599e08b47d/"/>
@@ -550,13 +550,13 @@
       <value>5.1K</value>
       <footprint>FlightComputer:_0402NO</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">RC0402FR-075K1L</field>
         <field name="Footprint">FlightComputer:_0402NO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="R13" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="RC0402FR-075K1L"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <sheetpath names="/Power/" tstamps="/cd0e32ad-13e2-50e0-a52c-06599e08b47d/"/>
@@ -574,13 +574,13 @@
       <value>1k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">RC0603FR-071KL</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="R55" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="RC0603FR-071KL"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <sheetpath names="/Power/" tstamps="/cd0e32ad-13e2-50e0-a52c-06599e08b47d/"/>
@@ -590,54 +590,6 @@
           <pins>
             <pin num="1"/>
             <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP1">
-      <value>TP</value>
-      <footprint>FlightComputer:B1_27</footprint>
-      <fields>
-        <field name="MPN"/>
-        <field name="Footprint">FlightComputer:B1_27</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FlightComputer" part="TP1" description=""/>
-      <property name="MPN" value=""/>
-      <property name="Sheetname" value="Power"/>
-      <property name="Sheetfile" value="power.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <sheetpath names="/Power/" tstamps="/cd0e32ad-13e2-50e0-a52c-06599e08b47d/"/>
-      <tstamps>da78707b-3873-531a-81de-3d994dfb7aef</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="TP"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP2">
-      <value>TP</value>
-      <footprint>FlightComputer:B1_27</footprint>
-      <fields>
-        <field name="MPN"/>
-        <field name="Footprint">FlightComputer:B1_27</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FlightComputer" part="TP2" description=""/>
-      <property name="MPN" value=""/>
-      <property name="Sheetname" value="Power"/>
-      <property name="Sheetfile" value="power.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <sheetpath names="/Power/" tstamps="/cd0e32ad-13e2-50e0-a52c-06599e08b47d/"/>
-      <tstamps>6949402c-ed2f-552b-b8cc-47a015b49826</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="TP"/>
           </pins>
         </unit>
       </units>
@@ -728,13 +680,13 @@
       <value>15pF</value>
       <footprint>FlightComputer:_0402NO</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">GRM1555C1H150JA01D</field>
         <field name="Footprint">FlightComputer:_0402NO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="C2" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="GRM1555C1H150JA01D"/>
       <property name="Sheetname" value="Processor"/>
       <property name="Sheetfile" value="processor.kicad_sch"/>
       <sheetpath names="/Processor/" tstamps="/78f1f110-7a61-53ef-8fea-fc2d064ccd6f/"/>
@@ -752,13 +704,13 @@
       <value>15pF</value>
       <footprint>FlightComputer:_0402NO</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">GRM1555C1H150JA01D</field>
         <field name="Footprint">FlightComputer:_0402NO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="C3" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="GRM1555C1H150JA01D"/>
       <property name="Sheetname" value="Processor"/>
       <property name="Sheetfile" value="processor.kicad_sch"/>
       <sheetpath names="/Processor/" tstamps="/78f1f110-7a61-53ef-8fea-fc2d064ccd6f/"/>
@@ -776,13 +728,13 @@
       <value>10uF</value>
       <footprint>FlightComputer:0603-NO</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">GRM188R60J106ME47D</field>
         <field name="Footprint">FlightComputer:0603-NO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="C5" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="GRM188R60J106ME47D"/>
       <property name="Sheetname" value="Processor"/>
       <property name="Sheetfile" value="processor.kicad_sch"/>
       <sheetpath names="/Processor/" tstamps="/78f1f110-7a61-53ef-8fea-fc2d064ccd6f/"/>
@@ -800,13 +752,13 @@
       <value>0.1uF</value>
       <footprint>FlightComputer:_0402NO</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">GRM155R71C104KA88D</field>
         <field name="Footprint">FlightComputer:_0402NO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="C6" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
       <property name="Sheetname" value="Processor"/>
       <property name="Sheetfile" value="processor.kicad_sch"/>
       <sheetpath names="/Processor/" tstamps="/78f1f110-7a61-53ef-8fea-fc2d064ccd6f/"/>
@@ -824,13 +776,13 @@
       <value>0.1uF</value>
       <footprint>FlightComputer:_0402NO</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">GRM155R71C104KA88D</field>
         <field name="Footprint">FlightComputer:_0402NO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="C7" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
       <property name="Sheetname" value="Processor"/>
       <property name="Sheetfile" value="processor.kicad_sch"/>
       <sheetpath names="/Processor/" tstamps="/78f1f110-7a61-53ef-8fea-fc2d064ccd6f/"/>
@@ -848,13 +800,13 @@
       <value>10uF_0603</value>
       <footprint>FlightComputer:_0603MP</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">GRM188R60J106ME47D</field>
         <field name="Footprint">FlightComputer:_0603MP</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="C8" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="GRM188R60J106ME47D"/>
       <property name="Sheetname" value="Processor"/>
       <property name="Sheetfile" value="processor.kicad_sch"/>
       <sheetpath names="/Processor/" tstamps="/78f1f110-7a61-53ef-8fea-fc2d064ccd6f/"/>
@@ -872,13 +824,13 @@
       <value>0.1uF</value>
       <footprint>FlightComputer:_0402NO</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">GRM155R71C104KA88D</field>
         <field name="Footprint">FlightComputer:_0402NO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="C9" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
       <property name="Sheetname" value="Processor"/>
       <property name="Sheetfile" value="processor.kicad_sch"/>
       <sheetpath names="/Processor/" tstamps="/78f1f110-7a61-53ef-8fea-fc2d064ccd6f/"/>
@@ -896,13 +848,13 @@
       <value>1uF</value>
       <footprint>FlightComputer:_0402NO</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">GRM155R61A105KE15D</field>
         <field name="Footprint">FlightComputer:_0402NO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="C10" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="GRM155R61A105KE15D"/>
       <property name="Sheetname" value="Processor"/>
       <property name="Sheetfile" value="processor.kicad_sch"/>
       <sheetpath names="/Processor/" tstamps="/78f1f110-7a61-53ef-8fea-fc2d064ccd6f/"/>
@@ -920,13 +872,13 @@
       <value>1uF</value>
       <footprint>FlightComputer:_0402NO</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">GRM155R61A105KE15D</field>
         <field name="Footprint">FlightComputer:_0402NO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="C11" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="GRM155R61A105KE15D"/>
       <property name="Sheetname" value="Processor"/>
       <property name="Sheetfile" value="processor.kicad_sch"/>
       <sheetpath names="/Processor/" tstamps="/78f1f110-7a61-53ef-8fea-fc2d064ccd6f/"/>
@@ -944,13 +896,13 @@
       <value>0.1uF</value>
       <footprint>FlightComputer:_0402NO</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">GRM155R71C104KA88D</field>
         <field name="Footprint">FlightComputer:_0402NO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="C12" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
       <property name="Sheetname" value="Processor"/>
       <property name="Sheetfile" value="processor.kicad_sch"/>
       <sheetpath names="/Processor/" tstamps="/78f1f110-7a61-53ef-8fea-fc2d064ccd6f/"/>
@@ -968,13 +920,13 @@
       <value>10uF_0603</value>
       <footprint>FlightComputer:_0603MP</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">GRM188R60J106ME47D</field>
         <field name="Footprint">FlightComputer:_0603MP</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="C13" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="GRM188R60J106ME47D"/>
       <property name="Sheetname" value="Processor"/>
       <property name="Sheetfile" value="processor.kicad_sch"/>
       <sheetpath names="/Processor/" tstamps="/78f1f110-7a61-53ef-8fea-fc2d064ccd6f/"/>
@@ -992,13 +944,13 @@
       <value>0.1uF</value>
       <footprint>FlightComputer:_0402NO</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">GRM155R71C104KA88D</field>
         <field name="Footprint">FlightComputer:_0402NO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="C14" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
       <property name="Sheetname" value="Processor"/>
       <property name="Sheetfile" value="processor.kicad_sch"/>
       <sheetpath names="/Processor/" tstamps="/78f1f110-7a61-53ef-8fea-fc2d064ccd6f/"/>
@@ -1016,13 +968,13 @@
       <value>1uF</value>
       <footprint>FlightComputer:_0402NO</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">GRM155R61A105KE15D</field>
         <field name="Footprint">FlightComputer:_0402NO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="C15" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="GRM155R61A105KE15D"/>
       <property name="Sheetname" value="Processor"/>
       <property name="Sheetfile" value="processor.kicad_sch"/>
       <sheetpath names="/Processor/" tstamps="/78f1f110-7a61-53ef-8fea-fc2d064ccd6f/"/>
@@ -1040,13 +992,13 @@
       <value>0.1uF</value>
       <footprint>FlightComputer:_0402NO</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">GRM155R71C104KA88D</field>
         <field name="Footprint">FlightComputer:_0402NO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="C16" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
       <property name="Sheetname" value="Processor"/>
       <property name="Sheetfile" value="processor.kicad_sch"/>
       <sheetpath names="/Processor/" tstamps="/78f1f110-7a61-53ef-8fea-fc2d064ccd6f/"/>
@@ -1064,13 +1016,13 @@
       <value>1uF</value>
       <footprint>FlightComputer:_0402NO</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">GRM155R61A105KE15D</field>
         <field name="Footprint">FlightComputer:_0402NO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="C17" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="GRM155R61A105KE15D"/>
       <property name="Sheetname" value="Processor"/>
       <property name="Sheetfile" value="processor.kicad_sch"/>
       <sheetpath names="/Processor/" tstamps="/78f1f110-7a61-53ef-8fea-fc2d064ccd6f/"/>
@@ -1088,13 +1040,13 @@
       <value>0.1uF</value>
       <footprint>FlightComputer:_0402NO</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">GRM155R71C104KA88D</field>
         <field name="Footprint">FlightComputer:_0402NO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="C18" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
       <property name="Sheetname" value="Processor"/>
       <property name="Sheetfile" value="processor.kicad_sch"/>
       <sheetpath names="/Processor/" tstamps="/78f1f110-7a61-53ef-8fea-fc2d064ccd6f/"/>
@@ -1112,13 +1064,13 @@
       <value>2.2uF</value>
       <footprint>FlightComputer:_0402NO</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">GRM155R61A225KE01D</field>
         <field name="Footprint">FlightComputer:_0402NO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="C19" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="GRM155R61A225KE01D"/>
       <property name="Sheetname" value="Processor"/>
       <property name="Sheetfile" value="processor.kicad_sch"/>
       <sheetpath names="/Processor/" tstamps="/78f1f110-7a61-53ef-8fea-fc2d064ccd6f/"/>
@@ -1136,13 +1088,13 @@
       <value>2.2uF</value>
       <footprint>FlightComputer:_0402NO</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">GRM155R61A225KE01D</field>
         <field name="Footprint">FlightComputer:_0402NO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="C21" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="GRM155R61A225KE01D"/>
       <property name="Sheetname" value="Processor"/>
       <property name="Sheetfile" value="processor.kicad_sch"/>
       <sheetpath names="/Processor/" tstamps="/78f1f110-7a61-53ef-8fea-fc2d064ccd6f/"/>
@@ -1160,13 +1112,13 @@
       <value>RED</value>
       <footprint>FlightComputer:CHIPLED_0603_NOOUTLINE</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">LTST-C190KRKT</field>
         <field name="Footprint">FlightComputer:CHIPLED_0603_NOOUTLINE</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="D1" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="LTST-C190KRKT"/>
       <property name="Sheetname" value="Processor"/>
       <property name="Sheetfile" value="processor.kicad_sch"/>
       <sheetpath names="/Processor/" tstamps="/78f1f110-7a61-53ef-8fea-fc2d064ccd6f/"/>
@@ -1184,15 +1136,16 @@
       <value>WS2812B_SK6805_1515</value>
       <footprint>FlightComputer:SK6805_1515</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">SK6805-EC15</field>
         <field name="Footprint">FlightComputer:SK6805_1515</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="D5" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="SK6805-EC15"/>
       <property name="Sheetname" value="Processor"/>
       <property name="Sheetfile" value="processor.kicad_sch"/>
+      <property name="dnp"/>
       <sheetpath names="/Processor/" tstamps="/78f1f110-7a61-53ef-8fea-fc2d064ccd6f/"/>
       <tstamps>fe8b554b-32f3-51a6-ab54-8dac325c70ac</tstamps>
       <units>
@@ -1210,13 +1163,13 @@
       <value>DFE252012F-3R3M=P2</value>
       <footprint>FlightComputer:INDUCTOR_1007</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">DFE252012F-3R3M=P2</field>
         <field name="Footprint">FlightComputer:INDUCTOR_1007</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="L1" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="DFE252012F-3R3M=P2"/>
       <property name="Sheetname" value="Processor"/>
       <property name="Sheetfile" value="processor.kicad_sch"/>
       <sheetpath names="/Processor/" tstamps="/78f1f110-7a61-53ef-8fea-fc2d064ccd6f/"/>
@@ -1234,13 +1187,13 @@
       <value>200</value>
       <footprint>FlightComputer:_0402NO</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">RC0402FR-07200RL</field>
         <field name="Footprint">FlightComputer:_0402NO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="R1" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="RC0402FR-07200RL"/>
       <property name="Sheetname" value="Processor"/>
       <property name="Sheetfile" value="processor.kicad_sch"/>
       <sheetpath names="/Processor/" tstamps="/78f1f110-7a61-53ef-8fea-fc2d064ccd6f/"/>
@@ -1258,13 +1211,13 @@
       <value>10K</value>
       <footprint>FlightComputer:_0402NO</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">RC0402FR-0710KL</field>
         <field name="Footprint">FlightComputer:_0402NO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="R5" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="RC0402FR-0710KL"/>
       <property name="Sheetname" value="Processor"/>
       <property name="Sheetfile" value="processor.kicad_sch"/>
       <sheetpath names="/Processor/" tstamps="/78f1f110-7a61-53ef-8fea-fc2d064ccd6f/"/>
@@ -1282,13 +1235,13 @@
       <value>1K</value>
       <footprint>FlightComputer:_0402NO</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">RC0402FR-071KL</field>
         <field name="Footprint">FlightComputer:_0402NO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="R6" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="RC0402FR-071KL"/>
       <property name="Sheetname" value="Processor"/>
       <property name="Sheetfile" value="processor.kicad_sch"/>
       <sheetpath names="/Processor/" tstamps="/78f1f110-7a61-53ef-8fea-fc2d064ccd6f/"/>
@@ -1306,13 +1259,13 @@
       <value>10K</value>
       <footprint>FlightComputer:_0402NO</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">RC0402FR-0710KL</field>
         <field name="Footprint">FlightComputer:_0402NO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="R7" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="RC0402FR-0710KL"/>
       <property name="Sheetname" value="Processor"/>
       <property name="Sheetfile" value="processor.kicad_sch"/>
       <sheetpath names="/Processor/" tstamps="/78f1f110-7a61-53ef-8fea-fc2d064ccd6f/"/>
@@ -1330,13 +1283,13 @@
       <value>1K</value>
       <footprint>FlightComputer:_0402NO</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">RC0402FR-071KL</field>
         <field name="Footprint">FlightComputer:_0402NO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="R11" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="RC0402FR-071KL"/>
       <property name="Sheetname" value="Processor"/>
       <property name="Sheetfile" value="processor.kicad_sch"/>
       <sheetpath names="/Processor/" tstamps="/78f1f110-7a61-53ef-8fea-fc2d064ccd6f/"/>
@@ -1354,13 +1307,13 @@
       <value>10</value>
       <footprint>FlightComputer:_0402NO</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">RC0402FR-0710RL</field>
         <field name="Footprint">FlightComputer:_0402NO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="R14" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="RC0402FR-0710RL"/>
       <property name="Sheetname" value="Processor"/>
       <property name="Sheetfile" value="processor.kicad_sch"/>
       <sheetpath names="/Processor/" tstamps="/78f1f110-7a61-53ef-8fea-fc2d064ccd6f/"/>
@@ -1378,13 +1331,13 @@
       <value>10K</value>
       <footprint>FlightComputer:_0402NO</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">RC0402FR-0710KL</field>
         <field name="Footprint">FlightComputer:_0402NO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="R21" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="RC0402FR-0710KL"/>
       <property name="Sheetname" value="Processor"/>
       <property name="Sheetfile" value="processor.kicad_sch"/>
       <sheetpath names="/Processor/" tstamps="/78f1f110-7a61-53ef-8fea-fc2d064ccd6f/"/>
@@ -1402,13 +1355,13 @@
       <value>KMR2</value>
       <footprint>FlightComputer:BTN_RKB2_4.6X2.8</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">KMR221GLFS</field>
         <field name="Footprint">FlightComputer:BTN_RKB2_4.6X2.8</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="SW1" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="KMR221GLFS"/>
       <property name="Sheetname" value="Processor"/>
       <property name="Sheetfile" value="processor.kicad_sch"/>
       <sheetpath names="/Processor/" tstamps="/78f1f110-7a61-53ef-8fea-fc2d064ccd6f/"/>
@@ -1428,13 +1381,13 @@
       <value>KMR2</value>
       <footprint>FlightComputer:BTN_RKB2_4.6X2.8</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">KMR221GLFS</field>
         <field name="Footprint">FlightComputer:BTN_RKB2_4.6X2.8</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="SW2" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="KMR221GLFS"/>
       <property name="Sheetname" value="Processor"/>
       <property name="Sheetfile" value="processor.kicad_sch"/>
       <sheetpath names="/Processor/" tstamps="/78f1f110-7a61-53ef-8fea-fc2d064ccd6f/"/>
@@ -1526,13 +1479,13 @@
       <value>8MB QSPI</value>
       <footprint>FlightComputer:USON8_4X4</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">W25Q64JVXGIQ</field>
         <field name="Footprint">FlightComputer:USON8_4X4</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="U1" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="W25Q64JVXGIQ"/>
       <property name="Sheetname" value="Processor"/>
       <property name="Sheetfile" value="processor.kicad_sch"/>
       <sheetpath names="/Processor/" tstamps="/78f1f110-7a61-53ef-8fea-fc2d064ccd6f/"/>
@@ -1557,13 +1510,13 @@
       <value>RP2350A (A4)</value>
       <footprint>FlightComputer:QFN60_7MM_REDUCEDEPAD</footprint>
       <fields>
-        <field name="MPN">RP2350A0A4</field>
+        <field name="MPN">SC1509-A4</field>
         <field name="Footprint">FlightComputer:QFN60_7MM_REDUCEDEPAD</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="U4" description=""/>
-      <property name="MPN" value="RP2350A0A4"/>
+      <property name="MPN" value="SC1509-A4"/>
       <property name="Sheetname" value="Processor"/>
       <property name="Sheetfile" value="processor.kicad_sch"/>
       <sheetpath names="/Processor/" tstamps="/78f1f110-7a61-53ef-8fea-fc2d064ccd6f/"/>
@@ -1638,15 +1591,15 @@
     </comp>
     <comp ref="Y1">
       <value>12MHz/10pF/50ohm</value>
-      <footprint>FlightComputer:CRYSTAL_2.5X2</footprint>
+      <footprint>Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm</footprint>
       <fields>
-        <field name="MPN"/>
-        <field name="Footprint">FlightComputer:CRYSTAL_2.5X2</field>
+        <field name="MPN">ABM8-272-T3</field>
+        <field name="Footprint">Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="Y1" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="ABM8-272-T3"/>
       <property name="Sheetname" value="Processor"/>
       <property name="Sheetfile" value="processor.kicad_sch"/>
       <sheetpath names="/Processor/" tstamps="/78f1f110-7a61-53ef-8fea-fc2d064ccd6f/"/>
@@ -1655,7 +1608,9 @@
         <unit name="A">
           <pins>
             <pin num="1"/>
+            <pin num="2"/>
             <pin num="3"/>
+            <pin num="4"/>
           </pins>
         </unit>
       </units>
@@ -1664,13 +1619,13 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">GRM188R71H104KA93D</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="C31" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="GRM188R71H104KA93D"/>
       <property name="Sheetname" value="Sensors"/>
       <property name="Sheetfile" value="sensors.kicad_sch"/>
       <sheetpath names="/Sensors/" tstamps="/8abbf1c8-8310-5052-84cd-43b243d42f0c/"/>
@@ -1688,13 +1643,13 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">GRM188R71H104KA93D</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="C32" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="GRM188R71H104KA93D"/>
       <property name="Sheetname" value="Sensors"/>
       <property name="Sheetfile" value="sensors.kicad_sch"/>
       <sheetpath names="/Sensors/" tstamps="/8abbf1c8-8310-5052-84cd-43b243d42f0c/"/>
@@ -1712,13 +1667,13 @@
       <value>22pF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">GRM1885C1H220JA01D</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="C33" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="GRM1885C1H220JA01D"/>
       <property name="Sheetname" value="Sensors"/>
       <property name="Sheetfile" value="sensors.kicad_sch"/>
       <sheetpath names="/Sensors/" tstamps="/8abbf1c8-8310-5052-84cd-43b243d42f0c/"/>
@@ -1736,13 +1691,13 @@
       <value>22pF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">GRM1885C1H220JA01D</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="C34" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="GRM1885C1H220JA01D"/>
       <property name="Sheetname" value="Sensors"/>
       <property name="Sheetfile" value="sensors.kicad_sch"/>
       <sheetpath names="/Sensors/" tstamps="/8abbf1c8-8310-5052-84cd-43b243d42f0c/"/>
@@ -1760,13 +1715,13 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">GRM188R71H104KA93D</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="C35" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="GRM188R71H104KA93D"/>
       <property name="Sheetname" value="Sensors"/>
       <property name="Sheetfile" value="sensors.kicad_sch"/>
       <sheetpath names="/Sensors/" tstamps="/8abbf1c8-8310-5052-84cd-43b243d42f0c/"/>
@@ -1784,13 +1739,13 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">GRM188R71H104KA93D</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="C36" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="GRM188R71H104KA93D"/>
       <property name="Sheetname" value="Sensors"/>
       <property name="Sheetfile" value="sensors.kicad_sch"/>
       <sheetpath names="/Sensors/" tstamps="/8abbf1c8-8310-5052-84cd-43b243d42f0c/"/>
@@ -1808,13 +1763,13 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">GRM188R71H104KA93D</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="C37" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="GRM188R71H104KA93D"/>
       <property name="Sheetname" value="Sensors"/>
       <property name="Sheetfile" value="sensors.kicad_sch"/>
       <sheetpath names="/Sensors/" tstamps="/8abbf1c8-8310-5052-84cd-43b243d42f0c/"/>
@@ -1832,13 +1787,13 @@
       <value>10k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">RC0603FR-0710KL</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="R41" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="RC0603FR-0710KL"/>
       <property name="Sheetname" value="Sensors"/>
       <property name="Sheetfile" value="sensors.kicad_sch"/>
       <sheetpath names="/Sensors/" tstamps="/8abbf1c8-8310-5052-84cd-43b243d42f0c/"/>
@@ -1856,13 +1811,13 @@
       <value>10k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">RC0603FR-0710KL</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="R42" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="RC0603FR-0710KL"/>
       <property name="Sheetname" value="Sensors"/>
       <property name="Sheetfile" value="sensors.kicad_sch"/>
       <sheetpath names="/Sensors/" tstamps="/8abbf1c8-8310-5052-84cd-43b243d42f0c/"/>
@@ -1880,13 +1835,13 @@
       <value>10k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">RC0603FR-0710KL</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="R43" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="RC0603FR-0710KL"/>
       <property name="Sheetname" value="Sensors"/>
       <property name="Sheetfile" value="sensors.kicad_sch"/>
       <sheetpath names="/Sensors/" tstamps="/8abbf1c8-8310-5052-84cd-43b243d42f0c/"/>
@@ -1904,13 +1859,13 @@
       <value>10k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">RC0603FR-0710KL</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="R44" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="RC0603FR-0710KL"/>
       <property name="Sheetname" value="Sensors"/>
       <property name="Sheetfile" value="sensors.kicad_sch"/>
       <sheetpath names="/Sensors/" tstamps="/8abbf1c8-8310-5052-84cd-43b243d42f0c/"/>
@@ -1928,13 +1883,13 @@
       <value>10k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">RC0603FR-0710KL</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="R45" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="RC0603FR-0710KL"/>
       <property name="Sheetname" value="Sensors"/>
       <property name="Sheetfile" value="sensors.kicad_sch"/>
       <sheetpath names="/Sensors/" tstamps="/8abbf1c8-8310-5052-84cd-43b243d42f0c/"/>
@@ -2032,15 +1987,15 @@
     </comp>
     <comp ref="Y2">
       <value>32.768kHz</value>
-      <footprint>FlightComputer:XTAL3215</footprint>
+      <footprint>Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm</footprint>
       <fields>
-        <field name="MPN"/>
-        <field name="Footprint">FlightComputer:XTAL3215</field>
+        <field name="MPN">ABS07-32.768KHZ-T</field>
+        <field name="Footprint">Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="Y2" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="ABS07-32.768KHZ-T"/>
       <property name="Sheetname" value="Sensors"/>
       <property name="Sheetfile" value="sensors.kicad_sch"/>
       <sheetpath names="/Sensors/" tstamps="/8abbf1c8-8310-5052-84cd-43b243d42f0c/"/>
@@ -2048,8 +2003,8 @@
       <units>
         <unit name="A">
           <pins>
-            <pin num="P$1"/>
-            <pin num="P$2"/>
+            <pin num="1"/>
+            <pin num="2"/>
           </pins>
         </unit>
       </units>
@@ -2058,13 +2013,13 @@
       <value>10uF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">GRM21BR61A106KE19L</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="C38" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="GRM21BR61A106KE19L"/>
       <property name="Sheetname" value="Interfaces"/>
       <property name="Sheetfile" value="interfaces.kicad_sch"/>
       <sheetpath names="/Interfaces/" tstamps="/82bf937c-a870-5237-8125-89cbc982d5d9/"/>
@@ -2182,15 +2137,15 @@
     </comp>
     <comp ref="JSD1">
       <value>MicroSD</value>
-      <footprint>FlightComputer:MICROSD</footprint>
+      <footprint>Connector_Card:microSD_HC_Molex_104031-0811</footprint>
       <fields>
-        <field name="MPN"/>
-        <field name="Footprint">FlightComputer:MICROSD</field>
+        <field name="MPN">1040310811</field>
+        <field name="Footprint">Connector_Card:microSD_HC_Molex_104031-0811</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="JSD1" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="1040310811"/>
       <property name="Sheetname" value="Interfaces"/>
       <property name="Sheetfile" value="interfaces.kicad_sch"/>
       <sheetpath names="/Interfaces/" tstamps="/82bf937c-a870-5237-8125-89cbc982d5d9/"/>
@@ -2206,25 +2161,24 @@
             <pin num="6"/>
             <pin num="7"/>
             <pin num="8"/>
-            <pin num="CD1"/>
-            <pin num="CD2"/>
-            <pin num="MT1"/>
-            <pin num="MT2"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="SH"/>
           </pins>
         </unit>
       </units>
     </comp>
     <comp ref="JSERVO1">
       <value>4 x servo: S / BAT / GND</value>
-      <footprint>FlightComputer:Servo_3x04_P2.54mm</footprint>
+      <footprint>FlightComputer:Servo_RA_3x04_P2.54mm_TSW10408</footprint>
       <fields>
-        <field name="MPN">TSW-104-07-T-T</field>
-        <field name="Footprint">FlightComputer:Servo_3x04_P2.54mm</field>
+        <field name="MPN">TSW-104-08-T-T-RA</field>
+        <field name="Footprint">FlightComputer:Servo_RA_3x04_P2.54mm_TSW10408</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="JSERVO1" description=""/>
-      <property name="MPN" value="TSW-104-07-T-T"/>
+      <property name="MPN" value="TSW-104-08-T-T-RA"/>
       <property name="Sheetname" value="Interfaces"/>
       <property name="Sheetfile" value="interfaces.kicad_sch"/>
       <sheetpath names="/Interfaces/" tstamps="/82bf937c-a870-5237-8125-89cbc982d5d9/"/>
@@ -2252,13 +2206,13 @@
       <value>4.7k</value>
       <footprint>FlightComputer:_0402NO</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">RC0402FR-074K7L</field>
         <field name="Footprint">FlightComputer:_0402NO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="R16" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="RC0402FR-074K7L"/>
       <property name="Sheetname" value="Interfaces"/>
       <property name="Sheetfile" value="interfaces.kicad_sch"/>
       <sheetpath names="/Interfaces/" tstamps="/82bf937c-a870-5237-8125-89cbc982d5d9/"/>
@@ -2276,13 +2230,13 @@
       <value>4.7k</value>
       <footprint>FlightComputer:_0402NO</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">RC0402FR-074K7L</field>
         <field name="Footprint">FlightComputer:_0402NO</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="R17" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="RC0402FR-074K7L"/>
       <property name="Sheetname" value="Interfaces"/>
       <property name="Sheetfile" value="interfaces.kicad_sch"/>
       <sheetpath names="/Interfaces/" tstamps="/82bf937c-a870-5237-8125-89cbc982d5d9/"/>
@@ -2300,13 +2254,13 @@
       <value>47k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">RC0603FR-0747KL</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="R31" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="RC0603FR-0747KL"/>
       <property name="Sheetname" value="Interfaces"/>
       <property name="Sheetfile" value="interfaces.kicad_sch"/>
       <sheetpath names="/Interfaces/" tstamps="/82bf937c-a870-5237-8125-89cbc982d5d9/"/>
@@ -2324,13 +2278,13 @@
       <value>47k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">RC0603FR-0747KL</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="R32" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="RC0603FR-0747KL"/>
       <property name="Sheetname" value="Interfaces"/>
       <property name="Sheetfile" value="interfaces.kicad_sch"/>
       <sheetpath names="/Interfaces/" tstamps="/82bf937c-a870-5237-8125-89cbc982d5d9/"/>
@@ -2348,13 +2302,13 @@
       <value>47k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">RC0603FR-0747KL</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="R33" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="RC0603FR-0747KL"/>
       <property name="Sheetname" value="Interfaces"/>
       <property name="Sheetfile" value="interfaces.kicad_sch"/>
       <sheetpath names="/Interfaces/" tstamps="/82bf937c-a870-5237-8125-89cbc982d5d9/"/>
@@ -2372,13 +2326,13 @@
       <value>47k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">RC0603FR-0747KL</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="R34" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="RC0603FR-0747KL"/>
       <property name="Sheetname" value="Interfaces"/>
       <property name="Sheetfile" value="interfaces.kicad_sch"/>
       <sheetpath names="/Interfaces/" tstamps="/82bf937c-a870-5237-8125-89cbc982d5d9/"/>
@@ -2396,13 +2350,13 @@
       <value>47k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">RC0603FR-0747KL</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="R35" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="RC0603FR-0747KL"/>
       <property name="Sheetname" value="Interfaces"/>
       <property name="Sheetfile" value="interfaces.kicad_sch"/>
       <sheetpath names="/Interfaces/" tstamps="/82bf937c-a870-5237-8125-89cbc982d5d9/"/>
@@ -2420,13 +2374,13 @@
       <value>47k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">RC0603FR-0747KL</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="R36" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="RC0603FR-0747KL"/>
       <property name="Sheetname" value="Interfaces"/>
       <property name="Sheetfile" value="interfaces.kicad_sch"/>
       <sheetpath names="/Interfaces/" tstamps="/82bf937c-a870-5237-8125-89cbc982d5d9/"/>
@@ -2444,13 +2398,13 @@
       <value>100k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">RC0603FR-07100KL</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="R51" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="RC0603FR-07100KL"/>
       <property name="Sheetname" value="Interfaces"/>
       <property name="Sheetfile" value="interfaces.kicad_sch"/>
       <sheetpath names="/Interfaces/" tstamps="/82bf937c-a870-5237-8125-89cbc982d5d9/"/>
@@ -2468,13 +2422,13 @@
       <value>100k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">RC0603FR-07100KL</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="R52" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="RC0603FR-07100KL"/>
       <property name="Sheetname" value="Interfaces"/>
       <property name="Sheetfile" value="interfaces.kicad_sch"/>
       <sheetpath names="/Interfaces/" tstamps="/82bf937c-a870-5237-8125-89cbc982d5d9/"/>
@@ -2492,13 +2446,13 @@
       <value>100k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">RC0603FR-07100KL</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="R53" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="RC0603FR-07100KL"/>
       <property name="Sheetname" value="Interfaces"/>
       <property name="Sheetfile" value="interfaces.kicad_sch"/>
       <sheetpath names="/Interfaces/" tstamps="/82bf937c-a870-5237-8125-89cbc982d5d9/"/>
@@ -2516,13 +2470,13 @@
       <value>100k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">RC0603FR-07100KL</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="FlightComputer" part="R54" description=""/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="RC0603FR-07100KL"/>
       <property name="Sheetname" value="Interfaces"/>
       <property name="Sheetfile" value="interfaces.kicad_sch"/>
       <sheetpath names="/Interfaces/" tstamps="/82bf937c-a870-5237-8125-89cbc982d5d9/"/>
@@ -3086,18 +3040,17 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="1" name="DAT2" type="bidirectional"/>
-        <pin num="2" name="CS" type="input"/>
-        <pin num="3" name="DATA_IN" type="input"/>
-        <pin num="4" name="SD_VDD" type="power_in"/>
-        <pin num="5" name="SCLK" type="input"/>
-        <pin num="6" name="SD_VSS" type="power_in"/>
-        <pin num="7" name="DATA_OUT" type="output"/>
-        <pin num="8" name="DAT1" type="bidirectional"/>
-        <pin num="CD1" name="CARD_DETECT" type="passive"/>
-        <pin num="CD2" name="CARD_DETECT" type="passive"/>
-        <pin num="MT1" name="MOUNTING" type="passive"/>
-        <pin num="MT2" name="MOUNTING" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+        <pin num="7" name="7" type="passive"/>
+        <pin num="8" name="8" type="passive"/>
+        <pin num="9" name="9" type="passive"/>
+        <pin num="10" name="10" type="passive"/>
+        <pin num="SH" name="SH" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="FlightComputer" part="JSERVO1">
@@ -3180,7 +3133,7 @@
     <libpart lib="FlightComputer" part="Q3">
       <fields>
         <field name="Reference">Q</field>
-        <field name="Value">DMG3415UFY</field>
+        <field name="Value">DMP2045UFY4</field>
         <field name="Footprint"/>
         <field name="Datasheet"/>
         <field name="Description"/>
@@ -3650,30 +3603,6 @@
         <pin num="B'" name="S1" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="FlightComputer" part="TP1">
-      <fields>
-        <field name="Reference">TP</field>
-        <field name="Value">TP</field>
-        <field name="Footprint"/>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <pins>
-        <pin num="TP" name="TP" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="FlightComputer" part="TP2">
-      <fields>
-        <field name="Reference">TP</field>
-        <field name="Value">TP</field>
-        <field name="Footprint"/>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <pins>
-        <pin num="TP" name="TP" type="passive"/>
-      </pins>
-    </libpart>
     <libpart lib="FlightComputer" part="TP3">
       <fields>
         <field name="Reference">TP</field>
@@ -3921,7 +3850,9 @@
       </fields>
       <pins>
         <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
         <pin num="3" name="2" type="passive"/>
+        <pin num="4" name="GND" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="FlightComputer" part="Y2">
@@ -3933,8 +3864,8 @@
         <field name="Description"/>
       </fields>
       <pins>
-        <pin num="P$1" name="P$1" type="bidirectional"/>
-        <pin num="P$2" name="P$2" type="bidirectional"/>
+        <pin num="1" name="P$1" type="bidirectional"/>
+        <pin num="2" name="P$2" type="bidirectional"/>
       </pins>
     </libpart>
   </libparts>
@@ -3972,7 +3903,7 @@
       <node ref="J1" pin="14" pinfunction="14_14" pintype="passive"/>
       <node ref="J1" pin="15" pinfunction="15_15" pintype="passive"/>
       <node ref="JQT1" pin="2" pinfunction="V+_2" pintype="passive"/>
-      <node ref="JSD1" pin="4" pinfunction="SD_VDD_4" pintype="power_in"/>
+      <node ref="JSD1" pin="4" pinfunction="4_4" pintype="passive"/>
       <node ref="R1" pin="2" pinfunction="~_2" pintype="passive"/>
       <node ref="R14" pin="1" pinfunction="~_1" pintype="passive"/>
       <node ref="R16" pin="1" pinfunction="~_1" pintype="passive"/>
@@ -4094,12 +4025,12 @@
     <net code="23" name="BNO_XIN" class="Default">
       <node ref="C33" pin="1" pinfunction="~_1" pintype="passive"/>
       <node ref="U5" pin="27" pinfunction="XIN32_27" pintype="input"/>
-      <node ref="Y2" pin="P$1" pinfunction="P$1_P$1" pintype="bidirectional"/>
+      <node ref="Y2" pin="1" pinfunction="P$1_1" pintype="bidirectional"/>
     </net>
     <net code="24" name="BNO_XOUT" class="Default">
       <node ref="C34" pin="1" pinfunction="~_1" pintype="passive"/>
       <node ref="U5" pin="26" pinfunction="CLKSEL1/XOUT32_26" pintype="output"/>
-      <node ref="Y2" pin="P$2" pinfunction="P$2_P$2" pintype="bidirectional"/>
+      <node ref="Y2" pin="2" pinfunction="P$2_2" pintype="bidirectional"/>
     </net>
     <net code="25" name="CC1" class="Default">
       <node ref="JUSB1" pin="A5" pinfunction="A5_A5" pintype="passive"/>
@@ -4177,9 +4108,9 @@
       <node ref="JQT1" pin="1" pinfunction="GND_1" pintype="passive"/>
       <node ref="JQT1" pin="MT1" pinfunction="MT_MT1" pintype="passive"/>
       <node ref="JQT1" pin="MT2" pinfunction="MT_MT2" pintype="passive"/>
-      <node ref="JSD1" pin="6" pinfunction="SD_VSS_6" pintype="power_in"/>
-      <node ref="JSD1" pin="MT1" pinfunction="MOUNTING_MT1" pintype="passive"/>
-      <node ref="JSD1" pin="MT2" pinfunction="MOUNTING_MT2" pintype="passive"/>
+      <node ref="JSD1" pin="10" pinfunction="10_10" pintype="passive"/>
+      <node ref="JSD1" pin="6" pinfunction="6_6" pintype="passive"/>
+      <node ref="JSD1" pin="SH" pinfunction="SH_SH" pintype="passive"/>
       <node ref="JSERVO1" pin="12" pinfunction="12_12" pintype="passive"/>
       <node ref="JSERVO1" pin="3" pinfunction="3_3" pintype="passive"/>
       <node ref="JSERVO1" pin="6" pinfunction="6_6" pintype="passive"/>
@@ -4219,6 +4150,8 @@
       <node ref="U6" pin="8" pinfunction="GND_8" pintype="power_in"/>
       <node ref="U6" pin="9" pinfunction="GND_9" pintype="power_in"/>
       <node ref="U7" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="Y1" pin="2" pinfunction="GND_2" pintype="passive"/>
+      <node ref="Y1" pin="4" pinfunction="GND_4" pintype="passive"/>
     </net>
     <net code="34" name="GPIO4" class="Default">
       <node ref="J2" pin="5" pinfunction="5_5" pintype="passive"/>
@@ -4291,35 +4224,34 @@
       <node ref="U6" pin="4" pinfunction="SDI_4" pintype="input"/>
     </net>
     <net code="49" name="SD_CLK" class="Default">
-      <node ref="JSD1" pin="5" pinfunction="SCLK_5" pintype="input"/>
+      <node ref="JSD1" pin="5" pinfunction="5_5" pintype="passive"/>
       <node ref="U4" pin="18" pinfunction="GPIO14_18" pintype="bidirectional"/>
     </net>
     <net code="50" name="SD_CS" class="Default">
-      <node ref="JSD1" pin="2" pinfunction="CS_2" pintype="input"/>
+      <node ref="JSD1" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R33" pin="2" pinfunction="~_2" pintype="passive"/>
       <node ref="U4" pin="17" pinfunction="GPIO13_17" pintype="bidirectional"/>
     </net>
     <net code="51" name="SD_DAT1_UNUSED" class="Default">
-      <node ref="JSD1" pin="8" pinfunction="DAT1_8" pintype="bidirectional"/>
+      <node ref="JSD1" pin="8" pinfunction="8_8" pintype="passive"/>
       <node ref="R34" pin="2" pinfunction="~_2" pintype="passive"/>
     </net>
     <net code="52" name="SD_DAT2_UNUSED" class="Default">
-      <node ref="JSD1" pin="1" pinfunction="DAT2_1" pintype="bidirectional"/>
+      <node ref="JSD1" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="R35" pin="2" pinfunction="~_2" pintype="passive"/>
     </net>
     <net code="53" name="SD_DETECT_N" class="Default">
-      <node ref="JSD1" pin="CD1" pinfunction="CARD_DETECT_CD1" pintype="passive"/>
-      <node ref="JSD1" pin="CD2" pinfunction="CARD_DETECT_CD2" pintype="passive"/>
+      <node ref="JSD1" pin="9" pinfunction="9_9" pintype="passive"/>
       <node ref="R36" pin="2" pinfunction="~_2" pintype="passive"/>
       <node ref="U4" pin="29" pinfunction="GPIO18_29" pintype="bidirectional"/>
     </net>
     <net code="54" name="SD_MISO" class="Default">
-      <node ref="JSD1" pin="7" pinfunction="DATA_OUT_7" pintype="output"/>
+      <node ref="JSD1" pin="7" pinfunction="7_7" pintype="passive"/>
       <node ref="R31" pin="2" pinfunction="~_2" pintype="passive"/>
       <node ref="U4" pin="16" pinfunction="GPIO12_16" pintype="bidirectional"/>
     </net>
     <net code="55" name="SD_MOSI" class="Default">
-      <node ref="JSD1" pin="3" pinfunction="DATA_IN_3" pintype="input"/>
+      <node ref="JSD1" pin="3" pinfunction="3_3" pintype="passive"/>
       <node ref="R32" pin="2" pinfunction="~_2" pintype="passive"/>
       <node ref="U4" pin="19" pinfunction="GPIO15_19" pintype="bidirectional"/>
     </net>
@@ -4382,13 +4314,11 @@
       <node ref="JUSB1" pin="A6" pinfunction="A6_A6" pintype="passive"/>
       <node ref="JUSB1" pin="B6" pinfunction="B6_B6" pintype="passive"/>
       <node ref="R10" pin="1" pinfunction="~_1" pintype="passive"/>
-      <node ref="TP1" pin="TP" pinfunction="TP_TP" pintype="passive"/>
     </net>
     <net code="68" name="USB_D-" class="Default">
       <node ref="JUSB1" pin="A7" pinfunction="A7_A7" pintype="passive"/>
       <node ref="JUSB1" pin="B7" pinfunction="B7_B7" pintype="passive"/>
       <node ref="R9" pin="1" pinfunction="~_1" pintype="passive"/>
-      <node ref="TP2" pin="TP" pinfunction="TP_TP" pintype="passive"/>
     </net>
     <net code="69" name="VBAT" class="Default">
       <node ref="C20" pin="1" pinfunction="~_1" pintype="passive"/>

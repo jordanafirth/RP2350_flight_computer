@@ -67,6 +67,13 @@ for part in model['parts']:
     def clean(node):
         return [clean(child) if isinstance(child, list) else child for child in node if not (isinstance(child, list) and child and child[0] in {'uuid', 'net', 'sheetname', 'sheetfile', 'path'})]
     fp = clean(fp)
+    # The imported legacy outlines cross solder lands. Keep these outlines in
+    # the assembly layer; actual board silkscreen is drawn around placed parts.
+    for graphic in fp:
+        if isinstance(graphic,list) and graphic and graphic[0].startswith('fp_'):
+            layer = first(graphic,'layer')
+            if layer and layer[1] == 'F.SilkS':
+                layer[1] = Quoted('F.Fab')
     if name == 'DFN2015-3':
         # Eagle's drain-land extension imports as an unnetted copper graphic.
         # Represent the identical polygon as another land of physical pad 3.
@@ -80,16 +87,24 @@ for part in model['parts']:
     (LIB / (name+'.kicad_mod')).write_text(dumps(fp)+'\n', encoding='utf-8', newline='\n')
     saved.add(name)
 
-servo = ['(footprint "Servo_3x04_P2.54mm" (version 20241229) (generator "flight_computer_generator") (layer "F.Cu") (attr through_hole)',
+servo = ['(footprint "Servo_RA_3x04_P2.54mm_TSW10408" (version 20260206) (generator "flight_computer_generator") (layer "F.Cu") (attr through_hole)',
          '(property "Reference" "REF**" (at 3.81 -2.54) (layer "F.SilkS") (effects (font (size 1 1) (thickness 0.15))))',
-         '(property "Value" "TSW-104-07-T-T" (at 3.81 7.62) (layer "F.Fab") (effects (font (size 1 1) (thickness 0.15))))',
-         '(fp_rect (start -1.27 -1.27) (end 8.89 6.35) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))',
-         '(fp_rect (start -1.52 -1.52) (end 9.14 6.6) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))']
+         '(property "Value" "TSW-104-08-T-T-RA" (at 3.81 10.5) (layer "F.Fab") (effects (font (size 1 1) (thickness 0.15))))',
+         # Samtec series print Fig. 5 / Tables 1 and 5, lead style -08:
+         # same 3x4 pad matrix; body 1.52 mm forward of the nearest row,
+         # 2.54-mm body depth, 5.84-mm exposed posts, 2.29-mm solder tail.
+         '(fp_rect (start -1.27 6.60) (end 8.89 9.14) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))',
+         '(fp_rect (start -1.52 -1.10) (end 9.14 15.23) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))']
 for channel in range(4):
     for row in range(3):
         number = channel*3+row+1
-        servo.append(f'(pad "{number}" thru_hole {"rect" if number == 1 else "circle"} (at {channel*2.54} {row*2.54}) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask"))')
+        servo.append(f'(pad "{number}" thru_hole {"rect" if number == 1 else "circle"} (at {channel*2.54} {row*2.54}) (size 1.7 1.7) (drill 1.02) (layers "*.Cu" "*.Mask"))')
+    servo.append(f'(fp_line (start {channel*2.54} 9.14) (end {channel*2.54} 14.98) (stroke (width 0.64) (type default)) (layer "F.Fab"))')
 servo.append(')')
-(LIB / 'Servo_3x04_P2.54mm.kicad_mod').write_text('\n'.join(servo)+'\n', encoding='utf-8', newline='\n')
+(LIB / 'Servo_RA_3x04_P2.54mm_TSW10408.kicad_mod').write_text('\n'.join(servo)+'\n', encoding='utf-8', newline='\n')
+hole = loads('(footprint "MountingHole_M2_Head3.8mm" (version 20260206) (generator "flight_computer_generator") (layer "F.Cu") (descr "M2 clearance, nonconductive hardware; maximum head/standoff diameter 3.8 mm") (property "Reference" "H**" (at 0 0) (layer "F.Fab") (hide yes) (effects (font (size 1 1) (thickness 0.15)))) (property "Value" "M2 / max head 3.8mm" (at 0 0) (layer "F.Fab") (hide yes) (effects (font (size 1 1) (thickness 0.15)))) (attr exclude_from_bom exclude_from_pos_files) (pad "" np_thru_hole circle (at 0 0) (size 2.2 2.2) (drill 2.2) (layers "*.Cu" "*.Mask")))')
+for side in ('F','B'):
+    hole.append(loads(f'(fp_circle (center 0 0) (end 2.1 0) (stroke (width 0.05) (type default)) (fill none) (layer "{side}.CrtYd"))'))
+(LIB/'MountingHole_M2_Head3.8mm.kicad_mod').write_text(dumps(hole)+'\n',encoding='utf-8',newline='\n')
 (OUT / 'fp-lib-table').write_text('(fp_lib_table (version 7) (lib (name "FlightComputer") (type "KiCad") (uri "${KIPRJMOD}/FlightComputer.pretty") (options "") (descr "Converted pinned reference footprints plus custom servo header")))\n', encoding='utf-8', newline='\n')
 print(f'Saved {len(saved)} converted footprints and one custom servo-header footprint.')

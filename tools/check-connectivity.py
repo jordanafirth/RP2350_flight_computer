@@ -41,6 +41,8 @@ requirements = {
     ('U5','19'): 'SCL', ('U5','20'): 'SDA', ('U5','14'): 'BNO_INT_N', ('U5','11'): 'BNO_RESET_N',
     ('U6','2'): 'SCL', ('U6','4'): 'SDA', ('U6','5'): 'GND', ('U6','7'): 'BMP_INT',
     ('U7','1'): 'VBAT', ('U7','3'): 'ENABLE', ('U7','6'): 'VBAT_SERVO',
+    ('Y1','2'): 'GND', ('Y1','4'): 'GND',
+    ('JSD1','9'): 'SD_DETECT_N', ('JSD1','10'): 'GND', ('JSD1','SH'): 'GND',
 }
 for channel in range(4):
     requirements[('JSERVO1',str(channel*3+1))] = f'SERVO{channel+1}'

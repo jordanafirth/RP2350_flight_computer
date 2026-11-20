@@ -42,7 +42,7 @@
     (stroke
       (width 0.2032)
       (type solid))
-    (layer "F.SilkS"))
+    (layer "F.Fab"))
   (fp_poly
     (pts
       (xy -0.0794 0.2381)
