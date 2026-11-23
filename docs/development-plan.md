@@ -58,9 +58,10 @@ Updated 2026-11-23: all signal and ground routing is complete on four copper lay
 
 The authoritative saved board is `hardware/rev-a/flight-computer.kicad_pcb`. See `reports/pcb/current-drc.json` for raw native results and `reports/pcb/routing-completion.json` for the board hash and completion checks. Only the three specified processor exposed-pad vias require filled/capped via-in-pad treatment. No other solder-land drill overlaps were introduced.
 
-1. Obtain fabricator confirmation of the candidate stackup and USB impedance geometry.
-2. Qualify exact footprints, paste/mask, selective via treatment and component tolerances. Validate USB, processor power/clock, sensor operation and servo transients on prototypes.
-3. Check battery clearance, connectors, cable exits, tag and SD access on a physical prototype.
-4. Prepare fabrication/assembly outputs and obtain vendor sourcing/DFM feedback and a PCBA quote. Draft scope remains in `pcba-rfq.md`; no vendor submission or manufacturing release has occurred.
+1. Resolve JLCPCB's RP2350 crystal/regulator warning before prototype release. Compare the implemented crystal circuit and buck-regulator parts, inductor orientation, local routing and return paths against the current Raspberry Pi hardware guide. The selected ABM8-272-T3 crystal is recommended; the TDK DFE252012F-3R3M=P2 inductor differs from the recommended polarized Abracon AOTA-B201610S3R3-101-T. Establish whether circuit/layout changes are needed, document the decision and rerun affected checks. User requested this as near-term work on 2026-11-23; the vendor acknowledgment remains pending.
+2. Obtain fabricator confirmation of the candidate stackup and USB impedance geometry.
+3. Qualify exact footprints, paste/mask, selective via treatment and component tolerances. Validate USB, processor power/clock, sensor operation and servo transients on prototypes.
+4. Check battery clearance, connectors, cable exits, tag and SD access on a physical prototype.
+5. Complete prototype PCB/components and production PCBA pricing. Gerbers, BOM and placement files have been uploaded to JLCPCB for quotation only; component shortages and the RP2350 acknowledgment prevent a complete PCBA quote. Initial LCSC loose-parts pricing and an assumption-based assembled-board budget have been obtained; firm production pricing remains open. No manufacturing release or purchase has occurred.
 
 `tools/finish-routing.ps1` checks the completed working board without regenerating placement or routing. `tools/place-pcb.py` and full rebuilds overwrite routed copper; preserve this board before regeneration. Placement overrides retain native coordinates, rotations and faces. All Markdown uses LF on checkout and checkin.
