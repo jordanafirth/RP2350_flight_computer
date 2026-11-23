@@ -1,7 +1,8 @@
 param(
     [string]$InputDsn = '.cache/routing/input-fine.dsn',
     [string]$OutputSes = '.cache/routing/result-fine.ses',
-    [ValidateRange(1,30)][int]$Passes = 5
+    [ValidateRange(1,30)][int]$Passes = 5,
+    [switch]$GroundPours
 )
 $ErrorActionPreference = 'Stop'
 $projectRoot = Split-Path -Parent $PSScriptRoot
@@ -17,6 +18,8 @@ New-Item -ItemType Directory -Force -Path $cache | Out-Null
 if ($LASTEXITCODE -ne 0) { throw 'Routing runner compilation failed' }
 Push-Location $projectRoot
 try {
-    & (Join-Path $jdk 'java.exe') '-Djava.awt.headless=true' '-Xmx2g' '-cp' "$jar;$cache" 'RouteBoard' $InputDsn $OutputSes "$Passes"
+    $routeArguments=@('-Djava.awt.headless=true','-Xmx2g','-cp',"$jar;$cache",'RouteBoard',$InputDsn,$OutputSes,"$Passes")
+    if($GroundPours){$routeArguments+='ground-pours'}
+    & (Join-Path $jdk 'java.exe') @routeArguments
     if ($LASTEXITCODE -ne 0) { throw 'Routing failed' }
 } finally { Pop-Location }

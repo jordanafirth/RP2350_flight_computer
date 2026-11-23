@@ -1,5 +1,5 @@
-param([ValidateSet('escape','offset','six','repair','repair2','repair6','repair6b')][string]$Source='escape',
-      [ValidateSet('repair','repair2','repair3','repair6','repair6b','repair6c')][string]$Candidate='repair',
+param([ValidateSet('escape','offset','six','four','final4','complete4','repair4','repair4b','repair4c','repair4d','repair','repair2','repair6','repair6b')][string]$Source='complete4',
+      [ValidateSet('repair4','repair4b','repair4c','repair4d','repair4e','repair','repair2','repair3','repair6','repair6b','repair6c')][string]$Candidate='repair4',
       [ValidateRange(1,100)][int]$Limit=100,[switch]$ReuseProposals)
 $ErrorActionPreference='Stop'
 if ($Source -eq $Candidate) {throw 'Keep the source board separate from the repair candidate'}
@@ -18,6 +18,10 @@ try {
     $board=".cache/routing/candidate-$Candidate.kicad_pcb"
     $report="reports/pcb/candidate-$Candidate-drc.json"
     $routes=".cache/routing/$Candidate-routes.json"
+    # Refresh the scratch library context after moving the project directory.
+    $libraryRoot=(Join-Path $root 'hardware/rev-a').Replace('\','/')
+    $table=(Get-Content 'hardware/rev-a/fp-lib-table' -Raw).Replace('${KIPRJMOD}',$libraryRoot)
+    [IO.File]::WriteAllText((Join-Path $root '.cache/routing/fp-lib-table'),$table,[Text.UTF8Encoding]::new($false))
     Run-Step $python @('tools/export-layout.py','--board',$sourceBoard,'--strict-vias')
     $routingArgs=@('tools/repair-routing.py','--drc',"reports/pcb/candidate-$Source-drc.json",'--output',$routes,'--limit',"$Limit")
     if ($ReuseProposals) {$routingArgs+='--deduplicate-only'}

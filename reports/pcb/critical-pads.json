@@ -3,7 +3,7 @@
     "ref": "C2",
     "pad": "2",
     "net": "BASE_N_5",
-    "x": 112.8,
+    "x": 112.55,
     "y": 110.752,
     "copper_layers": [
       "F.Cu"
@@ -23,7 +23,7 @@
     "ref": "Y1",
     "pad": "1",
     "net": "BASE_N_6",
-    "x": 116.15,
+    "x": 115.9,
     "y": 114.16,
     "copper_layers": [
       "F.Cu"
@@ -33,7 +33,7 @@
     "ref": "Y1",
     "pad": "3",
     "net": "BASE_N_5",
-    "x": 114.45,
+    "x": 114.2,
     "y": 111.96,
     "copper_layers": [
       "F.Cu"
@@ -43,7 +43,7 @@
     "ref": "C3",
     "pad": "2",
     "net": "BASE_N_6",
-    "x": 112.8,
+    "x": 112.55,
     "y": 114.768,
     "copper_layers": [
       "F.Cu"

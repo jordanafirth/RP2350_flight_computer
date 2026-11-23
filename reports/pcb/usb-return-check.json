@@ -1,0 +1,14 @@
+{
+  "status": "pass",
+  "board": "flight-computer.kicad_pcb",
+  "reference_layer": "In2.Cu / GND",
+  "trace_center_samples_with_reference": 389,
+  "samples_without_reference": [],
+  "transition_samples_excluded_within_0p8mm": 67,
+  "foreign_vias_within_0p3mm_copper_edge": [],
+  "front_reference_layer": "In1.Cu / GND",
+  "front_trace_center_samples_with_reference": 191,
+  "front_samples_without_reference": [],
+  "front_transition_samples_excluded_within_0p8mm": 59,
+  "limits": "Geometric saved-fill screen only. Excludes the local layer-transition regions, which require return-via review. Does not establish impedance, signal integrity or fabrication suitability."
+}

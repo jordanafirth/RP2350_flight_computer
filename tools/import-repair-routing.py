@@ -20,7 +20,7 @@ for route in data['routes']:
     if not net:raise ValueError('Unknown route net '+route['net'])
     for chunk in route['chunks']:
         layer=b.GetLayerID(chunk['layer'])
-        if layer not in (pcbnew.F_Cu,pcbnew.In2_Cu,pcbnew.In3_Cu,pcbnew.B_Cu):raise ValueError('Unsupported routing layer')
+        if layer not in (pcbnew.F_Cu,pcbnew.In1_Cu,pcbnew.In2_Cu,pcbnew.In3_Cu,pcbnew.B_Cu):raise ValueError('Unsupported routing layer')
         for a,z in zip(chunk['points'],chunk['points'][1:]):
             if a==z:continue
             t=pcbnew.PCB_TRACK(b);t.SetStart(vec(a));t.SetEnd(vec(z))

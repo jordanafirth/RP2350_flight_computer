@@ -13,7 +13,7 @@ import java.util.UUID;
 
 public class RouteBoard {
     public static void main(String[] args) throws Exception {
-        if (args.length != 3) throw new IllegalArgumentException("Usage: RouteBoard input.dsn output.ses passes");
+        if (args.length < 3 || args.length > 4) throw new IllegalArgumentException("Usage: RouteBoard input.dsn output.ses passes [ground-pours]");
         Freerouting.globalSettings = new GlobalSettings();
         Freerouting.globalSettings.usageAndDiagnosticData.disableAnalytics = true;
         RoutingJob job = new RoutingJob(UUID.randomUUID());
@@ -22,6 +22,18 @@ public class RouteBoard {
         manager.loadFromSpecctraDsn(job.input.getData(), null, new ItemIdentificationNumberGenerator());
         job.board = manager.get_routing_board();
         if (job.board == null) throw new IllegalStateException("DSN did not load");
+        if (args.length == 4 && args[3].equals("ground-pours")) {
+            var rules = job.board.rules;
+            var defaults = rules.get_default_net_class();
+            var ground = rules.append_net_class("NativeGroundPours");
+            ground.set_via_rule(defaults.get_via_rule());
+            ground.set_trace_clearance_class(defaults.get_trace_clearance_class());
+            for (int layer=0; layer<ground.layer_count(); layer++)
+                ground.set_trace_half_width(layer, defaults.get_trace_half_width(layer));
+            ground.is_ignored_by_autorouter = true;
+            for (var net : rules.nets.get("GND")) net.set_class(ground);
+            System.out.println("Ground connectivity is deferred to native ground-pour refill.");
+        }
         job.routerSettings = new RouterSettings(job.board);
         job.routerSettings.automatic_neckdown = false;
         job.routerSettings.set_stop_pass_no(Integer.parseInt(args[2]));

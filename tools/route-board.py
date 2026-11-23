@@ -5,6 +5,7 @@ this script does not upload CAD or run any vendor service.
 """
 import argparse
 import json
+import re
 from pathlib import Path
 from native_cad import pcbnew,load_board,save_board
 from kicad_sexpr import loads,dumps,first
@@ -20,6 +21,7 @@ parser.add_argument('--session',type=Path,default=CACHE/'result.ses')
 parser.add_argument('--dsn',type=Path,default=CACHE/'input.dsn')
 parser.add_argument('--board',type=Path,default=TARGET,help='Candidate PCB to read or update; defaults to the working board.')
 parser.add_argument('--signal-routing','--three-signal-layers',dest='signal_routing',action='store_true',help='Omit the provisional L3 ground pour from signal routing interchange.')
+parser.add_argument('--four-signal-layers',action='store_true',help='Omit both inner ground pours during routing; retain all ground zones in the native PCB and all reference keepouts.')
 parser.add_argument('--replace-tracks',action='store_true',help='Replace generated routing while retaining fixed copper omitted by SES; use the matching DSN base and back it up first.')
 parser.add_argument('--fresh-routing',action='store_true',help='Export placement and fixed copper without provisional generated tracks.')
 parser.add_argument('--outer-ground',action='store_true',help='Add outer-layer ground pours for a separately checked candidate.')
@@ -42,7 +44,7 @@ def copper_signature(n):
     return tuple((k,tuple(atom(v) for v in first(n,k)[1:])) for k in keys if first(n,k))
 fixed_before={first(n,'uuid')[1]:copper_signature(n) for n in original if isinstance(n,list) and n[0] in {'segment','via','arc'} and fixed(n)}
 strip_tracks=(args.action=='export' and args.fresh_routing) or (args.action=='import' and args.replace_tracks)
-strip_plane=args.action=='export' and args.signal_routing
+strip_plane=args.action=='export' and (args.signal_routing or args.four_signal_layers)
 strip_outer=args.action=='export'
 if strip_tracks or strip_plane or strip_outer:
     # Removing large SWIG-owned collections in this KiCad build destabilizes
@@ -52,7 +54,7 @@ if strip_tracks or strip_plane or strip_outer:
     data[:]=[n for n in data if not (isinstance(n,list) and (
         (strip_tracks and n[0] in {'segment','via','arc'} and not fixed(n)) or
         (n[0]=='zone' and not first(n,'keepout') and first(n,'layer') and (
-            (strip_plane and first(n,'layer')[1]=='In2.Cu') or
+            (strip_plane and (first(n,'layer')[1]=='In2.Cu' or (args.four_signal_layers and first(n,'layer')[1]=='In1.Cu'))) or
             (strip_outer and first(n,'layer')[1] in {'F.Cu','B.Cu'})))))]
     load_path=CACHE/(TARGET.stem+'-interchange-base.kicad_pcb')
     load_path.write_text(dumps(data)+'\n',encoding='utf-8',newline='\n')
@@ -83,6 +85,11 @@ elif args.action=='export':
     board.BuildConnectivity()
     if not pcbnew.ExportSpecctraDSN(board,str(args.dsn)):
         raise SystemExit('DSN export failed')
+    if args.four_signal_layers:
+        dsn=args.dsn.read_text(encoding='utf-8')
+        dsn=re.sub(r'(\(layer In1\.Cu\s+\(type )power(\))',r'\1signal\2',dsn)
+        if re.search(r'\(plane GND \(polygon In1\.Cu',dsn):raise ValueError('L2 plane was not omitted from routing interchange')
+        args.dsn.write_text(dsn,encoding='utf-8',newline='\n')
     print('Exported',args.dsn)
 elif args.action=='import':
     if not pcbnew.ImportSpecctraSES(board,str(args.session)):

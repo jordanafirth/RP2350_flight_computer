@@ -4,7 +4,7 @@
 
 `rev-a/flight-computer.kicad_pro` is the integrated custom schematic project, with a local symbol library and footprint library. It is a development draft and must not be sent for manufacturing.
 
-`rev-a/flight-computer.kicad_pcb` contains an incomplete routing candidate. USB and underside microSD occupy the same short end; four right-angle servo ports occupy the opposite end. The retained Qwiic connector is horizontal. The battery socket remains on top in the reference Feather location. Reports in `reports/pcb/` are named development checkpoints, with unresolved connections and raw violations retained. Mechanical review and remaining release gates are in `docs/placement-review.md`.
+`rev-a/flight-computer.kicad_pcb` contains the completed four-layer routing candidate. USB and underside microSD occupy the same short end; four right-angle servo ports occupy the opposite end. The retained Qwiic connector is horizontal. The battery socket remains on top in the reference Feather location. Reports in `reports/pcb/` are named development checkpoints, with historical intermediate results retained; current results are in `current-drc.json` and `routing-completion.json`. Mechanical review and remaining release gates are in `docs/placement-review.md`.
 
 Upstream Adafruit-derived circuits retain the attribution and CC BY-SA 3.0 notices in `references/`. Changes include integration, connector changes, GPIO reassignment and removal of breakout-only interfaces. No Adafruit endorsement is implied.
 
@@ -22,6 +22,6 @@ See [review notes](../docs/schematic-review.md) and [hardware attribution](NOTIC
 
 `tools/check-hardware.ps1` runs the current schematic and PCB checks without regenerating the PCB. Its `-PreviewOnly` option renders cropped top/bottom engineering views. Always inspect the raw DRC results; successful report generation does not mean a clean board.
 
-`tools/route-board.py` provides native KiCad DSN/SES interchange. Use KiCad's bundled Python. Exporting with `--fresh-routing` omits existing tracks from the routing input; importing with `--replace-tracks` replaces candidate tracks and requires a prior backup. `--three-signal-layers` leaves L2 as ground reference and allows L3 routing.
+`tools/route-board.py` provides native KiCad DSN/SES interchange. Use KiCad's bundled Python. Exporting with `--fresh-routing` omits existing tracks from the routing input; importing with `--replace-tracks` replaces candidate tracks and requires a prior backup. The completed four-layer board uses both inner layers for signals and ground fill, retaining local USB/clock reference reservations. Older three-signal-layer experiments do not describe the current stackup.
 
 `tools/run-router.ps1` runs the locally verified Freerouting 2.0.1 library through `tools/RouteBoard.java`, with an explicit pass limit and synchronous SES export. The upstream 2.0.1 CLI scheduler did not honor the requested routing stop and could race SES serialization; do not use its normal CLI entry point for this project. The wrapper starts no GUI, API server or analytics. Routing output still requires independent KiCad checks and engineering review.

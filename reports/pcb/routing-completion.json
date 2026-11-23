@@ -1,0 +1,33 @@
+{
+  "status": "routing complete; prototype and fabrication review pending",
+  "date": "2026-11-23",
+  "board": "hardware/rev-a/flight-computer.kicad_pcb",
+  "sha256": "b02358ef6007c777e6091184f4207a7054e61ea25130220e57865accd8892125",
+  "copper_layers": 4,
+  "unconnected_items": 0,
+  "schematic_parity_issues": 0,
+  "electrical_clearance_violations": 0,
+  "dangling_tracks_or_vias": 0,
+  "reviewed_locating_hole_notices": 2,
+  "drc_report": "reports/pcb/current-drc.json",
+  "schematic_erc": "reports/schematic/erc.json",
+  "pcb_model_check": "reports/pcb/pad-net-check.json",
+  "usb_reference_screen": "reports/pcb/usb-return-check.json",
+  "via_in_pad_screen": "reports/pcb/via-in-pad-check.json",
+  "usb_reference_screen_status": "pass",
+  "processor_filled_capped_vias": 3,
+  "additional_via_in_pad_sites": 0,
+  "standard_header_assignments_retained": true,
+  "inner_layer_roles": "In1.Cu and In2.Cu carry signals and GND fill; neither is a continuous plane",
+  "visual_review": [
+    "hardware/rev-a/exports/placement-top.png",
+    "hardware/rev-a/exports/placement-bottom.png"
+  ],
+  "manufacturing_release": false,
+  "open_validation": [
+    "Fabricator stackup and USB differential impedance confirmation",
+    "Prototype power, clock, USB, sensor and servo-transient testing",
+    "Battery, card access, plugs and mounting physical fit",
+    "Supplier DFM and assembly process review; PCBA quote"
+  ]
+}

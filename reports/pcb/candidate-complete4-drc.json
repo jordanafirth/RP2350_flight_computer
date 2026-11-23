@@ -1,0 +1,83 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-23T13:15:17",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.3",
+    "schematic_parity": [],
+    "source": "candidate-final-complete4.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "NPTH inside courtyard",
+            "items": [
+                {
+                    "description": "NPTH pad of JUSB1",
+                    "pos": {
+                        "x": 106.4785,
+                        "y": 108.54
+                    },
+                    "uuid": "c33a0a72-8775-5794-9439-c310ef8ae11c"
+                },
+                {
+                    "description": "Footprint JSD1",
+                    "pos": {
+                        "x": 106.4,
+                        "y": 111.43
+                    },
+                    "uuid": "e595414b-b56f-5bb2-96d7-4ab51e82f665"
+                }
+            ],
+            "severity": "error",
+            "type": "npth_inside_courtyard"
+        },
+        {
+            "description": "NPTH inside courtyard",
+            "items": [
+                {
+                    "description": "NPTH pad of JUSB1",
+                    "pos": {
+                        "x": 106.4785,
+                        "y": 114.32
+                    },
+                    "uuid": "ee517a14-6271-5216-929a-f5bc6dab67f1"
+                },
+                {
+                    "description": "Footprint JSD1",
+                    "pos": {
+                        "x": 106.4,
+                        "y": 111.43
+                    },
+                    "uuid": "e595414b-b56f-5bb2-96d7-4ab51e82f665"
+                }
+            ],
+            "severity": "error",
+            "type": "npth_inside_courtyard"
+        }
+    ]
+}

@@ -1,6 +1,6 @@
 # Routing development review
 
-Updated 2026-11-20. The working-board state and remaining connections are recorded in `development-plan.md` and the raw current DRC report. These notes describe engineering candidates, not a fabrication release.
+Updated 2026-11-23. The working-board state and remaining connections are recorded in `development-plan.md` and the raw current DRC report. These notes describe engineering candidates, not a fabrication release.
 
 ## Fixed local circuits
 
@@ -18,9 +18,15 @@ Explicit processor escapes avoid trapping the QSPI flash signals behind the USB 
 
 - Native KiCad DRC checks copper, holes, placement and connectivity after zone refill. Scratch boards receive the actual project rules and footprint-library context.
 - The importer verifies that every fixed track/via retains its UUID, geometry, width, layer and net. Freerouting's SES writer omits system-fixed copper, so replacing all original tracks would discard those critical connections.
-- Outer ground pours are omitted from the routing interchange and restored/refilled on the native PCB. The routing input retains L2 ground, and L3 carries signal routing outside the USB reference reservations.
+- Outer ground pours are omitted from the routing interchange and restored/refilled on the native PCB. Both inner layers now carry signals and ground fill. L2 is not a continuous ground plane. Native USB/clock rule areas retain the required local reference reservations.
 - A via-drill versus solder-land screen rejects unintended via-in-pad sites. Only the three specified processor exposed-pad vias are accepted automatically.
 - A saved-fill screen samples the L3 ground directly beneath bottom-layer USB trace centers and flags nearby foreign vias. It excludes samples within 0.8 mm of USB transition vias; those transition regions require separate return-path review. This is a geometric check, not a field solver.
 - Placement preservation now includes rotation and component face, as well as coordinates, so regenerating an unrouted placement can retain the checked arrangement. Regenerating placement still overwrites routed copper.
 
 Two reviewed USB locating-hole notices remain documented in `placement-review.md`. They do not excuse electrical or other mechanical violations. No manufacturing-ready package or vendor assembly quote exists yet.
+
+## Completed four-layer routing
+
+All standard header assignments are retained. Completion uses F.Cu, In1.Cu, In2.Cu and B.Cu, with local ground stitching. The final local changes reroute GPIO24, BMP_INT, VCORE and a 3.3-V distribution section to avoid enclosed ground islands. Power widths remain 0.3 mm for the modified VCORE section and 0.15 mm for the modified 3.3-V section. No additional via-in-pad sites were introduced; the three processor exposed-pad vias retain their specified treatment.
+
+The reset and boot switches exchanged physical positions, and the charge LED moved beside the charging circuit. Placement overrides preserve these locations. Native connectivity, clearance and schematic parity checks, plus the USB saved-fill and via-drill screens, are required for the saved working board. Final evidence is recorded in `reports/pcb/routing-completion.json`. Prototype power/clock/USB testing and fabricator impedance/DFM review remain open.

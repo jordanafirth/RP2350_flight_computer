@@ -41,11 +41,23 @@ for v in b.GetTracks():
     p=xy(v.GetPosition());radius=pcbnew.ToMM(v.GetWidth(pcbnew.F_Cu))/2
     separation=min((distance(p,xy(t.GetStart()),xy(t.GetEnd()))-pcbnew.ToMM(t.GetWidth())/2-radius for t in routes),default=999)
     if separation<.3:foreign.append({'net':v.GetNetname(),'position':p,'copper_edge_distance_mm':round(separation,4)})
-result={'status':'pass' if not gaps and not foreign else 'review required','board':args.board.name,
+front_ground=[z.GetFilledPolysList(pcbnew.In1_Cu) for z in b.Zones() if not z.GetIsRuleArea() and z.GetNetname()=='GND' and z.GetLayer()==pcbnew.In1_Cu]
+front_routes=[t for t in b.GetTracks() if not isinstance(t,pcbnew.PCB_VIA) and t.GetLayer()==pcbnew.F_Cu and t.GetNetname() in usb|{'D+','D-'}]
+front_samples=0;front_gaps=[];front_excluded=0
+for t in front_routes:
+    a,z=xy(t.GetStart()),xy(t.GetEnd());count=max(1,math.ceil(math.dist(a,z)/.1))
+    for i in range(count+1):
+        x,y=(a[k]+(z[k]-a[k])*i/count for k in (0,1))
+        if any(math.dist((x,y),v)<.8 for v in transitions):front_excluded+=1;continue
+        front_samples+=1
+        if not any(p.Contains(vec(x,y)) for p in front_ground):front_gaps.append({'net':t.GetNetname(),'x':round(x,4),'y':round(y,4)})
+result={'status':'pass' if not gaps and not foreign and not front_gaps else 'review required','board':args.board.name,
         'reference_layer':b.GetLayerName(reference)+' / GND','trace_center_samples_with_reference':samples-len(gaps),
         'samples_without_reference':gaps,'transition_samples_excluded_within_0p8mm':near_transition,
         'foreign_vias_within_0p3mm_copper_edge':foreign,
+        'front_reference_layer':'In1.Cu / GND','front_trace_center_samples_with_reference':front_samples-len(front_gaps),
+        'front_samples_without_reference':front_gaps,'front_transition_samples_excluded_within_0p8mm':front_excluded,
         'limits':'Geometric saved-fill screen only. Excludes the local layer-transition regions, which require return-via review. Does not establish impedance, signal integrity or fabrication suitability.'}
 args.report.write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8',newline='\n')
 print(json.dumps({k:v for k,v in result.items() if k not in {'samples_without_reference','limits'}},indent=2))
-if gaps or foreign:raise SystemExit(1)
+if gaps or foreign or front_gaps:raise SystemExit(1)

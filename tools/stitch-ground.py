@@ -1,7 +1,7 @@
 """Stitch filled ground islands using conservative copper containment tests.
 
 Run after KiCad DRC --refill-zones --save-board. Every proposed 0.4/0.2-mm
-through via must fit the continuous L2 GND reference and clear actual foreign
+through via must fit the saved local L2 GND fill and clear actual foreign
 copper on every layer. Processor exposed-pad vias require filling/capping.
 Independent KiCad DRC must follow. This is not a substitute for return-path,
 regulator-loop, thermal-pad or assembler review.

@@ -1,29 +1,210 @@
 {
-  "status": "candidate stitches; independent DRC required",
-  "vias_added": [],
-  "outer_fill_islands_without_a_new_stitch": [],
+  "status": "all ground nets connected in native current-drc.json",
   "processor_exposed_pad_vias": [
     {
-      "x": 123.178,
+      "x": 123.977499,
       "y": 112.7,
       "diameter_mm": 0.4,
       "drill_mm": 0.2,
       "process": "filled and copper capped; assembler review required"
     },
     {
-      "x": 123.178,
+      "x": 123.1775,
+      "y": 112.7,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2,
+      "process": "filled and copper capped; assembler review required"
+    },
+    {
+      "x": 123.1775,
       "y": 111.9,
-      "diameter_mm": 0.4,
-      "drill_mm": 0.2,
-      "process": "filled and copper capped; assembler review required"
-    },
-    {
-      "x": 123.977,
-      "y": 112.7,
       "diameter_mm": 0.4,
       "drill_mm": 0.2,
       "process": "filled and copper capped; assembler review required"
     }
   ],
-  "limits": "Exposed-pad vias require filling and copper capping in the fabrication quote. Uncovered islands may already connect through PTH pads or may need manual routing. Independent DRC and assembler stencil/process review remain required."
+  "all_ground_vias": [
+    {
+      "x": 102.5,
+      "y": 104.75,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2
+    },
+    {
+      "x": 127.9,
+      "y": 115.8,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2
+    },
+    {
+      "x": 122.75,
+      "y": 105.0,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2
+    },
+    {
+      "x": 116.4,
+      "y": 110.3,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2
+    },
+    {
+      "x": 137.25,
+      "y": 107.0,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2
+    },
+    {
+      "x": 110.75,
+      "y": 109.25,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2
+    },
+    {
+      "x": 131.0,
+      "y": 109.7,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2
+    },
+    {
+      "x": 109.2,
+      "y": 112.45,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2
+    },
+    {
+      "x": 123.85,
+      "y": 117.0,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2
+    },
+    {
+      "x": 144.5,
+      "y": 116.75,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2
+    },
+    {
+      "x": 112.75,
+      "y": 115.5,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2
+    },
+    {
+      "x": 108.25,
+      "y": 116.75,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2
+    },
+    {
+      "x": 139.25,
+      "y": 117.25,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2
+    },
+    {
+      "x": 127.0,
+      "y": 116.95,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2
+    },
+    {
+      "x": 123.977499,
+      "y": 112.7,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2
+    },
+    {
+      "x": 108.8,
+      "y": 114.0,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2
+    },
+    {
+      "x": 122.75,
+      "y": 100.6,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2
+    },
+    {
+      "x": 125.5,
+      "y": 112.25,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2
+    },
+    {
+      "x": 124.65,
+      "y": 105.7,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2
+    },
+    {
+      "x": 112.0,
+      "y": 118.5,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2
+    },
+    {
+      "x": 101.25,
+      "y": 118.25,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2
+    },
+    {
+      "x": 117.6,
+      "y": 115.2,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2
+    },
+    {
+      "x": 123.1775,
+      "y": 112.7,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2
+    },
+    {
+      "x": 130.5,
+      "y": 110.9,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2
+    },
+    {
+      "x": 123.1775,
+      "y": 111.9,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2
+    },
+    {
+      "x": 106.5,
+      "y": 111.5,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2
+    },
+    {
+      "x": 130.65,
+      "y": 117.4,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2
+    },
+    {
+      "x": 108.44,
+      "y": 109.8,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2
+    },
+    {
+      "x": 102.0,
+      "y": 113.75,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2
+    },
+    {
+      "x": 114.0,
+      "y": 120.5,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2
+    }
+  ],
+  "ground_via_count": 30,
+  "limits": "Saved routing connectivity only; prototype return-path, power and assembler process validation remain required."
 }

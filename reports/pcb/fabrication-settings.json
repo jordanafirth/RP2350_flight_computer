@@ -3,26 +3,29 @@
   "manufacturing_release": false,
   "board": "flight-computer.kicad_pcb",
   "stackup": "JLC04161H-3313",
+  "copper_layers": 4,
   "source": "https://jlcpcb.com/impedance",
   "nominal_board_thickness_mm": 1.6,
   "copper_and_dielectric_sum_mm": 1.5642,
   "sum_including_modelled_mask_mm": 1.59468,
+  "internal_dielectric_Dk_assumed": 4.6,
+  "internal_dielectric_Dk_supplier_confirmed": false,
   "ordinary_vias": "tented both faces per board defaults",
   "processor_vias": [
     {
-      "x": 123.178,
+      "x": 123.977499,
       "y": 112.7,
-      "uuid": "334f94a6-1d69-4355-bdc4-d118ec22b7de"
+      "uuid": "7eaaf284-8851-474a-aa74-3bde240b8ebe"
     },
     {
-      "x": 123.178,
+      "x": 123.1775,
+      "y": 112.7,
+      "uuid": "b36b1024-5bc1-41f9-9bd6-937d30294e0d"
+    },
+    {
+      "x": 123.1775,
       "y": 111.9,
-      "uuid": "3736f26e-2a15-4796-8d2d-e8e7159237aa"
-    },
-    {
-      "x": 123.977,
-      "y": 112.7,
-      "uuid": "bf0c3e72-e851-49d7-9f6a-1d6954f80ac0"
+      "uuid": "e1ad4e23-d779-4b37-b90c-ffa2b91ab84a"
     }
   ],
   "processor_via_process": "epoxy filled and copper capped; exposed on front, tented on back",

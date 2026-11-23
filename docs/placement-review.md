@@ -1,10 +1,10 @@
 # Placement and mechanical review
 
-Updated 2026-11-20. This is an engineering development record, not a manufacturing release.
+Updated 2026-11-23. This is an engineering development record, not a manufacturing release.
 
-2026-11-20 routing update: USB series resistors R9/R10 are on the processor face, with explicit processor-side traces about 5.16 and 4.16 mm long. The interleaved USB-C contacts have fixed local jumps, and the long parallel route is on the bottom with reserved L3 ground beneath it. The inherited USB data test pads were removed. Processor regulator/decoupling connections and the short IMU crystal circuit are also explicitly routed. See `routing-review.md` for geometry and validation limits. L2 is the continuous ground reference; L3 carries signals outside the USB reference reservations. The candidate stackup is now recorded in native CAD, with fabricator impedance confirmation still pending.
+2026-11-20 routing update: USB series resistors R9/R10 are on the processor face, with explicit processor-side traces about 5.16 and 4.16 mm long. The interleaved USB-C contacts have fixed local jumps, and the long parallel route is on the bottom with reserved L3 ground beneath it. The inherited USB data test pads were removed. Processor regulator/decoupling connections and the short IMU crystal circuit are also explicitly routed. See `routing-review.md` for geometry and validation limits. Both inner layers carry signals and ground fill; L2 is not a continuous ground plane. USB reference reservations are retained. The candidate stackup is now recorded in native CAD, with fabricator impedance confirmation still pending.
 
-The latest working-board DRC has 30 unconnected items, one dangling-track warning, six dangling-via warnings and the two locating-hole notices below. There are no reported shorts, copper-clearance, edge-clearance or schematic-parity violations. Only the three intended processor ground vias overlap solder lands. These have explicit filled/capped CAD attributes and require assembler process review; see `pcba-rfq.md`, `reports/pcb/fabrication-settings.json` and `reports/pcb/ground-stitching.json`.
+The completed four-layer routing connects every signal and ground net. Current native checks are recorded in `reports/pcb/current-drc.json`, with a board hash in `reports/pcb/routing-completion.json`. Only the three intended processor ground vias overlap solder lands and require the specified filled/capped process. The two reviewed locating-hole notices below remain separate from electrical clearance/connectivity checks.
 
 ## Current arrangement
 
@@ -24,7 +24,7 @@ This exception applies only to the two USB locating holes under JSD1. It does no
 
 ## Still required
 
-1. Complete routing and independent KiCad connectivity/clearance checks.
+1. Preserve the completed routing and rerun native connectivity/clearance checks after any change.
 2. Review the USB pair, RP2350 regulator/clock loops and sensor decoupling after routing; an autorouter result alone is insufficient.
 3. Choose the fabrication stackup explicitly. JLC04161H-3313 is the current candidate: nominal 0.0994-mm outer prepregs, 1-oz outer and 0.5-oz inner copper. USB requires a 90-ohm differential geometry checked against the fabricator's selected stackup.
 4. Inspect the complete assembly with actual battery, servo plugs, USB plug and SD card. Check tag extraction, Qwiic cable clearance, mounting hardware, barometer venting and battery restraint.

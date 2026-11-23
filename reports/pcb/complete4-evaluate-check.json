@@ -1,0 +1,9 @@
+{
+  "status": "pass",
+  "sha256": "af3e2b92fb0d8dc49b9e93c407e2cebf0c3b55ffd002255637960d248165b488",
+  "copper_layers": 4,
+  "drc_report": "reports/pcb/candidate-complete4-drc.json",
+  "unconnected_items": 0,
+  "reviewed_locating_hole_notices": 2,
+  "other_violations": 0
+}

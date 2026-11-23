@@ -1,18 +1,21 @@
-# Bounded, headless routing/check workflow. No GUI, uploads, Git or purchases.
+# Check the completed routed board; never regenerate placement or copper here.
+param([ValidateSet('All','Check')][string]$Stage='Check')
 $ErrorActionPreference='Stop'
 $root=Split-Path -Parent $PSScriptRoot
+$bin=Join-Path $env:LOCALAPPDATA 'Programs\KiCad\10.0\bin'
 Push-Location $root
 try {
-    $previous='six'
-    $previousCount=@((Get-Content 'reports/pcb/candidate-six-drc.json' -Raw|ConvertFrom-Json).unconnected_items).Count
-    foreach ($candidate in @('repair6','repair6b','repair6c')) {
-        & (Join-Path $PSScriptRoot 'complete-routing.ps1') -Source $previous -Candidate $candidate
-        $report=Get-Content "reports/pcb/candidate-$candidate-drc.json" -Raw|ConvertFrom-Json
-        $count=@($report.unconnected_items).Count
-        $blocking=@($report.violations|Where-Object type -NotIn npth_inside_courtyard,track_dangling,via_dangling)
-        if ($blocking.Count) {throw 'Resolve the raw candidate DRC violations before another completion round'}
-        Write-Output "Checked $candidate : $count unconnected items"
-        if ($count -eq 0 -or $count -ge $previousCount) {break}
-        $previous=$candidate;$previousCount=$count
+    & (Join-Path $PSScriptRoot 'check-hardware.ps1')
+    if($LASTEXITCODE -ne 0){throw 'Hardware checks failed'}
+    $drc=Get-Content 'reports/pcb/current-drc.json' -Raw | ConvertFrom-Json
+    if(@($drc.unconnected_items).Count){throw 'Disconnected nets remain'}
+    $notices=@($drc.violations | Where-Object type -eq 'npth_inside_courtyard')
+    if(@($drc.violations | Where-Object type -ne 'npth_inside_courtyard').Count -or $notices.Count -ne 2){throw 'Unexpected board-rule result'}
+    foreach($notice in $notices){
+        if(-not ($notice.items | Where-Object description -eq 'NPTH pad of JUSB1') -or -not ($notice.items | Where-Object description -eq 'Footprint JSD1')){throw 'Unreviewed locating-hole notice'}
     }
+    & "$bin\python.exe" tools/export-layout.py --strict-vias --require-ep-vias
+    if($LASTEXITCODE -ne 0){throw 'Via screening failed'}
+    & "$bin\python.exe" tools/check-usb-return.py --board hardware/rev-a/flight-computer.kicad_pcb
+    if($LASTEXITCODE -ne 0){throw 'USB ground-reference screen failed'}
 } finally {Pop-Location}

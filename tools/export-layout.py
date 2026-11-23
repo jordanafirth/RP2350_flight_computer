@@ -8,6 +8,8 @@ ROOT=Path(__file__).resolve().parents[1]
 parser=argparse.ArgumentParser()
 parser.add_argument('--board',type=Path,default=ROOT/'hardware/rev-a/flight-computer.kicad_pcb')
 parser.add_argument('--strict-vias',action='store_true')
+parser.add_argument('--require-ep-vias',action='store_true',help='Require the three specified processor exposed-pad ground vias.')
+parser.add_argument('--l2-mask',action='store_true',help='Sample front ground copper for short, locally referenced L2 routing bridges.')
 args=parser.parse_args()
 b=load_board(args.board.resolve(),ROOT/'hardware/rev-a/flight-computer.kicad_pro')
 def xy(p):return [round(pcbnew.ToMM(p.x),6),round(pcbnew.ToMM(p.y),6)]
@@ -15,6 +17,19 @@ def bounds(item):
     box=item.GetBoundingBox()
     return [round(pcbnew.ToMM(v),6) for v in [box.GetX(),box.GetY(),box.GetX()+box.GetWidth(),box.GetY()+box.GetHeight()]]
 parts=[];pads=[];tracks=[]
+b.BuildConnectivity()
+connected=b.GetConnectivity()
+items={item.m_Uuid.AsString():item for item in list(b.GetTracks())+[p for fp in b.GetFootprints() for p in fp.Pads()]}
+parents={key:key for key in items}
+def root(key):
+    while parents[key]!=key:
+        parents[key]=parents[parents[key]];key=parents[key]
+    return key
+for key,item in items.items():
+    if not item.GetNetname() or item.GetNetname()=='GND':continue
+    for other in connected.GetConnectedItems(item):
+        target=other.m_Uuid.AsString()
+        if target in items and other.GetNetname()==item.GetNetname():parents[root(target)]=root(key)
 for fp in b.GetFootprints():
     ref=fp.GetReference()
     fp.BuildCourtyardCaches()
@@ -27,22 +42,29 @@ for fp in b.GetFootprints():
     parts.append({'ref':ref,'position':xy(fp.GetPosition()),'rotation':fp.GetOrientationDegrees(),
         'side':b.GetLayerName(fp.GetLayer()),'footprint':fp.GetFPID().GetUniStringLibId(),'courtyard':courtyard})
     for p in fp.Pads():
-        pads.append({'ref':ref,'pad':p.GetNumber(),'net':p.GetNetname(),'position':xy(p.GetPosition()),
+        pads.append({'uuid':p.m_Uuid.AsString(),'component':root(p.m_Uuid.AsString()),'ref':ref,'pad':p.GetNumber(),'net':p.GetNetname(),'position':xy(p.GetPosition()),
             'bounds':bounds(p),'size':xy(p.GetSize()),'rotation':p.GetOrientationDegrees(),
             'layers':[b.GetLayerName(l) for l in p.GetLayerSet().CuStack()],
             'drill':xy(p.GetDrillSize())})
 for t in b.GetTracks():
     via=isinstance(t,pcbnew.PCB_VIA)
-    row={'uuid':t.m_Uuid.AsString(),'net':t.GetNetname(),'via':via,
+    row={'uuid':t.m_Uuid.AsString(),'component':root(t.m_Uuid.AsString()),'net':t.GetNetname(),'via':via,
         'layers':[b.GetLayerName(l) for l in t.GetLayerSet().CuStack()],'bounds':bounds(t),
         'width':pcbnew.ToMM(t.GetWidth(pcbnew.F_Cu) if via else t.GetWidth())}
     if via:row.update(position=xy(t.GetPosition()),drill=pcbnew.ToMM(t.GetDrillValue()))
     else:row.update(start=xy(t.GetStart()),end=xy(t.GetEnd()))
     tracks.append(row)
 path=ROOT/'.cache/layout-geometry.json'
+areas=[]
+for zone in b.Zones():
+    if not zone.GetIsRuleArea() or not zone.GetDoNotAllowTracks():continue
+    poly=zone.Outline();polygons=[]
+    for i in range(poly.OutlineCount()):
+        chain=poly.Outline(i);polygons.append([xy(chain.CPoint(j)) for j in range(chain.PointCount())])
+    areas.append({'layers':[b.GetLayerName(l) for l in zone.GetLayerSet().CuStack()],'polygons':polygons})
 count=b.GetCopperLayerCount()
-signal_layers=['F.Cu','In2.Cu','In3.Cu','B.Cu'] if count==6 else ['F.Cu','In2.Cu','B.Cu']
-path.write_text(json.dumps({'copper_layer_count':count,'routing_layers':signal_layers,'parts':parts,'pads':pads,'tracks':tracks},indent=2)+'\n',encoding='utf-8',newline='\n')
+signal_layers=['F.Cu','In2.Cu','In3.Cu','B.Cu'] if count==6 else ['F.Cu','In1.Cu','In2.Cu','B.Cu']
+path.write_text(json.dumps({'copper_layer_count':count,'routing_layers':signal_layers,'parts':parts,'pads':pads,'tracks':tracks,'track_keepouts':areas},indent=2)+'\n',encoding='utf-8',newline='\n')
 vip=[]
 for v in tracks:
     if not v['via']:continue
@@ -60,3 +82,19 @@ print(f'Exported {len(parts)} footprints, {len(pads)} pads and {len(tracks)} tra
 print(f'Via-drill / SMD land screening: {len(vip)} matches; {sum(not p["test_point"] and not p["planned_processor_ep"] for p in vip)} need review beyond the specified processor EP process.')
 if args.strict_vias and any(not p['test_point'] and not p['planned_processor_ep'] for p in vip):
     raise SystemExit('Unexpected via drill overlaps a solder land; review before continuing')
+ep=[p for p in vip if p['planned_processor_ep']]
+if args.require_ep_vias and (len(ep)!=3 or any(p['via_net']!='GND' for p in ep)):
+    raise SystemExit('Exactly three processor exposed-pad ground vias are required')
+if args.l2_mask:
+    ground=[z.GetFilledPolysList(pcbnew.F_Cu) for z in b.Zones() if not z.GetIsRuleArea() and z.GetNetname()=='GND' and z.GetLayer()==pcbnew.F_Cu]
+    lands=[p for f in b.GetFootprints() for p in f.Pads() if p.GetNetname()=='GND' and pcbnew.F_Cu in p.GetLayerSet().CuStack()]
+    def grounded(x,y):
+        v=pcbnew.VECTOR2I(pcbnew.FromMM(x),pcbnew.FromMM(y))
+        return any(poly.Contains(v) for poly in ground) or any(p.GetBoundingBox().Contains(v) and p.HitTest(v) for p in lands)
+    allowed=[];nx=441;ny=371;step=.05;x0=114.;y0=102.
+    for iy in range(ny):
+        for ix in range(nx):
+            x=x0+ix*step;y=y0+iy*step
+            if all(grounded(x+dx,y+dy) for dx,dy in ((0,0),(.15,0),(-.15,0),(0,.15),(0,-.15))):allowed.append(iy*nx+ix)
+    (ROOT/'.cache/l2-reference-mask.json').write_text(json.dumps({'x0':x0,'y0':y0,'step':step,'nx':nx,'ny':ny,'allowed':allowed,'reference':'F.Cu ground zone or ground land; 0.15-mm cardinal margins'})+'\n',encoding='utf-8',newline='\n')
+    print(f'Sampled {len(allowed)} locally referenced L2 cells in the processor region')

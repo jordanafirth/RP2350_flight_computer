@@ -1,0 +1,66 @@
+{
+  "status": "pass",
+  "matches": [
+    {
+      "via": [
+        123.977499,
+        112.7
+      ],
+      "via_net": "GND",
+      "ref": "U4",
+      "pad": "P$1",
+      "pad_net": "GND",
+      "test_point": false,
+      "planned_processor_ep": true
+    },
+    {
+      "via": [
+        123.1775,
+        112.7
+      ],
+      "via_net": "GND",
+      "ref": "U4",
+      "pad": "P$1",
+      "pad_net": "GND",
+      "test_point": false,
+      "planned_processor_ep": true
+    },
+    {
+      "via": [
+        123.1775,
+        111.9
+      ],
+      "via_net": "GND",
+      "ref": "U4",
+      "pad": "P$1",
+      "pad_net": "GND",
+      "test_point": false,
+      "planned_processor_ep": true
+    }
+  ],
+  "board": "flight-computer.kicad_pcb",
+  "approved_processor_sites": [
+    {
+      "x": 123.977499,
+      "y": 112.7,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2,
+      "process": "filled and copper capped; assembler review required"
+    },
+    {
+      "x": 123.1775,
+      "y": 112.7,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2,
+      "process": "filled and copper capped; assembler review required"
+    },
+    {
+      "x": 123.1775,
+      "y": 111.9,
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2,
+      "process": "filled and copper capped; assembler review required"
+    }
+  ],
+  "screening_method": "conservative pad-bounds screening; review exact land shapes"
+}
